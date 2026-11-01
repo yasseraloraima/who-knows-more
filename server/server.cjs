@@ -42,13 +42,16 @@ const supabase = createClient(
 const app = express();
 const server = http.createServer(app);
 
-const FRONTEND_URL = "http://localhost:5173";
+const FRONTEND_URL = [
+  "https://www.whoknowsmore.site",
+  "https://whoknowsmore.site",
+  "http://localhost:5173",
+];
 
 app.use(
   cors({
     origin: FRONTEND_URL,
     methods: ["GET", "POST"],
-    allowedHeaders: ["Content-Type", "Authorization"],
   })
 );
 
