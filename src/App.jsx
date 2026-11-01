@@ -3,7 +3,7 @@ import { io } from "socket.io-client";
 import { supabase } from "./lib/supabase";
 import "./App.css";
 
-const SERVER_URL = "http://localhost:3001";
+const SERVER_URL = "https://who-knows-more.onrender.com";
 
 const AVATARS = [
   {
