@@ -42,27 +42,39 @@ const supabase = createClient(
 const app = express();
 const server = http.createServer(app);
 
-const FRONTEND_URL = [
-  "https://www.whoknowsmore.site",
-  "https://whoknowsmore.site",
+// Frontend origins allowed to call this backend.
+// Keep localhost for development and both custom-domain variants for production.
+const allowedOrigins = new Set([
   "http://localhost:5173",
-];
+  "https://whoknowsmore.site",
+  "https://www.whoknowsmore.site",
+  ...(process.env.FRONTEND_URLS || "")
+    .split(",")
+    .map((origin) => origin.trim())
+    .filter(Boolean),
+]);
 
-app.use(
-  cors({
-    origin: FRONTEND_URL,
-    methods: ["GET", "POST"],
-  })
-);
+const corsOrigin = (origin, callback) => {
+  // Requests without an Origin header (such as server-to-server health checks) are allowed.
+  if (!origin || allowedOrigins.has(origin)) {
+    return callback(null, true);
+  }
 
+  console.warn("Blocked CORS request from origin:", origin);
+  return callback(new Error(`Origin not allowed by CORS: ${origin}`));
+};
+
+const corsOptions = {
+  origin: corsOrigin,
+  methods: ["GET", "POST", "OPTIONS"],
+  allowedHeaders: ["Content-Type", "Authorization"],
+};
+
+app.use(cors(corsOptions));
 app.use(express.json());
 
 const io = new Server(server, {
-  cors: {
-    origin: FRONTEND_URL,
-    methods: ["GET", "POST"],
-    allowedHeaders: ["Content-Type", "Authorization"],
-  },
+  cors: corsOptions,
 });
 
 const rooms = new Map();
@@ -164,115 +176,81 @@ async function getAuthenticatedPlayer(userId) {
 // QUESTIONS
 // =====================================
 
-const questions = [
-  {
-    category: "General Knowledge",
-    en: "What is the largest planet in our solar system?",
-    ar: "ما هو أكبر كوكب في المجموعة الشمسية؟",
-    options: ["Earth", "Mars", "Jupiter", "Venus"],
-    optionsAr: ["الأرض", "المريخ", "المشتري", "الزهرة"],
-    answer: 2,
-  },
-  {
-    category: "General Knowledge",
-    en: "How many continents are there?",
-    ar: "كم عدد القارات في العالم؟",
-    options: ["5", "6", "7", "8"],
-    optionsAr: ["5", "6", "7", "8"],
-    answer: 2,
-  },
-  {
-    category: "Sports",
-    en: "How many players are on a football team on the field?",
-    ar: "كم عدد لاعبي فريق كرة القدم داخل الملعب؟",
-    options: ["9", "10", "11", "12"],
-    optionsAr: ["9", "10", "11", "12"],
-    answer: 2,
-  },
-  {
-    category: "Sports",
-    en: "Which country won the 2022 FIFA World Cup?",
-    ar: "أي دولة فازت بكأس العالم لكرة القدم 2022؟",
-    options: ["France", "Brazil", "Argentina", "Germany"],
-    optionsAr: ["فرنسا", "البرازيل", "الأرجنتين", "ألمانيا"],
-    answer: 2,
-  },
-  {
-    category: "Movies & TV",
-    en: "What is the name of the wizarding school in Harry Potter?",
-    ar: "ما اسم مدرسة السحر في هاري بوتر؟",
-    options: ["Narnia", "Hogwarts", "Neverland", "Camelot"],
-    optionsAr: ["نارنيا", "هوغوورتس", "نيفرلاند", "كاميلوت"],
-    answer: 1,
-  },
-  {
-    category: "Movies & TV",
-    en: "Which movie features the character Jack Sparrow?",
-    ar: "في أي سلسلة أفلام تظهر شخصية جاك سبارو؟",
-    options: [
-      "Titanic",
-      "Avatar",
-      "Pirates of the Caribbean",
-      "Jaws",
-    ],
-    optionsAr: [
-      "تايتانيك",
-      "أفاتار",
-      "قراصنة الكاريبي",
-      "الفك المفترس",
-    ],
-    answer: 2,
-  },
-  {
-    category: "Science",
-    en: "What is the chemical symbol for water?",
-    ar: "ما الرمز الكيميائي للماء؟",
-    options: ["CO2", "H2O", "O2", "NaCl"],
-    optionsAr: ["CO2", "H2O", "O2", "NaCl"],
-    answer: 1,
-  },
-  {
-    category: "Science",
-    en: "Which planet is known as the Red Planet?",
-    ar: "أي كوكب يُعرف بالكوكب الأحمر؟",
-    options: ["Venus", "Saturn", "Mars", "Mercury"],
-    optionsAr: ["الزهرة", "زحل", "المريخ", "عطارد"],
-    answer: 2,
-  },
-  {
-    category: "Gaming",
-    en: "Which company created Minecraft?",
-    ar: "أي شركة طورت لعبة ماينكرافت؟",
-    options: ["Nintendo", "Mojang", "Sony", "Valve"],
-    optionsAr: ["نينتندو", "موجانغ", "سوني", "فالف"],
-    answer: 1,
-  },
-  {
-    category: "Gaming",
-    en: "What is the main character's name in The Legend of Zelda?",
-    ar: "ما اسم الشخصية الرئيسية في لعبة The Legend of Zelda؟",
-    options: ["Mario", "Link", "Kirby", "Sonic"],
-    optionsAr: ["ماريو", "لينك", "كيربي", "سونيك"],
-    answer: 1,
-  },
-  {
-    category: "Geography",
-    en: "What is the capital of Japan?",
-    ar: "ما عاصمة اليابان؟",
-    options: ["Seoul", "Beijing", "Tokyo", "Bangkok"],
-    optionsAr: ["سيول", "بكين", "طوكيو", "بانكوك"],
-    answer: 2,
-  },
-  {
-    category: "Geography",
-    en: "Which is the largest ocean on Earth?",
-    ar: "ما أكبر محيط على الأرض؟",
-    options: ["Atlantic", "Indian", "Arctic", "Pacific"],
-    optionsAr: ["الأطلسي", "الهندي", "المتجمد الشمالي", "الهادئ"],
-    answer: 3,
-  },
-];
+const questions = require("./questions.cjs");
 
+if (!Array.isArray(questions) || questions.length !== 1250) {
+  throw new Error(`Expected exactly 1,250 questions, found ${questions?.length ?? 0}`);
+}
+
+const expectedQuestionCounts = {
+  "General Knowledge": 210,
+  "Sports": 210,
+  "Movies & TV": 210,
+  "Science": 210,
+  "Gaming": 205,
+  "Geography": 205,
+};
+
+for (const [category, expectedCount] of Object.entries(expectedQuestionCounts)) {
+  const actualCount = questions.filter((q) => q.category === category).length;
+  if (actualCount !== expectedCount) {
+    throw new Error(
+      `Invalid question bank: ${category} has ${actualCount}, expected ${expectedCount}`
+    );
+  }
+}
+
+// =====================================
+// STABLE QUESTION IDS
+// =====================================
+
+questions.forEach((question, index) => {
+  question.id = `question-${String(index + 1).padStart(4, "0")}`;
+});
+// =====================================
+// PLAYER SEEN QUESTIONS
+// =====================================
+
+async function getSeenQuestions(userIds) {
+  const { data, error } = await supabase
+    .from("player_seen_questions")
+    .select("user_id, question_id")
+    .in("user_id", userIds);
+
+  if (error) {
+    throw error;
+  }
+
+  const seenByPlayer = new Map();
+
+  for (const userId of userIds) {
+    seenByPlayer.set(userId, new Set());
+  }
+
+  for (const row of data || []) {
+    seenByPlayer.get(row.user_id)?.add(row.question_id);
+  }
+
+  return seenByPlayer;
+}
+
+async function markQuestionSeen(userIds, questionId) {
+  const records = userIds.map((userId) => ({
+    user_id: userId,
+    question_id: questionId,
+  }));
+
+  const { error } = await supabase
+    .from("player_seen_questions")
+    .upsert(records, {
+      onConflict: "user_id,question_id",
+      ignoreDuplicates: true,
+    });
+
+  if (error) {
+    console.error("Could not save seen question:", error);
+  }
+}
 // =====================================
 // ROOM HELPERS
 // =====================================
@@ -432,21 +410,42 @@ async function finishGame(room) {
 // QUESTION SYSTEM
 // =====================================
 
-function sendQuestion(room) {
+async function sendQuestion(room) {
   stopTimer(room);
 
+  if (!room || !room.started) {
+    return;
+  }
+
   if (room.currentIndex >= room.gameQuestions.length) {
-    finishGame(room);
+    await finishGame(room);
     return;
   }
 
   room.answers = new Set();
+  room.correctAnswerOrder = [];
 
   const question = room.gameQuestions[room.currentIndex];
+
+  if (!question || !Array.isArray(question.options)) {
+    throw new Error(`Question is missing at index ${room.currentIndex}`);
+  }
+
+  // Persist seen-question history in the background. Database latency must
+  // never block the live game from showing the next question.
+  const userIds = room.players.map((player) => player.user_id);
+  void markQuestionSeen(userIds, question.id).catch((error) => {
+    console.error("Could not save seen question:", error);
+  });
+
+  console.log(
+    `Sending question ${room.currentIndex + 1}/${room.gameQuestions.length} to room ${room.code}`
+  );
 
   io.to(room.code).emit("questionStarted", {
     question: {
       category: question.category,
+      difficulty: question.difficulty,
       en: question.en,
       ar: question.ar,
       options: question.options,
@@ -459,20 +458,40 @@ function sendQuestion(room) {
   });
 
   room.timer = setTimeout(() => {
-    nextQuestion(room);
+    void nextQuestion(room);
   }, QUESTION_TIME * 1000);
 }
 
-function nextQuestion(room) {
-  if (!room.started) {
+// =====================================
+// NEXT QUESTION
+// =====================================
+
+async function nextQuestion(room) {
+  // The answer handler and timer can fire close together. Advance only once.
+  if (!room || !room.started || room.advancing) {
     return;
   }
 
+  room.advancing = true;
   stopTimer(room);
-
   room.currentIndex += 1;
 
-  sendQuestion(room);
+  console.log(
+    `Advancing room ${room.code} to question ${room.currentIndex + 1}`
+  );
+
+  try {
+    await sendQuestion(room);
+  } catch (error) {
+    console.error("Next question error:", error);
+    stopTimer(room);
+    room.started = false;
+    io.to(room.code).emit("roomError", {
+      message: "Could not load the next question. Please return to the room.",
+    });
+  } finally {
+    room.advancing = false;
+  }
 }
 
 // =====================================
@@ -817,7 +836,7 @@ io.on("connection", (socket) => {
   // CREATE ROOM
   // =====================================
 
-  socket.on("createRoom", async (_data = {}, callback) => {
+socket.on("createRoom", async (data = {}, callback) => {
     try {
       const player = await getAuthenticatedPlayer(socket.user.id);
 
@@ -841,6 +860,10 @@ io.on("connection", (socket) => {
         code: roomCode,
         host: socket.id,
 
+selectedCategories: Array.isArray(data.selectedCategories)
+  ? data.selectedCategories
+
+  : [],
         players: [
           {
             id: socket.id,
@@ -857,6 +880,7 @@ io.on("connection", (socket) => {
         gameQuestions: [],
         answers: new Set(),
         timer: null,
+        advancing: false,
       };
 
       rooms.set(roomCode, room);
@@ -972,7 +996,8 @@ io.on("connection", (socket) => {
   // START GAME
   // =====================================
 
-  socket.on("startGame", ({ roomCode } = {}, callback) => {
+ socket.on("startGame", async ({ roomCode } = {}, callback) => {
+  try {
     const code = String(roomCode || "")
       .trim()
       .toUpperCase();
@@ -1007,18 +1032,93 @@ io.on("connection", (socket) => {
       });
     }
 
+    // Get questions from the host-selected categories only.
+    const selectedQuestions = room.selectedCategories.length > 0
+      ? questions.filter((q) =>
+          room.selectedCategories.includes(q.category)
+        )
+      : [...questions];
+
+    // Every match contains exactly 3 easy, 4 medium, and 3 hard questions.
+    const requiredMix = [
+      { difficulty: "easy", count: 3 },
+      { difficulty: "medium", count: 4 },
+      { difficulty: "hard", count: 3 },
+    ];
+
+    const insufficient = requiredMix.find(({ difficulty, count }) =>
+      selectedQuestions.filter((q) => q.difficulty === difficulty).length < count
+    );
+
+    if (insufficient) {
+      return callback?.({
+        success: false,
+        message: `Not enough ${insufficient.difficulty} questions in the selected categories. Please select more categories.`,
+      });
+    }
+
+    // Get authenticated player IDs and their previously seen questions.
+    const userIds = room.players.map((player) => player.user_id);
+    const seenByPlayer = await getSeenQuestions(userIds);
+
+    // Fisher-Yates shuffle.
+    const shuffle = (items) => {
+      const result = [...items];
+
+      for (let i = result.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [result[i], result[j]] = [result[j], result[i]];
+      }
+
+      return result;
+    };
+
+    // Prefer questions that none of the players has seen.
+    const unseenByEveryone = (question) =>
+      userIds.every(
+        (userId) => !seenByPlayer.get(userId)?.has(question.id)
+      );
+
+    const chosenQuestions = [];
+
+    for (const { difficulty, count } of requiredMix) {
+      const pool = selectedQuestions.filter(
+        (question) => question.difficulty === difficulty
+      );
+
+      const unseen = shuffle(pool.filter(unseenByEveryone));
+      const previouslySeen = shuffle(
+        pool.filter((question) => !unseenByEveryone(question))
+      );
+
+      chosenQuestions.push(
+        ...unseen.slice(0, count),
+        ...previouslySeen.slice(
+          0,
+          Math.max(0, count - unseen.length)
+        )
+      );
+    }
+
+    // Randomize question order without changing the 3/4/3 distribution.
+    room.gameQuestions = shuffle(chosenQuestions);
+
+    if (room.gameQuestions.length !== 10) {
+      return callback?.({
+        success: false,
+        message: "Could not prepare 10 questions. Please try different categories.",
+      });
+    }
+
     room.started = true;
     room.finished = false;
     room.currentIndex = 0;
     room.answers = new Set();
+    room.advancing = false;
 
     room.players.forEach((player) => {
       player.score = 0;
     });
-
-    room.gameQuestions = [...questions]
-      .sort(() => Math.random() - 0.5)
-      .slice(0, 10);
 
     io.to(code).emit("gameStarted", {
       totalQuestions: room.gameQuestions.length,
@@ -1031,85 +1131,151 @@ io.on("connection", (socket) => {
 
     console.log("Game started:", code);
 
-    sendQuestion(room);
-  });
+    void sendQuestion(room).catch((error) => {
+      console.error("Initial question error:", error);
+      stopTimer(room);
+      room.started = false;
+    });
+  } catch (error) {
+    console.error("Start game error:", error);
 
-  // =====================================
-  // SUBMIT ANSWER
-  // =====================================
+    callback?.({
+      success: false,
+      message: error.message || "Could not start game",
+    });
+  }
+});
 
-  socket.on(
+ // =====================================
+// SUBMIT ANSWER
+// =====================================
+
+socket.on(
     "submitAnswer",
     ({ roomCode, answerIndex } = {}, callback) => {
-      const code = String(roomCode || "")
-        .trim()
-        .toUpperCase();
+      const acknowledge = (payload) => {
+        if (typeof callback === "function") {
+          callback(payload);
+        }
+      };
 
-      const room = rooms.get(code);
+      try {
+        const code = String(roomCode || "").trim().toUpperCase();
+        const room = rooms.get(code);
 
-      if (!room || !room.started) {
-        return callback?.({
-          success: false,
-          message: "Game is not running",
+        if (!room || !room.started) {
+          return acknowledge({
+            success: false,
+            message: "Game is not running",
+          });
+        }
+
+        const player = room.players.find((p) => p.id === socket.id);
+
+        if (!player) {
+          return acknowledge({
+            success: false,
+            message: "Player not found",
+          });
+        }
+
+        const question = room.gameQuestions?.[room.currentIndex];
+
+        if (!question || !Array.isArray(question.options)) {
+          console.error("Submit answer error: current question is missing", {
+            roomCode: code,
+            currentIndex: room.currentIndex,
+          });
+
+          return acknowledge({
+            success: false,
+            message: "Current question is unavailable",
+          });
+        }
+
+        if (!(room.answers instanceof Set)) {
+          room.answers = new Set();
+        }
+
+        if (room.answers.has(socket.id)) {
+          return acknowledge({
+            success: false,
+            message: "You already answered",
+          });
+        }
+
+        const selectedAnswer = Number(answerIndex);
+
+        if (
+          answerIndex === null ||
+          answerIndex === undefined ||
+          answerIndex === "" ||
+          !Number.isInteger(selectedAnswer) ||
+          selectedAnswer < 0 ||
+          selectedAnswer >= question.options.length
+        ) {
+          return acknowledge({
+            success: false,
+            message: "Invalid answer",
+          });
+        }
+
+        const correct = selectedAnswer === Number(question.answer);
+
+        // Record the answer before sending updates, so it cannot be submitted twice.
+        room.answers.add(socket.id);
+
+        let points = 0;
+        let rank = null;
+
+        if (correct) {
+          if (!Array.isArray(room.correctAnswerOrder)) {
+            room.correctAnswerOrder = [];
+          }
+
+          const pointsByRank = [10, 8, 6, 5, 4, 3, 2, 1];
+
+          room.correctAnswerOrder.push(socket.id);
+          rank = room.correctAnswerOrder.length;
+          points = pointsByRank[rank - 1] || 0;
+          player.score = (Number(player.score) || 0) + points;
+        }
+
+        acknowledge({
+          success: true,
+          correct,
+          points,
+          rank,
         });
-      }
 
-      const player = room.players.find(
-        (p) => p.id === socket.id
-      );
-
-      if (!player) {
-        return callback?.({
-          success: false,
-          message: "Player not found",
+        io.to(code).emit("answerUpdate", {
+          players: publicPlayers(room),
+          answeredCount: room.answers.size,
+          totalPlayers: room.players.length,
         });
-      }
 
-      if (room.answers.has(socket.id)) {
-        return callback?.({
+        // Advance immediately when all currently connected players have answered.
+        if (
+          room.started &&
+          !room.advancing &&
+          room.answers.size >= room.players.length
+        ) {
+          console.log(
+            `All players answered in room ${code} (${room.answers.size}/${room.players.length}).`
+          );
+          void nextQuestion(room);
+        }
+      } catch (error) {
+        console.error("Submit answer handler error:", error);
+
+        acknowledge({
           success: false,
-          message: "You already answered",
+          message: "Could not submit answer. Please try again.",
         });
-      }
-
-      const question = room.gameQuestions[room.currentIndex];
-
-      if (
-        !Number.isInteger(Number(answerIndex)) ||
-        Number(answerIndex) < 0 ||
-        Number(answerIndex) >= question.options.length
-      ) {
-        return callback?.({
-          success: false,
-          message: "Invalid answer",
-        });
-      }
-
-      const correct =
-        Number(answerIndex) === question.answer;
-
-      room.answers.add(socket.id);
-
-      if (correct) {
-        player.score += 10;
-      }
-
-      callback?.({
-        success: true,
-        correct,
-      });
-
-      io.to(code).emit("answerUpdate", {
-        players: publicPlayers(room),
-        answeredCount: room.answers.size,
-        totalPlayers: room.players.length,
-      });
-
-      if (room.answers.size === room.players.length) {
-        nextQuestion(room);
       }
     }
   );
+
 
   // =====================================
   // DISCONNECT
@@ -1140,9 +1306,9 @@ io.on("connection", (socket) => {
 
         if (
           room.started &&
-          room.answers.size === room.players.length
+          room.answers.size >= room.players.length
         ) {
-          nextQuestion(room);
+          void nextQuestion(room);
         }
       }
 
@@ -1157,10 +1323,10 @@ io.on("connection", (socket) => {
 // START SERVER
 // =====================================
 
-const PORT = 3001;
+const PORT = Number(process.env.PORT) || 3001;
 
 server.listen(PORT, () => {
-  console.log(`Server running on http://localhost:${PORT}`);
+  console.log(`Server listening on port ${PORT}`);
   console.log("Supabase connection configured!");
 });
 
