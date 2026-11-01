@@ -3,7 +3,8 @@ import { io } from "socket.io-client";
 import { supabase } from "./lib/supabase";
 import "./App.css";
 
-const SERVER_URL = "https://who-knows-more.onrender.com";
+const SERVER_URL =
+  import.meta.env.VITE_SERVER_URL || "http://localhost:3001";
 
 const AVATARS = [
   {
@@ -78,6 +79,9 @@ function App() {
   const [roomPlayers, setRoomPlayers] = useState([]);
   const [roomError, setRoomError] = useState("");
   const [isHost, setIsHost] = useState(false);
+  // QUESTION CATEGORIES
+  const [selectedCategories, setSelectedCategories] = useState([]);
+
   const [socketConnected, setSocketConnected] = useState(false);
   const [socketId, setSocketId] = useState(null);
 
@@ -420,7 +424,7 @@ function App() {
 
     try {
       const { error } = await supabase.auth.resetPasswordForEmail(email, {
-       redirectTo: "https://www.whoknowsmore.site",
+        redirectTo: window.location.origin,
       });
 
       if (error) throw error;
@@ -821,7 +825,12 @@ function App() {
       return;
     }
 
-    socket.emit("createRoom", {}, (response) => {
+socket.emit(
+  "createRoom",
+  {
+    selectedCategories,
+  },
+  (response) => {
       if (!response?.success) {
         setRoomError(
           response?.message || "Could not create room."
@@ -1898,6 +1907,81 @@ function App() {
                   </div>
                 </div>
 
+{/* CATEGORY PICKER */}
+
+<div className="avatar-picker">
+  <h3 className="avatar-picker-title">
+    {text("Choose game categories", "اختر فئات اللعبة")}
+  </h3>
+
+  <p className="multiplayer-description">
+    {text(
+      "Select the categories you want to play. You can choose as many as you like.",
+      "اختر الفئات التي تريد اللعب بها. يمكنك اختيار أي عدد."
+    )}
+  </p>
+
+  <div className="avatar-options">
+    {[
+      {
+        name: "General Knowledge",
+        nameAr: "المعلومات العامة",
+        emoji: "🧠",
+      },
+      {
+        name: "Sports",
+        nameAr: "الرياضة",
+        emoji: "⚽",
+      },
+      {
+        name: "Movies & TV",
+        nameAr: "الأفلام والمسلسلات",
+        emoji: "🎬",
+      },
+      {
+        name: "Science",
+        nameAr: "العلوم",
+        emoji: "🔬",
+      },
+      {
+        name: "Gaming",
+        nameAr: "الألعاب",
+        emoji: "🎮",
+      },
+      {
+        name: "Geography",
+        nameAr: "الجغرافيا",
+        emoji: "🌍",
+      },
+    ].map((category) => (
+      <label
+        key={category.name}
+        className="avatar-option"
+        style={{ cursor: "pointer" }}
+      >
+        <input
+          type="checkbox"
+          checked={selectedCategories.includes(category.name)}
+          onChange={() => {
+            setSelectedCategories((previous) =>
+              previous.includes(category.name)
+                ? previous.filter(
+                    (item) => item !== category.name
+                  )
+                : [...previous, category.name]
+            );
+          }}
+        />
+
+        <span>
+          {category.emoji}{" "}
+          {isArabic ? category.nameAr : category.name}
+        </span>
+      </label>
+    ))}
+  </div>
+</div>
+
                 <div className="multiplayer-actions">
                   <button
                     className="primary-button"
@@ -1906,6 +1990,8 @@ function App() {
                     ➕ {text("CREATE ROOM", "إنشاء غرفة")}
                   </button>
                 </div>
+
+
 
                 <div className="room-divider">
                   <span>
