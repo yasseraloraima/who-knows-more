@@ -423,7 +423,17 @@ async function sendQuestion(room) {
   }
 
   room.answers = new Set();
+  room.playerAnswers = new Map();
   room.correctAnswerOrder = [];
+  room.phase = "answer";
+
+  // Snapshot standings before this question for rank movement.
+  const beforeQuestion = [...room.players].sort(
+    (a, b) => (Number(b.score) || 0) - (Number(a.score) || 0)
+  );
+  room.rankBeforeQuestion = new Map(
+    beforeQuestion.map((player, index) => [player.id, index + 1])
+  );
 
   const question = room.gameQuestions[room.currentIndex];
 
@@ -467,31 +477,94 @@ async function sendQuestion(room) {
 // =====================================
 
 async function nextQuestion(room) {
-  // The answer handler and timer can fire close together. Advance only once.
-  if (!room || !room.started || room.advancing) {
+  // Begin the reveal phase; advance only after reveal + mini leaderboard.
+  if (!room || !room.started || room.phase !== "answer" || room.advancing) {
     return;
   }
 
   room.advancing = true;
   stopTimer(room);
-  room.currentIndex += 1;
 
-  console.log(
-    `Advancing room ${room.code} to question ${room.currentIndex + 1}`
-  );
-
-  try {
-    await sendQuestion(room);
-  } catch (error) {
-    console.error("Next question error:", error);
-    stopTimer(room);
-    room.started = false;
-    io.to(room.code).emit("roomError", {
-      message: "Could not load the next question. Please return to the room.",
-    });
-  } finally {
+  const question = room.gameQuestions[room.currentIndex];
+  if (!question) {
     room.advancing = false;
+    await finishGame(room);
+    return;
   }
+
+  room.phase = "reveal";
+
+  const answers = room.players.map((player) => {
+    const submitted = room.playerAnswers?.get(player.id);
+    return {
+      id: player.id,
+      name: player.name,
+      avatar_url: player.avatar_url || DEFAULT_AVATAR,
+      answerIndex: submitted?.answerIndex ?? null,
+      isCorrect: submitted?.isCorrect ?? false,
+      pointsEarned: submitted?.points ?? 0,
+      timedOut: !submitted,
+    };
+  });
+
+  io.to(room.code).emit("answerReveal", {
+    currentIndex: room.currentIndex,
+    totalQuestions: room.gameQuestions.length,
+    correctAnswerIndex: Number(question.answer),
+    answers,
+    players: publicPlayers(room),
+  });
+
+  // Show answer reveal for four seconds.
+  room.timer = setTimeout(() => {
+    if (!room.started || room.phase !== "reveal") return;
+
+    room.phase = "leaderboard";
+
+    const sortedPlayers = [...room.players].sort(
+      (a, b) => (Number(b.score) || 0) - (Number(a.score) || 0)
+    );
+
+    const leaderboard = sortedPlayers.map((player, index) => {
+      const currentRank = index + 1;
+      const previousRank =
+        room.rankBeforeQuestion?.get(player.id) ?? currentRank;
+
+      return {
+        id: player.id,
+        name: player.name,
+        avatar_url: player.avatar_url || DEFAULT_AVATAR,
+        score: Number(player.score) || 0,
+        pointsEarned: room.playerAnswers?.get(player.id)?.points || 0,
+        rank: currentRank,
+        previousRank,
+        rankChange: previousRank - currentRank,
+      };
+    });
+
+    io.to(room.code).emit("miniLeaderboard", {
+      currentIndex: room.currentIndex,
+      totalQuestions: room.gameQuestions.length,
+      players: leaderboard,
+    });
+
+    // Keep the mini leaderboard visible for 4.5 seconds.
+    room.timer = setTimeout(() => {
+      if (!room.started || room.phase !== "leaderboard") return;
+
+      room.currentIndex += 1;
+      room.advancing = false;
+
+      void sendQuestion(room).catch((error) => {
+        console.error("Next question error:", error);
+        stopTimer(room);
+        room.started = false;
+        io.to(room.code).emit("roomError", {
+          message: "Could not load the next question. Please return to the room.",
+        });
+      });
+    }, 4500);
+  }, 4000);
 }
 
 // =====================================
@@ -879,6 +952,9 @@ selectedCategories: Array.isArray(data.selectedCategories)
         currentIndex: 0,
         gameQuestions: [],
         answers: new Set(),
+        playerAnswers: new Map(),
+        rankBeforeQuestion: new Map(),
+        phase: "lobby",
         timer: null,
         advancing: false,
       };
@@ -1114,6 +1190,8 @@ selectedCategories: Array.isArray(data.selectedCategories)
     room.finished = false;
     room.currentIndex = 0;
     room.answers = new Set();
+    room.playerAnswers = new Map();
+    room.phase = "answer";
     room.advancing = false;
 
     room.players.forEach((player) => {
@@ -1167,6 +1245,13 @@ socket.on(
           return acknowledge({
             success: false,
             message: "Game is not running",
+          });
+        }
+
+        if (room.phase !== "answer") {
+          return acknowledge({
+            success: false,
+            message: "The answer phase has ended",
           });
         }
 
@@ -1241,6 +1326,15 @@ socket.on(
           player.score = (Number(player.score) || 0) + points;
         }
 
+        if (!(room.playerAnswers instanceof Map)) {
+          room.playerAnswers = new Map();
+        }
+        room.playerAnswers.set(socket.id, {
+          answerIndex: selectedAnswer,
+          isCorrect: correct,
+          points,
+        });
+
         acknowledge({
           success: true,
           correct,
@@ -1293,6 +1387,7 @@ socket.on(
 
       room.players.splice(playerIndex, 1);
       room.answers.delete(socket.id);
+      room.playerAnswers?.delete(socket.id);
 
       if (room.players.length === 0) {
         stopTimer(room);
@@ -1329,4 +1424,3 @@ server.listen(PORT, () => {
   console.log(`Server listening on port ${PORT}`);
   console.log("Supabase connection configured!");
 });
-
