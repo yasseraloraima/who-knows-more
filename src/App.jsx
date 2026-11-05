@@ -46,6 +46,32 @@ function Avatar({ src, alt = "Player avatar", className = "" }) {
   );
 }
 
+
+function AnimatedScore({ score = 0, pointsEarned = 0 }) {
+  const target = Number(score) || 0;
+  const gained = Number(pointsEarned) || 0;
+  const [displayed, setDisplayed] = useState(Math.max(0, target - gained));
+
+  useEffect(() => {
+    const start = Math.max(0, target - gained);
+    const duration = 850;
+    const steps = 20;
+    let step = 0;
+    setDisplayed(start);
+
+    const timer = setInterval(() => {
+      step += 1;
+      const progress = Math.min(1, step / steps);
+      setDisplayed(Math.round(start + (target - start) * progress));
+      if (progress >= 1) clearInterval(timer);
+    }, duration / steps);
+
+    return () => clearInterval(timer);
+  }, [target, gained]);
+
+  return <span className="mp-score-pulse">{displayed} XP</span>;
+}
+
 // =====================================
 // APP
 // =====================================
@@ -98,6 +124,9 @@ function App() {
   const [mpAnswered, setMpAnswered] = useState(0);
   const [mpFinished, setMpFinished] = useState([]);
   const [mpError, setMpError] = useState("");
+  const [mpPhase, setMpPhase] = useState("answer");
+  const [mpReveal, setMpReveal] = useState(null);
+  const [mpMiniLeaderboard, setMpMiniLeaderboard] = useState([]);
 
   // LEADERBOARD
   const [leaderboardPlayers, setLeaderboardPlayers] = useState([]);
@@ -791,6 +820,9 @@ function App() {
       setMpSelected(null);
       setMpAnswered(0);
       setMpPlayers(data.players);
+      setMpPhase("answer");
+      setMpReveal(null);
+      setMpMiniLeaderboard([]);
       setMpError("");
       setScreen("multiplayerQuiz");
     });
@@ -798,6 +830,17 @@ function App() {
     socket.on("answerUpdate", (data) => {
       setMpPlayers(data.players);
       setMpAnswered(data.answeredCount);
+    });
+
+    socket.on("answerReveal", (data) => {
+      setMpPhase("reveal");
+      setMpReveal(data);
+      setMpPlayers(data.players || []);
+    });
+
+    socket.on("miniLeaderboard", (data) => {
+      setMpPhase("leaderboard");
+      setMpMiniLeaderboard(data.players || []);
     });
 
     socket.on("gameFinished", (data) => {
@@ -952,6 +995,7 @@ socket.emit(
   useEffect(() => {
     if (
       screen !== "multiplayerQuiz" ||
+      mpPhase !== "answer" ||
       mpSelected !== null ||
       mpTime <= 0
     ) {
@@ -963,7 +1007,7 @@ socket.emit(
     }, 1000);
 
     return () => clearInterval(timer);
-  }, [screen, mpIndex, mpSelected, mpTime]);
+  }, [screen, mpPhase, mpIndex, mpSelected, mpTime]);
 
   // =====================================
   // LEAVE ROOM
@@ -988,6 +1032,9 @@ socket.emit(
     setMpFinished([]);
     setMpSelected(null);
     setMpError("");
+    setMpPhase("answer");
+    setMpReveal(null);
+    setMpMiniLeaderboard([]);
 
     setScreen("home");
     loadLeaderboard();
@@ -2139,114 +2186,141 @@ socket.emit(
 
       {screen === "multiplayerQuiz" && mpQuestion && (
         <main className="game-screen">
-          <div className="game-top">
-            <span className="game-score">
-              🏆 {text("Question", "السؤال")} {mpIndex + 1}/{mpTotal}
-            </span>
+          <style>{`
+            .mp-phase-panel { width: min(100%, 760px); margin: 0 auto; }
+            .mp-phase-heading { text-align: center; margin: 8px 0 18px; }
+            .mp-phase-heading h2 { margin: 8px 0; }
+            .mp-phase-subtitle { opacity: .72; font-size: .92rem; }
+            .mp-reveal-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px; margin-top: 20px; }
+            .mp-reveal-option { position: relative; border: 1px solid rgba(255,255,255,.12); border-radius: 14px; padding: 15px; min-height: 76px; background: rgba(255,255,255,.04); }
+            .mp-reveal-option.correct { border: 2px solid #22c55e; background: rgba(34,197,94,.13); }
+            .mp-reveal-option.wrong { border: 2px solid #ef4444; background: rgba(239,68,68,.13); }
+            .mp-reveal-option-label { display: block; font-weight: 800; opacity: .7; margin-bottom: 6px; }
+            .mp-answer-players { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 10px; }
+            .mp-answer-player { display: inline-flex; align-items: center; gap: 5px; padding: 3px 7px; border-radius: 20px; background: rgba(0,0,0,.3); font-size: .75rem; }
+            .mp-answer-player img { width: 22px; height: 22px; border-radius: 50%; object-fit: cover; }
+            .mp-reveal-status { font-size: .75rem; opacity: .75; margin-top: 7px; }
+            .mp-leaderboard-list { display: grid; gap: 10px; }
+            .mp-leaderboard-row { display: grid; grid-template-columns: 34px 42px minmax(0,1fr) auto auto; align-items: center; gap: 10px; padding: 12px 14px; border-radius: 14px; background: rgba(255,255,255,.055); border: 1px solid rgba(255,255,255,.09); }
+            .mp-leaderboard-row:first-child { border-color: rgba(168,85,247,.7); background: rgba(147,51,234,.14); }
+            .mp-leaderboard-rank { font-weight: 900; font-size: 1.1rem; text-align: center; }
+            .mp-rank-change { font-size: .82rem; font-weight: 800; white-space: nowrap; }
+            .mp-rank-up { color: #22c55e; } .mp-rank-down { color: #ef4444; } .mp-rank-same { opacity: .6; }
+            .mp-score-pulse { font-weight: 900; animation: mpScorePop .55s ease both; }
+            @keyframes mpScorePop { from { transform: scale(.82); opacity: .45; } to { transform: scale(1); opacity: 1; } }
+            @media (max-width: 560px) {
+              .mp-reveal-grid { grid-template-columns: 1fr; }
+              .mp-leaderboard-row { grid-template-columns: 28px 36px minmax(0,1fr) auto; gap: 7px; padding: 10px; }
+              .mp-leaderboard-row .mp-points-earned { grid-column: 3 / -1; }
+            }
+          `}</style>
 
-            <span className={mpTime <= 5 ? "timer danger" : "timer"}>
-              ⏱ {mpTime}s
-            </span>
-          </div>
-
-          <div className="quiz-card">
-            <span className="section-label">
-              {text("MULTIPLAYER GAME", "اللعبة الجماعية")}
-            </span>
-
-            <div className="quiz-meta">
-              <span>
-                {text("QUESTION", "السؤال")} {mpIndex + 1} / {mpTotal}
-              </span>
-
-              <span>
-                {text("PLAYERS", "اللاعبون")}: {mpPlayers.length}
-              </span>
-            </div>
-
-            <div className="progress-track">
-              <div
-                className="progress-fill"
-                style={{
-                  width: `${((mpIndex + 1) / mpTotal) * 100}%`,
-                }}
-              />
-            </div>
-
-            <h2 className="question-title">
-              {text(mpQuestion.en, mpQuestion.ar)}
-            </h2>
-
-            <div className="answers-grid">
-              {(isArabic
-                ? mpQuestion.optionsAr
-                : mpQuestion.options
-              ).map((option, index) => (
-                <button
-                  key={index}
-                  className={`answer-button ${
-                    mpSelected === index ? "selected" : ""
-                  }`}
-                  onClick={() => submitMultiplayerAnswer(index)}
-                  disabled={
-                    mpSelected !== null || mpTime === 0
-                  }
-                >
-                  <span className="answer-letter">
-                    {["A", "B", "C", "D"][index]}
-                  </span>
-
-                  {option}
-                </button>
-              ))}
-            </div>
-
-            {mpSelected !== null && (
-              <p className="multiplayer-description">
-                {text(
-                  "Answer submitted! Waiting for other players...",
-                  "تم إرسال إجابتك! بانتظار بقية اللاعبين..."
-                )}
-              </p>
-            )}
-
-            {mpTime === 0 && mpSelected === null && (
-              <p className="multiplayer-description">
-                {text(
-                  "Time is up! Waiting for the next question...",
-                  "انتهى الوقت! بانتظار السؤال التالي..."
-                )}
-              </p>
-            )}
-
-            <p className="multiplayer-description">
-              {text(
-                `Players answered: ${mpAnswered}/${mpPlayers.length}`,
-                `اللاعبون الذين أجابوا: ${mpAnswered}/${mpPlayers.length}`
-              )}
-            </p>
-
-            <div className="leaderboard">
-              {mpPlayers.map((player) => (
-                <div className="player-row" key={player.id}>
-                  <Avatar
-                    src={player.avatar_url}
-                    alt={player.name}
-                  />
-
-                  <strong>{player.name}</strong>
-
-                  <span className="player-score">
-                    {player.score} XP
-                  </span>
+          {mpPhase === "answer" && (
+            <>
+              <div className="game-top">
+                <span className="game-score">🏆 {text("Question", "السؤال")} {mpIndex + 1}/{mpTotal}</span>
+                <span className={mpTime <= 5 ? "timer danger" : "timer"}>⏱ {mpTime}s</span>
+              </div>
+              <div className="quiz-card">
+                <span className="section-label">{text("MULTIPLAYER GAME", "اللعبة الجماعية")}</span>
+                <div className="quiz-meta">
+                  <span>{text("QUESTION", "السؤال")} {mpIndex + 1} / {mpTotal}</span>
+                  <span>{text("PLAYERS", "اللاعبون")}: {mpPlayers.length}</span>
                 </div>
-              ))}
-            </div>
+                <div className="progress-track">
+                  <div className="progress-fill" style={{ width: `${((mpIndex + 1) / mpTotal) * 100}%` }} />
+                </div>
+                <h2 className="question-title">{text(mpQuestion.en, mpQuestion.ar)}</h2>
+                <div className="answers-grid">
+                  {(isArabic ? mpQuestion.optionsAr : mpQuestion.options).map((option, index) => (
+                    <button key={index} className={`answer-button ${mpSelected === index ? "selected" : ""}`}
+                      onClick={() => submitMultiplayerAnswer(index)}
+                      disabled={mpSelected !== null || mpTime === 0}>
+                      <span className="answer-letter">{["A", "B", "C", "D"][index]}</span>
+                      {option}
+                    </button>
+                  ))}
+                </div>
+                {mpSelected !== null && <p className="multiplayer-description">{text("Answer submitted! Waiting for other players...", "تم إرسال إجابتك! بانتظار بقية اللاعبين...")}</p>}
+                {mpTime === 0 && mpSelected === null && <p className="multiplayer-description">{text("Time is up! Waiting for the reveal...", "انتهى الوقت! بانتظار كشف الإجابات...")}</p>}
+                <p className="multiplayer-description">{text(`Players answered: ${mpAnswered}/${mpPlayers.length}`, `اللاعبون الذين أجابوا: ${mpAnswered}/${mpPlayers.length}`)}</p>
+                <div className="leaderboard">
+                  {mpPlayers.map((player) => (
+                    <div className="player-row" key={player.id}>
+                      <Avatar src={player.avatar_url} alt={player.name} />
+                      <strong>{player.name}</strong>
+                      <span className="player-score">{player.score} XP</span>
+                    </div>
+                  ))}
+                </div>
+                {mpError && <p className="room-error">{mpError}</p>}
+              </div>
+            </>
+          )}
 
-            {mpError && (
-              <p className="room-error">{mpError}</p>
-            )}
-          </div>
+          {mpPhase === "reveal" && mpReveal && (
+            <div className="quiz-card mp-phase-panel">
+              <div className="mp-phase-heading">
+                <span className="section-label">{text("ANSWER REVEAL", "كشف الإجابات")}</span>
+                <h2>{text("Who got it right?", "مين جاوب صح؟")}</h2>
+                <p className="mp-phase-subtitle">{text("Question", "السؤال")} {mpIndex + 1}/{mpTotal}</p>
+              </div>
+              <h3 className="question-title">{text(mpQuestion.en, mpQuestion.ar)}</h3>
+              <div className="mp-reveal-grid">
+                {(isArabic ? mpQuestion.optionsAr : mpQuestion.options).map((option, index) => {
+                  const isCorrectOption = index === mpReveal.correctAnswerIndex;
+                  const selectedPlayers = (mpReveal.answers || []).filter((answer) => answer.answerIndex === index);
+                  return (
+                    <div key={index} className={`mp-reveal-option ${isCorrectOption ? "correct" : selectedPlayers.some((answer) => !answer.isCorrect) ? "wrong" : ""}`}>
+                      <span className="mp-reveal-option-label">{["A", "B", "C", "D"][index]}</span>
+                      <strong>{option}</strong>
+                      <div className="mp-answer-players">
+                        {selectedPlayers.map((answer) => (
+                          <span className="mp-answer-player" key={answer.id}>
+                            <img src={answer.avatar_url || DEFAULT_AVATAR} alt="" />{answer.name}
+                          </span>
+                        ))}
+                      </div>
+                      {isCorrectOption && <div className="mp-reveal-status">✓ {text("Correct answer", "الإجابة الصحيحة")}</div>}
+                    </div>
+                  );
+                })}
+              </div>
+              <div className="mp-answer-players" style={{ justifyContent: "center", marginTop: 18 }}>
+                {(mpReveal.answers || []).filter((answer) => answer.timedOut).map((answer) => (
+                  <span className="mp-answer-player" key={answer.id}>
+                    <img src={answer.avatar_url || DEFAULT_AVATAR} alt="" />{answer.name}: {text("No answer", "لم يجب")}
+                  </span>
+                ))}
+              </div>
+            </div>
+          )}
+
+          {mpPhase === "leaderboard" && (
+            <div className="quiz-card mp-phase-panel">
+              <div className="mp-phase-heading">
+                <span className="section-label">{text("LIVE STANDINGS", "الترتيب المؤقت")}</span>
+                <h2>🏆 {text("Leaderboard", "لوحة الترتيب")}</h2>
+                <p className="mp-phase-subtitle">{text("After question", "بعد السؤال")} {mpIndex + 1}</p>
+              </div>
+              <div className="mp-leaderboard-list">
+                {mpMiniLeaderboard.map((player) => (
+                  <div className="mp-leaderboard-row" key={player.id}>
+                    <span className="mp-leaderboard-rank">#{player.rank}</span>
+                    <Avatar src={player.avatar_url} alt={player.name} />
+                    <strong>{player.name}</strong>
+                    <AnimatedScore score={player.score} pointsEarned={player.pointsEarned} />
+                    <span className={`mp-rank-change ${player.rankChange > 0 ? "mp-rank-up" : player.rankChange < 0 ? "mp-rank-down" : "mp-rank-same"}`}>
+                      {player.rankChange > 0 ? `↑ ${player.rankChange}` : player.rankChange < 0 ? `↓ ${Math.abs(player.rankChange)}` : "—"}
+                    </span>
+                    <span className="mp-points-earned" style={{ fontSize: ".78rem", opacity: .75 }}>
+                      {player.pointsEarned > 0 ? `+${player.pointsEarned} ${text("this question", "هذا السؤال")}` : text("0 points", "0 نقطة")}
+                    </span>
+                  </div>
+                ))}
+              </div>
+            </div>
+          )}
         </main>
       )}
 
