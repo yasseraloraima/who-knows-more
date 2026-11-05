@@ -1,1424 +1,1424 @@
 "use strict";
 
-// 1,250 bilingual quiz questions for Who Knows More?
+// 1,250 bilingual questions. Arabic options are localized/transliterated.
 const questions = [
   {
     "category": "General Knowledge",
-    "en": "Who wrote “The Hobbit”?",
-    "ar": "من مؤلف رواية «The Hobbit»؟",
+    "en": "Which planet is known as the Red Planet?",
+    "ar": "ما الكوكب المعروف باسم الكوكب الأحمر؟",
     "options": [
-      "Miguel de Cervantes",
-      "Amy Tan",
-      "J. R. R. Tolkien",
-      "Jules Verne"
-    ],
-    "optionsAr": [
-      "Miguel de Cervantes",
-      "Amy Tan",
-      "J. R. R. Tolkien",
-      "Jules Verne"
+      "Mercury",
+      "Venus",
+      "Mars",
+      "Jupiter"
     ],
     "answer": 2,
     "difficulty": "easy",
-    "id": "question-0001"
+    "id": "question-0001",
+    "optionsAr": [
+      "عطارد",
+      "الزهرة",
+      "المريخ",
+      "المشتري"
+    ]
   },
   {
     "category": "General Knowledge",
-    "en": "Who wrote “The Lord of the Rings”?",
-    "ar": "من مؤلف رواية «The Lord of the Rings»؟",
+    "en": "How many days are in a leap year?",
+    "ar": "كم عدد أيام السنة الكبيسة؟",
     "options": [
-      "J. R. R. Tolkien",
-      "Umberto Eco",
-      "Stephen King",
-      "Lois Lowry"
+      "365",
+      "366",
+      "364",
+      "367"
     ],
+    "answer": 1,
+    "difficulty": "easy",
+    "id": "question-0002",
     "optionsAr": [
-      "J. R. R. Tolkien",
-      "Umberto Eco",
-      "Stephen King",
-      "Lois Lowry"
+      "365",
+      "366",
+      "364",
+      "367"
+    ]
+  },
+  {
+    "category": "General Knowledge",
+    "en": "What is the largest ocean on Earth?",
+    "ar": "ما أكبر محيط على الأرض؟",
+    "options": [
+      "Pacific Ocean",
+      "Arctic Ocean",
+      "Indian Ocean",
+      "Atlantic Ocean"
     ],
     "answer": 0,
     "difficulty": "easy",
-    "id": "question-0002"
+    "id": "question-0003",
+    "optionsAr": [
+      "المحيط الهادئ",
+      "المحيط المتجمد الشمالي",
+      "المحيط الهندي",
+      "المحيط الأطلسي"
+    ]
   },
   {
     "category": "General Knowledge",
-    "en": "Who wrote “Pride and Prejudice”?",
-    "ar": "من مؤلف رواية «Pride and Prejudice»؟",
+    "en": "Which animal is the tallest in the world?",
+    "ar": "ما أطول حيوان في العالم؟",
     "options": [
-      "Jane Austen",
-      "Mark Twain",
-      "Chinua Achebe",
-      "Arthur Conan Doyle"
-    ],
-    "optionsAr": [
-      "Jane Austen",
-      "Mark Twain",
-      "Chinua Achebe",
-      "Arthur Conan Doyle"
-    ],
-    "answer": 0,
-    "difficulty": "easy",
-    "id": "question-0003"
-  },
-  {
-    "category": "General Knowledge",
-    "en": "Who wrote “Emma”?",
-    "ar": "من مؤلف رواية «Emma»؟",
-    "options": [
-      "H. G. Wells",
-      "Jane Austen",
-      "Emily Brontë",
-      "Toni Morrison"
-    ],
-    "optionsAr": [
-      "H. G. Wells",
-      "Jane Austen",
-      "Emily Brontë",
-      "Toni Morrison"
-    ],
-    "answer": 1,
-    "difficulty": "easy",
-    "id": "question-0004"
-  },
-  {
-    "category": "General Knowledge",
-    "en": "Who wrote “Sense and Sensibility”?",
-    "ar": "من مؤلف رواية «Sense and Sensibility»؟",
-    "options": [
-      "Miguel de Cervantes",
-      "Jane Austen",
-      "Ernest Hemingway",
-      "Harper Lee"
-    ],
-    "optionsAr": [
-      "Miguel de Cervantes",
-      "Jane Austen",
-      "Ernest Hemingway",
-      "Harper Lee"
-    ],
-    "answer": 1,
-    "difficulty": "easy",
-    "id": "question-0005"
-  },
-  {
-    "category": "General Knowledge",
-    "en": "Who wrote “1984”?",
-    "ar": "من مؤلف رواية «1984»؟",
-    "options": [
-      "Roald Dahl",
-      "George Orwell",
-      "Antoine de Saint-Exupéry",
-      "Arthur Conan Doyle"
-    ],
-    "optionsAr": [
-      "Roald Dahl",
-      "George Orwell",
-      "Antoine de Saint-Exupéry",
-      "Arthur Conan Doyle"
-    ],
-    "answer": 1,
-    "difficulty": "easy",
-    "id": "question-0006"
-  },
-  {
-    "category": "General Knowledge",
-    "en": "Who wrote “Animal Farm”?",
-    "ar": "من مؤلف رواية «Animal Farm»؟",
-    "options": [
-      "Lewis Carroll",
-      "Yann Martel",
-      "Bram Stoker",
-      "George Orwell"
-    ],
-    "optionsAr": [
-      "Lewis Carroll",
-      "Yann Martel",
-      "Bram Stoker",
-      "George Orwell"
+      "Camel",
+      "Elephant",
+      "Ostrich",
+      "Giraffe"
     ],
     "answer": 3,
     "difficulty": "easy",
-    "id": "question-0007"
+    "id": "question-0004",
+    "optionsAr": [
+      "كاميل",
+      "فيل",
+      "نعامة",
+      "زرافة"
+    ]
   },
   {
     "category": "General Knowledge",
-    "en": "Who wrote “To Kill a Mockingbird”?",
-    "ar": "من مؤلف رواية «To Kill a Mockingbird»؟",
+    "en": "What do bees collect from flowers to make honey?",
+    "ar": "ماذا يجمع النحل من الأزهار لصنع العسل؟",
     "options": [
-      "Harper Lee",
-      "Lois Lowry",
-      "F. Scott Fitzgerald",
-      "Aldous Huxley"
+      "Water",
+      "Nectar",
+      "Pollen only",
+      "Sap"
     ],
+    "answer": 1,
+    "difficulty": "easy",
+    "id": "question-0005",
     "optionsAr": [
-      "Harper Lee",
-      "Lois Lowry",
-      "F. Scott Fitzgerald",
-      "Aldous Huxley"
+      "الماء",
+      "نيكتار",
+      "بوللين ونلي",
+      "ساب"
+    ]
+  },
+  {
+    "category": "General Knowledge",
+    "en": "How many sides does a hexagon have?",
+    "ar": "كم ضلعاً للشكل السداسي؟",
+    "options": [
+      "Seven",
+      "Six",
+      "Eight",
+      "Five"
+    ],
+    "answer": 1,
+    "difficulty": "easy",
+    "id": "question-0006",
+    "optionsAr": [
+      "سيفين",
+      "سيكس",
+      "ييجهت",
+      "فيفي"
+    ]
+  },
+  {
+    "category": "General Knowledge",
+    "en": "Which gas do humans need to breathe?",
+    "ar": "ما الغاز الذي يحتاج الإنسان إلى تنفسه؟",
+    "options": [
+      "Carbon dioxide",
+      "Hydrogen",
+      "Helium",
+      "Oxygen"
+    ],
+    "answer": 3,
+    "difficulty": "easy",
+    "id": "question-0007",
+    "optionsAr": [
+      "ثاني أكسيد الكربون",
+      "الهيدروجين",
+      "الهيليوم",
+      "الأكسجين"
+    ]
+  },
+  {
+    "category": "General Knowledge",
+    "en": "What is the freezing point of water in Celsius?",
+    "ar": "كم درجة تجمد الماء بالمقياس المئوي؟",
+    "options": [
+      "0°C",
+      "-10°C",
+      "10°C",
+      "100°C"
     ],
     "answer": 0,
     "difficulty": "easy",
-    "id": "question-0008"
+    "id": "question-0008",
+    "optionsAr": [
+      "0°ك",
+      "-10°ك",
+      "10°ك",
+      "100°ك"
+    ]
   },
   {
     "category": "General Knowledge",
-    "en": "Who wrote “The Great Gatsby”?",
-    "ar": "من مؤلف رواية «The Great Gatsby»؟",
+    "en": "Which country is famous for the pyramids of Giza?",
+    "ar": "في أي دولة توجد أهرامات الجيزة؟",
     "options": [
-      "F. Scott Fitzgerald",
-      "J. D. Salinger",
-      "E. B. White",
-      "Stephen King"
-    ],
-    "optionsAr": [
-      "F. Scott Fitzgerald",
-      "J. D. Salinger",
-      "E. B. White",
-      "Stephen King"
-    ],
-    "answer": 0,
-    "difficulty": "easy",
-    "id": "question-0009"
-  },
-  {
-    "category": "General Knowledge",
-    "en": "Who wrote “Moby-Dick”?",
-    "ar": "من مؤلف رواية «Moby-Dick»؟",
-    "options": [
-      "Ernest Hemingway",
-      "Gabriel García Márquez",
-      "Herman Melville",
-      "Mary Shelley"
-    ],
-    "optionsAr": [
-      "Ernest Hemingway",
-      "Gabriel García Márquez",
-      "Herman Melville",
-      "Mary Shelley"
+      "India",
+      "Greece",
+      "Egypt",
+      "Mexico"
     ],
     "answer": 2,
     "difficulty": "easy",
-    "id": "question-0010"
+    "id": "question-0009",
+    "optionsAr": [
+      "الهند",
+      "اليونان",
+      "مصر",
+      "المكسيك"
+    ]
   },
   {
     "category": "General Knowledge",
-    "en": "Who wrote “Frankenstein”?",
-    "ar": "من مؤلف رواية «Frankenstein»؟",
+    "en": "What is the main ingredient in traditional hummus?",
+    "ar": "ما المكوّن الأساسي في الحمص التقليدي؟",
     "options": [
-      "Ernest Hemingway",
-      "Mary Shelley",
-      "Lois Lowry",
-      "Arthur Conan Doyle"
-    ],
-    "optionsAr": [
-      "Ernest Hemingway",
-      "Mary Shelley",
-      "Lois Lowry",
-      "Arthur Conan Doyle"
+      "Potatoes",
+      "Chickpeas",
+      "Rice",
+      "Lentils"
     ],
     "answer": 1,
     "difficulty": "easy",
-    "id": "question-0011"
+    "id": "question-0010",
+    "optionsAr": [
+      "بوتاتويس",
+      "كهيككبياس",
+      "الأرز",
+      "لينتيلس"
+    ]
   },
   {
     "category": "General Knowledge",
-    "en": "Who wrote “Dracula”?",
-    "ar": "من مؤلف رواية «Dracula»؟",
+    "en": "Which bird is often associated with delivering messages?",
+    "ar": "أي طائر ارتبط تقليدياً بنقل الرسائل؟",
     "options": [
-      "Bram Stoker",
-      "Charlotte Brontë",
-      "H. G. Wells",
-      "Gabriel García Márquez"
-    ],
-    "optionsAr": [
-      "Bram Stoker",
-      "Charlotte Brontë",
-      "H. G. Wells",
-      "Gabriel García Márquez"
+      "Pigeon",
+      "Owl",
+      "Penguin",
+      "Eagle"
     ],
     "answer": 0,
     "difficulty": "easy",
-    "id": "question-0012"
+    "id": "question-0011",
+    "optionsAr": [
+      "حمامة",
+      "بومة",
+      "بطريق",
+      "نسر"
+    ]
   },
   {
     "category": "General Knowledge",
-    "en": "Who wrote “The Time Machine”?",
-    "ar": "من مؤلف رواية «The Time Machine»؟",
+    "en": "How many colors are traditionally named in a rainbow?",
+    "ar": "كم لوناً يُذكر تقليدياً في قوس قزح؟",
     "options": [
-      "Yann Martel",
-      "H. G. Wells",
-      "Amy Tan",
-      "E. B. White"
-    ],
-    "optionsAr": [
-      "Yann Martel",
-      "H. G. Wells",
-      "Amy Tan",
-      "E. B. White"
+      "Eight",
+      "Seven",
+      "Six",
+      "Five"
     ],
     "answer": 1,
     "difficulty": "easy",
-    "id": "question-0013"
+    "id": "question-0012",
+    "optionsAr": [
+      "ييجهت",
+      "سيفين",
+      "سيكس",
+      "فيفي"
+    ]
   },
   {
     "category": "General Knowledge",
-    "en": "Who wrote “The War of the Worlds”?",
-    "ar": "من مؤلف رواية «The War of the Worlds»؟",
+    "en": "Which instrument is used to measure temperature?",
+    "ar": "ما الأداة المستخدمة لقياس درجة الحرارة؟",
     "options": [
-      "Stephen King",
-      "Toni Morrison",
-      "H. G. Wells",
-      "Jane Austen"
-    ],
-    "optionsAr": [
-      "Stephen King",
-      "Toni Morrison",
-      "H. G. Wells",
-      "Jane Austen"
-    ],
-    "answer": 2,
-    "difficulty": "easy",
-    "id": "question-0014"
-  },
-  {
-    "category": "General Knowledge",
-    "en": "Who wrote “Twenty Thousand Leagues Under the Seas”?",
-    "ar": "من مؤلف رواية «Twenty Thousand Leagues Under the Seas»؟",
-    "options": [
-      "Cormac McCarthy",
-      "Umberto Eco",
-      "Jules Verne",
-      "Chinua Achebe"
-    ],
-    "optionsAr": [
-      "Cormac McCarthy",
-      "Umberto Eco",
-      "Jules Verne",
-      "Chinua Achebe"
-    ],
-    "answer": 2,
-    "difficulty": "easy",
-    "id": "question-0015"
-  },
-  {
-    "category": "General Knowledge",
-    "en": "Who wrote “Around the World in Eighty Days”?",
-    "ar": "من مؤلف رواية «Around the World in Eighty Days»؟",
-    "options": [
-      "Amy Tan",
-      "Jules Verne",
-      "Aldous Huxley",
-      "Paulo Coelho"
-    ],
-    "optionsAr": [
-      "Amy Tan",
-      "Jules Verne",
-      "Aldous Huxley",
-      "Paulo Coelho"
-    ],
-    "answer": 1,
-    "difficulty": "easy",
-    "id": "question-0016"
-  },
-  {
-    "category": "General Knowledge",
-    "en": "Who wrote “The Adventures of Sherlock Holmes”?",
-    "ar": "من مؤلف رواية «The Adventures of Sherlock Holmes»؟",
-    "options": [
-      "Mark Haddon",
-      "Arthur Conan Doyle",
-      "Toni Morrison",
-      "Agatha Christie"
-    ],
-    "optionsAr": [
-      "Mark Haddon",
-      "Arthur Conan Doyle",
-      "Toni Morrison",
-      "Agatha Christie"
-    ],
-    "answer": 1,
-    "difficulty": "easy",
-    "id": "question-0017"
-  },
-  {
-    "category": "General Knowledge",
-    "en": "Who wrote “Murder on the Orient Express”?",
-    "ar": "من مؤلف رواية «Murder on the Orient Express»؟",
-    "options": [
-      "Margaret Atwood",
-      "Chinua Achebe",
-      "Mark Haddon",
-      "Agatha Christie"
-    ],
-    "optionsAr": [
-      "Margaret Atwood",
-      "Chinua Achebe",
-      "Mark Haddon",
-      "Agatha Christie"
-    ],
-    "answer": 3,
-    "difficulty": "easy",
-    "id": "question-0018"
-  },
-  {
-    "category": "General Knowledge",
-    "en": "Who wrote “And Then There Were None”?",
-    "ar": "من مؤلف رواية «And Then There Were None»؟",
-    "options": [
-      "Agatha Christie",
-      "F. Scott Fitzgerald",
-      "J. D. Salinger",
-      "Charles Dickens"
-    ],
-    "optionsAr": [
-      "Agatha Christie",
-      "F. Scott Fitzgerald",
-      "J. D. Salinger",
-      "Charles Dickens"
+      "Thermometer",
+      "Barometer",
+      "Compass",
+      "Ruler"
     ],
     "answer": 0,
     "difficulty": "easy",
-    "id": "question-0019"
+    "id": "question-0013",
+    "optionsAr": [
+      "مقياس الحرارة",
+      "البارومتر",
+      "البوصلة",
+      "رولير"
+    ]
   },
   {
     "category": "General Knowledge",
-    "en": "Who wrote “Oliver Twist”?",
-    "ar": "من مؤلف رواية «Oliver Twist»؟",
+    "en": "What is the currency of Japan?",
+    "ar": "ما عملة اليابان؟",
     "options": [
-      "Lewis Carroll",
-      "Louisa May Alcott",
-      "Suzanne Collins",
-      "Charles Dickens"
-    ],
-    "optionsAr": [
-      "Lewis Carroll",
-      "Louisa May Alcott",
-      "Suzanne Collins",
-      "Charles Dickens"
-    ],
-    "answer": 3,
-    "difficulty": "easy",
-    "id": "question-0020"
-  },
-  {
-    "category": "General Knowledge",
-    "en": "Who wrote “Great Expectations”?",
-    "ar": "من مؤلف رواية «Great Expectations»؟",
-    "options": [
-      "Amy Tan",
-      "Charles Dickens",
-      "Miguel de Cervantes",
-      "Stephen King"
-    ],
-    "optionsAr": [
-      "Amy Tan",
-      "Charles Dickens",
-      "Miguel de Cervantes",
-      "Stephen King"
-    ],
-    "answer": 1,
-    "difficulty": "easy",
-    "id": "question-0021"
-  },
-  {
-    "category": "General Knowledge",
-    "en": "Who wrote “Jane Eyre”?",
-    "ar": "من مؤلف رواية «Jane Eyre»؟",
-    "options": [
-      "Charlotte Brontë",
-      "Emily Brontë",
-      "Jane Austen",
-      "Arthur Conan Doyle"
-    ],
-    "optionsAr": [
-      "Charlotte Brontë",
-      "Emily Brontë",
-      "Jane Austen",
-      "Arthur Conan Doyle"
+      "Yen",
+      "Yuan",
+      "Baht",
+      "Won"
     ],
     "answer": 0,
     "difficulty": "easy",
-    "id": "question-0022"
+    "id": "question-0014",
+    "optionsAr": [
+      "يين",
+      "يوان",
+      "باهت",
+      "وون"
+    ]
   },
   {
     "category": "General Knowledge",
-    "en": "Who wrote “Wuthering Heights”?",
-    "ar": "من مؤلف رواية «Wuthering Heights»؟",
+    "en": "Which shape has three sides?",
+    "ar": "أي شكل له ثلاثة أضلاع؟",
     "options": [
-      "Suzanne Collins",
-      "Cormac McCarthy",
-      "Charlotte Brontë",
-      "Emily Brontë"
+      "Circle",
+      "Triangle",
+      "Pentagon",
+      "Square"
     ],
+    "answer": 1,
+    "difficulty": "easy",
+    "id": "question-0015",
     "optionsAr": [
-      "Suzanne Collins",
-      "Cormac McCarthy",
-      "Charlotte Brontë",
-      "Emily Brontë"
+      "كيركلي",
+      "تريانجلي",
+      "بينتاجون",
+      "سقواري"
+    ]
+  },
+  {
+    "category": "General Knowledge",
+    "en": "What is the largest land animal?",
+    "ar": "ما أكبر حيوان بري؟",
+    "options": [
+      "Giraffe",
+      "Hippopotamus",
+      "Rhinoceros",
+      "African elephant"
     ],
     "answer": 3,
     "difficulty": "easy",
-    "id": "question-0023"
+    "id": "question-0016",
+    "optionsAr": [
+      "زرافة",
+      "هيببوبوتاموس",
+      "رهينوكيروس",
+      "الفيل الأفريقي"
+    ]
   },
   {
     "category": "General Knowledge",
-    "en": "Who wrote “War and Peace”?",
-    "ar": "من مؤلف رواية «War and Peace»؟",
+    "en": "Which month comes immediately after September?",
+    "ar": "أي شهر يأتي مباشرة بعد سبتمبر؟",
     "options": [
-      "Leo Tolstoy",
-      "Markus Zusak",
-      "Charles Dickens",
-      "J. R. R. Tolkien"
+      "November",
+      "October",
+      "August",
+      "December"
     ],
+    "answer": 1,
+    "difficulty": "easy",
+    "id": "question-0017",
     "optionsAr": [
-      "Leo Tolstoy",
-      "Markus Zusak",
-      "Charles Dickens",
-      "J. R. R. Tolkien"
+      "نوفيمبير",
+      "وكتوبير",
+      "اوجوست",
+      "ديكيمبير"
+    ]
+  },
+  {
+    "category": "General Knowledge",
+    "en": "What is the common name for H2O?",
+    "ar": "ما الاسم الشائع للمركب H2O؟",
+    "options": [
+      "Salt",
+      "Hydrogen",
+      "Oxygen",
+      "Water"
+    ],
+    "answer": 3,
+    "difficulty": "easy",
+    "id": "question-0018",
+    "optionsAr": [
+      "الملح",
+      "الهيدروجين",
+      "الأكسجين",
+      "الماء"
+    ]
+  },
+  {
+    "category": "General Knowledge",
+    "en": "Which organ pumps blood around the human body?",
+    "ar": "أي عضو يضخ الدم في جسم الإنسان؟",
+    "options": [
+      "Lungs",
+      "Kidneys",
+      "Heart",
+      "Liver"
+    ],
+    "answer": 2,
+    "difficulty": "easy",
+    "id": "question-0019",
+    "optionsAr": [
+      "الرئتان",
+      "الكليتان",
+      "القلب",
+      "الكبد"
+    ]
+  },
+  {
+    "category": "General Knowledge",
+    "en": "Which country is shaped like a boot?",
+    "ar": "أي دولة تشتهر بشكلها الشبيه بالحذاء؟",
+    "options": [
+      "Italy",
+      "Spain",
+      "Portugal",
+      "Greece"
     ],
     "answer": 0,
     "difficulty": "easy",
-    "id": "question-0024"
+    "id": "question-0020",
+    "optionsAr": [
+      "إيطاليا",
+      "إسبانيا",
+      "البرتغال",
+      "اليونان"
+    ]
   },
   {
     "category": "General Knowledge",
-    "en": "Who wrote “Anna Karenina”?",
-    "ar": "من مؤلف رواية «Anna Karenina»؟",
+    "en": "What is the young one of a sheep called?",
+    "ar": "ماذا يُسمى صغير الخروف؟",
     "options": [
-      "Umberto Eco",
-      "Amy Tan",
-      "Arthur Conan Doyle",
-      "Leo Tolstoy"
+      "Calf",
+      "Foal",
+      "Lamb",
+      "Kid"
     ],
-    "optionsAr": [
-      "Umberto Eco",
-      "Amy Tan",
-      "Arthur Conan Doyle",
-      "Leo Tolstoy"
-    ],
-    "answer": 3,
+    "answer": 2,
     "difficulty": "easy",
-    "id": "question-0025"
+    "id": "question-0021",
+    "optionsAr": [
+      "عجل",
+      "فوال",
+      "حَمَل",
+      "كيد"
+    ]
   },
   {
     "category": "General Knowledge",
-    "en": "Who wrote “Crime and Punishment”?",
-    "ar": "من مؤلف رواية «Crime and Punishment»؟",
+    "en": "Which metal is liquid at room temperature?",
+    "ar": "أي معدن يكون سائلاً في درجة حرارة الغرفة؟",
     "options": [
-      "Charlotte Brontë",
-      "Fyodor Dostoevsky",
-      "J. R. R. Tolkien",
-      "Antoine de Saint-Exupéry"
+      "Iron",
+      "Copper",
+      "Mercury",
+      "Aluminium"
     ],
+    "answer": 2,
+    "difficulty": "easy",
+    "id": "question-0022",
     "optionsAr": [
-      "Charlotte Brontë",
-      "Fyodor Dostoevsky",
-      "J. R. R. Tolkien",
-      "Antoine de Saint-Exupéry"
+      "الحديد",
+      "النحاس",
+      "عطارد",
+      "الومينيوم"
+    ]
+  },
+  {
+    "category": "General Knowledge",
+    "en": "How many hours are in one day?",
+    "ar": "كم ساعة في اليوم الواحد؟",
+    "options": [
+      "36",
+      "24",
+      "12",
+      "18"
     ],
     "answer": 1,
     "difficulty": "easy",
-    "id": "question-0026"
+    "id": "question-0023",
+    "optionsAr": [
+      "36",
+      "24",
+      "12",
+      "18"
+    ]
   },
   {
     "category": "General Knowledge",
-    "en": "Who wrote “The Brothers Karamazov”?",
-    "ar": "من مؤلف رواية «The Brothers Karamazov»؟",
+    "en": "Which planet is closest to the Sun?",
+    "ar": "ما أقرب كوكب إلى الشمس؟",
     "options": [
-      "Louisa May Alcott",
-      "Charles Dickens",
-      "Fyodor Dostoevsky",
-      "Toni Morrison"
-    ],
-    "optionsAr": [
-      "Louisa May Alcott",
-      "Charles Dickens",
-      "Fyodor Dostoevsky",
-      "Toni Morrison"
-    ],
-    "answer": 2,
-    "difficulty": "easy",
-    "id": "question-0027"
-  },
-  {
-    "category": "General Knowledge",
-    "en": "Who wrote “Les Misérables”?",
-    "ar": "من مؤلف رواية «Les Misérables»؟",
-    "options": [
-      "Leo Tolstoy",
-      "George Orwell",
-      "Victor Hugo",
-      "Mark Haddon"
-    ],
-    "optionsAr": [
-      "Leo Tolstoy",
-      "George Orwell",
-      "Victor Hugo",
-      "Mark Haddon"
-    ],
-    "answer": 2,
-    "difficulty": "easy",
-    "id": "question-0028"
-  },
-  {
-    "category": "General Knowledge",
-    "en": "Who wrote “The Hunchback of Notre-Dame”?",
-    "ar": "من مؤلف رواية «The Hunchback of Notre-Dame»؟",
-    "options": [
-      "Victor Hugo",
-      "J. D. Salinger",
-      "Stephen King",
-      "J. R. R. Tolkien"
-    ],
-    "optionsAr": [
-      "Victor Hugo",
-      "J. D. Salinger",
-      "Stephen King",
-      "J. R. R. Tolkien"
+      "Mercury",
+      "Venus",
+      "Mars",
+      "Earth"
     ],
     "answer": 0,
     "difficulty": "easy",
-    "id": "question-0029"
+    "id": "question-0024",
+    "optionsAr": [
+      "عطارد",
+      "الزهرة",
+      "المريخ",
+      "الأرض"
+    ]
   },
   {
     "category": "General Knowledge",
-    "en": "Who wrote “Don Quixote”?",
-    "ar": "من مؤلف رواية «Don Quixote»؟",
+    "en": "What do you call a person who treats teeth?",
+    "ar": "ماذا يُسمى الطبيب المتخصص في علاج الأسنان؟",
     "options": [
-      "Aldous Huxley",
-      "Paulo Coelho",
-      "Miguel de Cervantes",
-      "Cormac McCarthy"
-    ],
-    "optionsAr": [
-      "Aldous Huxley",
-      "Paulo Coelho",
-      "Miguel de Cervantes",
-      "Cormac McCarthy"
-    ],
-    "answer": 2,
-    "difficulty": "easy",
-    "id": "question-0030"
-  },
-  {
-    "category": "General Knowledge",
-    "en": "Who wrote “One Hundred Years of Solitude”?",
-    "ar": "من مؤلف رواية «One Hundred Years of Solitude»؟",
-    "options": [
-      "Bram Stoker",
-      "Cormac McCarthy",
-      "Gabriel García Márquez",
-      "Charlotte Brontë"
-    ],
-    "optionsAr": [
-      "Bram Stoker",
-      "Cormac McCarthy",
-      "Gabriel García Márquez",
-      "Charlotte Brontë"
-    ],
-    "answer": 2,
-    "difficulty": "easy",
-    "id": "question-0031"
-  },
-  {
-    "category": "General Knowledge",
-    "en": "Who wrote “Love in the Time of Cholera”?",
-    "ar": "من مؤلف رواية «Love in the Time of Cholera»؟",
-    "options": [
-      "J. D. Salinger",
-      "Charles Dickens",
-      "Frank Herbert",
-      "Gabriel García Márquez"
-    ],
-    "optionsAr": [
-      "J. D. Salinger",
-      "Charles Dickens",
-      "Frank Herbert",
-      "Gabriel García Márquez"
-    ],
-    "answer": 3,
-    "difficulty": "easy",
-    "id": "question-0032"
-  },
-  {
-    "category": "General Knowledge",
-    "en": "Who wrote “The Alchemist”?",
-    "ar": "من مؤلف رواية «The Alchemist»؟",
-    "options": [
-      "Roald Dahl",
-      "Paulo Coelho",
-      "Yann Martel",
-      "Umberto Eco"
-    ],
-    "optionsAr": [
-      "Roald Dahl",
-      "Paulo Coelho",
-      "Yann Martel",
-      "Umberto Eco"
+      "Pharmacist",
+      "Dentist",
+      "Surgeon",
+      "Optician"
     ],
     "answer": 1,
     "difficulty": "easy",
-    "id": "question-0033"
+    "id": "question-0025",
+    "optionsAr": [
+      "بهارماكيست",
+      "دينتيست",
+      "سورجيون",
+      "وبتيكيان"
+    ]
   },
   {
     "category": "General Knowledge",
-    "en": "Who wrote “The Little Prince”?",
-    "ar": "من مؤلف رواية «The Little Prince»؟",
+    "en": "Which season comes after spring?",
+    "ar": "أي فصل يأتي بعد الربيع؟",
     "options": [
-      "Paulo Coelho",
-      "F. Scott Fitzgerald",
-      "Toni Morrison",
-      "Antoine de Saint-Exupéry"
+      "Monsoon",
+      "Autumn",
+      "Summer",
+      "Winter"
     ],
+    "answer": 2,
+    "difficulty": "easy",
+    "id": "question-0026",
     "optionsAr": [
-      "Paulo Coelho",
-      "F. Scott Fitzgerald",
-      "Toni Morrison",
-      "Antoine de Saint-Exupéry"
+      "مونسوون",
+      "اوتومن",
+      "سوممير",
+      "وينتير"
+    ]
+  },
+  {
+    "category": "General Knowledge",
+    "en": "What is the largest mammal?",
+    "ar": "ما أكبر الثدييات حجماً؟",
+    "options": [
+      "Orca",
+      "Giraffe",
+      "Elephant",
+      "Blue whale"
     ],
     "answer": 3,
     "difficulty": "easy",
-    "id": "question-0034"
+    "id": "question-0027",
+    "optionsAr": [
+      "وركا",
+      "زرافة",
+      "فيل",
+      "الحوت الأزرق"
+    ]
   },
   {
     "category": "General Knowledge",
-    "en": "Who wrote “Alice’s Adventures in Wonderland”?",
-    "ar": "من مؤلف رواية «Alice’s Adventures in Wonderland»؟",
+    "en": "Which food is made by bees?",
+    "ar": "ما الطعام الذي يصنعه النحل؟",
     "options": [
-      "Lewis Carroll",
-      "Alice Walker",
-      "Dan Brown",
-      "Khaled Hosseini"
-    ],
-    "optionsAr": [
-      "Lewis Carroll",
-      "Alice Walker",
-      "Dan Brown",
-      "Khaled Hosseini"
+      "Honey",
+      "Yogurt",
+      "Butter",
+      "Cheese"
     ],
     "answer": 0,
     "difficulty": "easy",
-    "id": "question-0035"
+    "id": "question-0028",
+    "optionsAr": [
+      "العسل",
+      "يوجورت",
+      "بوتتير",
+      "كهييسي"
+    ]
   },
   {
     "category": "General Knowledge",
-    "en": "Who wrote “Through the Looking-Glass”?",
-    "ar": "من مؤلف رواية «Through the Looking-Glass»؟",
+    "en": "How many minutes are in one hour?",
+    "ar": "كم دقيقة في الساعة الواحدة؟",
     "options": [
-      "Margaret Atwood",
-      "Lewis Carroll",
-      "Jules Verne",
-      "Roald Dahl"
-    ],
-    "optionsAr": [
-      "Margaret Atwood",
-      "Lewis Carroll",
-      "Jules Verne",
-      "Roald Dahl"
-    ],
-    "answer": 1,
-    "difficulty": "easy",
-    "id": "question-0036"
-  },
-  {
-    "category": "General Knowledge",
-    "en": "Who wrote “Adventures of Huckleberry Finn”?",
-    "ar": "من مؤلف رواية «Adventures of Huckleberry Finn»؟",
-    "options": [
-      "Victor Hugo",
-      "Mark Twain",
-      "Roald Dahl",
-      "Lewis Carroll"
-    ],
-    "optionsAr": [
-      "Victor Hugo",
-      "Mark Twain",
-      "Roald Dahl",
-      "Lewis Carroll"
-    ],
-    "answer": 1,
-    "difficulty": "easy",
-    "id": "question-0037"
-  },
-  {
-    "category": "General Knowledge",
-    "en": "Who wrote “The Adventures of Tom Sawyer”?",
-    "ar": "من مؤلف رواية «The Adventures of Tom Sawyer»؟",
-    "options": [
-      "Ernest Hemingway",
-      "Mark Twain",
-      "Suzanne Collins",
-      "Victor Hugo"
-    ],
-    "optionsAr": [
-      "Ernest Hemingway",
-      "Mark Twain",
-      "Suzanne Collins",
-      "Victor Hugo"
-    ],
-    "answer": 1,
-    "difficulty": "easy",
-    "id": "question-0038"
-  },
-  {
-    "category": "General Knowledge",
-    "en": "Who wrote “Little Women”?",
-    "ar": "من مؤلف رواية «Little Women»؟",
-    "options": [
-      "Roald Dahl",
-      "Chinua Achebe",
-      "Louisa May Alcott",
-      "Agatha Christie"
-    ],
-    "optionsAr": [
-      "Roald Dahl",
-      "Chinua Achebe",
-      "Louisa May Alcott",
-      "Agatha Christie"
-    ],
-    "answer": 2,
-    "difficulty": "easy",
-    "id": "question-0039"
-  },
-  {
-    "category": "General Knowledge",
-    "en": "Who wrote “The Chronicles of Narnia”?",
-    "ar": "من مؤلف رواية «The Chronicles of Narnia»؟",
-    "options": [
-      "C. S. Lewis",
-      "Mark Twain",
-      "F. Scott Fitzgerald",
-      "George Orwell"
-    ],
-    "optionsAr": [
-      "C. S. Lewis",
-      "Mark Twain",
-      "F. Scott Fitzgerald",
-      "George Orwell"
+      "60",
+      "30",
+      "45",
+      "90"
     ],
     "answer": 0,
     "difficulty": "easy",
-    "id": "question-0040"
+    "id": "question-0029",
+    "optionsAr": [
+      "60",
+      "30",
+      "45",
+      "90"
+    ]
   },
   {
     "category": "General Knowledge",
-    "en": "Who wrote “The Lion, the Witch and the Wardrobe”?",
-    "ar": "من مؤلف رواية «The Lion, the Witch and the Wardrobe»؟",
+    "en": "Which sense organ is used for hearing?",
+    "ar": "ما العضو المستخدم للسمع؟",
     "options": [
-      "C. S. Lewis",
-      "Leo Tolstoy",
-      "Roald Dahl",
-      "Agatha Christie"
+      "Tongue",
+      "Nose",
+      "Eye",
+      "Ear"
     ],
+    "answer": 3,
+    "difficulty": "easy",
+    "id": "question-0030",
     "optionsAr": [
-      "C. S. Lewis",
-      "Leo Tolstoy",
-      "Roald Dahl",
-      "Agatha Christie"
+      "تونجوي",
+      "نوسي",
+      "ييي",
+      "يار"
+    ]
+  },
+  {
+    "category": "General Knowledge",
+    "en": "What is the capital city of Saudi Arabia?",
+    "ar": "ما عاصمة المملكة العربية السعودية؟",
+    "options": [
+      "Jeddah",
+      "Makkah",
+      "Riyadh",
+      "Dammam"
+    ],
+    "answer": 2,
+    "difficulty": "easy",
+    "id": "question-0031",
+    "optionsAr": [
+      "جدة",
+      "مكة المكرمة",
+      "الرياض",
+      "الدمام"
+    ]
+  },
+  {
+    "category": "General Knowledge",
+    "en": "Which sport uses a racket and a shuttlecock?",
+    "ar": "أي رياضة تستخدم مضرباً وريشة؟",
+    "options": [
+      "Squash",
+      "Tennis",
+      "Table tennis",
+      "Badminton"
+    ],
+    "answer": 3,
+    "difficulty": "easy",
+    "id": "question-0032",
+    "optionsAr": [
+      "سقواسه",
+      "التنس",
+      "تابلي تيننيس",
+      "تنس الريشة"
+    ]
+  },
+  {
+    "category": "General Knowledge",
+    "en": "Which animal is known for carrying its home on its back?",
+    "ar": "أي حيوان يُعرف بحمل منزله على ظهره؟",
+    "options": [
+      "Turtle",
+      "Fox",
+      "Deer",
+      "Rabbit"
     ],
     "answer": 0,
     "difficulty": "easy",
-    "id": "question-0041"
+    "id": "question-0033",
+    "optionsAr": [
+      "سلحفاة",
+      "فوكس",
+      "ديير",
+      "راببيت"
+    ]
   },
   {
     "category": "General Knowledge",
-    "en": "Who wrote “The Hunger Games”?",
-    "ar": "من مؤلف رواية «The Hunger Games»؟",
+    "en": "What is the opposite direction of north?",
+    "ar": "ما الاتجاه المعاكس للشمال؟",
     "options": [
-      "Aldous Huxley",
-      "Suzanne Collins",
-      "Khaled Hosseini",
-      "Jane Austen"
+      "West",
+      "East",
+      "Northeast",
+      "South"
     ],
-    "optionsAr": [
-      "Aldous Huxley",
-      "Suzanne Collins",
-      "Khaled Hosseini",
-      "Jane Austen"
-    ],
-    "answer": 1,
+    "answer": 3,
     "difficulty": "easy",
-    "id": "question-0042"
+    "id": "question-0034",
+    "optionsAr": [
+      "ويست",
+      "ياست",
+      "نورتهياست",
+      "سووته"
+    ]
   },
   {
     "category": "General Knowledge",
-    "en": "Who wrote “Catching Fire”?",
-    "ar": "من مؤلف رواية «Catching Fire»؟",
+    "en": "Which fruit is known for having seeds on its outer surface?",
+    "ar": "أي فاكهة تتميز بوجود بذورها على سطحها الخارجي؟",
     "options": [
-      "Yann Martel",
-      "Suzanne Collins",
-      "Bram Stoker",
-      "Markus Zusak"
+      "Banana",
+      "Apple",
+      "Strawberry",
+      "Orange"
     ],
-    "optionsAr": [
-      "Yann Martel",
-      "Suzanne Collins",
-      "Bram Stoker",
-      "Markus Zusak"
-    ],
-    "answer": 1,
+    "answer": 2,
     "difficulty": "easy",
-    "id": "question-0043"
+    "id": "question-0035",
+    "optionsAr": [
+      "الموز",
+      "التفاح",
+      "الفراولة",
+      "البرتقال"
+    ]
   },
   {
     "category": "General Knowledge",
-    "en": "Who wrote “The Shining”?",
-    "ar": "من مؤلف رواية «The Shining»؟",
+    "en": "What is the primary source of energy for Earth?",
+    "ar": "ما المصدر الأساسي للطاقة على الأرض؟",
     "options": [
-      "Mary Shelley",
-      "Stephen King",
-      "Alice Walker",
-      "Louisa May Alcott"
+      "The ocean",
+      "The Moon",
+      "The Sun",
+      "Wind"
     ],
-    "optionsAr": [
-      "Mary Shelley",
-      "Stephen King",
-      "Alice Walker",
-      "Louisa May Alcott"
-    ],
-    "answer": 1,
+    "answer": 2,
     "difficulty": "easy",
-    "id": "question-0044"
+    "id": "question-0036",
+    "optionsAr": [
+      "تهي وكيان",
+      "تهي موون",
+      "تهي سون",
+      "ويند"
+    ]
   },
   {
     "category": "General Knowledge",
-    "en": "Who wrote “It”?",
-    "ar": "من مؤلف رواية «It»؟",
+    "en": "Which country is home to the city of Barcelona?",
+    "ar": "في أي دولة تقع مدينة برشلونة؟",
     "options": [
-      "Stephen King",
-      "Frank Herbert",
-      "Fyodor Dostoevsky",
-      "Margaret Atwood"
+      "Italy",
+      "Argentina",
+      "France",
+      "Spain"
     ],
+    "answer": 3,
+    "difficulty": "easy",
+    "id": "question-0037",
     "optionsAr": [
-      "Stephen King",
-      "Frank Herbert",
-      "Fyodor Dostoevsky",
-      "Margaret Atwood"
+      "إيطاليا",
+      "الأرجنتين",
+      "فرنسا",
+      "إسبانيا"
+    ]
+  },
+  {
+    "category": "General Knowledge",
+    "en": "What is the name of a baby dog?",
+    "ar": "ماذا يُسمى صغير الكلب؟",
+    "options": [
+      "Puppy",
+      "Cub",
+      "Kitten",
+      "Calf"
     ],
     "answer": 0,
     "difficulty": "easy",
-    "id": "question-0045"
+    "id": "question-0038",
+    "optionsAr": [
+      "جرو",
+      "كوب",
+      "هريرة",
+      "عجل"
+    ]
   },
   {
     "category": "General Knowledge",
-    "en": "Who wrote “The Da Vinci Code”?",
-    "ar": "من مؤلف رواية «The Da Vinci Code»؟",
+    "en": "Which household appliance keeps food cold?",
+    "ar": "أي جهاز منزلي يحافظ على برودة الطعام؟",
     "options": [
-      "J. D. Salinger",
-      "George Orwell",
-      "Dan Brown",
-      "Toni Morrison"
+      "Refrigerator",
+      "Washing machine",
+      "Toaster",
+      "Oven"
     ],
-    "optionsAr": [
-      "J. D. Salinger",
-      "George Orwell",
-      "Dan Brown",
-      "Toni Morrison"
-    ],
-    "answer": 2,
+    "answer": 0,
     "difficulty": "easy",
-    "id": "question-0046"
+    "id": "question-0039",
+    "optionsAr": [
+      "ريفريجيراتور",
+      "واسهينج ماكهيني",
+      "تواستير",
+      "وفين"
+    ]
   },
   {
     "category": "General Knowledge",
-    "en": "Who wrote “Angels & Demons”?",
-    "ar": "من مؤلف رواية «Angels & Demons»؟",
+    "en": "How many wheels does a standard bicycle have?",
+    "ar": "كم عجلة للدراجة الهوائية العادية؟",
     "options": [
-      "E. B. White",
-      "Roald Dahl",
-      "Leo Tolstoy",
-      "Dan Brown"
+      "Two",
+      "One",
+      "Three",
+      "Four"
     ],
+    "answer": 0,
+    "difficulty": "easy",
+    "id": "question-0040",
     "optionsAr": [
-      "E. B. White",
-      "Roald Dahl",
-      "Leo Tolstoy",
-      "Dan Brown"
+      "توو",
+      "وني",
+      "تهريي",
+      "فوور"
+    ]
+  },
+  {
+    "category": "General Knowledge",
+    "en": "Which language is primarily spoken in Brazil?",
+    "ar": "ما اللغة الأكثر استخداماً في البرازيل؟",
+    "options": [
+      "French",
+      "English",
+      "Spanish",
+      "Portuguese"
     ],
     "answer": 3,
     "difficulty": "easy",
-    "id": "question-0047"
+    "id": "question-0041",
+    "optionsAr": [
+      "فرينكه",
+      "ينجليسه",
+      "سبانيسه",
+      "بورتوجويسي"
+    ]
   },
   {
     "category": "General Knowledge",
-    "en": "Who wrote “The Kite Runner”?",
-    "ar": "من مؤلف رواية «The Kite Runner»؟",
+    "en": "What is the hardest natural substance commonly found on Earth?",
+    "ar": "ما أصلب مادة طبيعية معروفة على الأرض؟",
     "options": [
-      "Louisa May Alcott",
-      "Khaled Hosseini",
-      "Cormac McCarthy",
-      "Herman Melville"
+      "Iron",
+      "Granite",
+      "Diamond",
+      "Quartz"
     ],
+    "answer": 2,
+    "difficulty": "easy",
+    "id": "question-0042",
     "optionsAr": [
-      "Louisa May Alcott",
-      "Khaled Hosseini",
-      "Cormac McCarthy",
-      "Herman Melville"
+      "الحديد",
+      "جرانيتي",
+      "الألماس",
+      "قوارتز"
+    ]
+  },
+  {
+    "category": "General Knowledge",
+    "en": "Which animal is famous for changing its color?",
+    "ar": "أي حيوان يشتهر بتغيير لونه؟",
+    "options": [
+      "Panda",
+      "Koala",
+      "Chameleon",
+      "Kangaroo"
+    ],
+    "answer": 2,
+    "difficulty": "easy",
+    "id": "question-0043",
+    "optionsAr": [
+      "باندا",
+      "كوالا",
+      "حرباء",
+      "كانجاروو"
+    ]
+  },
+  {
+    "category": "General Knowledge",
+    "en": "What is the center of our solar system?",
+    "ar": "ما مركز مجموعتنا الشمسية؟",
+    "options": [
+      "The Moon",
+      "Earth",
+      "The Sun",
+      "Jupiter"
+    ],
+    "answer": 2,
+    "difficulty": "easy",
+    "id": "question-0044",
+    "optionsAr": [
+      "تهي موون",
+      "الأرض",
+      "تهي سون",
+      "المشتري"
+    ]
+  },
+  {
+    "category": "General Knowledge",
+    "en": "Which day comes after Friday?",
+    "ar": "أي يوم يأتي بعد الجمعة؟",
+    "options": [
+      "Saturday",
+      "Sunday",
+      "Thursday",
+      "Monday"
+    ],
+    "answer": 0,
+    "difficulty": "easy",
+    "id": "question-0045",
+    "optionsAr": [
+      "ساتورداي",
+      "سونداي",
+      "تهورسداي",
+      "مونداي"
+    ]
+  },
+  {
+    "category": "General Knowledge",
+    "en": "Which drink is made by steeping tea leaves in hot water?",
+    "ar": "أي مشروب يُحضّر بنقع أوراق الشاي في الماء الساخن؟",
+    "options": [
+      "Tea",
+      "Coffee",
+      "Juice",
+      "Milk"
+    ],
+    "answer": 0,
+    "difficulty": "easy",
+    "id": "question-0046",
+    "optionsAr": [
+      "الشاي",
+      "القهوة",
+      "جويكي",
+      "الحليب"
+    ]
+  },
+  {
+    "category": "General Knowledge",
+    "en": "What is the largest internal organ in the human body?",
+    "ar": "ما أكبر عضو داخلي في جسم الإنسان؟",
+    "options": [
+      "Stomach",
+      "Liver",
+      "Heart",
+      "Lung"
     ],
     "answer": 1,
     "difficulty": "easy",
-    "id": "question-0048"
+    "id": "question-0047",
+    "optionsAr": [
+      "ستوماكه",
+      "الكبد",
+      "القلب",
+      "لونج"
+    ]
   },
   {
     "category": "General Knowledge",
-    "en": "Who wrote “A Thousand Splendid Suns”?",
-    "ar": "من مؤلف رواية «A Thousand Splendid Suns»؟",
+    "en": "Which animal is known as the king of the jungle?",
+    "ar": "أي حيوان يُلقب بملك الغابة؟",
     "options": [
-      "Roald Dahl",
-      "Arthur Conan Doyle",
-      "Khaled Hosseini",
-      "Umberto Eco"
-    ],
-    "optionsAr": [
-      "Roald Dahl",
-      "Arthur Conan Doyle",
-      "Khaled Hosseini",
-      "Umberto Eco"
+      "Leopard",
+      "Wolf",
+      "Lion",
+      "Tiger"
     ],
     "answer": 2,
     "difficulty": "easy",
-    "id": "question-0049"
+    "id": "question-0048",
+    "optionsAr": [
+      "ليوبارد",
+      "وولف",
+      "أسد",
+      "نمر"
+    ]
   },
   {
     "category": "General Knowledge",
-    "en": "Who wrote “Things Fall Apart”?",
-    "ar": "من مؤلف رواية «Things Fall Apart»؟",
+    "en": "What do plants absorb from the atmosphere for photosynthesis?",
+    "ar": "ماذا تمتص النباتات من الجو خلال عملية البناء الضوئي؟",
     "options": [
-      "Jules Verne",
-      "Chinua Achebe",
-      "Mark Haddon",
-      "F. Scott Fitzgerald"
-    ],
-    "optionsAr": [
-      "Jules Verne",
-      "Chinua Achebe",
-      "Mark Haddon",
-      "F. Scott Fitzgerald"
+      "Helium",
+      "Carbon dioxide",
+      "Oxygen",
+      "Nitrogen"
     ],
     "answer": 1,
     "difficulty": "easy",
-    "id": "question-0050"
+    "id": "question-0049",
+    "optionsAr": [
+      "الهيليوم",
+      "ثاني أكسيد الكربون",
+      "الأكسجين",
+      "النيتروجين"
+    ]
   },
   {
     "category": "General Knowledge",
-    "en": "Who wrote “Beloved”?",
-    "ar": "من مؤلف رواية «Beloved»؟",
+    "en": "Which continent is the Sahara Desert located in?",
+    "ar": "في أي قارة تقع الصحراء الكبرى؟",
     "options": [
-      "Stephen King",
-      "Ernest Hemingway",
-      "Toni Morrison",
-      "Paulo Coelho"
-    ],
-    "optionsAr": [
-      "Stephen King",
-      "Ernest Hemingway",
-      "Toni Morrison",
-      "Paulo Coelho"
-    ],
-    "answer": 2,
-    "difficulty": "easy",
-    "id": "question-0051"
-  },
-  {
-    "category": "General Knowledge",
-    "en": "Who wrote “The Handmaid’s Tale”?",
-    "ar": "من مؤلف رواية «The Handmaid’s Tale»؟",
-    "options": [
-      "J. D. Salinger",
-      "Jules Verne",
-      "Margaret Atwood",
-      "Victor Hugo"
-    ],
-    "optionsAr": [
-      "J. D. Salinger",
-      "Jules Verne",
-      "Margaret Atwood",
-      "Victor Hugo"
-    ],
-    "answer": 2,
-    "difficulty": "easy",
-    "id": "question-0052"
-  },
-  {
-    "category": "General Knowledge",
-    "en": "Who wrote “Brave New World”?",
-    "ar": "من مؤلف رواية «Brave New World»؟",
-    "options": [
-      "Aldous Huxley",
-      "Amy Tan",
-      "Paulo Coelho",
-      "Charlotte Brontë"
-    ],
-    "optionsAr": [
-      "Aldous Huxley",
-      "Amy Tan",
-      "Paulo Coelho",
-      "Charlotte Brontë"
-    ],
-    "answer": 0,
-    "difficulty": "easy",
-    "id": "question-0053"
-  },
-  {
-    "category": "General Knowledge",
-    "en": "Who wrote “Fahrenheit 451”?",
-    "ar": "من مؤلف رواية «Fahrenheit 451»؟",
-    "options": [
-      "Chinua Achebe",
-      "Miguel de Cervantes",
-      "Lewis Carroll",
-      "Ray Bradbury"
-    ],
-    "optionsAr": [
-      "Chinua Achebe",
-      "Miguel de Cervantes",
-      "Lewis Carroll",
-      "Ray Bradbury"
+      "Australia",
+      "South America",
+      "Asia",
+      "Africa"
     ],
     "answer": 3,
     "difficulty": "easy",
-    "id": "question-0054"
+    "id": "question-0050",
+    "optionsAr": [
+      "أستراليا",
+      "أمريكا الجنوبية",
+      "آسيا",
+      "أفريقيا"
+    ]
   },
   {
     "category": "General Knowledge",
-    "en": "Who wrote “The Martian Chronicles”?",
-    "ar": "من مؤلف رواية «The Martian Chronicles»؟",
+    "en": "What is the usual number of players on a football team on the field?",
+    "ar": "كم عدد لاعبي فريق كرة القدم داخل الملعب عادةً؟",
     "options": [
-      "J. D. Salinger",
-      "Jane Austen",
-      "F. Scott Fitzgerald",
-      "Ray Bradbury"
-    ],
-    "optionsAr": [
-      "J. D. Salinger",
-      "Jane Austen",
-      "F. Scott Fitzgerald",
-      "Ray Bradbury"
+      "9",
+      "10",
+      "12",
+      "11"
     ],
     "answer": 3,
     "difficulty": "easy",
-    "id": "question-0055"
+    "id": "question-0051",
+    "optionsAr": [
+      "9",
+      "10",
+      "12",
+      "11"
+    ]
   },
   {
     "category": "General Knowledge",
-    "en": "Who wrote “Dune”?",
-    "ar": "من مؤلف رواية «Dune»؟",
+    "en": "Which material is commonly used to make window glass?",
+    "ar": "ما المادة الأساسية الشائعة في صناعة زجاج النوافذ؟",
     "options": [
-      "Aldous Huxley",
-      "Arthur Conan Doyle",
-      "Chinua Achebe",
-      "Frank Herbert"
-    ],
-    "optionsAr": [
-      "Aldous Huxley",
-      "Arthur Conan Doyle",
-      "Chinua Achebe",
-      "Frank Herbert"
+      "Wood",
+      "Rubber",
+      "Cotton",
+      "Silica sand"
     ],
     "answer": 3,
     "difficulty": "easy",
-    "id": "question-0056"
+    "id": "question-0052",
+    "optionsAr": [
+      "ووود",
+      "روببير",
+      "كوتتون",
+      "سيليكا ساند"
+    ]
   },
   {
     "category": "General Knowledge",
-    "en": "Who wrote “The Name of the Rose”?",
-    "ar": "من مؤلف رواية «The Name of the Rose»؟",
+    "en": "What is the name of the galaxy that contains our solar system?",
+    "ar": "ما اسم المجرة التي تضم مجموعتنا الشمسية؟",
     "options": [
-      "Umberto Eco",
-      "Amy Tan",
-      "Fyodor Dostoevsky",
-      "Mark Haddon"
-    ],
-    "optionsAr": [
-      "Umberto Eco",
-      "Amy Tan",
-      "Fyodor Dostoevsky",
-      "Mark Haddon"
-    ],
-    "answer": 0,
-    "difficulty": "easy",
-    "id": "question-0057"
-  },
-  {
-    "category": "General Knowledge",
-    "en": "Who wrote “The Old Man and the Sea”?",
-    "ar": "من مؤلف رواية «The Old Man and the Sea»؟",
-    "options": [
-      "Yann Martel",
-      "Harper Lee",
-      "J. R. R. Tolkien",
-      "Ernest Hemingway"
-    ],
-    "optionsAr": [
-      "Yann Martel",
-      "Harper Lee",
-      "J. R. R. Tolkien",
-      "Ernest Hemingway"
-    ],
-    "answer": 3,
-    "difficulty": "easy",
-    "id": "question-0058"
-  },
-  {
-    "category": "General Knowledge",
-    "en": "Who wrote “A Farewell to Arms”?",
-    "ar": "من مؤلف رواية «A Farewell to Arms»؟",
-    "options": [
-      "Ernest Hemingway",
-      "Fyodor Dostoevsky",
-      "Paulo Coelho",
-      "Chinua Achebe"
-    ],
-    "optionsAr": [
-      "Ernest Hemingway",
-      "Fyodor Dostoevsky",
-      "Paulo Coelho",
-      "Chinua Achebe"
-    ],
-    "answer": 0,
-    "difficulty": "easy",
-    "id": "question-0059"
-  },
-  {
-    "category": "General Knowledge",
-    "en": "Who wrote “The Catcher in the Rye”?",
-    "ar": "من مؤلف رواية «The Catcher in the Rye»؟",
-    "options": [
-      "Gabriel García Márquez",
-      "J. D. Salinger",
-      "Aldous Huxley",
-      "Harper Lee"
-    ],
-    "optionsAr": [
-      "Gabriel García Márquez",
-      "J. D. Salinger",
-      "Aldous Huxley",
-      "Harper Lee"
+      "Whirlpool",
+      "Milky Way",
+      "Sombrero",
+      "Andromeda"
     ],
     "answer": 1,
     "difficulty": "easy",
-    "id": "question-0060"
+    "id": "question-0053",
+    "optionsAr": [
+      "وهيرلبوول",
+      "ميلكي واي",
+      "سومبريرو",
+      "اندروميدا"
+    ]
   },
   {
     "category": "General Knowledge",
-    "en": "Who wrote “The Color Purple”?",
-    "ar": "من مؤلف رواية «The Color Purple»؟",
+    "en": "Which animal lays the largest eggs?",
+    "ar": "أي حيوان يضع أكبر البيض؟",
     "options": [
-      "Umberto Eco",
-      "Herman Melville",
-      "J. D. Salinger",
-      "Alice Walker"
-    ],
-    "optionsAr": [
-      "Umberto Eco",
-      "Herman Melville",
-      "J. D. Salinger",
-      "Alice Walker"
-    ],
-    "answer": 3,
-    "difficulty": "easy",
-    "id": "question-0061"
-  },
-  {
-    "category": "General Knowledge",
-    "en": "Who wrote “The Joy Luck Club”?",
-    "ar": "من مؤلف رواية «The Joy Luck Club»؟",
-    "options": [
-      "Jane Austen",
-      "Lois Lowry",
-      "Louisa May Alcott",
-      "Amy Tan"
-    ],
-    "optionsAr": [
-      "Jane Austen",
-      "Lois Lowry",
-      "Louisa May Alcott",
-      "Amy Tan"
-    ],
-    "answer": 3,
-    "difficulty": "easy",
-    "id": "question-0062"
-  },
-  {
-    "category": "General Knowledge",
-    "en": "Who wrote “The Book Thief”?",
-    "ar": "من مؤلف رواية «The Book Thief»؟",
-    "options": [
-      "Miguel de Cervantes",
-      "Lois Lowry",
-      "Fyodor Dostoevsky",
-      "Markus Zusak"
-    ],
-    "optionsAr": [
-      "Miguel de Cervantes",
-      "Lois Lowry",
-      "Fyodor Dostoevsky",
-      "Markus Zusak"
-    ],
-    "answer": 3,
-    "difficulty": "easy",
-    "id": "question-0063"
-  },
-  {
-    "category": "General Knowledge",
-    "en": "Who wrote “Life of Pi”?",
-    "ar": "من مؤلف رواية «Life of Pi»؟",
-    "options": [
-      "Yann Martel",
-      "Jules Verne",
-      "Mark Haddon",
-      "Frank Herbert"
-    ],
-    "optionsAr": [
-      "Yann Martel",
-      "Jules Verne",
-      "Mark Haddon",
-      "Frank Herbert"
+      "Ostrich",
+      "Albatross",
+      "Eagle",
+      "Penguin"
     ],
     "answer": 0,
     "difficulty": "easy",
-    "id": "question-0064"
+    "id": "question-0054",
+    "optionsAr": [
+      "نعامة",
+      "الباتروسس",
+      "نسر",
+      "بطريق"
+    ]
   },
   {
     "category": "General Knowledge",
-    "en": "Who wrote “The Road”?",
-    "ar": "من مؤلف رواية «The Road»؟",
+    "en": "What is the first month of the year?",
+    "ar": "ما أول شهر في السنة الميلادية؟",
     "options": [
-      "Suzanne Collins",
-      "Gabriel García Márquez",
-      "Cormac McCarthy",
-      "Harper Lee"
-    ],
-    "optionsAr": [
-      "Suzanne Collins",
-      "Gabriel García Márquez",
-      "Cormac McCarthy",
-      "Harper Lee"
+      "February",
+      "December",
+      "January",
+      "March"
     ],
     "answer": 2,
     "difficulty": "easy",
-    "id": "question-0065"
+    "id": "question-0055",
+    "optionsAr": [
+      "فيبرواري",
+      "ديكيمبير",
+      "جانواري",
+      "ماركه"
+    ]
   },
   {
     "category": "General Knowledge",
-    "en": "Who wrote “The Giver”?",
-    "ar": "من مؤلف رواية «The Giver»؟",
+    "en": "Which part of a plant usually absorbs water from the soil?",
+    "ar": "أي جزء من النبات يمتص الماء عادةً من التربة؟",
     "options": [
-      "J. D. Salinger",
-      "Toni Morrison",
-      "Lois Lowry",
-      "Victor Hugo"
-    ],
-    "optionsAr": [
-      "J. D. Salinger",
-      "Toni Morrison",
-      "Lois Lowry",
-      "Victor Hugo"
+      "Flowers",
+      "Fruit",
+      "Roots",
+      "Leaves"
     ],
     "answer": 2,
     "difficulty": "easy",
-    "id": "question-0066"
+    "id": "question-0056",
+    "optionsAr": [
+      "الأزهار",
+      "الثمار",
+      "الجذور",
+      "الأوراق"
+    ]
   },
   {
     "category": "General Knowledge",
-    "en": "Who wrote “Charlotte’s Web”?",
-    "ar": "من مؤلف رواية «Charlotte’s Web»؟",
+    "en": "What is the name of the device used to find direction?",
+    "ar": "ما اسم الأداة التي تُستخدم لتحديد الاتجاهات؟",
     "options": [
-      "Stephen King",
-      "Jules Verne",
-      "Louisa May Alcott",
-      "E. B. White"
-    ],
-    "optionsAr": [
-      "Stephen King",
-      "Jules Verne",
-      "Louisa May Alcott",
-      "E. B. White"
+      "Telescope",
+      "Thermometer",
+      "Microscope",
+      "Compass"
     ],
     "answer": 3,
     "difficulty": "easy",
-    "id": "question-0067"
+    "id": "question-0057",
+    "optionsAr": [
+      "التلسكوب",
+      "مقياس الحرارة",
+      "المجهر",
+      "البوصلة"
+    ]
   },
   {
     "category": "General Knowledge",
-    "en": "Who wrote “Matilda”?",
-    "ar": "من مؤلف رواية «Matilda»؟",
+    "en": "Which country gifted the Statue of Liberty to the United States?",
+    "ar": "أي دولة أهدت تمثال الحرية إلى الولايات المتحدة؟",
     "options": [
-      "Amy Tan",
-      "Margaret Atwood",
-      "Louisa May Alcott",
-      "Roald Dahl"
-    ],
-    "optionsAr": [
-      "Amy Tan",
-      "Margaret Atwood",
-      "Louisa May Alcott",
-      "Roald Dahl"
+      "Canada",
+      "Italy",
+      "Germany",
+      "France"
     ],
     "answer": 3,
     "difficulty": "easy",
-    "id": "question-0068"
+    "id": "question-0058",
+    "optionsAr": [
+      "كندا",
+      "إيطاليا",
+      "ألمانيا",
+      "فرنسا"
+    ]
   },
   {
     "category": "General Knowledge",
-    "en": "Who wrote “Charlie and the Chocolate Factory”?",
-    "ar": "من مؤلف رواية «Charlie and the Chocolate Factory»؟",
+    "en": "Which animal is the largest living reptile?",
+    "ar": "ما أكبر الزواحف الحية؟",
     "options": [
-      "George Orwell",
-      "Lewis Carroll",
-      "Roald Dahl",
-      "Margaret Atwood"
+      "Leatherback turtle",
+      "Saltwater crocodile",
+      "Komodo dragon",
+      "Green anaconda"
     ],
-    "optionsAr": [
-      "George Orwell",
-      "Lewis Carroll",
-      "Roald Dahl",
-      "Margaret Atwood"
-    ],
-    "answer": 2,
+    "answer": 1,
     "difficulty": "easy",
-    "id": "question-0069"
+    "id": "question-0059",
+    "optionsAr": [
+      "لياتهيرباكك تورتلي",
+      "سالتواتير كروكوديلي",
+      "كومودو دراجون",
+      "جريين اناكوندا"
+    ]
   },
   {
     "category": "General Knowledge",
-    "en": "Who wrote “The Curious Incident of the Dog in the Night-Time”?",
-    "ar": "من مؤلف رواية «The Curious Incident of the Dog in the Night-Time»؟",
+    "en": "How many legs does an insect have?",
+    "ar": "كم عدد أرجل الحشرة؟",
     "options": [
-      "Aldous Huxley",
-      "Amy Tan",
-      "Mark Haddon",
-      "Ernest Hemingway"
+      "Six",
+      "Four",
+      "Ten",
+      "Eight"
     ],
-    "optionsAr": [
-      "Aldous Huxley",
-      "Amy Tan",
-      "Mark Haddon",
-      "Ernest Hemingway"
-    ],
-    "answer": 2,
+    "answer": 0,
     "difficulty": "easy",
-    "id": "question-0070"
+    "id": "question-0060",
+    "optionsAr": [
+      "سيكس",
+      "فوور",
+      "تين",
+      "ييجهت"
+    ]
+  },
+  {
+    "category": "General Knowledge",
+    "en": "Which natural satellite orbits Earth?",
+    "ar": "ما القمر الطبيعي الذي يدور حول الأرض؟",
+    "options": [
+      "Phobos",
+      "The Moon",
+      "Titan",
+      "Europa"
+    ],
+    "answer": 1,
+    "difficulty": "easy",
+    "id": "question-0061",
+    "optionsAr": [
+      "بهوبوس",
+      "تهي موون",
+      "تيتان",
+      "يوروبا"
+    ]
+  },
+  {
+    "category": "General Knowledge",
+    "en": "What is the main language spoken in Argentina?",
+    "ar": "ما اللغة الأساسية المستخدمة في الأرجنتين؟",
+    "options": [
+      "Italian",
+      "Portuguese",
+      "German",
+      "Spanish"
+    ],
+    "answer": 3,
+    "difficulty": "easy",
+    "id": "question-0062",
+    "optionsAr": [
+      "يتاليان",
+      "بورتوجويسي",
+      "جيرمان",
+      "سبانيسه"
+    ]
+  },
+  {
+    "category": "General Knowledge",
+    "en": "Which city is famous for the Eiffel Tower?",
+    "ar": "أي مدينة تشتهر ببرج إيفل؟",
+    "options": [
+      "Vienna",
+      "Paris",
+      "Prague",
+      "Rome"
+    ],
+    "answer": 1,
+    "difficulty": "easy",
+    "id": "question-0063",
+    "optionsAr": [
+      "فيينا",
+      "باريس",
+      "براغ",
+      "روما"
+    ]
+  },
+  {
+    "category": "General Knowledge",
+    "en": "What do we call water in its solid state?",
+    "ar": "ماذا نسمّي الماء في حالته الصلبة؟",
+    "options": [
+      "Vapor",
+      "Ice",
+      "Steam",
+      "Mist"
+    ],
+    "answer": 1,
+    "difficulty": "easy",
+    "id": "question-0064",
+    "optionsAr": [
+      "فابور",
+      "الجليد",
+      "بخار الماء",
+      "ميست"
+    ]
+  },
+  {
+    "category": "General Knowledge",
+    "en": "Which animal is known for its black-and-white stripes?",
+    "ar": "أي حيوان يشتهر بخطوطه البيضاء والسوداء؟",
+    "options": [
+      "Zebra",
+      "Hyena",
+      "Cheetah",
+      "Giraffe"
+    ],
+    "answer": 0,
+    "difficulty": "easy",
+    "id": "question-0065",
+    "optionsAr": [
+      "حمار وحشي",
+      "هيينا",
+      "كهييتاه",
+      "زرافة"
+    ]
+  },
+  {
+    "category": "General Knowledge",
+    "en": "Which blood cells help the body fight infections?",
+    "ar": "أي خلايا في الدم تساعد الجسم على مقاومة العدوى؟",
+    "options": [
+      "White blood cells",
+      "Red blood cells",
+      "Platelets",
+      "Plasma"
+    ],
+    "answer": 0,
+    "difficulty": "easy",
+    "id": "question-0066",
+    "optionsAr": [
+      "وهيتي بلوود كيللس",
+      "ريد بلوود كيللس",
+      "بلاتيليتس",
+      "بلاسما"
+    ]
+  },
+  {
+    "category": "General Knowledge",
+    "en": "What is the common name for a young cat?",
+    "ar": "ماذا يُسمى صغير القط؟",
+    "options": [
+      "Puppy",
+      "Cub",
+      "Foal",
+      "Kitten"
+    ],
+    "answer": 3,
+    "difficulty": "easy",
+    "id": "question-0067",
+    "optionsAr": [
+      "جرو",
+      "كوب",
+      "فوال",
+      "هريرة"
+    ]
+  },
+  {
+    "category": "General Knowledge",
+    "en": "Which ocean lies between Africa and Australia?",
+    "ar": "أي محيط يقع بين أفريقيا وأستراليا؟",
+    "options": [
+      "Indian Ocean",
+      "Atlantic Ocean",
+      "Pacific Ocean",
+      "Arctic Ocean"
+    ],
+    "answer": 0,
+    "difficulty": "easy",
+    "id": "question-0068",
+    "optionsAr": [
+      "المحيط الهندي",
+      "المحيط الأطلسي",
+      "المحيط الهادئ",
+      "المحيط المتجمد الشمالي"
+    ]
+  },
+  {
+    "category": "General Knowledge",
+    "en": "Which tool is used to observe very small objects?",
+    "ar": "ما الأداة المستخدمة لرؤية الأجسام الصغيرة جداً؟",
+    "options": [
+      "Telescope",
+      "Microscope",
+      "Binoculars",
+      "Periscope"
+    ],
+    "answer": 1,
+    "difficulty": "easy",
+    "id": "question-0069",
+    "optionsAr": [
+      "التلسكوب",
+      "المجهر",
+      "بينوكولارس",
+      "بيريسكوبي"
+    ]
+  },
+  {
+    "category": "General Knowledge",
+    "en": "Which planet is famous for its rings?",
+    "ar": "أي كوكب يشتهر بحلقاته؟",
+    "options": [
+      "Mercury",
+      "Saturn",
+      "Venus",
+      "Mars"
+    ],
+    "answer": 1,
+    "difficulty": "easy",
+    "id": "question-0070",
+    "optionsAr": [
+      "عطارد",
+      "زحل",
+      "الزهرة",
+      "المريخ"
+    ]
   },
   {
     "category": "General Knowledge",
     "en": "Who is commonly credited with the World Wide Web?",
     "ar": "من يُنسب إليه عادةً ابتكار the World Wide Web؟",
     "options": [
-      "Richard Trevithick",
-      "Jacob Perkins",
       "Tim Berners-Lee",
+      "Jacob Perkins",
+      "Richard Trevithick",
       "Louis Pasteur"
     ],
     "optionsAr": [
-      "Richard Trevithick",
-      "Jacob Perkins",
-      "Tim Berners-Lee",
-      "Louis Pasteur"
+      "تيم بيرنيرس-ليي",
+      "جاكوب بيركينس",
+      "ريكهارد تريفيتهيكك",
+      "لوويس باستيور"
     ],
-    "answer": 2,
+    "answer": 0,
     "difficulty": "medium",
     "id": "question-0071"
   },
@@ -1427,16 +1427,16 @@ const questions = [
     "en": "Who is commonly credited with the dynamite?",
     "ar": "من يُنسب إليه عادةً ابتكار the dynamite؟",
     "options": [
+      "René Laennec",
       "Dmitri Mendeleev",
-      "Richard Trevithick",
       "Alfred Nobel",
-      "René Laennec"
+      "Richard Trevithick"
     ],
     "optionsAr": [
-      "Dmitri Mendeleev",
-      "Richard Trevithick",
-      "Alfred Nobel",
-      "René Laennec"
+      "رينé لايننيك",
+      "دميتري مينديلييف",
+      "الفريد نوبيل",
+      "ريكهارد تريفيتهيكك"
     ],
     "answer": 2,
     "difficulty": "medium",
@@ -1447,18 +1447,18 @@ const questions = [
     "en": "Who is commonly credited with the Braille writing system?",
     "ar": "من يُنسب إليه عادةً ابتكار the Braille writing system؟",
     "options": [
+      "Alessandro Volta",
       "Daniel Gabriel Fahrenheit",
       "Louis Braille",
-      "Edward Jenner",
-      "Alessandro Volta"
+      "Edward Jenner"
     ],
     "optionsAr": [
-      "Daniel Gabriel Fahrenheit",
-      "Louis Braille",
-      "Edward Jenner",
-      "Alessandro Volta"
+      "اليسساندرو فولتا",
+      "دانييل جابرييل فاهرينهييت",
+      "لوويس برايللي",
+      "يدوارد جيننير"
     ],
-    "answer": 1,
+    "answer": 2,
     "difficulty": "medium",
     "id": "question-0073"
   },
@@ -1467,18 +1467,18 @@ const questions = [
     "en": "Who is commonly credited with the diesel engine?",
     "ar": "من يُنسب إليه عادةً ابتكار the diesel engine؟",
     "options": [
-      "Rudolf Diesel",
       "Charles Babbage",
       "Louis Pasteur",
+      "Rudolf Diesel",
       "James Watt"
     ],
     "optionsAr": [
-      "Rudolf Diesel",
-      "Charles Babbage",
-      "Louis Pasteur",
-      "James Watt"
+      "كهارليس بابباجي",
+      "لوويس باستيور",
+      "رودولف دييسيل",
+      "جاميس واتت"
     ],
-    "answer": 0,
+    "answer": 2,
     "difficulty": "medium",
     "id": "question-0074"
   },
@@ -1487,18 +1487,18 @@ const questions = [
     "en": "Who is commonly credited with the first practical telephone?",
     "ar": "من يُنسب إليه عادةً ابتكار the first practical telephone؟",
     "options": [
-      "Ada Lovelace",
       "Michael Faraday",
       "Alexander Graham Bell",
-      "John Bardeen, Walter Brattain and William Shockley"
+      "John Bardeen, Walter Brattain and William Shockley",
+      "Ada Lovelace"
     ],
     "optionsAr": [
-      "Ada Lovelace",
-      "Michael Faraday",
-      "Alexander Graham Bell",
-      "John Bardeen, Walter Brattain and William Shockley"
+      "ميكهايل فاراداي",
+      "اليكساندير جراهام بيلل",
+      "جوهن بارديين, والتير براتتاين اند ويلليام سهوككليي",
+      "ادا لوفيلاكي"
     ],
-    "answer": 2,
+    "answer": 1,
     "difficulty": "medium",
     "id": "question-0075"
   },
@@ -1507,18 +1507,18 @@ const questions = [
     "en": "Who is commonly credited with the phonograph?",
     "ar": "من يُنسب إليه عادةً ابتكار the phonograph؟",
     "options": [
-      "Thomas Edison",
-      "Ada Lovelace",
       "Eli Whitney",
-      "Wilhelm Conrad Röntgen"
+      "Ada Lovelace",
+      "Wilhelm Conrad Röntgen",
+      "Thomas Edison"
     ],
     "optionsAr": [
-      "Thomas Edison",
-      "Ada Lovelace",
-      "Eli Whitney",
-      "Wilhelm Conrad Röntgen"
+      "يلي وهيتنيي",
+      "ادا لوفيلاكي",
+      "ويلهيلم كونراد رöنتجين",
+      "تهوماس يديسون"
     ],
-    "answer": 0,
+    "answer": 3,
     "difficulty": "medium",
     "id": "question-0076"
   },
@@ -1527,18 +1527,18 @@ const questions = [
     "en": "Who is commonly credited with the steam engine improvements?",
     "ar": "من يُنسب إليه عادةً ابتكار the steam engine improvements؟",
     "options": [
-      "Robert H. Goddard",
-      "Ada Lovelace",
+      "James Watt",
       "Norman Joseph Woodland and Bernard Silver",
-      "James Watt"
+      "Ada Lovelace",
+      "Robert H. Goddard"
     ],
     "optionsAr": [
-      "Robert H. Goddard",
-      "Ada Lovelace",
-      "Norman Joseph Woodland and Bernard Silver",
-      "James Watt"
+      "جاميس واتت",
+      "نورمان جوسيبه ووودلاند اند بيرنارد سيلفير",
+      "ادا لوفيلاكي",
+      "روبيرت ه. جوددارد"
     ],
-    "answer": 3,
+    "answer": 0,
     "difficulty": "medium",
     "id": "question-0077"
   },
@@ -1547,18 +1547,18 @@ const questions = [
     "en": "Who is commonly credited with the first successful airplane?",
     "ar": "من يُنسب إليه عادةً ابتكار the first successful airplane؟",
     "options": [
-      "the Wright brothers",
-      "Louis Daguerre",
       "Johannes Gutenberg",
-      "Chester Carlson"
+      "Louis Daguerre",
+      "Chester Carlson",
+      "the Wright brothers"
     ],
     "optionsAr": [
-      "the Wright brothers",
-      "Louis Daguerre",
-      "Johannes Gutenberg",
-      "Chester Carlson"
+      "جوهاننيس جوتينبيرج",
+      "لوويس داجويرري",
+      "كهيستير كارلسون",
+      "الأخوان رايت"
     ],
-    "answer": 0,
+    "answer": 3,
     "difficulty": "medium",
     "id": "question-0078"
   },
@@ -1568,17 +1568,17 @@ const questions = [
     "ar": "من يُنسب إليه عادةً ابتكار the first practical electric light bulb؟",
     "options": [
       "Joseph Murray",
+      "John Goodenough, M. Stanley Whittingham and Akira Yoshino",
       "Douglas Engelbart",
-      "Thomas Edison",
-      "John Goodenough, M. Stanley Whittingham and Akira Yoshino"
+      "Thomas Edison"
     ],
     "optionsAr": [
-      "Joseph Murray",
-      "Douglas Engelbart",
-      "Thomas Edison",
-      "John Goodenough, M. Stanley Whittingham and Akira Yoshino"
+      "جوسيبه مورراي",
+      "جوهن جوودينووجه, م. ستانليي وهيتتينجهام اند اكيرا يوسهينو",
+      "دووجلاس ينجيلبارت",
+      "تهوماس يديسون"
     ],
-    "answer": 2,
+    "answer": 3,
     "difficulty": "medium",
     "id": "question-0079"
   },
@@ -1588,15 +1588,15 @@ const questions = [
     "ar": "من يُنسب إليه عادةً ابتكار the printing press in Europe؟",
     "options": [
       "Johannes Gutenberg",
-      "John Mauchly and J. Presper Eckert",
+      "Christopher Latham Sholes",
       "Wilhelm Conrad Röntgen",
-      "Christopher Latham Sholes"
+      "John Mauchly and J. Presper Eckert"
     ],
     "optionsAr": [
-      "Johannes Gutenberg",
-      "John Mauchly and J. Presper Eckert",
-      "Wilhelm Conrad Röntgen",
-      "Christopher Latham Sholes"
+      "جوهاننيس جوتينبيرج",
+      "كهريستوبهير لاتهام سهوليس",
+      "ويلهيلم كونراد رöنتجين",
+      "جوهن ماوكهلي اند ج. بريسبير يككيرت"
     ],
     "answer": 0,
     "difficulty": "medium",
@@ -1607,18 +1607,18 @@ const questions = [
     "en": "Who is commonly credited with the periodic table?",
     "ar": "من يُنسب إليه عادةً ابتكار the periodic table؟",
     "options": [
-      "Dmitri Mendeleev",
       "Elisha Otis",
-      "Rosalind Franklin",
-      "the Soviet space program"
+      "Dmitri Mendeleev",
+      "the Soviet space program",
+      "Rosalind Franklin"
     ],
     "optionsAr": [
-      "Dmitri Mendeleev",
-      "Elisha Otis",
-      "Rosalind Franklin",
-      "the Soviet space program"
+      "يليسها وتيس",
+      "دميتري مينديلييف",
+      "تهي سوفييت سباكي بروجرام",
+      "روساليند فرانكلين"
     ],
-    "answer": 0,
+    "answer": 1,
     "difficulty": "medium",
     "id": "question-0081"
   },
@@ -1627,18 +1627,18 @@ const questions = [
     "en": "Who is commonly credited with the first widely used smallpox vaccine?",
     "ar": "من يُنسب إليه عادةً ابتكار the first widely used smallpox vaccine؟",
     "options": [
-      "Charles Babbage",
-      "Ray Tomlinson",
+      "Edward Jenner",
       "Jack Kilby",
-      "Edward Jenner"
+      "Charles Babbage",
+      "Ray Tomlinson"
     ],
     "optionsAr": [
-      "Charles Babbage",
-      "Ray Tomlinson",
-      "Jack Kilby",
-      "Edward Jenner"
+      "يدوارد جيننير",
+      "جاكك كيلبي",
+      "كهارليس بابباجي",
+      "راي توملينسون"
     ],
-    "answer": 3,
+    "answer": 0,
     "difficulty": "medium",
     "id": "question-0082"
   },
@@ -1648,15 +1648,15 @@ const questions = [
     "ar": "من يُنسب إليه عادةً ابتكار the discovery of penicillin؟",
     "options": [
       "Alexander Fleming",
+      "Michael Faraday",
       "Joseph Lister",
-      "Dmitri Mendeleev",
-      "Michael Faraday"
+      "Dmitri Mendeleev"
     ],
     "optionsAr": [
-      "Alexander Fleming",
-      "Joseph Lister",
-      "Dmitri Mendeleev",
-      "Michael Faraday"
+      "ألكسندر فليمنغ",
+      "ميكهايل فاراداي",
+      "جوسيبه ليستير",
+      "دميتري مينديلييف"
     ],
     "answer": 0,
     "difficulty": "medium",
@@ -1668,15 +1668,15 @@ const questions = [
     "ar": "من يُنسب إليه عادةً ابتكار the first polio vaccine؟",
     "options": [
       "Jonas Salk",
-      "John Logie Baird",
       "Charles Babbage",
-      "Nikola Tesla"
+      "Nikola Tesla",
+      "John Logie Baird"
     ],
     "optionsAr": [
-      "Jonas Salk",
-      "John Logie Baird",
-      "Charles Babbage",
-      "Nikola Tesla"
+      "جوناس سالك",
+      "كهارليس بابباجي",
+      "نيكولا تيسلا",
+      "جوهن لوجيي بايرد"
     ],
     "answer": 0,
     "difficulty": "medium",
@@ -1687,18 +1687,18 @@ const questions = [
     "en": "Who is commonly credited with the first practical typewriter?",
     "ar": "من يُنسب إليه عادةً ابتكار the first practical typewriter؟",
     "options": [
-      "Nikola Tesla",
-      "Christopher Latham Sholes",
+      "Alfred Nobel",
       "Werner von Siemens",
-      "Alfred Nobel"
+      "Christopher Latham Sholes",
+      "Nikola Tesla"
     ],
     "optionsAr": [
-      "Nikola Tesla",
-      "Christopher Latham Sholes",
-      "Werner von Siemens",
-      "Alfred Nobel"
+      "الفريد نوبيل",
+      "ويرنير فون سييمينس",
+      "كهريستوبهير لاتهام سهوليس",
+      "نيكولا تيسلا"
     ],
-    "answer": 1,
+    "answer": 2,
     "difficulty": "medium",
     "id": "question-0085"
   },
@@ -1708,15 +1708,15 @@ const questions = [
     "ar": "من يُنسب إليه عادةً ابتكار the cotton gin؟",
     "options": [
       "Eli Whitney",
+      "David Bushnell",
       "John Logie Baird",
-      "Douglas Engelbart",
-      "David Bushnell"
+      "Douglas Engelbart"
     ],
     "optionsAr": [
-      "Eli Whitney",
-      "John Logie Baird",
-      "Douglas Engelbart",
-      "David Bushnell"
+      "يلي وهيتنيي",
+      "دافيد بوسهنيلل",
+      "جوهن لوجيي بايرد",
+      "دووجلاس ينجيلبارت"
     ],
     "answer": 0,
     "difficulty": "medium",
@@ -1727,16 +1727,16 @@ const questions = [
     "en": "Who is commonly credited with the modern sewing machine?",
     "ar": "من يُنسب إليه عادةً ابتكار the modern sewing machine؟",
     "options": [
-      "Evangelista Torricelli",
       "Ada Lovelace",
       "Thomas Edison",
+      "Evangelista Torricelli",
       "Isaac Singer"
     ],
     "optionsAr": [
-      "Evangelista Torricelli",
-      "Ada Lovelace",
-      "Thomas Edison",
-      "Isaac Singer"
+      "ادا لوفيلاكي",
+      "تهوماس يديسون",
+      "يفانجيليستا تورريكيللي",
+      "يسااك سينجير"
     ],
     "answer": 3,
     "difficulty": "medium",
@@ -1747,18 +1747,18 @@ const questions = [
     "en": "Who is commonly credited with the diesel motor?",
     "ar": "من يُنسب إليه عادةً ابتكار the diesel motor؟",
     "options": [
+      "Willis Carrier",
       "Rudolf Diesel",
       "Richard Trevithick",
-      "Willis Carrier",
       "Douglas Engelbart"
     ],
     "optionsAr": [
-      "Rudolf Diesel",
-      "Richard Trevithick",
-      "Willis Carrier",
-      "Douglas Engelbart"
+      "ويلليس كارريير",
+      "رودولف دييسيل",
+      "ريكهارد تريفيتهيكك",
+      "دووجلاس ينجيلبارت"
     ],
-    "answer": 0,
+    "answer": 1,
     "difficulty": "medium",
     "id": "question-0088"
   },
@@ -1768,17 +1768,17 @@ const questions = [
     "ar": "من يُنسب إليه عادةً ابتكار the safety elevator؟",
     "options": [
       "Michael Faraday",
-      "Ada Lovelace",
       "Elisha Otis",
+      "Ada Lovelace",
       "James Chadwick"
     ],
     "optionsAr": [
-      "Michael Faraday",
-      "Ada Lovelace",
-      "Elisha Otis",
-      "James Chadwick"
+      "ميكهايل فاراداي",
+      "يليسها وتيس",
+      "ادا لوفيلاكي",
+      "جاميس كهادويكك"
     ],
-    "answer": 2,
+    "answer": 1,
     "difficulty": "medium",
     "id": "question-0089"
   },
@@ -1787,18 +1787,18 @@ const questions = [
     "en": "Who is commonly credited with the first practical incandescent lamp?",
     "ar": "من يُنسب إليه عادةً ابتكار the first practical incandescent lamp؟",
     "options": [
+      "John Bardeen, Walter Brattain and William Shockley",
       "Thomas Edison",
       "Alessandro Volta",
-      "Nikola Tesla",
-      "John Bardeen, Walter Brattain and William Shockley"
+      "Nikola Tesla"
     ],
     "optionsAr": [
-      "Thomas Edison",
-      "Alessandro Volta",
-      "Nikola Tesla",
-      "John Bardeen, Walter Brattain and William Shockley"
+      "جوهن بارديين, والتير براتتاين اند ويلليام سهوككليي",
+      "تهوماس يديسون",
+      "اليسساندرو فولتا",
+      "نيكولا تيسلا"
     ],
-    "answer": 0,
+    "answer": 1,
     "difficulty": "medium",
     "id": "question-0090"
   },
@@ -1807,18 +1807,18 @@ const questions = [
     "en": "Who is commonly credited with the radio control system?",
     "ar": "من يُنسب إليه عادةً ابتكار the radio control system؟",
     "options": [
-      "the Soviet space program",
-      "Henri Becquerel",
       "Rosalind Franklin",
-      "Nikola Tesla"
+      "Henri Becquerel",
+      "Nikola Tesla",
+      "the Soviet space program"
     ],
     "optionsAr": [
-      "the Soviet space program",
-      "Henri Becquerel",
-      "Rosalind Franklin",
-      "Nikola Tesla"
+      "روساليند فرانكلين",
+      "هينري بيكقويريل",
+      "نيكولا تيسلا",
+      "تهي سوفييت سباكي بروجرام"
     ],
-    "answer": 3,
+    "answer": 2,
     "difficulty": "medium",
     "id": "question-0091"
   },
@@ -1827,18 +1827,18 @@ const questions = [
     "en": "Who is commonly credited with the alternating-current induction motor?",
     "ar": "من يُنسب إليه عادةً ابتكار the alternating-current induction motor؟",
     "options": [
-      "Charles Babbage",
+      "René Laennec",
       "Christopher Latham Sholes",
-      "Nikola Tesla",
-      "René Laennec"
+      "Charles Babbage",
+      "Nikola Tesla"
     ],
     "optionsAr": [
-      "Charles Babbage",
-      "Christopher Latham Sholes",
-      "Nikola Tesla",
-      "René Laennec"
+      "رينé لايننيك",
+      "كهريستوبهير لاتهام سهوليس",
+      "كهارليس بابباجي",
+      "نيكولا تيسلا"
     ],
-    "answer": 2,
+    "answer": 3,
     "difficulty": "medium",
     "id": "question-0092"
   },
@@ -1847,16 +1847,16 @@ const questions = [
     "en": "Who is commonly credited with the first computer algorithm?",
     "ar": "من يُنسب إليه عادةً ابتكار the first computer algorithm؟",
     "options": [
-      "Alessandro Volta",
+      "Daniel Gabriel Fahrenheit",
       "Ada Lovelace",
-      "John Logie Baird",
-      "Daniel Gabriel Fahrenheit"
+      "Alessandro Volta",
+      "John Logie Baird"
     ],
     "optionsAr": [
-      "Alessandro Volta",
-      "Ada Lovelace",
-      "John Logie Baird",
-      "Daniel Gabriel Fahrenheit"
+      "دانييل جابرييل فاهرينهييت",
+      "ادا لوفيلاكي",
+      "اليسساندرو فولتا",
+      "جوهن لوجيي بايرد"
     ],
     "answer": 1,
     "difficulty": "medium",
@@ -1867,16 +1867,16 @@ const questions = [
     "en": "Who is commonly credited with the analytical engine design?",
     "ar": "من يُنسب إليه عادةً ابتكار the analytical engine design؟",
     "options": [
-      "Thomas Edison",
-      "Charles Babbage",
       "Eli Whitney",
-      "Robert H. Goddard"
+      "Charles Babbage",
+      "Robert H. Goddard",
+      "Thomas Edison"
     ],
     "optionsAr": [
-      "Thomas Edison",
-      "Charles Babbage",
-      "Eli Whitney",
-      "Robert H. Goddard"
+      "يلي وهيتنيي",
+      "كهارليس بابباجي",
+      "روبيرت ه. جوددارد",
+      "تهوماس يديسون"
     ],
     "answer": 1,
     "difficulty": "medium",
@@ -1887,18 +1887,18 @@ const questions = [
     "en": "Who is commonly credited with the first general-purpose electronic computer design?",
     "ar": "من يُنسب إليه عادةً ابتكار the first general-purpose electronic computer design؟",
     "options": [
-      "J. J. Thomson",
       "John Mauchly and J. Presper Eckert",
-      "Christiaan Barnard",
-      "Rosalind Franklin"
+      "J. J. Thomson",
+      "Rosalind Franklin",
+      "Christiaan Barnard"
     ],
     "optionsAr": [
-      "J. J. Thomson",
-      "John Mauchly and J. Presper Eckert",
-      "Christiaan Barnard",
-      "Rosalind Franklin"
+      "جوهن ماوكهلي اند ج. بريسبير يككيرت",
+      "ج. ج. تهومسون",
+      "روساليند فرانكلين",
+      "كهريستياان بارنارد"
     ],
-    "answer": 1,
+    "answer": 0,
     "difficulty": "medium",
     "id": "question-0095"
   },
@@ -1907,18 +1907,18 @@ const questions = [
     "en": "Who is commonly credited with the first successful kidney transplant operation?",
     "ar": "من يُنسب إليه عادةً ابتكار the first successful kidney transplant operation؟",
     "options": [
-      "René Laennec",
-      "Jonas Salk",
       "Joseph Murray",
+      "Jonas Salk",
+      "René Laennec",
       "Ada Lovelace"
     ],
     "optionsAr": [
-      "René Laennec",
-      "Jonas Salk",
-      "Joseph Murray",
-      "Ada Lovelace"
+      "جوسيبه مورراي",
+      "جوناس سالك",
+      "رينé لايننيك",
+      "ادا لوفيلاكي"
     ],
-    "answer": 2,
+    "answer": 0,
     "difficulty": "medium",
     "id": "question-0096"
   },
@@ -1929,16 +1929,16 @@ const questions = [
     "options": [
       "Dmitri Mendeleev",
       "Joseph Murray",
-      "John Bardeen, Walter Brattain and William Shockley",
-      "Christiaan Barnard"
+      "Christiaan Barnard",
+      "John Bardeen, Walter Brattain and William Shockley"
     ],
     "optionsAr": [
-      "Dmitri Mendeleev",
-      "Joseph Murray",
-      "John Bardeen, Walter Brattain and William Shockley",
-      "Christiaan Barnard"
+      "دميتري مينديلييف",
+      "جوسيبه مورراي",
+      "كهريستياان بارنارد",
+      "جوهن بارديين, والتير براتتاين اند ويلليام سهوككليي"
     ],
-    "answer": 3,
+    "answer": 2,
     "difficulty": "medium",
     "id": "question-0097"
   },
@@ -1947,18 +1947,18 @@ const questions = [
     "en": "Who is commonly credited with the first artificial satellite?",
     "ar": "من يُنسب إليه عادةً ابتكار the first artificial satellite؟",
     "options": [
-      "the Soviet space program",
-      "Jonas Salk",
+      "Richard Trevithick",
       "J. J. Thomson",
-      "Richard Trevithick"
+      "the Soviet space program",
+      "Jonas Salk"
     ],
     "optionsAr": [
-      "the Soviet space program",
-      "Jonas Salk",
-      "J. J. Thomson",
-      "Richard Trevithick"
+      "ريكهارد تريفيتهيكك",
+      "ج. ج. تهومسون",
+      "تهي سوفييت سباكي بروجرام",
+      "جوناس سالك"
     ],
-    "answer": 0,
+    "answer": 2,
     "difficulty": "medium",
     "id": "question-0098"
   },
@@ -1968,17 +1968,17 @@ const questions = [
     "ar": "من يُنسب إليه عادةً ابتكار the first liquid-fueled rocket؟",
     "options": [
       "Louis Daguerre",
-      "Robert H. Goddard",
+      "Werner von Siemens",
       "Alessandro Volta",
-      "Werner von Siemens"
+      "Robert H. Goddard"
     ],
     "optionsAr": [
-      "Louis Daguerre",
-      "Robert H. Goddard",
-      "Alessandro Volta",
-      "Werner von Siemens"
+      "لوويس داجويرري",
+      "ويرنير فون سييمينس",
+      "اليسساندرو فولتا",
+      "روبيرت ه. جوددارد"
     ],
-    "answer": 1,
+    "answer": 3,
     "difficulty": "medium",
     "id": "question-0099"
   },
@@ -1988,15 +1988,15 @@ const questions = [
     "ar": "من يُنسب إليه عادةً ابتكار the first practical helicopter؟",
     "options": [
       "J. J. Thomson",
-      "Louis Pasteur",
+      "Albert Sabin",
       "Igor Sikorsky",
-      "Albert Sabin"
+      "Louis Pasteur"
     ],
     "optionsAr": [
-      "J. J. Thomson",
-      "Louis Pasteur",
-      "Igor Sikorsky",
-      "Albert Sabin"
+      "ج. ج. تهومسون",
+      "البيرت سابين",
+      "يجور سيكورسكي",
+      "لوويس باستيور"
     ],
     "answer": 2,
     "difficulty": "medium",
@@ -2007,18 +2007,18 @@ const questions = [
     "en": "Who is commonly credited with the first commercial barcode system?",
     "ar": "من يُنسب إليه عادةً ابتكار the first commercial barcode system؟",
     "options": [
-      "Norman Joseph Woodland and Bernard Silver",
       "Alfred Nobel",
+      "Norman Joseph Woodland and Bernard Silver",
       "Dmitri Mendeleev",
       "Ada Lovelace"
     ],
     "optionsAr": [
-      "Norman Joseph Woodland and Bernard Silver",
-      "Alfred Nobel",
-      "Dmitri Mendeleev",
-      "Ada Lovelace"
+      "الفريد نوبيل",
+      "نورمان جوسيبه ووودلاند اند بيرنارد سيلفير",
+      "دميتري مينديلييف",
+      "ادا لوفيلاكي"
     ],
-    "answer": 0,
+    "answer": 1,
     "difficulty": "medium",
     "id": "question-0101"
   },
@@ -2028,17 +2028,17 @@ const questions = [
     "ar": "من يُنسب إليه عادةً ابتكار the first laser؟",
     "options": [
       "Alexander Graham Bell",
+      "Theodore Maiman",
       "Wilhelm Conrad Röntgen",
-      "the Soviet space program",
-      "Theodore Maiman"
+      "the Soviet space program"
     ],
     "optionsAr": [
-      "Alexander Graham Bell",
-      "Wilhelm Conrad Röntgen",
-      "the Soviet space program",
-      "Theodore Maiman"
+      "اليكساندير جراهام بيلل",
+      "تهيودوري مايمان",
+      "ويلهيلم كونراد رöنتجين",
+      "تهي سوفييت سباكي بروجرام"
     ],
-    "answer": 3,
+    "answer": 1,
     "difficulty": "medium",
     "id": "question-0102"
   },
@@ -2048,17 +2048,17 @@ const questions = [
     "ar": "من يُنسب إليه عادةً ابتكار the first working transistor؟",
     "options": [
       "Christopher Latham Sholes",
-      "Werner von Siemens",
+      "John Bardeen, Walter Brattain and William Shockley",
       "Thomas Edison",
-      "John Bardeen, Walter Brattain and William Shockley"
+      "Werner von Siemens"
     ],
     "optionsAr": [
-      "Christopher Latham Sholes",
-      "Werner von Siemens",
-      "Thomas Edison",
-      "John Bardeen, Walter Brattain and William Shockley"
+      "كهريستوبهير لاتهام سهوليس",
+      "جوهن بارديين, والتير براتتاين اند ويلليام سهوككليي",
+      "تهوماس يديسون",
+      "ويرنير فون سييمينس"
     ],
-    "answer": 3,
+    "answer": 1,
     "difficulty": "medium",
     "id": "question-0103"
   },
@@ -2067,18 +2067,18 @@ const questions = [
     "en": "Who is commonly credited with the first practical photocopier?",
     "ar": "من يُنسب إليه عادةً ابتكار the first practical photocopier؟",
     "options": [
-      "Jacob Perkins",
-      "Alfred Nobel",
+      "Chester Carlson",
       "John Logie Baird",
-      "Chester Carlson"
+      "Jacob Perkins",
+      "Alfred Nobel"
     ],
     "optionsAr": [
-      "Jacob Perkins",
-      "Alfred Nobel",
-      "John Logie Baird",
-      "Chester Carlson"
+      "كهيستير كارلسون",
+      "جوهن لوجيي بايرد",
+      "جاكوب بيركينس",
+      "الفريد نوبيل"
     ],
-    "answer": 3,
+    "answer": 0,
     "difficulty": "medium",
     "id": "question-0104"
   },
@@ -2087,16 +2087,16 @@ const questions = [
     "en": "Who is commonly credited with the first modern air conditioner?",
     "ar": "من يُنسب إليه عادةً ابتكار the first modern air conditioner؟",
     "options": [
-      "Alexander Graham Bell",
-      "Isaac Singer",
       "David Bushnell",
+      "Isaac Singer",
+      "Alexander Graham Bell",
       "Willis Carrier"
     ],
     "optionsAr": [
-      "Alexander Graham Bell",
-      "Isaac Singer",
-      "David Bushnell",
-      "Willis Carrier"
+      "دافيد بوسهنيلل",
+      "يسااك سينجير",
+      "اليكساندير جراهام بيلل",
+      "ويلليس كارريير"
     ],
     "answer": 3,
     "difficulty": "medium",
@@ -2113,10 +2113,10 @@ const questions = [
       "Jacob Perkins"
     ],
     "optionsAr": [
-      "Louis Pasteur",
-      "Christiaan Barnard",
-      "Joseph Lister",
-      "Jacob Perkins"
+      "لوويس باستيور",
+      "كهريستياان بارنارد",
+      "جوسيبه ليستير",
+      "جاكوب بيركينس"
     ],
     "answer": 3,
     "difficulty": "medium",
@@ -2127,18 +2127,18 @@ const questions = [
     "en": "Who is commonly credited with the first successful powered flight in Europe?",
     "ar": "من يُنسب إليه عادةً ابتكار the first successful powered flight in Europe؟",
     "options": [
-      "Alessandro Volta",
       "Alberto Santos-Dumont",
-      "John Logie Baird",
-      "Ray Tomlinson"
+      "Alessandro Volta",
+      "Ray Tomlinson",
+      "John Logie Baird"
     ],
     "optionsAr": [
-      "Alessandro Volta",
-      "Alberto Santos-Dumont",
-      "John Logie Baird",
-      "Ray Tomlinson"
+      "البيرتو سانتوس-دومونت",
+      "اليسساندرو فولتا",
+      "راي توملينسون",
+      "جوهن لوجيي بايرد"
     ],
-    "answer": 1,
+    "answer": 0,
     "difficulty": "medium",
     "id": "question-0107"
   },
@@ -2147,18 +2147,18 @@ const questions = [
     "en": "Who is commonly credited with the first practical submarine?",
     "ar": "من يُنسب إليه عادةً ابتكار the first practical submarine؟",
     "options": [
-      "Robert H. Goddard",
       "David Bushnell",
       "Charles Babbage",
+      "Robert H. Goddard",
       "John Logie Baird"
     ],
     "optionsAr": [
-      "Robert H. Goddard",
-      "David Bushnell",
-      "Charles Babbage",
-      "John Logie Baird"
+      "دافيد بوسهنيلل",
+      "كهارليس بابباجي",
+      "روبيرت ه. جوددارد",
+      "جوهن لوجيي بايرد"
     ],
-    "answer": 1,
+    "answer": 0,
     "difficulty": "medium",
     "id": "question-0108"
   },
@@ -2167,18 +2167,18 @@ const questions = [
     "en": "Who is commonly credited with the first working steam locomotive?",
     "ar": "من يُنسب إليه عادةً ابتكار the first working steam locomotive؟",
     "options": [
-      "Richard Trevithick",
-      "Edward Jenner",
+      "René Laennec",
       "Thomas Edison",
-      "René Laennec"
+      "Richard Trevithick",
+      "Edward Jenner"
     ],
     "optionsAr": [
-      "Richard Trevithick",
-      "Edward Jenner",
-      "Thomas Edison",
-      "René Laennec"
+      "رينé لايننيك",
+      "تهوماس يديسون",
+      "ريكهارد تريفيتهيكك",
+      "يدوارد جيننير"
     ],
-    "answer": 0,
+    "answer": 2,
     "difficulty": "medium",
     "id": "question-0109"
   },
@@ -2187,16 +2187,16 @@ const questions = [
     "en": "Who is commonly credited with the first practical electric battery?",
     "ar": "من يُنسب إليه عادةً ابتكار the first practical electric battery؟",
     "options": [
-      "Dmitri Mendeleev",
       "Christopher Latham Sholes",
       "Theodore Maiman",
+      "Dmitri Mendeleev",
       "Alessandro Volta"
     ],
     "optionsAr": [
-      "Dmitri Mendeleev",
-      "Christopher Latham Sholes",
-      "Theodore Maiman",
-      "Alessandro Volta"
+      "كهريستوبهير لاتهام سهوليس",
+      "تهيودوري مايمان",
+      "دميتري مينديلييف",
+      "اليسساندرو فولتا"
     ],
     "answer": 3,
     "difficulty": "medium",
@@ -2208,17 +2208,17 @@ const questions = [
     "ar": "من يُنسب إليه عادةً ابتكار the first practical mechanical television system؟",
     "options": [
       "Isaac Singer",
-      "John Logie Baird",
+      "Edward Jenner",
       "Alfred Nobel",
-      "Edward Jenner"
+      "John Logie Baird"
     ],
     "optionsAr": [
-      "Isaac Singer",
-      "John Logie Baird",
-      "Alfred Nobel",
-      "Edward Jenner"
+      "يسااك سينجير",
+      "يدوارد جيننير",
+      "الفريد نوبيل",
+      "جوهن لوجيي بايرد"
     ],
-    "answer": 1,
+    "answer": 3,
     "difficulty": "medium",
     "id": "question-0111"
   },
@@ -2227,18 +2227,18 @@ const questions = [
     "en": "Who is commonly credited with the first successful polio vaccine used widely?",
     "ar": "من يُنسب إليه عادةً ابتكار the first successful polio vaccine used widely؟",
     "options": [
-      "Willis Carrier",
-      "Jonas Salk",
+      "Martin Cooper",
       "Ray Tomlinson",
-      "Martin Cooper"
+      "Willis Carrier",
+      "Jonas Salk"
     ],
     "optionsAr": [
-      "Willis Carrier",
-      "Jonas Salk",
-      "Ray Tomlinson",
-      "Martin Cooper"
+      "مارتين كووبير",
+      "راي توملينسون",
+      "ويلليس كارريير",
+      "جوناس سالك"
     ],
-    "answer": 1,
+    "answer": 3,
     "difficulty": "medium",
     "id": "question-0112"
   },
@@ -2247,16 +2247,16 @@ const questions = [
     "en": "Who is commonly credited with the first successful rabies vaccine?",
     "ar": "من يُنسب إليه عادةً ابتكار the first successful rabies vaccine؟",
     "options": [
-      "Douglas Engelbart",
+      "Robert Noyce",
       "John Logie Baird",
       "Louis Pasteur",
-      "Robert Noyce"
+      "Douglas Engelbart"
     ],
     "optionsAr": [
-      "Douglas Engelbart",
-      "John Logie Baird",
-      "Louis Pasteur",
-      "Robert Noyce"
+      "روبيرت نويكي",
+      "جوهن لوجيي بايرد",
+      "لوويس باستيور",
+      "دووجلاس ينجيلبارت"
     ],
     "answer": 2,
     "difficulty": "medium",
@@ -2267,18 +2267,18 @@ const questions = [
     "en": "Who is commonly credited with the first successful anthrax vaccine?",
     "ar": "من يُنسب إليه عادةً ابتكار the first successful anthrax vaccine؟",
     "options": [
-      "Tim Berners-Lee",
       "Louis Pasteur",
+      "James Watt",
       "Henri Becquerel",
-      "James Watt"
+      "Tim Berners-Lee"
     ],
     "optionsAr": [
-      "Tim Berners-Lee",
-      "Louis Pasteur",
-      "Henri Becquerel",
-      "James Watt"
+      "لوويس باستيور",
+      "جاميس واتت",
+      "هينري بيكقويريل",
+      "تيم بيرنيرس-ليي"
     ],
-    "answer": 1,
+    "answer": 0,
     "difficulty": "medium",
     "id": "question-0114"
   },
@@ -2288,17 +2288,17 @@ const questions = [
     "ar": "من يُنسب إليه عادةً ابتكار the first modern antiseptic surgery method؟",
     "options": [
       "James Chadwick",
-      "Elisha Otis",
       "J. J. Thomson",
-      "Joseph Lister"
+      "Joseph Lister",
+      "Elisha Otis"
     ],
     "optionsAr": [
-      "James Chadwick",
-      "Elisha Otis",
-      "J. J. Thomson",
-      "Joseph Lister"
+      "جاميس كهادويكك",
+      "ج. ج. تهومسون",
+      "جوسيبه ليستير",
+      "يليسها وتيس"
     ],
-    "answer": 3,
+    "answer": 2,
     "difficulty": "medium",
     "id": "question-0115"
   },
@@ -2307,18 +2307,18 @@ const questions = [
     "en": "Who is commonly credited with the first practical stethoscope?",
     "ar": "من يُنسب إليه عادةً ابتكار the first practical stethoscope؟",
     "options": [
+      "James Watt",
       "René Laennec",
-      "Norman Joseph Woodland and Bernard Silver",
       "Johannes Gutenberg",
-      "James Watt"
+      "Norman Joseph Woodland and Bernard Silver"
     ],
     "optionsAr": [
-      "René Laennec",
-      "Norman Joseph Woodland and Bernard Silver",
-      "Johannes Gutenberg",
-      "James Watt"
+      "جاميس واتت",
+      "رينé لايننيك",
+      "جوهاننيس جوتينبيرج",
+      "نورمان جوسيبه ووودلاند اند بيرنارد سيلفير"
     ],
-    "answer": 0,
+    "answer": 1,
     "difficulty": "medium",
     "id": "question-0116"
   },
@@ -2327,18 +2327,18 @@ const questions = [
     "en": "Who is commonly credited with the first practical mercury thermometer?",
     "ar": "من يُنسب إليه عادةً ابتكار the first practical mercury thermometer؟",
     "options": [
-      "Frederick Banting and Charles Best",
-      "Louis Daguerre",
       "Daniel Gabriel Fahrenheit",
-      "Igor Sikorsky"
+      "Frederick Banting and Charles Best",
+      "Igor Sikorsky",
+      "Louis Daguerre"
     ],
     "optionsAr": [
-      "Frederick Banting and Charles Best",
-      "Louis Daguerre",
-      "Daniel Gabriel Fahrenheit",
-      "Igor Sikorsky"
+      "دانييل جابرييل فاهرينهييت",
+      "فريديريكك بانتينج اند كهارليس بيست",
+      "يجور سيكورسكي",
+      "لوويس داجويرري"
     ],
-    "answer": 2,
+    "answer": 0,
     "difficulty": "medium",
     "id": "question-0117"
   },
@@ -2353,10 +2353,10 @@ const questions = [
       "Bryan Allen and Paul MacCready’s team"
     ],
     "optionsAr": [
-      "Alfred Nobel",
-      "Evangelista Torricelli",
-      "Henri Becquerel",
-      "Bryan Allen and Paul MacCready’s team"
+      "الفريد نوبيل",
+      "يفانجيليستا تورريكيللي",
+      "هينري بيكقويريل",
+      "بريان اللين اند باول ماككريادي’س تيام"
     ],
     "answer": 1,
     "difficulty": "medium",
@@ -2367,18 +2367,18 @@ const questions = [
     "en": "Who is commonly credited with the first widely used type of vaccination against smallpox?",
     "ar": "من يُنسب إليه عادةً ابتكار the first widely used type of vaccination against smallpox؟",
     "options": [
-      "Edward Jenner",
-      "Igor Sikorsky",
       "Louis Daguerre",
-      "Isaac Singer"
+      "Isaac Singer",
+      "Edward Jenner",
+      "Igor Sikorsky"
     ],
     "optionsAr": [
-      "Edward Jenner",
-      "Igor Sikorsky",
-      "Louis Daguerre",
-      "Isaac Singer"
+      "لوويس داجويرري",
+      "يسااك سينجير",
+      "يدوارد جيننير",
+      "يجور سيكورسكي"
     ],
-    "answer": 0,
+    "answer": 2,
     "difficulty": "medium",
     "id": "question-0119"
   },
@@ -2387,18 +2387,18 @@ const questions = [
     "en": "Who is commonly credited with the first practical electric motor?",
     "ar": "من يُنسب إليه عادةً ابتكار the first practical electric motor؟",
     "options": [
-      "Douglas Engelbart",
       "Nikola Tesla",
       "Edward Jenner",
-      "Michael Faraday"
+      "Michael Faraday",
+      "Douglas Engelbart"
     ],
     "optionsAr": [
-      "Douglas Engelbart",
-      "Nikola Tesla",
-      "Edward Jenner",
-      "Michael Faraday"
+      "نيكولا تيسلا",
+      "يدوارد جيننير",
+      "ميكهايل فاراداي",
+      "دووجلاس ينجيلبارت"
     ],
-    "answer": 3,
+    "answer": 2,
     "difficulty": "medium",
     "id": "question-0120"
   },
@@ -2408,15 +2408,15 @@ const questions = [
     "ar": "من يُنسب إليه عادةً ابتكار the first practical dynamo؟",
     "options": [
       "Werner von Siemens",
-      "Louis Braille",
       "John Bardeen, Walter Brattain and William Shockley",
-      "Richard Trevithick"
+      "Richard Trevithick",
+      "Louis Braille"
     ],
     "optionsAr": [
-      "Werner von Siemens",
-      "Louis Braille",
-      "John Bardeen, Walter Brattain and William Shockley",
-      "Richard Trevithick"
+      "ويرنير فون سييمينس",
+      "جوهن بارديين, والتير براتتاين اند ويلليام سهوككليي",
+      "ريكهارد تريفيتهيكك",
+      "لوويس برايللي"
     ],
     "answer": 0,
     "difficulty": "medium",
@@ -2427,18 +2427,18 @@ const questions = [
     "en": "Who is commonly credited with the first modern periodic table arrangement?",
     "ar": "من يُنسب إليه عادةً ابتكار the first modern periodic table arrangement؟",
     "options": [
-      "Richard Trevithick",
-      "Dmitri Mendeleev",
       "Alfred Nobel",
-      "Martin Cooper"
+      "Martin Cooper",
+      "Richard Trevithick",
+      "Dmitri Mendeleev"
     ],
     "optionsAr": [
-      "Richard Trevithick",
-      "Dmitri Mendeleev",
-      "Alfred Nobel",
-      "Martin Cooper"
+      "الفريد نوبيل",
+      "مارتين كووبير",
+      "ريكهارد تريفيتهيكك",
+      "دميتري مينديلييف"
     ],
-    "answer": 1,
+    "answer": 3,
     "difficulty": "medium",
     "id": "question-0122"
   },
@@ -2448,17 +2448,17 @@ const questions = [
     "ar": "من يُنسب إليه عادةً ابتكار the first successful human-powered flight across the English Channel؟",
     "options": [
       "Louis Pasteur",
+      "Daniel Gabriel Fahrenheit",
       "Nicolas-Joseph Cugnot",
-      "Bryan Allen and Paul MacCready’s team",
-      "Daniel Gabriel Fahrenheit"
+      "Bryan Allen and Paul MacCready’s team"
     ],
     "optionsAr": [
-      "Louis Pasteur",
-      "Nicolas-Joseph Cugnot",
-      "Bryan Allen and Paul MacCready’s team",
-      "Daniel Gabriel Fahrenheit"
+      "لوويس باستيور",
+      "دانييل جابرييل فاهرينهييت",
+      "نيكولاس-جوسيبه كوجنوت",
+      "بريان اللين اند باول ماككريادي’س تيام"
     ],
-    "answer": 2,
+    "answer": 3,
     "difficulty": "medium",
     "id": "question-0123"
   },
@@ -2473,10 +2473,10 @@ const questions = [
       "Alberto Santos-Dumont"
     ],
     "optionsAr": [
-      "Douglas Engelbart",
-      "Rudolf Diesel",
-      "Richard Trevithick",
-      "Alberto Santos-Dumont"
+      "دووجلاس ينجيلبارت",
+      "رودولف دييسيل",
+      "ريكهارد تريفيتهيكك",
+      "البيرتو سانتوس-دومونت"
     ],
     "answer": 0,
     "difficulty": "medium",
@@ -2487,18 +2487,18 @@ const questions = [
     "en": "Who is commonly credited with the first graphical computer mouse design?",
     "ar": "من يُنسب إليه عادةً ابتكار the first graphical computer mouse design؟",
     "options": [
-      "Jonas Salk",
       "Louis Daguerre",
+      "Douglas Engelbart",
       "Christopher Latham Sholes",
-      "Douglas Engelbart"
+      "Jonas Salk"
     ],
     "optionsAr": [
-      "Jonas Salk",
-      "Louis Daguerre",
-      "Christopher Latham Sholes",
-      "Douglas Engelbart"
+      "لوويس داجويرري",
+      "دووجلاس ينجيلبارت",
+      "كهريستوبهير لاتهام سهوليس",
+      "جوناس سالك"
     ],
-    "answer": 3,
+    "answer": 1,
     "difficulty": "medium",
     "id": "question-0125"
   },
@@ -2507,18 +2507,18 @@ const questions = [
     "en": "Who is commonly credited with the first practical integrated circuit?",
     "ar": "من يُنسب إليه عادةً ابتكار the first practical integrated circuit؟",
     "options": [
-      "Ray Tomlinson",
       "Martin Cooper",
       "Alessandro Volta",
-      "Jack Kilby"
+      "Jack Kilby",
+      "Ray Tomlinson"
     ],
     "optionsAr": [
-      "Ray Tomlinson",
-      "Martin Cooper",
-      "Alessandro Volta",
-      "Jack Kilby"
+      "مارتين كووبير",
+      "اليسساندرو فولتا",
+      "جاكك كيلبي",
+      "راي توملينسون"
     ],
-    "answer": 3,
+    "answer": 2,
     "difficulty": "medium",
     "id": "question-0126"
   },
@@ -2527,18 +2527,18 @@ const questions = [
     "en": "Who is commonly credited with the first planar integrated circuit?",
     "ar": "من يُنسب إليه عادةً ابتكار the first planar integrated circuit؟",
     "options": [
-      "Jonas Salk",
-      "Robert Noyce",
       "Ray Tomlinson",
-      "Richard Trevithick"
+      "Richard Trevithick",
+      "Jonas Salk",
+      "Robert Noyce"
     ],
     "optionsAr": [
-      "Jonas Salk",
-      "Robert Noyce",
-      "Ray Tomlinson",
-      "Richard Trevithick"
+      "راي توملينسون",
+      "ريكهارد تريفيتهيكك",
+      "جوناس سالك",
+      "روبيرت نويكي"
     ],
-    "answer": 1,
+    "answer": 3,
     "difficulty": "medium",
     "id": "question-0127"
   },
@@ -2547,16 +2547,16 @@ const questions = [
     "en": "Who is commonly credited with the first working mobile phone prototype?",
     "ar": "من يُنسب إليه عادةً ابتكار the first working mobile phone prototype؟",
     "options": [
-      "Douglas Engelbart",
+      "Louis Braille",
       "Joseph Lister",
       "Martin Cooper",
-      "Louis Braille"
+      "Douglas Engelbart"
     ],
     "optionsAr": [
-      "Douglas Engelbart",
-      "Joseph Lister",
-      "Martin Cooper",
-      "Louis Braille"
+      "لوويس برايللي",
+      "جوسيبه ليستير",
+      "مارتين كووبير",
+      "دووجلاس ينجيلبارت"
     ],
     "answer": 2,
     "difficulty": "medium",
@@ -2568,17 +2568,17 @@ const questions = [
     "ar": "من يُنسب إليه عادةً ابتكار the first practical lithium-ion battery؟",
     "options": [
       "Rosalind Franklin",
-      "Ray Tomlinson",
       "James Chadwick",
-      "John Goodenough, M. Stanley Whittingham and Akira Yoshino"
+      "John Goodenough, M. Stanley Whittingham and Akira Yoshino",
+      "Ray Tomlinson"
     ],
     "optionsAr": [
-      "Rosalind Franklin",
-      "Ray Tomlinson",
-      "James Chadwick",
-      "John Goodenough, M. Stanley Whittingham and Akira Yoshino"
+      "روساليند فرانكلين",
+      "جاميس كهادويكك",
+      "جوهن جوودينووجه, م. ستانليي وهيتتينجهام اند اكيرا يوسهينو",
+      "راي توملينسون"
     ],
-    "answer": 3,
+    "answer": 2,
     "difficulty": "medium",
     "id": "question-0129"
   },
@@ -2587,18 +2587,18 @@ const questions = [
     "en": "Who is commonly credited with the first web browser and web server?",
     "ar": "من يُنسب إليه عادةً ابتكار the first web browser and web server؟",
     "options": [
-      "Ada Lovelace",
-      "Louis Daguerre",
+      "Joseph Lister",
       "Tim Berners-Lee",
-      "Joseph Lister"
+      "Ada Lovelace",
+      "Louis Daguerre"
     ],
     "optionsAr": [
-      "Ada Lovelace",
-      "Louis Daguerre",
-      "Tim Berners-Lee",
-      "Joseph Lister"
+      "جوسيبه ليستير",
+      "تيم بيرنيرس-ليي",
+      "ادا لوفيلاكي",
+      "لوويس داجويرري"
     ],
-    "answer": 2,
+    "answer": 1,
     "difficulty": "medium",
     "id": "question-0130"
   },
@@ -2607,18 +2607,18 @@ const questions = [
     "en": "Who is commonly credited with the first email system on ARPANET?",
     "ar": "من يُنسب إليه عادةً ابتكار the first email system on ARPANET؟",
     "options": [
-      "the Soviet space program",
-      "Ray Tomlinson",
       "Joseph Murray",
-      "Thomas Edison"
+      "Thomas Edison",
+      "the Soviet space program",
+      "Ray Tomlinson"
     ],
     "optionsAr": [
-      "the Soviet space program",
-      "Ray Tomlinson",
-      "Joseph Murray",
-      "Thomas Edison"
+      "جوسيبه مورراي",
+      "تهوماس يديسون",
+      "تهي سوفييت سباكي بروجرام",
+      "راي توملينسون"
     ],
-    "answer": 1,
+    "answer": 3,
     "difficulty": "medium",
     "id": "question-0131"
   },
@@ -2627,16 +2627,16 @@ const questions = [
     "en": "Who is commonly credited with the first successful human insulin treatment?",
     "ar": "من يُنسب إليه عادةً ابتكار the first successful human insulin treatment؟",
     "options": [
+      "J. J. Thomson",
       "Bryan Allen and Paul MacCready’s team",
-      "Louis Pasteur",
       "Frederick Banting and Charles Best",
-      "J. J. Thomson"
+      "Louis Pasteur"
     ],
     "optionsAr": [
-      "Bryan Allen and Paul MacCready’s team",
-      "Louis Pasteur",
-      "Frederick Banting and Charles Best",
-      "J. J. Thomson"
+      "ج. ج. تهومسون",
+      "بريان اللين اند باول ماككريادي’س تيام",
+      "فريديريكك بانتينج اند كهارليس بيست",
+      "لوويس باستيور"
     ],
     "answer": 2,
     "difficulty": "medium",
@@ -2647,18 +2647,18 @@ const questions = [
     "en": "Who is commonly credited with the discovery of X-rays?",
     "ar": "من يُنسب إليه عادةً ابتكار the discovery of X-rays؟",
     "options": [
+      "Norman Joseph Woodland and Bernard Silver",
       "Wilhelm Conrad Röntgen",
       "Alexander Graham Bell",
-      "Norman Joseph Woodland and Bernard Silver",
       "Alberto Santos-Dumont"
     ],
     "optionsAr": [
-      "Wilhelm Conrad Röntgen",
-      "Alexander Graham Bell",
-      "Norman Joseph Woodland and Bernard Silver",
-      "Alberto Santos-Dumont"
+      "نورمان جوسيبه ووودلاند اند بيرنارد سيلفير",
+      "ويلهيلم كونراد رöنتجين",
+      "اليكساندير جراهام بيلل",
+      "البيرتو سانتوس-دومونت"
     ],
-    "answer": 0,
+    "answer": 1,
     "difficulty": "medium",
     "id": "question-0133"
   },
@@ -2667,16 +2667,16 @@ const questions = [
     "en": "Who is commonly credited with the discovery of radioactivity?",
     "ar": "من يُنسب إليه عادةً ابتكار the discovery of radioactivity؟",
     "options": [
-      "Alessandro Volta",
       "Werner von Siemens",
+      "Alessandro Volta",
       "James Chadwick",
       "Henri Becquerel"
     ],
     "optionsAr": [
-      "Alessandro Volta",
-      "Werner von Siemens",
-      "James Chadwick",
-      "Henri Becquerel"
+      "ويرنير فون سييمينس",
+      "اليسساندرو فولتا",
+      "جاميس كهادويكك",
+      "هينري بيكقويريل"
     ],
     "answer": 3,
     "difficulty": "medium",
@@ -2688,17 +2688,17 @@ const questions = [
     "ar": "من يُنسب إليه عادةً ابتكار the discovery of the electron؟",
     "options": [
       "Werner von Siemens",
-      "J. J. Thomson",
       "James Chadwick",
-      "Louis Pasteur"
+      "Louis Pasteur",
+      "J. J. Thomson"
     ],
     "optionsAr": [
-      "Werner von Siemens",
-      "J. J. Thomson",
-      "James Chadwick",
-      "Louis Pasteur"
+      "ويرنير فون سييمينس",
+      "جاميس كهادويكك",
+      "لوويس باستيور",
+      "ج. ج. تهومسون"
     ],
-    "answer": 1,
+    "answer": 3,
     "difficulty": "medium",
     "id": "question-0135"
   },
@@ -2708,15 +2708,15 @@ const questions = [
     "ar": "من يُنسب إليه عادةً ابتكار the discovery of the neutron؟",
     "options": [
       "James Chadwick",
-      "Christiaan Barnard",
       "Bryan Allen and Paul MacCready’s team",
-      "Elisha Otis"
+      "Elisha Otis",
+      "Christiaan Barnard"
     ],
     "optionsAr": [
-      "James Chadwick",
-      "Christiaan Barnard",
-      "Bryan Allen and Paul MacCready’s team",
-      "Elisha Otis"
+      "جاميس كهادويكك",
+      "بريان اللين اند باول ماككريادي’س تيام",
+      "يليسها وتيس",
+      "كهريستياان بارنارد"
     ],
     "answer": 0,
     "difficulty": "medium",
@@ -2727,18 +2727,18 @@ const questions = [
     "en": "Who is commonly credited with the discovery of the structure of DNA using X-ray diffraction evidence?",
     "ar": "من يُنسب إليه عادةً ابتكار the discovery of the structure of DNA using X-ray diffraction evidence؟",
     "options": [
-      "Rosalind Franklin",
-      "John Logie Baird",
+      "Jack Kilby",
       "Jonas Salk",
-      "Jack Kilby"
+      "John Logie Baird",
+      "Rosalind Franklin"
     ],
     "optionsAr": [
-      "Rosalind Franklin",
-      "John Logie Baird",
-      "Jonas Salk",
-      "Jack Kilby"
+      "جاكك كيلبي",
+      "جوناس سالك",
+      "جوهن لوجيي بايرد",
+      "روساليند فرانكلين"
     ],
-    "answer": 0,
+    "answer": 3,
     "difficulty": "medium",
     "id": "question-0137"
   },
@@ -2749,16 +2749,16 @@ const questions = [
     "options": [
       "Nikola Tesla",
       "James Chadwick",
-      "Louis Pasteur",
-      "Albert Sabin"
+      "Albert Sabin",
+      "Louis Pasteur"
     ],
     "optionsAr": [
-      "Nikola Tesla",
-      "James Chadwick",
-      "Louis Pasteur",
-      "Albert Sabin"
+      "نيكولا تيسلا",
+      "جاميس كهادويكك",
+      "البيرت سابين",
+      "لوويس باستيور"
     ],
-    "answer": 3,
+    "answer": 2,
     "difficulty": "medium",
     "id": "question-0138"
   },
@@ -2767,16 +2767,16 @@ const questions = [
     "en": "Who is commonly credited with the first practical photographic process?",
     "ar": "من يُنسب إليه عادةً ابتكار the first practical photographic process؟",
     "options": [
+      "Nikola Tesla",
       "Rudolf Diesel",
       "Louis Pasteur",
-      "Nikola Tesla",
       "Louis Daguerre"
     ],
     "optionsAr": [
-      "Rudolf Diesel",
-      "Louis Pasteur",
-      "Nikola Tesla",
-      "Louis Daguerre"
+      "نيكولا تيسلا",
+      "رودولف دييسيل",
+      "لوويس باستيور",
+      "لوويس داجويرري"
     ],
     "answer": 3,
     "difficulty": "medium",
@@ -2788,15 +2788,15 @@ const questions = [
     "ar": "من يُنسب إليه عادةً ابتكار the first successful steam-powered automobile؟",
     "options": [
       "Nicolas-Joseph Cugnot",
+      "John Logie Baird",
       "Michael Faraday",
-      "Norman Joseph Woodland and Bernard Silver",
-      "John Logie Baird"
+      "Norman Joseph Woodland and Bernard Silver"
     ],
     "optionsAr": [
-      "Nicolas-Joseph Cugnot",
-      "Michael Faraday",
-      "Norman Joseph Woodland and Bernard Silver",
-      "John Logie Baird"
+      "نيكولاس-جوسيبه كوجنوت",
+      "جوهن لوجيي بايرد",
+      "ميكهايل فاراداي",
+      "نورمان جوسيبه ووودلاند اند بيرنارد سيلفير"
     ],
     "answer": 0,
     "difficulty": "medium",
@@ -2804,1403 +2804,1403 @@ const questions = [
   },
   {
     "category": "General Knowledge",
-    "en": "Who composed “The Four Seasons”?",
-    "ar": "من ألّف المقطوعة الموسيقية «The Four Seasons»؟",
+    "en": "In which year did the Berlin Wall fall?",
+    "ar": "في أي عام سقط جدار برلين؟",
     "options": [
-      "Igor Stravinsky",
-      "Sergei Prokofiev",
-      "Antonio Vivaldi",
-      "Maurice Ravel"
-    ],
-    "optionsAr": [
-      "Igor Stravinsky",
-      "Sergei Prokofiev",
-      "Antonio Vivaldi",
-      "Maurice Ravel"
-    ],
-    "answer": 2,
-    "difficulty": "hard",
-    "id": "question-0141"
-  },
-  {
-    "category": "General Knowledge",
-    "en": "Who composed “Moonlight Sonata”?",
-    "ar": "من ألّف المقطوعة الموسيقية «Moonlight Sonata»؟",
-    "options": [
-      "Ludwig van Beethoven",
-      "Antonio Vivaldi",
-      "Ralph Vaughan Williams",
-      "Pyotr Ilyich Tchaikovsky"
-    ],
-    "optionsAr": [
-      "Ludwig van Beethoven",
-      "Antonio Vivaldi",
-      "Ralph Vaughan Williams",
-      "Pyotr Ilyich Tchaikovsky"
-    ],
-    "answer": 0,
-    "difficulty": "hard",
-    "id": "question-0142"
-  },
-  {
-    "category": "General Knowledge",
-    "en": "Who composed “Symphony No. 5”?",
-    "ar": "من ألّف المقطوعة الموسيقية «Symphony No. 5»؟",
-    "options": [
-      "Modest Mussorgsky",
-      "Ludwig van Beethoven",
-      "Carl Orff",
-      "Johann Pachelbel"
-    ],
-    "optionsAr": [
-      "Modest Mussorgsky",
-      "Ludwig van Beethoven",
-      "Carl Orff",
-      "Johann Pachelbel"
+      "1979",
+      "1989",
+      "1991",
+      "1985"
     ],
     "answer": 1,
     "difficulty": "hard",
-    "id": "question-0143"
+    "id": "question-0141",
+    "optionsAr": [
+      "1979",
+      "1989",
+      "1991",
+      "1985"
+    ]
   },
   {
     "category": "General Knowledge",
-    "en": "Who composed “Symphony No. 9 “Choral””?",
-    "ar": "من ألّف المقطوعة الموسيقية «Symphony No. 9 “Choral”»؟",
+    "en": "Which ancient civilization developed cuneiform writing?",
+    "ar": "أي حضارة قديمة طورت الكتابة المسمارية؟",
     "options": [
-      "Johann Pachelbel",
-      "Richard Wagner",
-      "Giuseppe Verdi",
-      "Ludwig van Beethoven"
+      "Romans",
+      "Phoenicians",
+      "Sumerians",
+      "Minoans"
     ],
+    "answer": 2,
+    "difficulty": "hard",
+    "id": "question-0142",
     "optionsAr": [
-      "Johann Pachelbel",
-      "Richard Wagner",
-      "Giuseppe Verdi",
-      "Ludwig van Beethoven"
+      "رومانس",
+      "الفينيقيون",
+      "السومريون",
+      "مينوانس"
+    ]
+  },
+  {
+    "category": "General Knowledge",
+    "en": "What is the SI unit of electrical resistance?",
+    "ar": "ما وحدة قياس المقاومة الكهربائية في النظام الدولي؟",
+    "options": [
+      "Ohm",
+      "Ampere",
+      "Watt",
+      "Volt"
+    ],
+    "answer": 0,
+    "difficulty": "hard",
+    "id": "question-0143",
+    "optionsAr": [
+      "أوم",
+      "امبيري",
+      "واتت",
+      "فولت"
+    ]
+  },
+  {
+    "category": "General Knowledge",
+    "en": "Which strait separates Spain from Morocco?",
+    "ar": "ما المضيق الذي يفصل إسبانيا عن المغرب؟",
+    "options": [
+      "Dardanelles",
+      "Bosporus",
+      "Strait of Gibraltar",
+      "Bering Strait"
+    ],
+    "answer": 2,
+    "difficulty": "hard",
+    "id": "question-0144",
+    "optionsAr": [
+      "داردانيلليس",
+      "بوسبوروس",
+      "مضيق جبل طارق",
+      "بيرينج سترايت"
+    ]
+  },
+  {
+    "category": "General Knowledge",
+    "en": "What is the smallest bone in the human body?",
+    "ar": "ما أصغر عظمة في جسم الإنسان؟",
+    "options": [
+      "Patella",
+      "Stapes",
+      "Ulna",
+      "Femur"
+    ],
+    "answer": 1,
+    "difficulty": "hard",
+    "id": "question-0145",
+    "optionsAr": [
+      "باتيللا",
+      "عظمة الركاب",
+      "ولنا",
+      "فيمور"
+    ]
+  },
+  {
+    "category": "General Knowledge",
+    "en": "Which treaty formally ended the state of war between Germany and the Allied Powers after World War I?",
+    "ar": "ما المعاهدة التي أنهت رسمياً حالة الحرب بين ألمانيا والحلفاء بعد الحرب العالمية الأولى؟",
+    "options": [
+      "Treaty of Tordesillas",
+      "Treaty of Utrecht",
+      "Treaty of Versailles",
+      "Treaty of Paris"
+    ],
+    "answer": 2,
+    "difficulty": "hard",
+    "id": "question-0146",
+    "optionsAr": [
+      "ترياتي وف تورديسيللاس",
+      "ترياتي وف وتريكهت",
+      "معاهدة فرساي",
+      "ترياتي وف باريس"
+    ]
+  },
+  {
+    "category": "General Knowledge",
+    "en": "Which element has the chemical symbol W?",
+    "ar": "ما العنصر الذي رمزه الكيميائي W؟",
+    "options": [
+      "Tin",
+      "Titanium",
+      "Tungsten",
+      "Tantalum"
+    ],
+    "answer": 2,
+    "difficulty": "hard",
+    "id": "question-0147",
+    "optionsAr": [
+      "تين",
+      "تيتانيوم",
+      "تونجستين",
+      "تانتالوم"
+    ]
+  },
+  {
+    "category": "General Knowledge",
+    "en": "What is the deepest known ocean trench?",
+    "ar": "ما أعمق خندق محيطي معروف؟",
+    "options": [
+      "Tonga Trench",
+      "Puerto Rico Trench",
+      "Mariana Trench",
+      "Java Trench"
+    ],
+    "answer": 2,
+    "difficulty": "hard",
+    "id": "question-0148",
+    "optionsAr": [
+      "تونجا ترينكه",
+      "بويرتو ريكو ترينكه",
+      "خندق ماريانا",
+      "جافا ترينكه"
+    ]
+  },
+  {
+    "category": "General Knowledge",
+    "en": "Which scientist formulated the three laws of motion?",
+    "ar": "من العالم الذي صاغ قوانين الحركة الثلاثة؟",
+    "options": [
+      "Johannes Kepler",
+      "Niels Bohr",
+      "Isaac Newton",
+      "Galileo Galilei"
+    ],
+    "answer": 2,
+    "difficulty": "hard",
+    "id": "question-0149",
+    "optionsAr": [
+      "جوهاننيس كيبلير",
+      "نييلس بوهر",
+      "إسحاق نيوتن",
+      "جاليليو جاليليي"
+    ]
+  },
+  {
+    "category": "General Knowledge",
+    "en": "Which country was formerly known as Abyssinia?",
+    "ar": "ما الدولة التي كان يُطلق عليها سابقاً اسم الحبشة؟",
+    "options": [
+      "Somalia",
+      "Eritrea",
+      "Sudan",
+      "Ethiopia"
     ],
     "answer": 3,
     "difficulty": "hard",
-    "id": "question-0144"
+    "id": "question-0150",
+    "optionsAr": [
+      "سوماليا",
+      "يريتريا",
+      "سودان",
+      "إثيوبيا"
+    ]
   },
   {
     "category": "General Knowledge",
-    "en": "Who composed “Für Elise”?",
-    "ar": "من ألّف المقطوعة الموسيقية «Für Elise»؟",
+    "en": "What is the capital of Bhutan?",
+    "ar": "ما عاصمة بوتان؟",
     "options": [
-      "Ludwig van Beethoven",
-      "Johann Strauss II",
-      "Georges Bizet",
-      "Claude Debussy"
+      "Dhaka",
+      "Thimphu",
+      "Kathmandu",
+      "Vientiane"
     ],
-    "optionsAr": [
-      "Ludwig van Beethoven",
-      "Johann Strauss II",
-      "Georges Bizet",
-      "Claude Debussy"
-    ],
-    "answer": 0,
+    "answer": 1,
     "difficulty": "hard",
-    "id": "question-0145"
+    "id": "question-0151",
+    "optionsAr": [
+      "دكا",
+      "تيمفو",
+      "كاتهماندو",
+      "فيينتيان"
+    ]
   },
   {
     "category": "General Knowledge",
-    "en": "Who composed “Eine kleine Nachtmusik”?",
-    "ar": "من ألّف المقطوعة الموسيقية «Eine kleine Nachtmusik»؟",
+    "en": "Which layer of Earth lies directly beneath the crust?",
+    "ar": "ما الطبقة التي تقع مباشرة أسفل القشرة الأرضية؟",
     "options": [
-      "Sergei Rachmaninoff",
-      "Giuseppe Verdi",
-      "Aaron Copland",
-      "Wolfgang Amadeus Mozart"
+      "Outer core",
+      "Mantle",
+      "Lithosphere",
+      "Inner core"
     ],
+    "answer": 1,
+    "difficulty": "hard",
+    "id": "question-0152",
     "optionsAr": [
-      "Sergei Rachmaninoff",
-      "Giuseppe Verdi",
-      "Aaron Copland",
-      "Wolfgang Amadeus Mozart"
+      "ووتير كوري",
+      "الوشاح",
+      "ليتهوسبهيري",
+      "يننير كوري"
+    ]
+  },
+  {
+    "category": "General Knowledge",
+    "en": "Which empire built the road network known as the Qhapaq Ñan?",
+    "ar": "أي إمبراطورية بنت شبكة الطرق المعروفة باسم قَباك نيان؟",
+    "options": [
+      "Roman Empire",
+      "Inca Empire",
+      "Aztec Empire",
+      "Maya civilization"
+    ],
+    "answer": 1,
+    "difficulty": "hard",
+    "id": "question-0153",
+    "optionsAr": [
+      "رومان يمبيري",
+      "إمبراطورية الإنكا",
+      "ازتيك يمبيري",
+      "مايا كيفيليزاتيون"
+    ]
+  },
+  {
+    "category": "General Knowledge",
+    "en": "What is the SI unit of luminous intensity?",
+    "ar": "ما وحدة قياس شدة الإضاءة في النظام الدولي؟",
+    "options": [
+      "Lux",
+      "Watt",
+      "Lumen",
+      "Candela"
     ],
     "answer": 3,
     "difficulty": "hard",
-    "id": "question-0146"
+    "id": "question-0154",
+    "optionsAr": [
+      "لوكس",
+      "واتت",
+      "لومين",
+      "كانديلا"
+    ]
   },
   {
     "category": "General Knowledge",
-    "en": "Who composed “The Magic Flute”?",
-    "ar": "من ألّف المقطوعة الموسيقية «The Magic Flute»؟",
+    "en": "Which sea has no coastline and is defined by ocean currents?",
+    "ar": "أي بحر لا تحده سواحل ويُحدد بتيارات المحيط؟",
     "options": [
-      "Sergei Rachmaninoff",
-      "Erik Satie",
-      "Samuel Barber",
-      "Wolfgang Amadeus Mozart"
-    ],
-    "optionsAr": [
-      "Sergei Rachmaninoff",
-      "Erik Satie",
-      "Samuel Barber",
-      "Wolfgang Amadeus Mozart"
-    ],
-    "answer": 3,
-    "difficulty": "hard",
-    "id": "question-0147"
-  },
-  {
-    "category": "General Knowledge",
-    "en": "Who composed “Requiem in D minor”?",
-    "ar": "من ألّف المقطوعة الموسيقية «Requiem in D minor»؟",
-    "options": [
-      "Johann Pachelbel",
-      "Bedřich Smetana",
-      "Jean Sibelius",
-      "Wolfgang Amadeus Mozart"
-    ],
-    "optionsAr": [
-      "Johann Pachelbel",
-      "Bedřich Smetana",
-      "Jean Sibelius",
-      "Wolfgang Amadeus Mozart"
+      "Arabian Sea",
+      "Baltic Sea",
+      "Coral Sea",
+      "Sargasso Sea"
     ],
     "answer": 3,
     "difficulty": "hard",
-    "id": "question-0148"
+    "id": "question-0155",
+    "optionsAr": [
+      "ارابيان سيا",
+      "بالتيك سيا",
+      "كورال سيا",
+      "سارجاسسو سيا"
+    ]
   },
   {
     "category": "General Knowledge",
-    "en": "Who composed “The Marriage of Figaro”?",
-    "ar": "من ألّف المقطوعة الموسيقية «The Marriage of Figaro»؟",
+    "en": "Which 1648 settlement is associated with the end of the Thirty Years’ War?",
+    "ar": "ما التسوية التي ارتبطت بنهاية حرب الثلاثين عاماً عام 1648؟",
     "options": [
-      "Wolfgang Amadeus Mozart",
-      "Gustav Holst",
-      "Franz Liszt",
-      "Maurice Ravel"
-    ],
-    "optionsAr": [
-      "Wolfgang Amadeus Mozart",
-      "Gustav Holst",
-      "Franz Liszt",
-      "Maurice Ravel"
+      "Peace of Westphalia",
+      "Congress of Vienna",
+      "Treaty of Utrecht",
+      "Peace of Augsburg"
     ],
     "answer": 0,
     "difficulty": "hard",
-    "id": "question-0149"
+    "id": "question-0156",
+    "optionsAr": [
+      "صلح وستفاليا",
+      "كونجريسس وف فييننا",
+      "ترياتي وف وتريكهت",
+      "بياكي وف اوجسبورج"
+    ]
   },
   {
     "category": "General Knowledge",
-    "en": "Who composed “The Nutcracker”?",
-    "ar": "من ألّف المقطوعة الموسيقية «The Nutcracker»؟",
+    "en": "Which gas makes up the largest percentage of Earth’s atmosphere?",
+    "ar": "ما الغاز الذي يشكل النسبة الأكبر من الغلاف الجوي للأرض؟",
     "options": [
-      "Richard Wagner",
-      "Johann Pachelbel",
-      "Pyotr Ilyich Tchaikovsky",
-      "Antonio Vivaldi"
+      "Nitrogen",
+      "Argon",
+      "Carbon dioxide",
+      "Oxygen"
     ],
+    "answer": 0,
+    "difficulty": "hard",
+    "id": "question-0157",
     "optionsAr": [
-      "Richard Wagner",
-      "Johann Pachelbel",
-      "Pyotr Ilyich Tchaikovsky",
-      "Antonio Vivaldi"
+      "النيتروجين",
+      "ارجون",
+      "ثاني أكسيد الكربون",
+      "الأكسجين"
+    ]
+  },
+  {
+    "category": "General Knowledge",
+    "en": "What is the study of fungi called?",
+    "ar": "ماذا يُسمى علم دراسة الفطريات؟",
+    "options": [
+      "Ecology",
+      "Entomology",
+      "Mycology",
+      "Ornithology"
     ],
     "answer": 2,
     "difficulty": "hard",
-    "id": "question-0150"
+    "id": "question-0158",
+    "optionsAr": [
+      "يكولوجي",
+      "علم الحشرات",
+      "علم الفطريات",
+      "ورنيتهولوجي"
+    ]
   },
   {
     "category": "General Knowledge",
-    "en": "Who composed “Swan Lake”?",
-    "ar": "من ألّف المقطوعة الموسيقية «Swan Lake»؟",
+    "en": "Which African lake is traditionally cited as a major source of the White Nile?",
+    "ar": "أي بحيرة تُعد تقليدياً مصدراً رئيسياً للنيل الأبيض؟",
     "options": [
-      "Bedřich Smetana",
-      "Carl Orff",
-      "Pyotr Ilyich Tchaikovsky",
-      "Gioachino Rossini"
-    ],
-    "optionsAr": [
-      "Bedřich Smetana",
-      "Carl Orff",
-      "Pyotr Ilyich Tchaikovsky",
-      "Gioachino Rossini"
-    ],
-    "answer": 2,
-    "difficulty": "hard",
-    "id": "question-0151"
-  },
-  {
-    "category": "General Knowledge",
-    "en": "Who composed “The Sleeping Beauty ballet”?",
-    "ar": "من ألّف المقطوعة الموسيقية «The Sleeping Beauty ballet»؟",
-    "options": [
-      "Franz Liszt",
-      "Igor Stravinsky",
-      "Samuel Barber",
-      "Pyotr Ilyich Tchaikovsky"
-    ],
-    "optionsAr": [
-      "Franz Liszt",
-      "Igor Stravinsky",
-      "Samuel Barber",
-      "Pyotr Ilyich Tchaikovsky"
+      "Lake Malawi",
+      "Lake Chad",
+      "Lake Tanganyika",
+      "Lake Victoria"
     ],
     "answer": 3,
     "difficulty": "hard",
-    "id": "question-0152"
+    "id": "question-0159",
+    "optionsAr": [
+      "لاكي مالاوي",
+      "لاكي كهاد",
+      "لاكي تانجانييكا",
+      "بحيرة فيكتوريا"
+    ]
   },
   {
     "category": "General Knowledge",
-    "en": "Who composed “The 1812 Overture”?",
-    "ar": "من ألّف المقطوعة الموسيقية «The 1812 Overture»؟",
+    "en": "Which mathematician is associated with the incompleteness theorems?",
+    "ar": "أي عالم رياضيات ارتبطت باسمه مبرهنتا عدم الاكتمال؟",
     "options": [
-      "Ralph Vaughan Williams",
-      "Carl Orff",
-      "Pyotr Ilyich Tchaikovsky",
-      "Igor Stravinsky"
-    ],
-    "optionsAr": [
-      "Ralph Vaughan Williams",
-      "Carl Orff",
-      "Pyotr Ilyich Tchaikovsky",
-      "Igor Stravinsky"
-    ],
-    "answer": 2,
-    "difficulty": "hard",
-    "id": "question-0153"
-  },
-  {
-    "category": "General Knowledge",
-    "en": "Who composed “Messiah”?",
-    "ar": "من ألّف المقطوعة الموسيقية «Messiah»؟",
-    "options": [
-      "George Frideric Handel",
-      "Samuel Barber",
-      "Johann Strauss II",
-      "Johann Sebastian Bach"
-    ],
-    "optionsAr": [
-      "George Frideric Handel",
-      "Samuel Barber",
-      "Johann Strauss II",
-      "Johann Sebastian Bach"
+      "Kurt Gödel",
+      "Alan Turing",
+      "Blaise Pascal",
+      "Euclid"
     ],
     "answer": 0,
     "difficulty": "hard",
-    "id": "question-0154"
+    "id": "question-0160",
+    "optionsAr": [
+      "كورت غودل",
+      "الان تورينج",
+      "بلايسي باسكال",
+      "يوكليد"
+    ]
   },
   {
     "category": "General Knowledge",
-    "en": "Who composed “Water Music”?",
-    "ar": "من ألّف المقطوعة الموسيقية «Water Music»؟",
+    "en": "What is the capital of Kazakhstan?",
+    "ar": "ما عاصمة كازاخستان؟",
     "options": [
-      "George Frideric Handel",
-      "Sergei Prokofiev",
-      "Gustav Holst",
-      "Modest Mussorgsky"
-    ],
-    "optionsAr": [
-      "George Frideric Handel",
-      "Sergei Prokofiev",
-      "Gustav Holst",
-      "Modest Mussorgsky"
-    ],
-    "answer": 0,
-    "difficulty": "hard",
-    "id": "question-0155"
-  },
-  {
-    "category": "General Knowledge",
-    "en": "Who composed “The Messiah: Hallelujah Chorus”?",
-    "ar": "من ألّف المقطوعة الموسيقية «The Messiah: Hallelujah Chorus»؟",
-    "options": [
-      "Pyotr Ilyich Tchaikovsky",
-      "Ludwig van Beethoven",
-      "Jean Sibelius",
-      "George Frideric Handel"
-    ],
-    "optionsAr": [
-      "Pyotr Ilyich Tchaikovsky",
-      "Ludwig van Beethoven",
-      "Jean Sibelius",
-      "George Frideric Handel"
+      "Tashkent",
+      "Almaty",
+      "Bishkek",
+      "Astana"
     ],
     "answer": 3,
     "difficulty": "hard",
-    "id": "question-0156"
+    "id": "question-0161",
+    "optionsAr": [
+      "طشقند",
+      "ألماتي",
+      "بيشكيك",
+      "أستانا"
+    ]
   },
   {
     "category": "General Knowledge",
-    "en": "Who composed “Brandenburg Concertos”?",
-    "ar": "من ألّف المقطوعة الموسيقية «Brandenburg Concertos»؟",
+    "en": "Which ancient city was buried by the eruption of Mount Vesuvius in AD 79?",
+    "ar": "أي مدينة قديمة دُفنت بسبب ثوران بركان فيزوف عام 79 ميلادية؟",
     "options": [
-      "Richard Wagner",
-      "Claude Debussy",
-      "Samuel Barber",
-      "Johann Sebastian Bach"
+      "Pompeii",
+      "Sparta",
+      "Ephesus",
+      "Carthage"
     ],
+    "answer": 0,
+    "difficulty": "hard",
+    "id": "question-0162",
     "optionsAr": [
-      "Richard Wagner",
-      "Claude Debussy",
-      "Samuel Barber",
-      "Johann Sebastian Bach"
+      "بومبي",
+      "سبارتا",
+      "يبهيسوس",
+      "كارتهاجي"
+    ]
+  },
+  {
+    "category": "General Knowledge",
+    "en": "Which blood type is known as the universal red-cell donor?",
+    "ar": "ما فصيلة الدم المعروفة بالمتبرع العام لخلايا الدم الحمراء؟",
+    "options": [
+      "O negative",
+      "AB positive",
+      "A negative",
+      "B positive"
+    ],
+    "answer": 0,
+    "difficulty": "hard",
+    "id": "question-0163",
+    "optionsAr": [
+      "O سالب",
+      "AB موجب",
+      "A سالب",
+      "B موجب"
+    ]
+  },
+  {
+    "category": "General Knowledge",
+    "en": "What is the boundary around a black hole beyond which light cannot escape called?",
+    "ar": "ماذا يُسمى الحد المحيط بالثقب الأسود الذي لا يستطيع الضوء الإفلات بعد تجاوزه؟",
+    "options": [
+      "Event horizon",
+      "Accretion disk",
+      "Singularity",
+      "Photon sphere"
+    ],
+    "answer": 0,
+    "difficulty": "hard",
+    "id": "question-0164",
+    "optionsAr": [
+      "أفق الحدث",
+      "اككريتيون ديسك",
+      "سينجولاريتي",
+      "بهوتون سبهيري"
+    ]
+  },
+  {
+    "category": "General Knowledge",
+    "en": "Which country contains the region of Transylvania?",
+    "ar": "أي دولة تقع فيها منطقة ترانسلفانيا؟",
+    "options": [
+      "Serbia",
+      "Bulgaria",
+      "Hungary",
+      "Romania"
     ],
     "answer": 3,
     "difficulty": "hard",
-    "id": "question-0157"
+    "id": "question-0165",
+    "optionsAr": [
+      "سيربيا",
+      "بولجاريا",
+      "هونجاري",
+      "رومانيا"
+    ]
   },
   {
     "category": "General Knowledge",
-    "en": "Who composed “Toccata and Fugue in D minor”?",
-    "ar": "من ألّف المقطوعة الموسيقية «Toccata and Fugue in D minor»؟",
+    "en": "Which architect designed the Sagrada Família in Barcelona?",
+    "ar": "من المهندس المعماري الذي صمم كنيسة ساغرادا فاميليا في برشلونة؟",
     "options": [
-      "Erik Satie",
-      "Giacomo Puccini",
-      "Samuel Barber",
-      "Johann Sebastian Bach"
+      "Santiago Calatrava",
+      "Antoni Gaudí",
+      "Frank Gehry",
+      "Le Corbusier"
     ],
+    "answer": 1,
+    "difficulty": "hard",
+    "id": "question-0166",
     "optionsAr": [
-      "Erik Satie",
-      "Giacomo Puccini",
-      "Samuel Barber",
-      "Johann Sebastian Bach"
+      "سانتياجو كالاترافا",
+      "أنطوني غاودي",
+      "فرانك جيهري",
+      "لي كوربوسيير"
+    ]
+  },
+  {
+    "category": "General Knowledge",
+    "en": "Which scale is commonly used to measure mineral hardness?",
+    "ar": "ما المقياس الشائع لقياس صلابة المعادن؟",
+    "options": [
+      "Beaufort scale",
+      "Mohs scale",
+      "Fujita scale",
+      "Richter scale"
+    ],
+    "answer": 1,
+    "difficulty": "hard",
+    "id": "question-0167",
+    "optionsAr": [
+      "بياوفورت سكالي",
+      "مقياس موس",
+      "فوجيتا سكالي",
+      "ريكهتير سكالي"
+    ]
+  },
+  {
+    "category": "General Knowledge",
+    "en": "Which ocean current helps moderate the climate of western Europe?",
+    "ar": "أي تيار محيطي يساعد على تلطيف مناخ غرب أوروبا؟",
+    "options": [
+      "Oyashio Current",
+      "Gulf Stream",
+      "Labrador Current",
+      "California Current"
+    ],
+    "answer": 1,
+    "difficulty": "hard",
+    "id": "question-0168",
+    "optionsAr": [
+      "وياسهيو كوررينت",
+      "تيار الخليج",
+      "لابرادور كوررينت",
+      "كاليفورنيا كوررينت"
+    ]
+  },
+  {
+    "category": "General Knowledge",
+    "en": "What is the capital of Mongolia?",
+    "ar": "ما عاصمة منغوليا؟",
+    "options": [
+      "Ulaanbaatar",
+      "Astana",
+      "Bishkek",
+      "Dushanbe"
+    ],
+    "answer": 0,
+    "difficulty": "hard",
+    "id": "question-0169",
+    "optionsAr": [
+      "أولان باتور",
+      "أستانا",
+      "بيشكيك",
+      "دوشنبه"
+    ]
+  },
+  {
+    "category": "General Knowledge",
+    "en": "Which branch of biology studies insects?",
+    "ar": "أي فرع من علم الأحياء يدرس الحشرات؟",
+    "options": [
+      "Herpetology",
+      "Ichthyology",
+      "Entomology",
+      "Mycology"
+    ],
+    "answer": 2,
+    "difficulty": "hard",
+    "id": "question-0170",
+    "optionsAr": [
+      "هيربيتولوجي",
+      "يكهتهيولوجي",
+      "علم الحشرات",
+      "علم الفطريات"
+    ]
+  },
+  {
+    "category": "General Knowledge",
+    "en": "Which ancient wonder stood in the city of Alexandria?",
+    "ar": "أي عجائب العالم القديم كان قائماً في مدينة الإسكندرية؟",
+    "options": [
+      "Colossus of Rhodes",
+      "Lighthouse of Alexandria",
+      "Temple of Artemis",
+      "Hanging Gardens of Babylon"
+    ],
+    "answer": 1,
+    "difficulty": "hard",
+    "id": "question-0171",
+    "optionsAr": [
+      "كولوسسوس وف رهوديس",
+      "ليجهتهووسي وف اليكساندريا",
+      "تيمبلي وف ارتيميس",
+      "هانجينج جاردينس وف بابيلون"
+    ]
+  },
+  {
+    "category": "General Knowledge",
+    "en": "What is the SI unit of frequency?",
+    "ar": "ما وحدة قياس التردد في النظام الدولي؟",
+    "options": [
+      "Pascal",
+      "Newton",
+      "Hertz",
+      "Joule"
+    ],
+    "answer": 2,
+    "difficulty": "hard",
+    "id": "question-0172",
+    "optionsAr": [
+      "باسكال",
+      "نيوتون",
+      "هرتز",
+      "جوولي"
+    ]
+  },
+  {
+    "category": "General Knowledge",
+    "en": "Which country has the most time zones when overseas territories are included?",
+    "ar": "أي دولة لديها أكبر عدد من المناطق الزمنية عند احتساب أقاليمها الخارجية؟",
+    "options": [
+      "Russia",
+      "United States",
+      "China",
+      "France"
     ],
     "answer": 3,
     "difficulty": "hard",
-    "id": "question-0158"
+    "id": "question-0173",
+    "optionsAr": [
+      "روسيا",
+      "الولايات المتحدة",
+      "الصين",
+      "فرنسا"
+    ]
   },
   {
     "category": "General Knowledge",
-    "en": "Who composed “Cello Suites”?",
-    "ar": "من ألّف المقطوعة الموسيقية «Cello Suites»؟",
+    "en": "Which philosopher wrote “The Republic”?",
+    "ar": "من الفيلسوف الذي ألّف كتاب «الجمهورية»؟",
     "options": [
-      "Johann Sebastian Bach",
-      "Edvard Grieg",
-      "Gustav Holst",
-      "Samuel Barber"
-    ],
-    "optionsAr": [
-      "Johann Sebastian Bach",
-      "Edvard Grieg",
-      "Gustav Holst",
-      "Samuel Barber"
+      "Plato",
+      "Socrates",
+      "Aristotle",
+      "Epicurus"
     ],
     "answer": 0,
     "difficulty": "hard",
-    "id": "question-0159"
+    "id": "question-0174",
+    "optionsAr": [
+      "أفلاطون",
+      "سوكراتيس",
+      "اريستوتلي",
+      "يبيكوروس"
+    ]
   },
   {
     "category": "General Knowledge",
-    "en": "Who composed “The Well-Tempered Clavier”?",
-    "ar": "من ألّف المقطوعة الموسيقية «The Well-Tempered Clavier»؟",
+    "en": "Which mineral is the primary source of aluminium?",
+    "ar": "ما المعدن الخام الأساسي لاستخراج الألومنيوم؟",
     "options": [
-      "Johann Sebastian Bach",
-      "George Frideric Handel",
-      "Giuseppe Verdi",
-      "Antonio Vivaldi"
-    ],
-    "optionsAr": [
-      "Johann Sebastian Bach",
-      "George Frideric Handel",
-      "Giuseppe Verdi",
-      "Antonio Vivaldi"
-    ],
-    "answer": 0,
-    "difficulty": "hard",
-    "id": "question-0160"
-  },
-  {
-    "category": "General Knowledge",
-    "en": "Who composed “Boléro”?",
-    "ar": "من ألّف المقطوعة الموسيقية «Boléro»؟",
-    "options": [
-      "Sergei Rachmaninoff",
-      "Wolfgang Amadeus Mozart",
-      "Maurice Ravel",
-      "Bedřich Smetana"
-    ],
-    "optionsAr": [
-      "Sergei Rachmaninoff",
-      "Wolfgang Amadeus Mozart",
-      "Maurice Ravel",
-      "Bedřich Smetana"
-    ],
-    "answer": 2,
-    "difficulty": "hard",
-    "id": "question-0161"
-  },
-  {
-    "category": "General Knowledge",
-    "en": "Who composed “Pavane for a Dead Princess”?",
-    "ar": "من ألّف المقطوعة الموسيقية «Pavane for a Dead Princess»؟",
-    "options": [
-      "Bedřich Smetana",
-      "Maurice Ravel",
-      "Franz Liszt",
-      "Giacomo Puccini"
-    ],
-    "optionsAr": [
-      "Bedřich Smetana",
-      "Maurice Ravel",
-      "Franz Liszt",
-      "Giacomo Puccini"
-    ],
-    "answer": 1,
-    "difficulty": "hard",
-    "id": "question-0162"
-  },
-  {
-    "category": "General Knowledge",
-    "en": "Who composed “Clair de lune”?",
-    "ar": "من ألّف المقطوعة الموسيقية «Clair de lune»؟",
-    "options": [
-      "Claude Debussy",
-      "Igor Stravinsky",
-      "Sergei Prokofiev",
-      "Johann Strauss II"
-    ],
-    "optionsAr": [
-      "Claude Debussy",
-      "Igor Stravinsky",
-      "Sergei Prokofiev",
-      "Johann Strauss II"
-    ],
-    "answer": 0,
-    "difficulty": "hard",
-    "id": "question-0163"
-  },
-  {
-    "category": "General Knowledge",
-    "en": "Who composed “La mer”?",
-    "ar": "من ألّف المقطوعة الموسيقية «La mer»؟",
-    "options": [
-      "Gustav Holst",
-      "Ralph Vaughan Williams",
-      "Sergei Prokofiev",
-      "Claude Debussy"
-    ],
-    "optionsAr": [
-      "Gustav Holst",
-      "Ralph Vaughan Williams",
-      "Sergei Prokofiev",
-      "Claude Debussy"
+      "Cassiterite",
+      "Hematite",
+      "Galena",
+      "Bauxite"
     ],
     "answer": 3,
     "difficulty": "hard",
-    "id": "question-0164"
+    "id": "question-0175",
+    "optionsAr": [
+      "كاسسيتيريتي",
+      "هيماتيتي",
+      "جالينا",
+      "باوكسيتي"
+    ]
   },
   {
     "category": "General Knowledge",
-    "en": "Who composed “Gymnopédies”?",
-    "ar": "من ألّف المقطوعة الموسيقية «Gymnopédies»؟",
+    "en": "What is the name of the process by which a solid changes directly into a gas?",
+    "ar": "ما اسم العملية التي تتحول فيها المادة من الحالة الصلبة إلى الغازية مباشرة؟",
     "options": [
-      "Ralph Vaughan Williams",
-      "Claude Debussy",
-      "Erik Satie",
-      "Antonín Dvořák"
-    ],
-    "optionsAr": [
-      "Ralph Vaughan Williams",
-      "Claude Debussy",
-      "Erik Satie",
-      "Antonín Dvořák"
-    ],
-    "answer": 2,
-    "difficulty": "hard",
-    "id": "question-0165"
-  },
-  {
-    "category": "General Knowledge",
-    "en": "Who composed “The Planets”?",
-    "ar": "من ألّف المقطوعة الموسيقية «The Planets»؟",
-    "options": [
-      "Pyotr Ilyich Tchaikovsky",
-      "Gustav Holst",
-      "Maurice Ravel",
-      "Ludwig van Beethoven"
-    ],
-    "optionsAr": [
-      "Pyotr Ilyich Tchaikovsky",
-      "Gustav Holst",
-      "Maurice Ravel",
-      "Ludwig van Beethoven"
-    ],
-    "answer": 1,
-    "difficulty": "hard",
-    "id": "question-0166"
-  },
-  {
-    "category": "General Knowledge",
-    "en": "Who composed “Peer Gynt suite”?",
-    "ar": "من ألّف المقطوعة الموسيقية «Peer Gynt suite»؟",
-    "options": [
-      "Giuseppe Verdi",
-      "Edvard Grieg",
-      "Johann Strauss II",
-      "Gustav Holst"
-    ],
-    "optionsAr": [
-      "Giuseppe Verdi",
-      "Edvard Grieg",
-      "Johann Strauss II",
-      "Gustav Holst"
-    ],
-    "answer": 1,
-    "difficulty": "hard",
-    "id": "question-0167"
-  },
-  {
-    "category": "General Knowledge",
-    "en": "Who composed “In the Hall of the Mountain King”?",
-    "ar": "من ألّف المقطوعة الموسيقية «In the Hall of the Mountain King»؟",
-    "options": [
-      "Antonio Vivaldi",
-      "Giacomo Puccini",
-      "Edvard Grieg",
-      "Samuel Barber"
-    ],
-    "optionsAr": [
-      "Antonio Vivaldi",
-      "Giacomo Puccini",
-      "Edvard Grieg",
-      "Samuel Barber"
-    ],
-    "answer": 2,
-    "difficulty": "hard",
-    "id": "question-0168"
-  },
-  {
-    "category": "General Knowledge",
-    "en": "Who composed “Finlandia”?",
-    "ar": "من ألّف المقطوعة الموسيقية «Finlandia»؟",
-    "options": [
-      "Edvard Grieg",
-      "Bedřich Smetana",
-      "Jean Sibelius",
-      "Pyotr Ilyich Tchaikovsky"
-    ],
-    "optionsAr": [
-      "Edvard Grieg",
-      "Bedřich Smetana",
-      "Jean Sibelius",
-      "Pyotr Ilyich Tchaikovsky"
-    ],
-    "answer": 2,
-    "difficulty": "hard",
-    "id": "question-0169"
-  },
-  {
-    "category": "General Knowledge",
-    "en": "Who composed “New World Symphony”?",
-    "ar": "من ألّف المقطوعة الموسيقية «New World Symphony»؟",
-    "options": [
-      "Antonín Dvořák",
-      "Bedřich Smetana",
-      "Johann Pachelbel",
-      "Erik Satie"
-    ],
-    "optionsAr": [
-      "Antonín Dvořák",
-      "Bedřich Smetana",
-      "Johann Pachelbel",
-      "Erik Satie"
-    ],
-    "answer": 0,
-    "difficulty": "hard",
-    "id": "question-0170"
-  },
-  {
-    "category": "General Knowledge",
-    "en": "Who composed “Slavonic Dances”?",
-    "ar": "من ألّف المقطوعة الموسيقية «Slavonic Dances»؟",
-    "options": [
-      "Antonín Dvořák",
-      "Edvard Grieg",
-      "Ludwig van Beethoven",
-      "Sergei Prokofiev"
-    ],
-    "optionsAr": [
-      "Antonín Dvořák",
-      "Edvard Grieg",
-      "Ludwig van Beethoven",
-      "Sergei Prokofiev"
-    ],
-    "answer": 0,
-    "difficulty": "hard",
-    "id": "question-0171"
-  },
-  {
-    "category": "General Knowledge",
-    "en": "Who composed “Carmen”?",
-    "ar": "من ألّف المقطوعة الموسيقية «Carmen»؟",
-    "options": [
-      "Aaron Copland",
-      "Giacomo Puccini",
-      "Georges Bizet",
-      "Pyotr Ilyich Tchaikovsky"
-    ],
-    "optionsAr": [
-      "Aaron Copland",
-      "Giacomo Puccini",
-      "Georges Bizet",
-      "Pyotr Ilyich Tchaikovsky"
-    ],
-    "answer": 2,
-    "difficulty": "hard",
-    "id": "question-0172"
-  },
-  {
-    "category": "General Knowledge",
-    "en": "Who composed “L’Arlésienne suite”?",
-    "ar": "من ألّف المقطوعة الموسيقية «L’Arlésienne suite»؟",
-    "options": [
-      "Edvard Grieg",
-      "Antonín Dvořák",
-      "Wolfgang Amadeus Mozart",
-      "Georges Bizet"
-    ],
-    "optionsAr": [
-      "Edvard Grieg",
-      "Antonín Dvořák",
-      "Wolfgang Amadeus Mozart",
-      "Georges Bizet"
+      "Deposition",
+      "Condensation",
+      "Evaporation",
+      "Sublimation"
     ],
     "answer": 3,
     "difficulty": "hard",
-    "id": "question-0173"
+    "id": "question-0176",
+    "optionsAr": [
+      "ديبوسيتيون",
+      "كوندينساتيون",
+      "يفابوراتيون",
+      "التسامي"
+    ]
   },
   {
     "category": "General Knowledge",
-    "en": "Who composed “The Barber of Seville”?",
-    "ar": "من ألّف المقطوعة الموسيقية «The Barber of Seville»؟",
+    "en": "Which country is home to the ancient city of Petra?",
+    "ar": "في أي دولة تقع مدينة البتراء الأثرية؟",
     "options": [
-      "Wolfgang Amadeus Mozart",
-      "Gioachino Rossini",
-      "Antonín Dvořák",
-      "Carl Orff"
-    ],
-    "optionsAr": [
-      "Wolfgang Amadeus Mozart",
-      "Gioachino Rossini",
-      "Antonín Dvořák",
-      "Carl Orff"
-    ],
-    "answer": 1,
-    "difficulty": "hard",
-    "id": "question-0174"
-  },
-  {
-    "category": "General Knowledge",
-    "en": "Who composed “William Tell Overture”?",
-    "ar": "من ألّف المقطوعة الموسيقية «William Tell Overture»؟",
-    "options": [
-      "Claude Debussy",
-      "Sergei Prokofiev",
-      "Gioachino Rossini",
-      "Aaron Copland"
-    ],
-    "optionsAr": [
-      "Claude Debussy",
-      "Sergei Prokofiev",
-      "Gioachino Rossini",
-      "Aaron Copland"
+      "Iraq",
+      "Lebanon",
+      "Jordan",
+      "Syria"
     ],
     "answer": 2,
     "difficulty": "hard",
-    "id": "question-0175"
+    "id": "question-0177",
+    "optionsAr": [
+      "العراق",
+      "لبنان",
+      "الأردن",
+      "سوريا"
+    ]
   },
   {
     "category": "General Knowledge",
-    "en": "Who composed “La Traviata”?",
-    "ar": "من ألّف المقطوعة الموسيقية «La Traviata»؟",
+    "en": "Which treaty established the European Economic Community in 1957?",
+    "ar": "أي معاهدة أسست المجموعة الاقتصادية الأوروبية عام 1957؟",
     "options": [
-      "Giacomo Puccini",
-      "Giuseppe Verdi",
-      "Gustav Holst",
-      "Edward Elgar"
-    ],
-    "optionsAr": [
-      "Giacomo Puccini",
-      "Giuseppe Verdi",
-      "Gustav Holst",
-      "Edward Elgar"
-    ],
-    "answer": 1,
-    "difficulty": "hard",
-    "id": "question-0176"
-  },
-  {
-    "category": "General Knowledge",
-    "en": "Who composed “Aida”?",
-    "ar": "من ألّف المقطوعة الموسيقية «Aida»؟",
-    "options": [
-      "Bedřich Smetana",
-      "Ralph Vaughan Williams",
-      "Giuseppe Verdi",
-      "Samuel Barber"
-    ],
-    "optionsAr": [
-      "Bedřich Smetana",
-      "Ralph Vaughan Williams",
-      "Giuseppe Verdi",
-      "Samuel Barber"
+      "Treaty of Paris",
+      "Lisbon Treaty",
+      "Treaty of Rome",
+      "Maastricht Treaty"
     ],
     "answer": 2,
     "difficulty": "hard",
-    "id": "question-0177"
+    "id": "question-0178",
+    "optionsAr": [
+      "ترياتي وف باريس",
+      "ليسبون ترياتي",
+      "معاهدة روما",
+      "مااستريكهت ترياتي"
+    ]
   },
   {
     "category": "General Knowledge",
-    "en": "Who composed “Rigoletto”?",
-    "ar": "من ألّف المقطوعة الموسيقية «Rigoletto»؟",
+    "en": "Which part of the cell contains most of its genetic material?",
+    "ar": "أي جزء من الخلية يحتوي على معظم مادتها الوراثية؟",
     "options": [
-      "Ludwig van Beethoven",
-      "Giuseppe Verdi",
-      "Johann Strauss II",
-      "Wolfgang Amadeus Mozart"
-    ],
-    "optionsAr": [
-      "Ludwig van Beethoven",
-      "Giuseppe Verdi",
-      "Johann Strauss II",
-      "Wolfgang Amadeus Mozart"
-    ],
-    "answer": 1,
-    "difficulty": "hard",
-    "id": "question-0178"
-  },
-  {
-    "category": "General Knowledge",
-    "en": "Who composed “Madama Butterfly”?",
-    "ar": "من ألّف المقطوعة الموسيقية «Madama Butterfly»؟",
-    "options": [
-      "George Frideric Handel",
-      "Claude Debussy",
-      "Giacomo Puccini",
-      "Gustav Holst"
-    ],
-    "optionsAr": [
-      "George Frideric Handel",
-      "Claude Debussy",
-      "Giacomo Puccini",
-      "Gustav Holst"
+      "Golgi apparatus",
+      "Ribosome",
+      "Nucleus",
+      "Cell membrane"
     ],
     "answer": 2,
     "difficulty": "hard",
-    "id": "question-0179"
+    "id": "question-0179",
+    "optionsAr": [
+      "جولجي ابباراتوس",
+      "ريبوسومي",
+      "النواة",
+      "كيلل ميمبراني"
+    ]
   },
   {
     "category": "General Knowledge",
-    "en": "Who composed “La Bohème”?",
-    "ar": "من ألّف المقطوعة الموسيقية «La Bohème»؟",
+    "en": "What is the capital of Madagascar?",
+    "ar": "ما عاصمة مدغشقر؟",
     "options": [
-      "Giacomo Puccini",
-      "Edward Elgar",
-      "Pyotr Ilyich Tchaikovsky",
-      "Gioachino Rossini"
-    ],
-    "optionsAr": [
-      "Giacomo Puccini",
-      "Edward Elgar",
-      "Pyotr Ilyich Tchaikovsky",
-      "Gioachino Rossini"
-    ],
-    "answer": 0,
-    "difficulty": "hard",
-    "id": "question-0180"
-  },
-  {
-    "category": "General Knowledge",
-    "en": "Who composed “Turandot”?",
-    "ar": "من ألّف المقطوعة الموسيقية «Turandot»؟",
-    "options": [
-      "Giacomo Puccini",
-      "Antonín Dvořák",
-      "Johann Strauss II",
-      "Wolfgang Amadeus Mozart"
-    ],
-    "optionsAr": [
-      "Giacomo Puccini",
-      "Antonín Dvořák",
-      "Johann Strauss II",
-      "Wolfgang Amadeus Mozart"
-    ],
-    "answer": 0,
-    "difficulty": "hard",
-    "id": "question-0181"
-  },
-  {
-    "category": "General Knowledge",
-    "en": "Who composed “Ride of the Valkyries”?",
-    "ar": "من ألّف المقطوعة الموسيقية «Ride of the Valkyries»؟",
-    "options": [
-      "Gustav Holst",
-      "Richard Wagner",
-      "Jean Sibelius",
-      "Wolfgang Amadeus Mozart"
-    ],
-    "optionsAr": [
-      "Gustav Holst",
-      "Richard Wagner",
-      "Jean Sibelius",
-      "Wolfgang Amadeus Mozart"
-    ],
-    "answer": 1,
-    "difficulty": "hard",
-    "id": "question-0182"
-  },
-  {
-    "category": "General Knowledge",
-    "en": "Who composed “The Ring Cycle”?",
-    "ar": "من ألّف المقطوعة الموسيقية «The Ring Cycle»؟",
-    "options": [
-      "Sergei Prokofiev",
-      "Richard Wagner",
-      "Pyotr Ilyich Tchaikovsky",
-      "Ludwig van Beethoven"
-    ],
-    "optionsAr": [
-      "Sergei Prokofiev",
-      "Richard Wagner",
-      "Pyotr Ilyich Tchaikovsky",
-      "Ludwig van Beethoven"
-    ],
-    "answer": 1,
-    "difficulty": "hard",
-    "id": "question-0183"
-  },
-  {
-    "category": "General Knowledge",
-    "en": "Who composed “The Blue Danube”?",
-    "ar": "من ألّف المقطوعة الموسيقية «The Blue Danube»؟",
-    "options": [
-      "Claude Debussy",
-      "Erik Satie",
-      "Johann Strauss II",
-      "Sergei Prokofiev"
-    ],
-    "optionsAr": [
-      "Claude Debussy",
-      "Erik Satie",
-      "Johann Strauss II",
-      "Sergei Prokofiev"
+      "Lilongwe",
+      "Maputo",
+      "Antananarivo",
+      "Moroni"
     ],
     "answer": 2,
     "difficulty": "hard",
-    "id": "question-0184"
+    "id": "question-0180",
+    "optionsAr": [
+      "ليلونجوي",
+      "مابوتو",
+      "أنتاناناريفو",
+      "موروني"
+    ]
   },
   {
     "category": "General Knowledge",
-    "en": "Who composed “Tales from the Vienna Woods”?",
-    "ar": "من ألّف المقطوعة الموسيقية «Tales from the Vienna Woods»؟",
+    "en": "Which desert is the largest hot desert in the world?",
+    "ar": "ما أكبر صحراء حارة في العالم؟",
     "options": [
-      "Johann Strauss II",
-      "Wolfgang Amadeus Mozart",
-      "George Frideric Handel",
-      "Edward Elgar"
-    ],
-    "optionsAr": [
-      "Johann Strauss II",
-      "Wolfgang Amadeus Mozart",
-      "George Frideric Handel",
-      "Edward Elgar"
-    ],
-    "answer": 0,
-    "difficulty": "hard",
-    "id": "question-0185"
-  },
-  {
-    "category": "General Knowledge",
-    "en": "Who composed “Hungarian Rhapsody No. 2”?",
-    "ar": "من ألّف المقطوعة الموسيقية «Hungarian Rhapsody No. 2»؟",
-    "options": [
-      "Franz Liszt",
-      "Gioachino Rossini",
-      "Wolfgang Amadeus Mozart",
-      "Johann Pachelbel"
-    ],
-    "optionsAr": [
-      "Franz Liszt",
-      "Gioachino Rossini",
-      "Wolfgang Amadeus Mozart",
-      "Johann Pachelbel"
-    ],
-    "answer": 0,
-    "difficulty": "hard",
-    "id": "question-0186"
-  },
-  {
-    "category": "General Knowledge",
-    "en": "Who composed “Liebesträume”?",
-    "ar": "من ألّف المقطوعة الموسيقية «Liebesträume»؟",
-    "options": [
-      "Franz Liszt",
-      "Richard Wagner",
-      "Samuel Barber",
-      "Johann Sebastian Bach"
-    ],
-    "optionsAr": [
-      "Franz Liszt",
-      "Richard Wagner",
-      "Samuel Barber",
-      "Johann Sebastian Bach"
-    ],
-    "answer": 0,
-    "difficulty": "hard",
-    "id": "question-0187"
-  },
-  {
-    "category": "General Knowledge",
-    "en": "Who composed “Piano Concerto No. 2”?",
-    "ar": "من ألّف المقطوعة الموسيقية «Piano Concerto No. 2»؟",
-    "options": [
-      "Sergei Rachmaninoff",
-      "Ludwig van Beethoven",
-      "Jean Sibelius",
-      "Sergei Prokofiev"
-    ],
-    "optionsAr": [
-      "Sergei Rachmaninoff",
-      "Ludwig van Beethoven",
-      "Jean Sibelius",
-      "Sergei Prokofiev"
-    ],
-    "answer": 0,
-    "difficulty": "hard",
-    "id": "question-0188"
-  },
-  {
-    "category": "General Knowledge",
-    "en": "Who composed “Rhapsody on a Theme of Paganini”?",
-    "ar": "من ألّف المقطوعة الموسيقية «Rhapsody on a Theme of Paganini»؟",
-    "options": [
-      "Giacomo Puccini",
-      "Sergei Rachmaninoff",
-      "Gioachino Rossini",
-      "Wolfgang Amadeus Mozart"
-    ],
-    "optionsAr": [
-      "Giacomo Puccini",
-      "Sergei Rachmaninoff",
-      "Gioachino Rossini",
-      "Wolfgang Amadeus Mozart"
+      "Gobi Desert",
+      "Sahara",
+      "Kalahari",
+      "Arabian Desert"
     ],
     "answer": 1,
     "difficulty": "hard",
-    "id": "question-0189"
+    "id": "question-0181",
+    "optionsAr": [
+      "جوبي ديسيرت",
+      "الصحراء الكبرى",
+      "كالاهاري",
+      "ارابيان ديسيرت"
+    ]
   },
   {
     "category": "General Knowledge",
-    "en": "Who composed “Pictures at an Exhibition”?",
-    "ar": "من ألّف المقطوعة الموسيقية «Pictures at an Exhibition»؟",
+    "en": "Which scientist discovered penicillin?",
+    "ar": "من العالم الذي اكتشف البنسلين؟",
     "options": [
-      "Richard Wagner",
-      "Ralph Vaughan Williams",
-      "Modest Mussorgsky",
-      "Bedřich Smetana"
-    ],
-    "optionsAr": [
-      "Richard Wagner",
-      "Ralph Vaughan Williams",
-      "Modest Mussorgsky",
-      "Bedřich Smetana"
+      "Louis Pasteur",
+      "Edward Jenner",
+      "Alexander Fleming",
+      "Robert Koch"
     ],
     "answer": 2,
     "difficulty": "hard",
-    "id": "question-0190"
+    "id": "question-0182",
+    "optionsAr": [
+      "لوويس باستيور",
+      "يدوارد جيننير",
+      "ألكسندر فليمنغ",
+      "روبيرت كوكه"
+    ]
   },
   {
     "category": "General Knowledge",
-    "en": "Who composed “Night on Bald Mountain”?",
-    "ar": "من ألّف المقطوعة الموسيقية «Night on Bald Mountain»؟",
+    "en": "What is the term for animals that are most active at dawn and dusk?",
+    "ar": "ما المصطلح الذي يطلق على الحيوانات الأكثر نشاطاً عند الفجر والغسق؟",
     "options": [
-      "Modest Mussorgsky",
-      "Edvard Grieg",
-      "Antonín Dvořák",
-      "Gioachino Rossini"
-    ],
-    "optionsAr": [
-      "Modest Mussorgsky",
-      "Edvard Grieg",
-      "Antonín Dvořák",
-      "Gioachino Rossini"
+      "Crepuscular",
+      "Diurnal",
+      "Nocturnal",
+      "Aquatic"
     ],
     "answer": 0,
     "difficulty": "hard",
-    "id": "question-0191"
+    "id": "question-0183",
+    "optionsAr": [
+      "كريبوسكولار",
+      "ديورنال",
+      "نوكتورنال",
+      "اقواتيك"
+    ]
   },
   {
     "category": "General Knowledge",
-    "en": "Who composed “The Rite of Spring”?",
-    "ar": "من ألّف المقطوعة الموسيقية «The Rite of Spring»؟",
+    "en": "Which river flows through Baghdad?",
+    "ar": "ما النهر الذي يمر بمدينة بغداد؟",
     "options": [
-      "Igor Stravinsky",
-      "Bedřich Smetana",
-      "Maurice Ravel",
-      "Antonio Vivaldi"
-    ],
-    "optionsAr": [
-      "Igor Stravinsky",
-      "Bedřich Smetana",
-      "Maurice Ravel",
-      "Antonio Vivaldi"
-    ],
-    "answer": 0,
-    "difficulty": "hard",
-    "id": "question-0192"
-  },
-  {
-    "category": "General Knowledge",
-    "en": "Who composed “The Firebird”?",
-    "ar": "من ألّف المقطوعة الموسيقية «The Firebird»؟",
-    "options": [
-      "Jean Sibelius",
-      "Igor Stravinsky",
-      "Aaron Copland",
-      "Wolfgang Amadeus Mozart"
-    ],
-    "optionsAr": [
-      "Jean Sibelius",
-      "Igor Stravinsky",
-      "Aaron Copland",
-      "Wolfgang Amadeus Mozart"
-    ],
-    "answer": 1,
-    "difficulty": "hard",
-    "id": "question-0193"
-  },
-  {
-    "category": "General Knowledge",
-    "en": "Who composed “Peter and the Wolf”?",
-    "ar": "من ألّف المقطوعة الموسيقية «Peter and the Wolf»؟",
-    "options": [
-      "Giacomo Puccini",
-      "Sergei Prokofiev",
-      "Gioachino Rossini",
-      "Pyotr Ilyich Tchaikovsky"
-    ],
-    "optionsAr": [
-      "Giacomo Puccini",
-      "Sergei Prokofiev",
-      "Gioachino Rossini",
-      "Pyotr Ilyich Tchaikovsky"
-    ],
-    "answer": 1,
-    "difficulty": "hard",
-    "id": "question-0194"
-  },
-  {
-    "category": "General Knowledge",
-    "en": "Who composed “Romeo and Juliet ballet”?",
-    "ar": "من ألّف المقطوعة الموسيقية «Romeo and Juliet ballet»؟",
-    "options": [
-      "Giuseppe Verdi",
-      "Sergei Prokofiev",
-      "Bedřich Smetana",
-      "Edward Elgar"
-    ],
-    "optionsAr": [
-      "Giuseppe Verdi",
-      "Sergei Prokofiev",
-      "Bedřich Smetana",
-      "Edward Elgar"
-    ],
-    "answer": 1,
-    "difficulty": "hard",
-    "id": "question-0195"
-  },
-  {
-    "category": "General Knowledge",
-    "en": "Who composed “Symphony No. 6 “Pathétique””?",
-    "ar": "من ألّف المقطوعة الموسيقية «Symphony No. 6 “Pathétique”»؟",
-    "options": [
-      "Ludwig van Beethoven",
-      "Pyotr Ilyich Tchaikovsky",
-      "Claude Debussy",
-      "Gustav Holst"
-    ],
-    "optionsAr": [
-      "Ludwig van Beethoven",
-      "Pyotr Ilyich Tchaikovsky",
-      "Claude Debussy",
-      "Gustav Holst"
-    ],
-    "answer": 1,
-    "difficulty": "hard",
-    "id": "question-0196"
-  },
-  {
-    "category": "General Knowledge",
-    "en": "Who composed “Canon in D”?",
-    "ar": "من ألّف المقطوعة الموسيقية «Canon in D»؟",
-    "options": [
-      "Johann Pachelbel",
-      "Jean Sibelius",
-      "Giacomo Puccini",
-      "Aaron Copland"
-    ],
-    "optionsAr": [
-      "Johann Pachelbel",
-      "Jean Sibelius",
-      "Giacomo Puccini",
-      "Aaron Copland"
-    ],
-    "answer": 0,
-    "difficulty": "hard",
-    "id": "question-0197"
-  },
-  {
-    "category": "General Knowledge",
-    "en": "Who composed “Adagio for Strings”?",
-    "ar": "من ألّف المقطوعة الموسيقية «Adagio for Strings»؟",
-    "options": [
-      "George Frideric Handel",
-      "Samuel Barber",
-      "Jean Sibelius",
-      "Sergei Rachmaninoff"
-    ],
-    "optionsAr": [
-      "George Frideric Handel",
-      "Samuel Barber",
-      "Jean Sibelius",
-      "Sergei Rachmaninoff"
-    ],
-    "answer": 1,
-    "difficulty": "hard",
-    "id": "question-0198"
-  },
-  {
-    "category": "General Knowledge",
-    "en": "Who composed “The Barber of Seville overture”?",
-    "ar": "من ألّف المقطوعة الموسيقية «The Barber of Seville overture»؟",
-    "options": [
-      "George Frideric Handel",
-      "Gioachino Rossini",
-      "Richard Wagner",
-      "Giuseppe Verdi"
-    ],
-    "optionsAr": [
-      "George Frideric Handel",
-      "Gioachino Rossini",
-      "Richard Wagner",
-      "Giuseppe Verdi"
-    ],
-    "answer": 1,
-    "difficulty": "hard",
-    "id": "question-0199"
-  },
-  {
-    "category": "General Knowledge",
-    "en": "Who composed “Appalachian Spring”?",
-    "ar": "من ألّف المقطوعة الموسيقية «Appalachian Spring»؟",
-    "options": [
-      "Johann Strauss II",
-      "Aaron Copland",
-      "Johann Pachelbel",
-      "Giacomo Puccini"
-    ],
-    "optionsAr": [
-      "Johann Strauss II",
-      "Aaron Copland",
-      "Johann Pachelbel",
-      "Giacomo Puccini"
-    ],
-    "answer": 1,
-    "difficulty": "hard",
-    "id": "question-0200"
-  },
-  {
-    "category": "General Knowledge",
-    "en": "Who composed “Fanfare for the Common Man”?",
-    "ar": "من ألّف المقطوعة الموسيقية «Fanfare for the Common Man»؟",
-    "options": [
-      "Igor Stravinsky",
-      "Giacomo Puccini",
-      "Aaron Copland",
-      "Giuseppe Verdi"
-    ],
-    "optionsAr": [
-      "Igor Stravinsky",
-      "Giacomo Puccini",
-      "Aaron Copland",
-      "Giuseppe Verdi"
-    ],
-    "answer": 2,
-    "difficulty": "hard",
-    "id": "question-0201"
-  },
-  {
-    "category": "General Knowledge",
-    "en": "Who composed “Carmina Burana”?",
-    "ar": "من ألّف المقطوعة الموسيقية «Carmina Burana»؟",
-    "options": [
-      "Sergei Prokofiev",
-      "Aaron Copland",
-      "Carl Orff",
-      "Georges Bizet"
-    ],
-    "optionsAr": [
-      "Sergei Prokofiev",
-      "Aaron Copland",
-      "Carl Orff",
-      "Georges Bizet"
-    ],
-    "answer": 2,
-    "difficulty": "hard",
-    "id": "question-0202"
-  },
-  {
-    "category": "General Knowledge",
-    "en": "Who composed “O Fortuna”?",
-    "ar": "من ألّف المقطوعة الموسيقية «O Fortuna»؟",
-    "options": [
-      "Sergei Prokofiev",
-      "Antonio Vivaldi",
-      "Aaron Copland",
-      "Carl Orff"
-    ],
-    "optionsAr": [
-      "Sergei Prokofiev",
-      "Antonio Vivaldi",
-      "Aaron Copland",
-      "Carl Orff"
+      "Jordan",
+      "Euphrates",
+      "Orontes",
+      "Tigris"
     ],
     "answer": 3,
     "difficulty": "hard",
-    "id": "question-0203"
+    "id": "question-0184",
+    "optionsAr": [
+      "الأردن",
+      "نهر الفرات",
+      "ورونتيس",
+      "نهر دجلة"
+    ]
   },
   {
     "category": "General Knowledge",
-    "en": "Who composed “Symphony No. 3 “Eroica””?",
-    "ar": "من ألّف المقطوعة الموسيقية «Symphony No. 3 “Eroica”»؟",
+    "en": "Which ancient civilization used quipu for record keeping?",
+    "ar": "أي حضارة قديمة استخدمت الكيبو لتسجيل المعلومات؟",
     "options": [
-      "Ludwig van Beethoven",
-      "Edvard Grieg",
-      "Bedřich Smetana",
-      "Ralph Vaughan Williams"
-    ],
-    "optionsAr": [
-      "Ludwig van Beethoven",
-      "Edvard Grieg",
-      "Bedřich Smetana",
-      "Ralph Vaughan Williams"
+      "Inca",
+      "Egyptian",
+      "Maya",
+      "Greek"
     ],
     "answer": 0,
     "difficulty": "hard",
-    "id": "question-0204"
+    "id": "question-0185",
+    "optionsAr": [
+      "الإنكا",
+      "يجيبتيان",
+      "مايا",
+      "جرييك"
+    ]
   },
   {
     "category": "General Knowledge",
-    "en": "Who composed “Goldberg Variations”?",
-    "ar": "من ألّف المقطوعة الموسيقية «Goldberg Variations»؟",
+    "en": "What is the capital of Slovenia?",
+    "ar": "ما عاصمة سلوفينيا؟",
     "options": [
-      "Giuseppe Verdi",
-      "Wolfgang Amadeus Mozart",
-      "Johann Sebastian Bach",
-      "Samuel Barber"
+      "Ljubljana",
+      "Sarajevo",
+      "Bratislava",
+      "Zagreb"
     ],
+    "answer": 0,
+    "difficulty": "hard",
+    "id": "question-0186",
     "optionsAr": [
-      "Giuseppe Verdi",
-      "Wolfgang Amadeus Mozart",
-      "Johann Sebastian Bach",
-      "Samuel Barber"
+      "ليوبليانا",
+      "سراييفو",
+      "براتيسلافا",
+      "زاجريب"
+    ]
+  },
+  {
+    "category": "General Knowledge",
+    "en": "Which law states that pressure and volume are inversely proportional at constant temperature?",
+    "ar": "أي قانون ينص على أن الضغط والحجم يتناسبان عكسياً عند ثبات درجة الحرارة؟",
+    "options": [
+      "Avogadro’s law",
+      "Charles’s law",
+      "Boyle’s law",
+      "Ohm’s law"
     ],
     "answer": 2,
     "difficulty": "hard",
-    "id": "question-0205"
+    "id": "question-0187",
+    "optionsAr": [
+      "افوجادرو’س لاو",
+      "كهارليس’س لاو",
+      "بويلي’س لاو",
+      "وهم’س لاو"
+    ]
   },
   {
     "category": "General Knowledge",
-    "en": "Who composed “The Moldau”?",
-    "ar": "من ألّف المقطوعة الموسيقية «The Moldau»؟",
+    "en": "Which mountain range separates Europe from Asia in the conventional boundary?",
+    "ar": "ما السلسلة الجبلية التي تفصل أوروبا عن آسيا وفق الحدود الجغرافية التقليدية؟",
     "options": [
-      "Gustav Holst",
-      "Bedřich Smetana",
-      "Samuel Barber",
-      "Johann Strauss II"
-    ],
-    "optionsAr": [
-      "Gustav Holst",
-      "Bedřich Smetana",
-      "Samuel Barber",
-      "Johann Strauss II"
-    ],
-    "answer": 1,
-    "difficulty": "hard",
-    "id": "question-0206"
-  },
-  {
-    "category": "General Knowledge",
-    "en": "Who composed “Má vlast”?",
-    "ar": "من ألّف المقطوعة الموسيقية «Má vlast»؟",
-    "options": [
-      "Johann Sebastian Bach",
-      "Igor Stravinsky",
-      "Edward Elgar",
-      "Bedřich Smetana"
-    ],
-    "optionsAr": [
-      "Johann Sebastian Bach",
-      "Igor Stravinsky",
-      "Edward Elgar",
-      "Bedřich Smetana"
+      "Carpathians",
+      "Pyrenees",
+      "Alps",
+      "Ural Mountains"
     ],
     "answer": 3,
     "difficulty": "hard",
-    "id": "question-0207"
+    "id": "question-0188",
+    "optionsAr": [
+      "كارباتهيانس",
+      "جبال البرانس",
+      "جبال الألب",
+      "جبال الأورال"
+    ]
   },
   {
     "category": "General Knowledge",
-    "en": "Who composed “The Enigma Variations”?",
-    "ar": "من ألّف المقطوعة الموسيقية «The Enigma Variations»؟",
+    "en": "What is the capital of Laos?",
+    "ar": "ما عاصمة لاوس؟",
     "options": [
-      "Antonio Vivaldi",
-      "Edward Elgar",
-      "Aaron Copland",
-      "Georges Bizet"
+      "Phnom Penh",
+      "Yangon",
+      "Hanoi",
+      "Vientiane"
     ],
-    "optionsAr": [
-      "Antonio Vivaldi",
-      "Edward Elgar",
-      "Aaron Copland",
-      "Georges Bizet"
-    ],
-    "answer": 1,
+    "answer": 3,
     "difficulty": "hard",
-    "id": "question-0208"
+    "id": "question-0189",
+    "optionsAr": [
+      "بهنوم بينه",
+      "يانجون",
+      "هانوي",
+      "فيينتيان"
+    ]
   },
   {
     "category": "General Knowledge",
-    "en": "Who composed “Pomp and Circumstance March No. 1”?",
-    "ar": "من ألّف المقطوعة الموسيقية «Pomp and Circumstance March No. 1»؟",
+    "en": "Which organelle is known as the powerhouse of the cell?",
+    "ar": "أي عضيّة تُعرف بأنها محطة الطاقة في الخلية؟",
     "options": [
-      "Johann Pachelbel",
-      "Edward Elgar",
-      "Samuel Barber",
-      "Gustav Holst"
+      "Mitochondrion",
+      "Chloroplast",
+      "Lysosome",
+      "Nucleus"
     ],
-    "optionsAr": [
-      "Johann Pachelbel",
-      "Edward Elgar",
-      "Samuel Barber",
-      "Gustav Holst"
-    ],
-    "answer": 1,
+    "answer": 0,
     "difficulty": "hard",
-    "id": "question-0209"
+    "id": "question-0190",
+    "optionsAr": [
+      "الميتوكوندريا",
+      "البلاستيدة الخضراء",
+      "ليسوسومي",
+      "النواة"
+    ]
   },
   {
     "category": "General Knowledge",
-    "en": "Who composed “The Lark Ascending”?",
-    "ar": "من ألّف المقطوعة الموسيقية «The Lark Ascending»؟",
+    "en": "Which civilization developed the first known alphabetic writing system?",
+    "ar": "أي حضارة طورت أحد أقدم أنظمة الكتابة الأبجدية المعروفة؟",
     "options": [
-      "Ludwig van Beethoven",
-      "Ralph Vaughan Williams",
-      "Sergei Prokofiev",
-      "Pyotr Ilyich Tchaikovsky"
-    ],
-    "optionsAr": [
-      "Ludwig van Beethoven",
-      "Ralph Vaughan Williams",
-      "Sergei Prokofiev",
-      "Pyotr Ilyich Tchaikovsky"
+      "Sumerians",
+      "Phoenicians",
+      "Persians",
+      "Romans"
     ],
     "answer": 1,
     "difficulty": "hard",
-    "id": "question-0210"
+    "id": "question-0191",
+    "optionsAr": [
+      "السومريون",
+      "الفينيقيون",
+      "بيرسيانس",
+      "رومانس"
+    ]
+  },
+  {
+    "category": "General Knowledge",
+    "en": "What is the name of the boundary between the Earth’s troposphere and stratosphere?",
+    "ar": "ما اسم الحد الفاصل بين طبقة التروبوسفير والستراتوسفير؟",
+    "options": [
+      "Mesopause",
+      "Thermopause",
+      "Tropopause",
+      "Stratopause"
+    ],
+    "answer": 2,
+    "difficulty": "hard",
+    "id": "question-0192",
+    "optionsAr": [
+      "ميسوباوسي",
+      "تهيرموباوسي",
+      "تروبوباوسي",
+      "ستراتوباوسي"
+    ]
+  },
+  {
+    "category": "General Knowledge",
+    "en": "Which country’s parliament is called the Knesset?",
+    "ar": "ما الدولة التي يُسمى برلمانها الكنيست؟",
+    "options": [
+      "Greece",
+      "Israel",
+      "Turkey",
+      "Cyprus"
+    ],
+    "answer": 1,
+    "difficulty": "hard",
+    "id": "question-0193",
+    "optionsAr": [
+      "اليونان",
+      "إسرائيل",
+      "تركيا",
+      "كيبروس"
+    ]
+  },
+  {
+    "category": "General Knowledge",
+    "en": "Which element is the most abundant in the universe?",
+    "ar": "ما العنصر الأكثر وفرة في الكون؟",
+    "options": [
+      "Helium",
+      "Hydrogen",
+      "Carbon",
+      "Oxygen"
+    ],
+    "answer": 1,
+    "difficulty": "hard",
+    "id": "question-0194",
+    "optionsAr": [
+      "الهيليوم",
+      "الهيدروجين",
+      "كاربون",
+      "الأكسجين"
+    ]
+  },
+  {
+    "category": "General Knowledge",
+    "en": "Which city hosted the first modern Olympic Games in 1896?",
+    "ar": "أي مدينة استضافت أول دورة ألعاب أولمبية حديثة عام 1896؟",
+    "options": [
+      "Athens",
+      "Paris",
+      "London",
+      "Rome"
+    ],
+    "answer": 0,
+    "difficulty": "hard",
+    "id": "question-0195",
+    "optionsAr": [
+      "أثينا",
+      "باريس",
+      "لوندون",
+      "روما"
+    ]
+  },
+  {
+    "category": "General Knowledge",
+    "en": "What is the capital of Suriname?",
+    "ar": "ما عاصمة سورينام؟",
+    "options": [
+      "Cayenne",
+      "Paramaribo",
+      "Belmopan",
+      "Georgetown"
+    ],
+    "answer": 1,
+    "difficulty": "hard",
+    "id": "question-0196",
+    "optionsAr": [
+      "كايينني",
+      "باراماريبو",
+      "بيلموبان",
+      "جيورجيتوون"
+    ]
+  },
+  {
+    "category": "General Knowledge",
+    "en": "Which instrument measures atmospheric pressure?",
+    "ar": "ما الأداة التي تقيس الضغط الجوي؟",
+    "options": [
+      "Anemometer",
+      "Barometer",
+      "Altimeter",
+      "Hygrometer"
+    ],
+    "answer": 1,
+    "difficulty": "hard",
+    "id": "question-0197",
+    "optionsAr": [
+      "انيموميتير",
+      "البارومتر",
+      "التيميتير",
+      "هيجروميتير"
+    ]
+  },
+  {
+    "category": "General Knowledge",
+    "en": "Which sea separates the Arabian Peninsula from northeastern Africa?",
+    "ar": "ما البحر الذي يفصل شبه الجزيرة العربية عن شمال شرق أفريقيا؟",
+    "options": [
+      "Black Sea",
+      "Mediterranean Sea",
+      "Red Sea",
+      "Caspian Sea"
+    ],
+    "answer": 2,
+    "difficulty": "hard",
+    "id": "question-0198",
+    "optionsAr": [
+      "بلاكك سيا",
+      "ميديتيررانيان سيا",
+      "البحر الأحمر",
+      "كاسبيان سيا"
+    ]
+  },
+  {
+    "category": "General Knowledge",
+    "en": "Which mathematician introduced the symbol commonly used for infinity?",
+    "ar": "من عالم الرياضيات الذي قدم الرمز الشائع للانهاية؟",
+    "options": [
+      "Carl Gauss",
+      "Leonhard Euler",
+      "René Descartes",
+      "John Wallis"
+    ],
+    "answer": 3,
+    "difficulty": "hard",
+    "id": "question-0199",
+    "optionsAr": [
+      "كارل جاوسس",
+      "ليونهارد يولير",
+      "رينé ديسكارتيس",
+      "جون واليس"
+    ]
+  },
+  {
+    "category": "General Knowledge",
+    "en": "What is the capital of Moldova?",
+    "ar": "ما عاصمة مولدوفا؟",
+    "options": [
+      "Podgorica",
+      "Tirana",
+      "Chișinău",
+      "Skopje"
+    ],
+    "answer": 2,
+    "difficulty": "hard",
+    "id": "question-0200",
+    "optionsAr": [
+      "بودغوريتسا",
+      "تيرانا",
+      "كيشيناو",
+      "سكوبيه"
+    ]
+  },
+  {
+    "category": "General Knowledge",
+    "en": "Which layer of the atmosphere contains most of the ozone layer?",
+    "ar": "في أي طبقة من الغلاف الجوي توجد معظم طبقة الأوزون؟",
+    "options": [
+      "Stratosphere",
+      "Mesosphere",
+      "Troposphere",
+      "Thermosphere"
+    ],
+    "answer": 0,
+    "difficulty": "hard",
+    "id": "question-0201",
+    "optionsAr": [
+      "الستراتوسفير",
+      "ميسوسبهيري",
+      "تروبوسبهيري",
+      "تهيرموسبهيري"
+    ]
+  },
+  {
+    "category": "General Knowledge",
+    "en": "Which ancient Greek historian is often called the “Father of History”?",
+    "ar": "أي مؤرخ يوناني قديم يُلقب غالباً بأبي التاريخ؟",
+    "options": [
+      "Herodotus",
+      "Homer",
+      "Thucydides",
+      "Xenophon"
+    ],
+    "answer": 0,
+    "difficulty": "hard",
+    "id": "question-0202",
+    "optionsAr": [
+      "هيرودوت",
+      "هومير",
+      "تهوكيديديس",
+      "كسينوبهون"
+    ]
+  },
+  {
+    "category": "General Knowledge",
+    "en": "What is the capital of Kyrgyzstan?",
+    "ar": "ما عاصمة قيرغيزستان؟",
+    "options": [
+      "Tashkent",
+      "Bishkek",
+      "Ashgabat",
+      "Dushanbe"
+    ],
+    "answer": 1,
+    "difficulty": "hard",
+    "id": "question-0203",
+    "optionsAr": [
+      "طشقند",
+      "بيشكيك",
+      "اسهجابات",
+      "دوشنبه"
+    ]
+  },
+  {
+    "category": "General Knowledge",
+    "en": "Which scientist proposed the uncertainty principle?",
+    "ar": "من العالم الذي طرح مبدأ عدم اليقين؟",
+    "options": [
+      "Ernest Rutherford",
+      "Max Planck",
+      "Erwin Schrödinger",
+      "Werner Heisenberg"
+    ],
+    "answer": 3,
+    "difficulty": "hard",
+    "id": "question-0204",
+    "optionsAr": [
+      "يرنيست روتهيرفورد",
+      "ماكس بلانكك",
+      "يروين سكهرöدينجير",
+      "فيرنر هايزنبرغ"
+    ]
+  },
+  {
+    "category": "General Knowledge",
+    "en": "Which canal connects the Mediterranean Sea to the Red Sea?",
+    "ar": "ما القناة التي تربط البحر المتوسط بالبحر الأحمر؟",
+    "options": [
+      "Suez Canal",
+      "Panama Canal",
+      "Kiel Canal",
+      "Corinth Canal"
+    ],
+    "answer": 0,
+    "difficulty": "hard",
+    "id": "question-0205",
+    "optionsAr": [
+      "قناة السويس",
+      "باناما كانال",
+      "كييل كانال",
+      "كورينته كانال"
+    ]
+  },
+  {
+    "category": "General Knowledge",
+    "en": "What is the study of earthquakes called?",
+    "ar": "ماذا يُسمى علم دراسة الزلازل؟",
+    "options": [
+      "Seismology",
+      "Oceanography",
+      "Volcanology",
+      "Meteorology"
+    ],
+    "answer": 0,
+    "difficulty": "hard",
+    "id": "question-0206",
+    "optionsAr": [
+      "علم الزلازل",
+      "وكيانوجرابهي",
+      "فولكانولوجي",
+      "ميتيورولوجي"
+    ]
+  },
+  {
+    "category": "General Knowledge",
+    "en": "Which country’s traditional writing system includes Hangul?",
+    "ar": "أي دولة يرتبط بها نظام الكتابة المعروف باسم الهانغول؟",
+    "options": [
+      "South Korea",
+      "Japan",
+      "China",
+      "Thailand"
+    ],
+    "answer": 0,
+    "difficulty": "hard",
+    "id": "question-0207",
+    "optionsAr": [
+      "كوريا الجنوبية",
+      "اليابان",
+      "الصين",
+      "تايلاند"
+    ]
+  },
+  {
+    "category": "General Knowledge",
+    "en": "Which city is the seat of the International Court of Justice?",
+    "ar": "في أي مدينة يقع مقر محكمة العدل الدولية؟",
+    "options": [
+      "Brussels",
+      "Geneva",
+      "The Hague",
+      "Vienna"
+    ],
+    "answer": 2,
+    "difficulty": "hard",
+    "id": "question-0208",
+    "optionsAr": [
+      "بروسسيلس",
+      "جينيفا",
+      "لاهاي",
+      "فيينا"
+    ]
+  },
+  {
+    "category": "General Knowledge",
+    "en": "Which element has the atomic number 79?",
+    "ar": "ما العنصر الذي عدده الذري 79؟",
+    "options": [
+      "Copper",
+      "Platinum",
+      "Silver",
+      "Gold"
+    ],
+    "answer": 3,
+    "difficulty": "hard",
+    "id": "question-0209",
+    "optionsAr": [
+      "النحاس",
+      "بلاتينوم",
+      "الفضة",
+      "الذهب"
+    ]
+  },
+  {
+    "category": "General Knowledge",
+    "en": "Which European river passes through four capital cities?",
+    "ar": "أي نهر أوروبي يمر عبر أربع عواصم؟",
+    "options": [
+      "Thames",
+      "Rhine",
+      "Danube",
+      "Seine"
+    ],
+    "answer": 2,
+    "difficulty": "hard",
+    "id": "question-0210",
+    "optionsAr": [
+      "تهاميس",
+      "رهيني",
+      "دانوبي",
+      "سييني"
+    ]
   },
   {
     "category": "Sports",
@@ -4215,8 +4215,8 @@ const questions = [
     "optionsAr": [
       "السباحة",
       "تنس الريشة",
-      "ركوب الأمواج بالطائرة الورقية",
-      "البلياردو"
+      "كيتيسورفينج",
+      "بيللياردس"
     ],
     "answer": 1,
     "difficulty": "easy",
@@ -4233,10 +4233,10 @@ const questions = [
       "Boxing"
     ],
     "optionsAr": [
-      "التزلج على اللوح الثلجي",
-      "هوكي الجليد",
+      "سنووبواردينج",
+      "يكي هوككيي",
       "الكرة الطائرة",
-      "الملاكمة"
+      "بوكسينج"
     ],
     "answer": 1,
     "difficulty": "easy",
@@ -4253,10 +4253,10 @@ const questions = [
       "Rowing"
     ],
     "optionsAr": [
-      "الزحافات الجماعية",
-      "دفع الجلة",
-      "الجمباز الفني",
-      "التجديف"
+      "بوبسلييجه",
+      "سهوت بوت",
+      "ارتيستيك جيمناستيكس",
+      "رووينج"
     ],
     "answer": 2,
     "difficulty": "easy",
@@ -4273,10 +4273,10 @@ const questions = [
       "Luge"
     ],
     "optionsAr": [
-      "التجديف بالكانو",
-      "رمي الرمح",
-      "المبارزة",
-      "الزحافات الفردية"
+      "كانويينج",
+      "جافيلين تهروو",
+      "فينكينج",
+      "لوجي"
     ],
     "answer": 2,
     "difficulty": "easy",
@@ -4293,10 +4293,10 @@ const questions = [
       "Table tennis"
     ],
     "optionsAr": [
-      "القفز بالزانة",
-      "الكريكيت",
-      "ركوب الأمواج",
-      "تنس الطاولة"
+      "بولي فاولت",
+      "كريككيت",
+      "سورفينج",
+      "تابلي تيننيس"
     ],
     "answer": 1,
     "difficulty": "easy",
@@ -4313,10 +4313,10 @@ const questions = [
       "Polo"
     ],
     "optionsAr": [
-      "المبارزة",
+      "فينكينج",
       "كرة السلة",
       "تنس الريشة",
-      "البولو"
+      "بولو"
     ],
     "answer": 3,
     "difficulty": "easy",
@@ -4333,10 +4333,10 @@ const questions = [
       "Sport climbing"
     ],
     "optionsAr": [
-      "السنوكر",
-      "تنس الطاولة",
-      "التزلج على اللوح الثلجي",
-      "التسلق الرياضي"
+      "سنووكير",
+      "تابلي تيننيس",
+      "سنووبواردينج",
+      "سبورت كليمبينج"
     ],
     "answer": 0,
     "difficulty": "easy",
@@ -4353,10 +4353,10 @@ const questions = [
       "Archery"
     ],
     "optionsAr": [
-      "كرة القدم",
-      "سباق التتابع",
-      "الغولف",
-      "الرماية بالقوس"
+      "اسسوكياتيون فووتبالل",
+      "ريلاي راكينج",
+      "جولف",
+      "اركهيري"
     ],
     "answer": 3,
     "difficulty": "easy",
@@ -4373,10 +4373,10 @@ const questions = [
       "Kayaking"
     ],
     "optionsAr": [
-      "كرة اليد",
-      "الإبحار الشراعي",
+      "تيام هاندبالل",
+      "سايلينج",
       "كرة السلة",
-      "التجديف بالكاياك"
+      "كاياكينج"
     ],
     "answer": 1,
     "difficulty": "easy",
@@ -4394,9 +4394,9 @@ const questions = [
     ],
     "optionsAr": [
       "تنس الريشة",
-      "الرماية الرياضية",
-      "التجديف",
-      "تتابع ألعاب القوى"
+      "سبورت سهووتينج",
+      "رووينج",
+      "اتهليتيكس ريلاي"
     ],
     "answer": 2,
     "difficulty": "easy",
@@ -4413,10 +4413,10 @@ const questions = [
       "Kitesurfing"
     ],
     "optionsAr": [
-      "التزلج الريفي",
-      "البياثلون",
-      "الجمباز الفني",
-      "ركوب الأمواج بالطائرة الورقية"
+      "كروسس-كوونتري سكيينج",
+      "بياتهلون",
+      "ارتيستيك جيمناستيكس",
+      "كيتيسورفينج"
     ],
     "answer": 2,
     "difficulty": "easy",
@@ -4433,9 +4433,9 @@ const questions = [
       "Volleyball"
     ],
     "optionsAr": [
-      "سباق الدراجات على المضمار",
-      "سباق التتابع",
-      "الجمباز الفني",
+      "تراكك كيكلينج",
+      "ريلاي راكينج",
+      "ارتيستيك جيمناستيكس",
       "الكرة الطائرة"
     ],
     "answer": 2,
@@ -4453,10 +4453,10 @@ const questions = [
       "Rugby union"
     ],
     "optionsAr": [
-      "الرماية بالقوس",
-      "التجديف",
-      "الغولف",
-      "الرغبي يونيون"
+      "اركهيري",
+      "رووينج",
+      "جولف",
+      "روجبي ونيون"
     ],
     "answer": 3,
     "difficulty": "easy",
@@ -4475,8 +4475,8 @@ const questions = [
     "optionsAr": [
       "السباحة",
       "الكرة الطائرة",
-      "البولو",
-      "المصارعة"
+      "بولو",
+      "وريستلينج"
     ],
     "answer": 1,
     "difficulty": "easy",
@@ -4493,10 +4493,10 @@ const questions = [
       "Rugby union"
     ],
     "optionsAr": [
-      "البيسبول",
-      "سباق الدراجات على الطريق",
-      "القفز بالزانة",
-      "الرغبي يونيون"
+      "باسيبالل",
+      "رواد كيكلينج",
+      "بولي فاولت",
+      "روجبي ونيون"
     ],
     "answer": 0,
     "difficulty": "easy",
@@ -4513,10 +4513,10 @@ const questions = [
       "Bobsleigh"
     ],
     "optionsAr": [
-      "ركوب الأمواج بالطائرة الورقية",
-      "الجمباز الفني",
-      "السنوكر",
-      "الزحافات الجماعية"
+      "كيتيسورفينج",
+      "ارتيستيك جيمناستيكس",
+      "سنووكير",
+      "بوبسلييجه"
     ],
     "answer": 1,
     "difficulty": "easy",
@@ -4533,10 +4533,10 @@ const questions = [
       "Cross-country skiing"
     ],
     "optionsAr": [
-      "المبارزة",
-      "الكريكيت",
-      "دفع الجلة",
-      "التزلج الريفي"
+      "فينكينج",
+      "كريككيت",
+      "سهوت بوت",
+      "كروسس-كوونتري سكيينج"
     ],
     "answer": 0,
     "difficulty": "easy",
@@ -4553,10 +4553,10 @@ const questions = [
       "Sport climbing"
     ],
     "optionsAr": [
-      "كرة القدم الأمريكية",
-      "الزحافات الفردية",
-      "الغولف",
-      "التسلق الرياضي"
+      "اميريكان فووتبالل",
+      "لوجي",
+      "جولف",
+      "سبورت كليمبينج"
     ],
     "answer": 2,
     "difficulty": "easy",
@@ -4573,10 +4573,10 @@ const questions = [
       "Cross-country skiing"
     ],
     "optionsAr": [
-      "الإبحار الشراعي",
-      "الغولف",
-      "تتابع ألعاب القوى",
-      "التزلج الريفي"
+      "سايلينج",
+      "جولف",
+      "اتهليتيكس ريلاي",
+      "كروسس-كوونتري سكيينج"
     ],
     "answer": 1,
     "difficulty": "easy",
@@ -4593,10 +4593,10 @@ const questions = [
       "Pole vault"
     ],
     "optionsAr": [
-      "رمي القرص",
-      "الغولف",
-      "البلياردو",
-      "القفز بالزانة"
+      "ديسكوس تهروو",
+      "جولف",
+      "بيللياردس",
+      "بولي فاولت"
     ],
     "answer": 3,
     "difficulty": "easy",
@@ -4613,10 +4613,10 @@ const questions = [
       "Sport shooting"
     ],
     "optionsAr": [
-      "الفورمولا 1",
-      "المبارزة",
-      "العدو السريع",
-      "الرماية الرياضية"
+      "فورمولا وني",
+      "فينكينج",
+      "تراكك سبرينتينج",
+      "سبورت سهووتينج"
     ],
     "answer": 2,
     "difficulty": "easy",
@@ -4633,10 +4633,10 @@ const questions = [
       "Golf"
     ],
     "optionsAr": [
-      "الرماية بالقوس",
-      "دفع الجلة",
-      "العدو السريع",
-      "الغولف"
+      "اركهيري",
+      "سهوت بوت",
+      "تراكك سبرينتينج",
+      "جولف"
     ],
     "answer": 1,
     "difficulty": "easy",
@@ -4653,10 +4653,10 @@ const questions = [
       "Golf"
     ],
     "optionsAr": [
-      "كرة اليد",
-      "البيسبول",
-      "رمي القرص",
-      "الغولف"
+      "تيام هاندبالل",
+      "باسيبالل",
+      "ديسكوس تهروو",
+      "جولف"
     ],
     "answer": 2,
     "difficulty": "easy",
@@ -4673,10 +4673,10 @@ const questions = [
       "Kayaking"
     ],
     "optionsAr": [
-      "الزحافات الفردية",
-      "رمي الرمح",
-      "الجمباز الفني",
-      "التجديف بالكاياك"
+      "لوجي",
+      "جافيلين تهروو",
+      "ارتيستيك جيمناستيكس",
+      "كاياكينج"
     ],
     "answer": 1,
     "difficulty": "easy",
@@ -4693,10 +4693,10 @@ const questions = [
       "Hurdling"
     ],
     "optionsAr": [
-      "رمي القرص",
+      "ديسكوس تهروو",
       "كرة السلة",
-      "التزلج الريفي",
-      "سباق الحواجز"
+      "كروسس-كوونتري سكيينج",
+      "هوردلينج"
     ],
     "answer": 3,
     "difficulty": "easy",
@@ -4713,10 +4713,10 @@ const questions = [
       "Taekwondo"
     ],
     "optionsAr": [
-      "التزلج على الماء بلوح",
-      "التجديف بالكاياك",
-      "سباق التتابع",
-      "التايكوندو"
+      "واكيبواردينج",
+      "كاياكينج",
+      "ريلاي راكينج",
+      "تايكووندو"
     ],
     "answer": 2,
     "difficulty": "easy",
@@ -4733,10 +4733,10 @@ const questions = [
       "Sport climbing"
     ],
     "optionsAr": [
-      "الزحافات الجماعية",
-      "التايكوندو",
-      "الهيكل العظمي الثلجي",
-      "التسلق الرياضي"
+      "بوبسلييجه",
+      "تايكووندو",
+      "سكيليتون",
+      "سبورت كليمبينج"
     ],
     "answer": 3,
     "difficulty": "easy",
@@ -4753,10 +4753,10 @@ const questions = [
       "Formula One"
     ],
     "optionsAr": [
-      "التجديف بالكانو",
-      "التزلج على اللوح الثلجي",
-      "التجديف",
-      "الفورمولا 1"
+      "كانويينج",
+      "سنووبواردينج",
+      "رووينج",
+      "فورمولا وني"
     ],
     "answer": 1,
     "difficulty": "easy",
@@ -4773,10 +4773,10 @@ const questions = [
       "Bobsleigh"
     ],
     "optionsAr": [
-      "الرماية بالقوس",
-      "التزلج الريفي",
-      "البياثلون",
-      "الزحافات الجماعية"
+      "اركهيري",
+      "كروسس-كوونتري سكيينج",
+      "بياتهلون",
+      "بوبسلييجه"
     ],
     "answer": 1,
     "difficulty": "easy",
@@ -4793,10 +4793,10 @@ const questions = [
       "Rugby union"
     ],
     "optionsAr": [
-      "التزلج على اللوح الثلجي",
-      "الجودو",
-      "الزحافات الجماعية",
-      "الرغبي يونيون"
+      "سنووبواردينج",
+      "جودو",
+      "بوبسلييجه",
+      "روجبي ونيون"
     ],
     "answer": 2,
     "difficulty": "easy",
@@ -4813,10 +4813,10 @@ const questions = [
       "Table tennis"
     ],
     "optionsAr": [
-      "الزحافات الفردية",
-      "الزحافات الجماعية",
-      "البولو",
-      "تنس الطاولة"
+      "لوجي",
+      "بوبسلييجه",
+      "بولو",
+      "تابلي تيننيس"
     ],
     "answer": 0,
     "difficulty": "easy",
@@ -4833,10 +4833,10 @@ const questions = [
       "Luge"
     ],
     "optionsAr": [
-      "التسلق الرياضي",
+      "سبورت كليمبينج",
       "كرة السلة",
-      "الهيكل العظمي الثلجي",
-      "الزحافات الفردية"
+      "سكيليتون",
+      "لوجي"
     ],
     "answer": 2,
     "difficulty": "easy",
@@ -4853,10 +4853,10 @@ const questions = [
       "Discus throw"
     ],
     "optionsAr": [
-      "الجمباز الإيقاعي",
-      "كرة اليد",
-      "ركوب الأمواج",
-      "رمي القرص"
+      "رهيتهميك جيمناستيكس",
+      "تيام هاندبالل",
+      "سورفينج",
+      "ديسكوس تهروو"
     ],
     "answer": 2,
     "difficulty": "easy",
@@ -4873,10 +4873,10 @@ const questions = [
       "American football"
     ],
     "optionsAr": [
-      "سباق الدراجات على المضمار",
-      "التزلج على الماء بلوح",
-      "التجديف",
-      "كرة القدم الأمريكية"
+      "تراكك كيكلينج",
+      "واكيبواردينج",
+      "رووينج",
+      "اميريكان فووتبالل"
     ],
     "answer": 1,
     "difficulty": "easy",
@@ -4893,10 +4893,10 @@ const questions = [
       "American football"
     ],
     "optionsAr": [
-      "سباق الدراجات على المضمار",
-      "التجديف بالكاياك",
-      "ركوب الأمواج بالطائرة الورقية",
-      "كرة القدم الأمريكية"
+      "تراكك كيكلينج",
+      "كاياكينج",
+      "كيتيسورفينج",
+      "اميريكان فووتبالل"
     ],
     "answer": 1,
     "difficulty": "easy",
@@ -4913,10 +4913,10 @@ const questions = [
       "Field hockey"
     ],
     "optionsAr": [
-      "التجديف بالكانو",
-      "البلياردو",
-      "تنس الطاولة",
-      "هوكي الميدان"
+      "كانويينج",
+      "بيللياردس",
+      "تابلي تيننيس",
+      "فييلد هوككيي"
     ],
     "answer": 0,
     "difficulty": "easy",
@@ -4933,10 +4933,10 @@ const questions = [
       "Kitesurfing"
     ],
     "optionsAr": [
-      "البيسبول",
-      "الجمباز الفني",
-      "الجمباز الإيقاعي",
-      "ركوب الأمواج بالطائرة الورقية"
+      "باسيبالل",
+      "ارتيستيك جيمناستيكس",
+      "رهيتهميك جيمناستيكس",
+      "كيتيسورفينج"
     ],
     "answer": 3,
     "difficulty": "easy",
@@ -4953,10 +4953,10 @@ const questions = [
       "Kitesurfing"
     ],
     "optionsAr": [
-      "الملاكمة",
-      "كرة اليد",
-      "الهيكل العظمي الثلجي",
-      "ركوب الأمواج بالطائرة الورقية"
+      "بوكسينج",
+      "تيام هاندبالل",
+      "سكيليتون",
+      "كيتيسورفينج"
     ],
     "answer": 0,
     "difficulty": "easy",
@@ -4973,10 +4973,10 @@ const questions = [
       "Sport shooting"
     ],
     "optionsAr": [
-      "الفورمولا 1",
-      "الجودو",
-      "ركوب الأمواج بالطائرة الورقية",
-      "الرماية الرياضية"
+      "فورمولا وني",
+      "جودو",
+      "كيتيسورفينج",
+      "سبورت سهووتينج"
     ],
     "answer": 1,
     "difficulty": "easy",
@@ -4993,10 +4993,10 @@ const questions = [
       "Taekwondo"
     ],
     "optionsAr": [
-      "كرة القدم الأمريكية",
-      "سباق السيارات",
-      "التجديف",
-      "التايكوندو"
+      "اميريكان فووتبالل",
+      "موتور راكينج",
+      "رووينج",
+      "تايكووندو"
     ],
     "answer": 3,
     "difficulty": "easy",
@@ -5013,10 +5013,10 @@ const questions = [
       "Athletics relay"
     ],
     "optionsAr": [
-      "البلياردو",
-      "البياثلون",
-      "المصارعة",
-      "تتابع ألعاب القوى"
+      "بيللياردس",
+      "بياتهلون",
+      "وريستلينج",
+      "اتهليتيكس ريلاي"
     ],
     "answer": 2,
     "difficulty": "easy",
@@ -5033,10 +5033,10 @@ const questions = [
       "Fencing"
     ],
     "optionsAr": [
-      "البلياردو",
-      "التسلق الرياضي",
-      "الزحافات الجماعية",
-      "المبارزة"
+      "بيللياردس",
+      "سبورت كليمبينج",
+      "بوبسلييجه",
+      "فينكينج"
     ],
     "answer": 3,
     "difficulty": "easy",
@@ -5053,10 +5053,10 @@ const questions = [
       "Snooker"
     ],
     "optionsAr": [
-      "تتابع ألعاب القوى",
-      "الرماية الرياضية",
-      "سباق الدراجات على المضمار",
-      "السنوكر"
+      "اتهليتيكس ريلاي",
+      "سبورت سهووتينج",
+      "تراكك كيكلينج",
+      "سنووكير"
     ],
     "answer": 1,
     "difficulty": "easy",
@@ -5073,10 +5073,10 @@ const questions = [
       "Biathlon"
     ],
     "optionsAr": [
-      "التايكوندو",
-      "سباق الحواجز",
+      "تايكووندو",
+      "هوردلينج",
       "الكرة الطائرة",
-      "البياثلون"
+      "بياتهلون"
     ],
     "answer": 3,
     "difficulty": "easy",
@@ -5093,10 +5093,10 @@ const questions = [
       "Track cycling"
     ],
     "optionsAr": [
-      "البولو",
-      "الزحافات الجماعية",
-      "الجمباز الإيقاعي",
-      "سباق الدراجات على المضمار"
+      "بولو",
+      "بوبسلييجه",
+      "رهيتهميك جيمناستيكس",
+      "تراكك كيكلينج"
     ],
     "answer": 3,
     "difficulty": "easy",
@@ -5113,10 +5113,10 @@ const questions = [
       "Road cycling"
     ],
     "optionsAr": [
-      "الهيكل العظمي الثلجي",
-      "سباق الدراجات على المضمار",
-      "التزلج على الماء بلوح",
-      "سباق الدراجات على الطريق"
+      "سكيليتون",
+      "تراكك كيكلينج",
+      "واكيبواردينج",
+      "رواد كيكلينج"
     ],
     "answer": 3,
     "difficulty": "easy",
@@ -5133,10 +5133,10 @@ const questions = [
       "Golf"
     ],
     "optionsAr": [
-      "سباق الدراجات على الطريق",
+      "رواد كيكلينج",
       "تنس الريشة",
-      "الرغبي يونيون",
-      "الغولف"
+      "روجبي ونيون",
+      "جولف"
     ],
     "answer": 0,
     "difficulty": "easy",
@@ -5153,10 +5153,10 @@ const questions = [
       "Track sprinting"
     ],
     "optionsAr": [
-      "الرغبي يونيون",
-      "الإبحار الشراعي",
-      "سباق التتابع",
-      "العدو السريع"
+      "روجبي ونيون",
+      "سايلينج",
+      "ريلاي راكينج",
+      "تراكك سبرينتينج"
     ],
     "answer": 0,
     "difficulty": "easy",
@@ -5173,10 +5173,10 @@ const questions = [
       "American football"
     ],
     "optionsAr": [
-      "رمي الرمح",
-      "رمي القرص",
+      "جافيلين تهروو",
+      "ديسكوس تهروو",
       "السباحة",
-      "كرة القدم الأمريكية"
+      "اميريكان فووتبالل"
     ],
     "answer": 3,
     "difficulty": "easy",
@@ -5193,10 +5193,10 @@ const questions = [
       "Billiards"
     ],
     "optionsAr": [
-      "البيسبول",
-      "التجديف بالكانو",
-      "البولو",
-      "البلياردو"
+      "باسيبالل",
+      "كانويينج",
+      "بولو",
+      "بيللياردس"
     ],
     "answer": 0,
     "difficulty": "easy",
@@ -5214,9 +5214,9 @@ const questions = [
     ],
     "optionsAr": [
       "كرة السلة",
-      "البيسبول",
-      "دفع الجلة",
-      "كرة القدم الأمريكية"
+      "باسيبالل",
+      "سهوت بوت",
+      "اميريكان فووتبالل"
     ],
     "answer": 0,
     "difficulty": "easy",
@@ -5233,10 +5233,10 @@ const questions = [
       "American football"
     ],
     "optionsAr": [
-      "الجمباز الفني",
-      "هوكي الميدان",
-      "السنوكر",
-      "كرة القدم الأمريكية"
+      "ارتيستيك جيمناستيكس",
+      "فييلد هوككيي",
+      "سنووكير",
+      "اميريكان فووتبالل"
     ],
     "answer": 1,
     "difficulty": "easy",
@@ -5253,10 +5253,10 @@ const questions = [
       "Association football"
     ],
     "optionsAr": [
-      "التجديف بالكاياك",
-      "الكريكيت",
+      "كاياكينج",
+      "كريككيت",
       "الكرة الطائرة",
-      "كرة القدم"
+      "اسسوكياتيون فووتبالل"
     ],
     "answer": 3,
     "difficulty": "easy",
@@ -5274,9 +5274,9 @@ const questions = [
     ],
     "optionsAr": [
       "الكرة الطائرة",
-      "التزلج على اللوح الثلجي",
-      "رمي الرمح",
-      "التزلج على الماء بلوح"
+      "سنووبواردينج",
+      "جافيلين تهروو",
+      "واكيبواردينج"
     ],
     "answer": 0,
     "difficulty": "easy",
@@ -5294,9 +5294,9 @@ const questions = [
     ],
     "optionsAr": [
       "تنس الريشة",
-      "البيسبول",
-      "الرغبي يونيون",
-      "التزلج على الماء بلوح"
+      "باسيبالل",
+      "روجبي ونيون",
+      "واكيبواردينج"
     ],
     "answer": 2,
     "difficulty": "easy",
@@ -5313,10 +5313,10 @@ const questions = [
       "Discus throw"
     ],
     "optionsAr": [
-      "التجديف",
-      "الزحافات الجماعية",
-      "الكريكيت",
-      "رمي القرص"
+      "رووينج",
+      "بوبسلييجه",
+      "كريككيت",
+      "ديسكوس تهروو"
     ],
     "answer": 2,
     "difficulty": "easy",
@@ -5334,9 +5334,9 @@ const questions = [
     ],
     "optionsAr": [
       "السباحة",
-      "هوكي الميدان",
-      "الغولف",
-      "البيسبول"
+      "فييلد هوككيي",
+      "جولف",
+      "باسيبالل"
     ],
     "answer": 2,
     "difficulty": "easy",
@@ -5353,10 +5353,10 @@ const questions = [
       "Snowboarding"
     ],
     "optionsAr": [
-      "التجديف بالكاياك",
-      "الفورمولا 1",
-      "التزلج الريفي",
-      "التزلج على اللوح الثلجي"
+      "كاياكينج",
+      "فورمولا وني",
+      "كروسس-كوونتري سكيينج",
+      "سنووبواردينج"
     ],
     "answer": 1,
     "difficulty": "easy",
@@ -5373,10 +5373,10 @@ const questions = [
       "Cross-country skiing"
     ],
     "optionsAr": [
-      "الجمباز الفني",
-      "سباق السيارات",
-      "الرماية بالقوس",
-      "التزلج الريفي"
+      "ارتيستيك جيمناستيكس",
+      "موتور راكينج",
+      "اركهيري",
+      "كروسس-كوونتري سكيينج"
     ],
     "answer": 1,
     "difficulty": "easy",
@@ -5394,8 +5394,8 @@ const questions = [
     ],
     "optionsAr": [
       "الكرة الطائرة",
-      "التزلج الريفي",
-      "الجمباز الإيقاعي",
+      "كروسس-كوونتري سكيينج",
+      "رهيتهميك جيمناستيكس",
       "السباحة"
     ],
     "answer": 3,
@@ -5413,10 +5413,10 @@ const questions = [
       "Rhythmic gymnastics"
     ],
     "optionsAr": [
-      "ركوب الأمواج بالطائرة الورقية",
+      "كيتيسورفينج",
       "الكرة الطائرة",
-      "تتابع ألعاب القوى",
-      "الجمباز الإيقاعي"
+      "اتهليتيكس ريلاي",
+      "رهيتهميك جيمناستيكس"
     ],
     "answer": 2,
     "difficulty": "easy",
@@ -5433,10 +5433,10 @@ const questions = [
       "Track cycling"
     ],
     "optionsAr": [
-      "الرماية الرياضية",
-      "الرغبي يونيون",
-      "القفز بالزانة",
-      "سباق الدراجات على المضمار"
+      "سبورت سهووتينج",
+      "روجبي ونيون",
+      "بولي فاولت",
+      "تراكك كيكلينج"
     ],
     "answer": 1,
     "difficulty": "easy",
@@ -5453,10 +5453,10 @@ const questions = [
       "Sport shooting"
     ],
     "optionsAr": [
-      "سباق السيارات",
-      "كرة اليد",
-      "رمي الرمح",
-      "الرماية الرياضية"
+      "موتور راكينج",
+      "تيام هاندبالل",
+      "جافيلين تهروو",
+      "سبورت سهووتينج"
     ],
     "answer": 1,
     "difficulty": "easy",
@@ -5474,9 +5474,9 @@ const questions = [
     ],
     "optionsAr": [
       "الكرة الطائرة",
-      "الهيكل العظمي الثلجي",
-      "هوكي الجليد",
-      "الزحافات الجماعية"
+      "سكيليتون",
+      "يكي هوككيي",
+      "بوبسلييجه"
     ],
     "answer": 2,
     "difficulty": "easy",
@@ -5493,10 +5493,10 @@ const questions = [
       "Pole vault"
     ],
     "optionsAr": [
-      "هوكي الجليد",
-      "التجديف بالكانو",
+      "يكي هوككيي",
+      "كانويينج",
       "الكرة الطائرة",
-      "القفز بالزانة"
+      "بولي فاولت"
     ],
     "answer": 0,
     "difficulty": "easy",
@@ -5513,10 +5513,10 @@ const questions = [
       "Rowing"
     ],
     "optionsAr": [
-      "ركوب الأمواج بالطائرة الورقية",
+      "كيتيسورفينج",
       "التنس",
       "الكرة الطائرة",
-      "التجديف"
+      "رووينج"
     ],
     "answer": 1,
     "difficulty": "easy",
@@ -5534,9 +5534,9 @@ const questions = [
     ],
     "optionsAr": [
       "التنس",
-      "الرماية بالقوس",
-      "المصارعة",
-      "ركوب الأمواج بالطائرة الورقية"
+      "اركهيري",
+      "وريستلينج",
+      "كيتيسورفينج"
     ],
     "answer": 0,
     "difficulty": "easy",
@@ -5553,10 +5553,10 @@ const questions = [
       "Table tennis"
     ],
     "optionsAr": [
-      "المصارعة",
-      "سباق السيارات",
-      "التجديف بالكاياك",
-      "تنس الطاولة"
+      "وريستلينج",
+      "موتور راكينج",
+      "كاياكينج",
+      "تابلي تيننيس"
     ],
     "answer": 3,
     "difficulty": "easy",
@@ -5574,9 +5574,9 @@ const questions = [
     ],
     "optionsAr": [
       "الكرة الطائرة",
-      "البلياردو",
-      "البياثلون",
-      "الجمباز الفني"
+      "بيللياردس",
+      "بياتهلون",
+      "ارتيستيك جيمناستيكس"
     ],
     "answer": 1,
     "difficulty": "easy",
@@ -5593,10 +5593,10 @@ const questions = [
       "Formula One"
     ],
     "optionsAr": [
-      "هوكي الميدان",
-      "الجمباز الإيقاعي",
-      "البياثلون",
-      "الفورمولا 1"
+      "فييلد هوككيي",
+      "رهيتهميك جيمناستيكس",
+      "بياتهلون",
+      "فورمولا وني"
     ],
     "answer": 1,
     "difficulty": "easy",
@@ -7013,10 +7013,10 @@ const questions = [
       "Birdie"
     ],
     "optionsAr": [
-      "إيس",
-      "الزانة",
-      "الميمنة",
-      "بيردي"
+      "اكي",
+      "بولي",
+      "ستاربوارد",
+      "بيرديي"
     ],
     "answer": 3,
     "difficulty": "hard",
@@ -7033,10 +7033,10 @@ const questions = [
       "Eagle"
     ],
     "optionsAr": [
-      "البطاقة الحمراء",
-      "ضربة رابحة",
-      "لوح ركوب الأمواج",
-      "إيغل"
+      "ريد كارد",
+      "ويننير",
+      "سورفبوارد",
+      "نسر"
     ],
     "answer": 3,
     "difficulty": "hard",
@@ -7053,10 +7053,10 @@ const questions = [
       "Bogey"
     ],
     "optionsAr": [
-      "منطقة الانطلاق",
-      "الزانة",
-      "تعادل Deuce",
-      "بوغي"
+      "تييينج جرووند",
+      "بولي",
+      "تعادل",
+      "بوجيي"
     ],
     "answer": 3,
     "difficulty": "hard",
@@ -7073,10 +7073,10 @@ const questions = [
       "Bull"
     ],
     "optionsAr": [
-      "مطرقة البولو",
-      "قفزة",
-      "إيس",
-      "مركز اللوحة"
+      "مالليت",
+      "جومب",
+      "اكي",
+      "بولل"
     ],
     "answer": 2,
     "difficulty": "hard",
@@ -7093,10 +7093,10 @@ const questions = [
       "Pit lane"
     ],
     "optionsAr": [
-      "صد",
+      "بلوكك",
       "40",
-      "تمريرة حاسمة",
-      "ممر الصيانة"
+      "اسسيست",
+      "بيت لاني"
     ],
     "answer": 1,
     "difficulty": "hard",
@@ -7113,10 +7113,10 @@ const questions = [
       "Red card"
     ],
     "optionsAr": [
-      "فقدان الاستحواذ",
-      "تعادل Deuce",
+      "تورنوفير",
+      "تعادل",
       "بيلوتون",
-      "البطاقة الحمراء"
+      "ريد كارد"
     ],
     "answer": 1,
     "difficulty": "hard",
@@ -7133,10 +7133,10 @@ const questions = [
       "Advantage"
     ],
     "optionsAr": [
-      "منطقة الغرين",
-      "لوح ركوب الأمواج",
-      "ضربة شبكية",
-      "أفضلية"
+      "جريين",
+      "سورفبوارد",
+      "نيت سهوت",
+      "ادفانتاجي"
     ],
     "answer": 3,
     "difficulty": "hard",
@@ -7153,10 +7153,10 @@ const questions = [
       "Penalty kick"
     ],
     "optionsAr": [
-      "المستقبل",
-      "تجميعة نقاط",
-      "منطقة الغرين",
-      "ركلة جزاء"
+      "كاتكهير",
+      "برياك",
+      "جريين",
+      "بينالتي كيكك"
     ],
     "answer": 3,
     "difficulty": "hard",
@@ -7173,10 +7173,10 @@ const questions = [
       "Strikeout"
     ],
     "optionsAr": [
-      "تصويبة مهدرة",
-      "ركلة ركنية",
-      "إيغل",
-      "خروج بالضربات"
+      "ميسسيد فييلد جوال",
+      "كورنير كيكك",
+      "نسر",
+      "ستريكيووت"
     ],
     "answer": 1,
     "difficulty": "hard",
@@ -7193,10 +7193,10 @@ const questions = [
       "Ball"
     ],
     "optionsAr": [
-      "Over",
-      "البطاقة الصفراء",
-      "رمية تماس",
-      "Ball"
+      "خارج الملعب",
+      "ييللوو كارد",
+      "تهروو-ين",
+      "الكرة"
     ],
     "answer": 2,
     "difficulty": "hard",
@@ -7213,10 +7213,10 @@ const questions = [
       "Coxswain"
     ],
     "optionsAr": [
-      "تمريرة حاسمة",
-      "البطاقة الحمراء",
-      "الميمنة",
-      "قائد التوجيه"
+      "اسسيست",
+      "ريد كارد",
+      "ستاربوارد",
+      "كوكسسواين"
     ],
     "answer": 1,
     "difficulty": "hard",
@@ -7233,10 +7233,10 @@ const questions = [
       "Count"
     ],
     "optionsAr": [
-      "الميسرة",
-      "البطاقة الصفراء",
+      "بورت",
+      "ييللوو كارد",
       "دوبوك",
-      "العد"
+      "كوونت"
     ],
     "answer": 1,
     "difficulty": "hard",
@@ -7253,10 +7253,10 @@ const questions = [
       "Eagle"
     ],
     "optionsAr": [
-      "رمية تماس",
-      "Clear",
-      "مخالفة المشي",
-      "إيغل"
+      "تهروو-ين",
+      "واضح",
+      "ترافيلينج",
+      "نسر"
     ],
     "answer": 2,
     "difficulty": "hard",
@@ -7273,10 +7273,10 @@ const questions = [
       "Jump shot"
     ],
     "optionsAr": [
-      "البطاقة الحمراء",
-      "سباحة الظهر",
-      "Clear",
-      "تصويبة قفز"
+      "ريد كارد",
+      "باككستروكي",
+      "واضح",
+      "جومب سهوت"
     ],
     "answer": 3,
     "difficulty": "hard",
@@ -7293,10 +7293,10 @@ const questions = [
       "Assist"
     ],
     "optionsAr": [
-      "Try",
-      "بيردي",
-      "البطاقة الحمراء",
-      "تمريرة حاسمة"
+      "تري",
+      "بيرديي",
+      "ريد كارد",
+      "اسسيست"
     ],
     "answer": 3,
     "difficulty": "hard",
@@ -7313,10 +7313,10 @@ const questions = [
       "Red card"
     ],
     "optionsAr": [
-      "الميمنة",
-      "تصويبة مهدرة",
-      "أفضلية",
-      "البطاقة الحمراء"
+      "ستاربوارد",
+      "ميسسيد فييلد جوال",
+      "ادفانتاجي",
+      "ريد كارد"
     ],
     "answer": 1,
     "difficulty": "hard",
@@ -7333,10 +7333,10 @@ const questions = [
       "Libero"
     ],
     "optionsAr": [
-      "هوم ران",
-      "ممر المبارزة",
-      "ركلة جزاء",
-      "ليبرو"
+      "هومي رون",
+      "بيستي",
+      "بينالتي كيكك",
+      "ليبيرو"
     ],
     "answer": 0,
     "difficulty": "hard",
@@ -7353,10 +7353,10 @@ const questions = [
       "Backstroke"
     ],
     "optionsAr": [
-      "ضربة رابحة",
-      "قائد التوجيه",
-      "Ball",
-      "سباحة الظهر"
+      "ويننير",
+      "كوكسسواين",
+      "الكرة",
+      "باككستروكي"
     ],
     "answer": 2,
     "difficulty": "hard",
@@ -7373,10 +7373,10 @@ const questions = [
       "Strikeout"
     ],
     "optionsAr": [
-      "ضربة رابحة",
-      "تجميعة نقاط",
-      "سباحة الظهر",
-      "خروج بالضربات"
+      "ويننير",
+      "برياك",
+      "باككستروكي",
+      "ستريكيووت"
     ],
     "answer": 3,
     "difficulty": "hard",
@@ -7393,9 +7393,9 @@ const questions = [
       "Peloton"
     ],
     "optionsAr": [
-      "سبع مسابقات",
-      "ويكيت",
-      "لوح ركوب الأمواج",
+      "سيفين",
+      "ويككيت",
+      "سورفبوارد",
       "بيلوتون"
     ],
     "answer": 1,
@@ -7413,9 +7413,9 @@ const questions = [
       "40"
     ],
     "optionsAr": [
-      "ست نقاط",
-      "مركز اللوحة",
-      "حارس المرمى",
+      "سيكس",
+      "بولل",
+      "جوالكييبير",
       "40"
     ],
     "answer": 0,
@@ -7433,10 +7433,10 @@ const questions = [
       "Cross-country skiing and rifle shooting"
     ],
     "optionsAr": [
-      "إيبون",
-      "ركلة تحويلية",
-      "Over",
-      "التزلج الريفي والرماية"
+      "يببون",
+      "كونفيرسيون",
+      "خارج الملعب",
+      "كروسس-كوونتري سكيينج اند ريفلي سهووتينج"
     ],
     "answer": 2,
     "difficulty": "hard",
@@ -7453,10 +7453,10 @@ const questions = [
       "Breaststroke"
     ],
     "optionsAr": [
-      "Try",
-      "Clear",
-      "بوغي",
-      "سباحة الصدر"
+      "تري",
+      "واضح",
+      "بوجيي",
+      "برياستستروكي"
     ],
     "answer": 0,
     "difficulty": "hard",
@@ -7473,10 +7473,10 @@ const questions = [
       "Winner"
     ],
     "optionsAr": [
-      "ركلة تحويلية",
-      "Over",
-      "بيردي",
-      "ضربة رابحة"
+      "كونفيرسيون",
+      "خارج الملعب",
+      "بيرديي",
+      "ويننير"
     ],
     "answer": 0,
     "difficulty": "hard",
@@ -7493,10 +7493,10 @@ const questions = [
       "Jockey"
     ],
     "optionsAr": [
-      "البطاقة الحمراء",
-      "Quarterback",
-      "العلم المربّع",
-      "فارس السباق"
+      "ريد كارد",
+      "قوارتيرباكك",
+      "كهيقويريد فلاج",
+      "جوككيي"
     ],
     "answer": 1,
     "difficulty": "hard",
@@ -7513,10 +7513,10 @@ const questions = [
       "Winner"
     ],
     "optionsAr": [
-      "فقدان الاستحواذ",
-      "صد",
-      "منطقة التسليم",
-      "ضربة رابحة"
+      "تورنوفير",
+      "بلوكك",
+      "يكسكهانجي زوني",
+      "ويننير"
     ],
     "answer": 0,
     "difficulty": "hard",
@@ -7533,10 +7533,10 @@ const questions = [
       "Throw-in"
     ],
     "optionsAr": [
-      "ليبرو",
-      "ضربة ساحقة",
+      "ليبيرو",
+      "سبيكي",
       "دوبوك",
-      "رمية تماس"
+      "تهروو-ين"
     ],
     "answer": 1,
     "difficulty": "hard",
@@ -7553,10 +7553,10 @@ const questions = [
       "Penalty kick"
     ],
     "optionsAr": [
-      "صد",
-      "إيبون",
-      "رمية تماس",
-      "ركلة جزاء"
+      "بلوكك",
+      "يببون",
+      "تهروو-ين",
+      "بينالتي كيكك"
     ],
     "answer": 0,
     "difficulty": "hard",
@@ -7574,9 +7574,9 @@ const questions = [
     ],
     "optionsAr": [
       "40",
-      "سباحة الظهر",
-      "ليبرو",
-      "إعادة الإرسال"
+      "باككستروكي",
+      "ليبيرو",
+      "ليت"
     ],
     "answer": 2,
     "difficulty": "hard",
@@ -7593,10 +7593,10 @@ const questions = [
       "Net shot"
     ],
     "optionsAr": [
-      "عشر مسابقات",
-      "السباحة الحرة",
-      "إيبون",
-      "ضربة شبكية"
+      "تين",
+      "فرييستيلي",
+      "يببون",
+      "نيت سهوت"
     ],
     "answer": 3,
     "difficulty": "hard",
@@ -7613,10 +7613,10 @@ const questions = [
       "Break"
     ],
     "optionsAr": [
-      "عشر مسابقات",
-      "هوم ران",
-      "Clear",
-      "تجميعة نقاط"
+      "تين",
+      "هومي رون",
+      "واضح",
+      "برياك"
     ],
     "answer": 2,
     "difficulty": "hard",
@@ -7633,10 +7633,10 @@ const questions = [
       "Ball"
     ],
     "optionsAr": [
-      "Try",
-      "إعادة الإرسال",
-      "ليبرو",
-      "Ball"
+      "تري",
+      "ليت",
+      "ليبيرو",
+      "الكرة"
     ],
     "answer": 1,
     "difficulty": "hard",
@@ -7653,10 +7653,10 @@ const questions = [
       "Exchange zone"
     ],
     "optionsAr": [
-      "السباحة والدراجات والجري",
-      "العارضة",
-      "سباحة الظهر",
-      "منطقة التسليم"
+      "سويممينج, كيكلينج اند روننينج",
+      "كروسسبار",
+      "باككستروكي",
+      "يكسكهانجي زوني"
     ],
     "answer": 2,
     "difficulty": "hard",
@@ -7673,10 +7673,10 @@ const questions = [
       "Seven"
     ],
     "optionsAr": [
-      "Over",
-      "العلم المربّع",
-      "سباحة الصدر",
-      "سبع مسابقات"
+      "خارج الملعب",
+      "كهيقويريد فلاج",
+      "برياستستروكي",
+      "سيفين"
     ],
     "answer": 2,
     "difficulty": "hard",
@@ -7693,10 +7693,10 @@ const questions = [
       "Bull"
     ],
     "optionsAr": [
-      "السباحة الحرة",
-      "البيت",
-      "قائد التوجيه",
-      "مركز اللوحة"
+      "فرييستيلي",
+      "هووسي",
+      "كوكسسواين",
+      "بولل"
     ],
     "answer": 0,
     "difficulty": "hard",
@@ -7713,10 +7713,10 @@ const questions = [
       "Clear"
     ],
     "optionsAr": [
-      "منطقة التسليم",
-      "ركلة جزاء",
-      "ركلة تحويلية",
-      "Clear"
+      "يكسكهانجي زوني",
+      "بينالتي كيكك",
+      "كونفيرسيون",
+      "واضح"
     ],
     "answer": 0,
     "difficulty": "hard",
@@ -7733,10 +7733,10 @@ const questions = [
       "Teeing ground"
     ],
     "optionsAr": [
-      "إعادة الإرسال",
-      "العارضة",
-      "حارس المرمى",
-      "منطقة الانطلاق"
+      "ليت",
+      "كروسسبار",
+      "جوالكييبير",
+      "تييينج جرووند"
     ],
     "answer": 1,
     "difficulty": "hard",
@@ -7753,10 +7753,10 @@ const questions = [
       "Six"
     ],
     "optionsAr": [
-      "قفزة",
-      "المستقبل",
-      "الزانة",
-      "ست نقاط"
+      "جومب",
+      "كاتكهير",
+      "بولي",
+      "سيكس"
     ],
     "answer": 2,
     "difficulty": "hard",
@@ -7773,10 +7773,10 @@ const questions = [
       "Swimming, cycling and running"
     ],
     "optionsAr": [
-      "إيس",
+      "اكي",
       "بيلوتون",
-      "أفضلية",
-      "السباحة والدراجات والجري"
+      "ادفانتاجي",
+      "سويممينج, كيكلينج اند روننينج"
     ],
     "answer": 1,
     "difficulty": "hard",
@@ -7793,10 +7793,10 @@ const questions = [
       "Corner kick"
     ],
     "optionsAr": [
-      "فارس السباق",
-      "ممر الصيانة",
-      "هوم ران",
-      "ركلة ركنية"
+      "جوككيي",
+      "بيت لاني",
+      "هومي رون",
+      "كورنير كيكك"
     ],
     "answer": 1,
     "difficulty": "hard",
@@ -7813,10 +7813,10 @@ const questions = [
       "Chequered flag"
     ],
     "optionsAr": [
-      "ركلة ركنية",
-      "خمس رياضات",
-      "سباحة الظهر",
-      "العلم المربّع"
+      "كورنير كيكك",
+      "فيفي",
+      "باككستروكي",
+      "كهيقويريد فلاج"
     ],
     "answer": 3,
     "difficulty": "hard",
@@ -7833,10 +7833,10 @@ const questions = [
       "Red card"
     ],
     "optionsAr": [
-      "قفزة",
-      "ست نقاط",
-      "ضربة قاضية",
-      "البطاقة الحمراء"
+      "جومب",
+      "سيكس",
+      "كنوككووت",
+      "ريد كارد"
     ],
     "answer": 2,
     "difficulty": "hard",
@@ -7853,10 +7853,10 @@ const questions = [
       "Red card"
     ],
     "optionsAr": [
-      "ست نقاط",
-      "العد",
-      "حارس المرمى",
-      "البطاقة الحمراء"
+      "سيكس",
+      "كوونت",
+      "جوالكييبير",
+      "ريد كارد"
     ],
     "answer": 1,
     "difficulty": "hard",
@@ -7874,9 +7874,9 @@ const questions = [
     ],
     "optionsAr": [
       "بيلوتون",
-      "سباحة الظهر",
-      "Clear",
-      "إيبون"
+      "باككستروكي",
+      "واضح",
+      "يببون"
     ],
     "answer": 3,
     "difficulty": "hard",
@@ -7894,9 +7894,9 @@ const questions = [
     ],
     "optionsAr": [
       "دوبوك",
-      "مركز الهدف",
-      "منطقة التسليم",
-      "Quarterback"
+      "بوللسييي",
+      "يكسكهانجي زوني",
+      "قوارتيرباكك"
     ],
     "answer": 0,
     "difficulty": "hard",
@@ -7913,9 +7913,9 @@ const questions = [
       "Dobok"
     ],
     "optionsAr": [
-      "ركلة ركنية",
-      "ممر المبارزة",
-      "السباحة الحرة",
+      "كورنير كيكك",
+      "بيستي",
+      "فرييستيلي",
       "دوبوك"
     ],
     "answer": 1,
@@ -7933,10 +7933,10 @@ const questions = [
       "Try"
     ],
     "optionsAr": [
-      "منطقة الغرين",
-      "لوح ركوب الأمواج",
-      "البيت",
-      "Try"
+      "جريين",
+      "سورفبوارد",
+      "هووسي",
+      "تري"
     ],
     "answer": 0,
     "difficulty": "hard",
@@ -7953,10 +7953,10 @@ const questions = [
       "Teeing ground"
     ],
     "optionsAr": [
-      "ركلة تحويلية",
-      "البطاقة الصفراء",
-      "المستقبل",
-      "منطقة الانطلاق"
+      "كونفيرسيون",
+      "ييللوو كارد",
+      "كاتكهير",
+      "تييينج جرووند"
     ],
     "answer": 3,
     "difficulty": "hard",
@@ -7973,10 +7973,10 @@ const questions = [
       "Try"
     ],
     "optionsAr": [
-      "قائد التوجيه",
-      "الميمنة",
-      "البيت",
-      "Try"
+      "كوكسسواين",
+      "ستاربوارد",
+      "هووسي",
+      "تري"
     ],
     "answer": 2,
     "difficulty": "hard",
@@ -7993,10 +7993,10 @@ const questions = [
       "Bullseye"
     ],
     "optionsAr": [
-      "تصويبة قفز",
-      "إعادة الإرسال",
-      "الميسرة",
-      "مركز الهدف"
+      "جومب سهوت",
+      "ليت",
+      "بورت",
+      "بوللسييي"
     ],
     "answer": 3,
     "difficulty": "hard",
@@ -8013,10 +8013,10 @@ const questions = [
       "Home run"
     ],
     "optionsAr": [
-      "السباحة والدراجات والجري",
-      "لوح ركوب الأمواج",
-      "خمس رياضات",
-      "هوم ران"
+      "سويممينج, كيكلينج اند روننينج",
+      "سورفبوارد",
+      "فيفي",
+      "هومي رون"
     ],
     "answer": 1,
     "difficulty": "hard",
@@ -8033,10 +8033,10 @@ const questions = [
       "Stick landing"
     ],
     "optionsAr": [
-      "ضربة رابحة",
-      "الميسرة",
+      "ويننير",
+      "بورت",
       "دوبوك",
-      "هبوط ثابت"
+      "ستيكك لاندينج"
     ],
     "answer": 1,
     "difficulty": "hard",
@@ -8053,10 +8053,10 @@ const questions = [
       "Red card"
     ],
     "optionsAr": [
-      "الميمنة",
-      "تمريرة حاسمة",
-      "ركلة ركنية",
-      "البطاقة الحمراء"
+      "ستاربوارد",
+      "اسسيست",
+      "كورنير كيكك",
+      "ريد كارد"
     ],
     "answer": 0,
     "difficulty": "hard",
@@ -8073,10 +8073,10 @@ const questions = [
       "Bullseye"
     ],
     "optionsAr": [
-      "البطاقة الصفراء",
-      "قائد التوجيه",
-      "إعادة الإرسال",
-      "مركز الهدف"
+      "ييللوو كارد",
+      "كوكسسواين",
+      "ليت",
+      "بوللسييي"
     ],
     "answer": 1,
     "difficulty": "hard",
@@ -8093,10 +8093,10 @@ const questions = [
       "Mallet"
     ],
     "optionsAr": [
-      "فارس السباق",
-      "قائد التوجيه",
-      "بيردي",
-      "مطرقة البولو"
+      "جوككيي",
+      "كوكسسواين",
+      "بيرديي",
+      "مالليت"
     ],
     "answer": 0,
     "difficulty": "hard",
@@ -8113,10 +8113,10 @@ const questions = [
       "Starboard"
     ],
     "optionsAr": [
-      "التزلج الريفي والرماية",
-      "Try",
-      "مطرقة البولو",
-      "الميمنة"
+      "كروسس-كوونتري سكيينج اند ريفلي سهووتينج",
+      "تري",
+      "مالليت",
+      "ستاربوارد"
     ],
     "answer": 2,
     "difficulty": "hard",
@@ -8133,10 +8133,10 @@ const questions = [
       "Jockey"
     ],
     "optionsAr": [
-      "هوم ران",
-      "إيبون",
-      "تجميعة نقاط",
-      "فارس السباق"
+      "هومي رون",
+      "يببون",
+      "برياك",
+      "جوككيي"
     ],
     "answer": 2,
     "difficulty": "hard",
@@ -8153,10 +8153,10 @@ const questions = [
       "Bull"
     ],
     "optionsAr": [
-      "السباحة والدراجات والجري",
-      "ست نقاط",
-      "ضربة شبكية",
-      "مركز اللوحة"
+      "سويممينج, كيكلينج اند روننينج",
+      "سيكس",
+      "نيت سهوت",
+      "بولل"
     ],
     "answer": 3,
     "difficulty": "hard",
@@ -8173,10 +8173,10 @@ const questions = [
       "Swimming, cycling and running"
     ],
     "optionsAr": [
-      "هبوط ثابت",
-      "رامي الكرة",
+      "ستيكك لاندينج",
+      "بوولير",
       "بيلوتون",
-      "السباحة والدراجات والجري"
+      "سويممينج, كيكلينج اند روننينج"
     ],
     "answer": 0,
     "difficulty": "hard",
@@ -8193,10 +8193,10 @@ const questions = [
       "Teeing ground"
     ],
     "optionsAr": [
-      "الزانة",
-      "قفزة",
-      "ركلة تحويلية",
-      "منطقة الانطلاق"
+      "بولي",
+      "جومب",
+      "كونفيرسيون",
+      "تييينج جرووند"
     ],
     "answer": 1,
     "difficulty": "hard",
@@ -8213,10 +8213,10 @@ const questions = [
       "Spike"
     ],
     "optionsAr": [
-      "التزلج الريفي والرماية",
-      "ويكيت",
-      "فقدان الاستحواذ",
-      "ضربة ساحقة"
+      "كروسس-كوونتري سكيينج اند ريفلي سهووتينج",
+      "ويككيت",
+      "تورنوفير",
+      "سبيكي"
     ],
     "answer": 0,
     "difficulty": "hard",
@@ -8233,10 +8233,10 @@ const questions = [
       "Strikeout"
     ],
     "optionsAr": [
-      "السباحة والدراجات والجري",
-      "الميمنة",
-      "إعادة الإرسال",
-      "خروج بالضربات"
+      "سويممينج, كيكلينج اند روننينج",
+      "ستاربوارد",
+      "ليت",
+      "ستريكيووت"
     ],
     "answer": 0,
     "difficulty": "hard",
@@ -8253,10 +8253,10 @@ const questions = [
       "Five"
     ],
     "optionsAr": [
-      "ركلة تحويلية",
-      "تمريرة حاسمة",
-      "تجميعة نقاط",
-      "خمس رياضات"
+      "كونفيرسيون",
+      "اسسيست",
+      "برياك",
+      "فيفي"
     ],
     "answer": 3,
     "difficulty": "hard",
@@ -8273,10 +8273,10 @@ const questions = [
       "Knockout"
     ],
     "optionsAr": [
-      "ضربة شبكية",
-      "الميمنة",
-      "عشر مسابقات",
-      "ضربة قاضية"
+      "نيت سهوت",
+      "ستاربوارد",
+      "تين",
+      "كنوككووت"
     ],
     "answer": 2,
     "difficulty": "hard",
@@ -8293,10 +8293,10 @@ const questions = [
       "Stick landing"
     ],
     "optionsAr": [
-      "خمس رياضات",
-      "سبع مسابقات",
-      "البيت",
-      "هبوط ثابت"
+      "فيفي",
+      "سيفين",
+      "هووسي",
+      "ستيكك لاندينج"
     ],
     "answer": 1,
     "difficulty": "hard",
@@ -8313,10 +8313,10 @@ const questions = [
       "Bowler"
     ],
     "optionsAr": [
-      "منطقة الانطلاق",
-      "إيس",
+      "تييينج جرووند",
+      "اكي",
       "دوبوك",
-      "رامي الكرة"
+      "بوولير"
     ],
     "answer": 3,
     "difficulty": "hard",
@@ -8333,10 +8333,10 @@ const questions = [
       "Goalkeeper"
     ],
     "optionsAr": [
-      "سباحة الظهر",
-      "تصويبة مهدرة",
-      "رامي الكرة",
-      "حارس المرمى"
+      "باككستروكي",
+      "ميسسيد فييلد جوال",
+      "بيتكهير",
+      "جوالكييبير"
     ],
     "answer": 2,
     "difficulty": "hard",
@@ -8353,10 +8353,10 @@ const questions = [
       "Block"
     ],
     "optionsAr": [
-      "Ball",
-      "بيردي",
-      "المستقبل",
-      "صد"
+      "الكرة",
+      "بيرديي",
+      "كاتكهير",
+      "بلوكك"
     ],
     "answer": 2,
     "difficulty": "hard",
@@ -8373,10 +8373,10 @@ const questions = [
       "Starboard"
     ],
     "optionsAr": [
-      "حارس المرمى",
-      "البطاقة الحمراء",
-      "منطقة الغرين",
-      "الميمنة"
+      "جوالكييبير",
+      "ريد كارد",
+      "جريين",
+      "ستاربوارد"
     ],
     "answer": 0,
     "difficulty": "hard",
@@ -8393,10 +8393,10 @@ const questions = [
       "Breaststroke"
     ],
     "optionsAr": [
-      "عشر مسابقات",
-      "ضربة قاضية",
-      "ضربة رابحة",
-      "سباحة الصدر"
+      "تين",
+      "كنوككووت",
+      "ويننير",
+      "برياستستروكي"
     ],
     "answer": 2,
     "difficulty": "hard",
@@ -8413,10 +8413,10 @@ const questions = [
       "Cillian Murphy"
     ],
     "optionsAr": [
-      "Tobey Maguire",
-      "Anthony Gonzalez",
-      "Tim Robbins",
-      "Cillian Murphy"
+      "توبيي ماجويري",
+      "انتهوني جونزاليز",
+      "تيم روببينس",
+      "كيلليان موربهي"
     ],
     "answer": 2,
     "difficulty": "easy",
@@ -8433,10 +8433,10 @@ const questions = [
       "Tom Hardy"
     ],
     "optionsAr": [
-      "Marlon Brando",
-      "Elijah Wood",
-      "Benedict Cumberbatch",
-      "Tom Hardy"
+      "مارلون براندو",
+      "يليجاه ووود",
+      "بينيديكت كومبيرباتكه",
+      "توم هاردي"
     ],
     "answer": 0,
     "difficulty": "easy",
@@ -8453,10 +8453,10 @@ const questions = [
       "Matthew McConaughey"
     ],
     "optionsAr": [
-      "Christian Bale",
-      "Matt Damon",
-      "Harrison Ford",
-      "Matthew McConaughey"
+      "كهريستيان بالي",
+      "ماتت دامون",
+      "هارريسون فورد",
+      "ماتتهيو مككوناوجهيي"
     ],
     "answer": 0,
     "difficulty": "easy",
@@ -8473,10 +8473,10 @@ const questions = [
       "Harrison Ford"
     ],
     "optionsAr": [
-      "Anthony Gonzalez",
-      "Naomi Watts",
-      "John Travolta",
-      "Harrison Ford"
+      "انتهوني جونزاليز",
+      "ناومي واتتس",
+      "جوهن ترافولتا",
+      "هارريسون فورد"
     ],
     "answer": 2,
     "difficulty": "easy",
@@ -8493,10 +8493,10 @@ const questions = [
       "Tom Hanks"
     ],
     "optionsAr": [
-      "Tim Robbins",
-      "Yōji Matsuda",
-      "Marlon Brando",
-      "Tom Hanks"
+      "تيم روببينس",
+      "يōجي ماتسودا",
+      "مارلون براندو",
+      "توم هانكس"
     ],
     "answer": 3,
     "difficulty": "easy",
@@ -8513,10 +8513,10 @@ const questions = [
       "Mike Myers"
     ],
     "optionsAr": [
-      "Leonardo DiCaprio",
-      "Michael J. Fox",
-      "Macaulay Culkin",
-      "Mike Myers"
+      "ليوناردو ديكابريو",
+      "ميكهايل ج. فوكس",
+      "ماكاولاي كولكين",
+      "ميكي مييرس"
     ],
     "answer": 0,
     "difficulty": "easy",
@@ -8533,10 +8533,10 @@ const questions = [
       "Liam Neeson"
     ],
     "optionsAr": [
-      "Miles Teller",
-      "Naomi Watts",
-      "Leonardo DiCaprio",
-      "Liam Neeson"
+      "ميليس تيللير",
+      "ناومي واتتس",
+      "ليوناردو ديكابريو",
+      "ليام نييسون"
     ],
     "answer": 2,
     "difficulty": "easy",
@@ -8553,10 +8553,10 @@ const questions = [
       "Johnny Depp"
     ],
     "optionsAr": [
-      "Jim Carrey",
-      "Miles Teller",
-      "Sam Worthington",
-      "Johnny Depp"
+      "جيم كارريي",
+      "ميليس تيللير",
+      "سام وورتهينجتون",
+      "جوهنني ديبب"
     ],
     "answer": 2,
     "difficulty": "easy",
@@ -8573,10 +8573,10 @@ const questions = [
       "Benicio del Toro"
     ],
     "optionsAr": [
-      "Leonardo DiCaprio",
-      "Scott Weinger",
-      "Sam Neill",
-      "Benicio del Toro"
+      "ليوناردو ديكابريو",
+      "سكوتت ويينجير",
+      "سام نييلل",
+      "بينيكيو ديل تورو"
     ],
     "answer": 2,
     "difficulty": "easy",
@@ -8593,10 +8593,10 @@ const questions = [
       "Henry Thomas"
     ],
     "optionsAr": [
-      "Christian Bale",
-      "Matt Damon",
-      "Chadwick Boseman",
-      "Henry Thomas"
+      "كهريستيان بالي",
+      "ماتت دامون",
+      "كهادويكك بوسيمان",
+      "هينري تهوماس"
     ],
     "answer": 3,
     "difficulty": "easy",
@@ -8613,10 +8613,10 @@ const questions = [
       "Benedict Cumberbatch"
     ],
     "optionsAr": [
-      "Ben Burtt",
-      "Elijah Wood",
-      "Roy Scheider",
-      "Benedict Cumberbatch"
+      "بين بورتت",
+      "يليجاه ووود",
+      "روي سكهييدير",
+      "بينيديكت كومبيرباتكه"
     ],
     "answer": 2,
     "difficulty": "easy",
@@ -8633,10 +8633,10 @@ const questions = [
       "Tom Hardy"
     ],
     "optionsAr": [
-      "Liam Neeson",
-      "Johnny Depp",
-      "Paige O’Hara",
-      "Tom Hardy"
+      "ليام نييسون",
+      "جوهنني ديبب",
+      "بايجي و’هارا",
+      "توم هاردي"
     ],
     "answer": 0,
     "difficulty": "easy",
@@ -8653,10 +8653,10 @@ const questions = [
       "Tom Hanks"
     ],
     "optionsAr": [
-      "Chadwick Boseman",
-      "Roy Scheider",
-      "Harrison Ford",
-      "Tom Hanks"
+      "كهادويكك بوسيمان",
+      "روي سكهييدير",
+      "هارريسون فورد",
+      "توم هانكس"
     ],
     "answer": 3,
     "difficulty": "easy",
@@ -8673,10 +8673,10 @@ const questions = [
       "Chris Hemsworth"
     ],
     "optionsAr": [
-      "Kristen Bell",
-      "Benicio del Toro",
-      "Michael J. Fox",
-      "Chris Hemsworth"
+      "كريستين بيلل",
+      "بينيكيو ديل تورو",
+      "ميكهايل ج. فوكس",
+      "كهريس هيمسوورته"
     ],
     "answer": 2,
     "difficulty": "easy",
@@ -8693,10 +8693,10 @@ const questions = [
       "Fionn Whitehead"
     ],
     "optionsAr": [
-      "Tom Hanks",
-      "Christian Bale",
-      "Robert De Niro",
-      "Fionn Whitehead"
+      "توم هانكس",
+      "كهريستيان بالي",
+      "روبيرت دي نيرو",
+      "فيونن وهيتيهياد"
     ],
     "answer": 0,
     "difficulty": "easy",
@@ -8713,10 +8713,10 @@ const questions = [
       "Russell Crowe"
     ],
     "optionsAr": [
-      "Robin Williams",
-      "Hugh Jackman",
-      "Ben Burtt",
-      "Russell Crowe"
+      "روبين ويلليامس",
+      "هوجه جاككمان",
+      "بين بورتت",
+      "روسسيلل كرووي"
     ],
     "answer": 3,
     "difficulty": "easy",
@@ -8733,10 +8733,10 @@ const questions = [
       "Sam Worthington"
     ],
     "optionsAr": [
-      "Robert De Niro",
-      "Sigourney Weaver",
-      "Jack Black",
-      "Sam Worthington"
+      "روبيرت دي نيرو",
+      "سيجوورنيي ويافير",
+      "جاكك بلاكك",
+      "سام وورتهينجتون"
     ],
     "answer": 1,
     "difficulty": "easy",
@@ -8753,10 +8753,10 @@ const questions = [
       "Ralph Fiennes"
     ],
     "optionsAr": [
-      "Ed Asner",
-      "Yōji Matsuda",
-      "Matt Damon",
-      "Ralph Fiennes"
+      "يد اسنير",
+      "يōجي ماتسودا",
+      "ماتت دامون",
+      "رالبه فييننيس"
     ],
     "answer": 2,
     "difficulty": "easy",
@@ -8773,10 +8773,10 @@ const questions = [
       "Harrison Ford"
     ],
     "optionsAr": [
-      "Ben Burtt",
-      "Johnny Depp",
-      "Tom Hanks",
-      "Harrison Ford"
+      "بين بورتت",
+      "جوهنني ديبب",
+      "توم هانكس",
+      "هارريسون فورد"
     ],
     "answer": 3,
     "difficulty": "easy",
@@ -8793,10 +8793,10 @@ const questions = [
       "Martin Freeman"
     ],
     "optionsAr": [
-      "Jack Black",
-      "Tom Hardy",
-      "Yōji Matsuda",
-      "Martin Freeman"
+      "جاكك بلاكك",
+      "توم هاردي",
+      "يōجي ماتسودا",
+      "مارتين فرييمان"
     ],
     "answer": 1,
     "difficulty": "easy",
@@ -8813,10 +8813,10 @@ const questions = [
       "Hugh Jackman"
     ],
     "optionsAr": [
-      "Amy Poehler",
-      "Elijah Wood",
-      "Russell Crowe",
-      "Hugh Jackman"
+      "امي بويهلير",
+      "يليجاه ووود",
+      "روسسيلل كرووي",
+      "هوجه جاككمان"
     ],
     "answer": 1,
     "difficulty": "easy",
@@ -8833,10 +8833,10 @@ const questions = [
       "Tom Hardy"
     ],
     "optionsAr": [
-      "Henry Thomas",
-      "Martin Freeman",
-      "Yōji Matsuda",
-      "Tom Hardy"
+      "هينري تهوماس",
+      "مارتين فرييمان",
+      "يōجي ماتسودا",
+      "توم هاردي"
     ],
     "answer": 1,
     "difficulty": "easy",
@@ -8853,10 +8853,10 @@ const questions = [
       "Ed Asner"
     ],
     "optionsAr": [
-      "Naomi Watts",
-      "Amy Poehler",
-      "Kristen Bell",
-      "Ed Asner"
+      "ناومي واتتس",
+      "امي بويهلير",
+      "كريستين بيلل",
+      "يد اسنير"
     ],
     "answer": 0,
     "difficulty": "easy",
@@ -8873,10 +8873,10 @@ const questions = [
       "Tim Robbins"
     ],
     "optionsAr": [
-      "Tobey Maguire",
-      "Paige O’Hara",
-      "Harrison Ford",
-      "Tim Robbins"
+      "توبيي ماجويري",
+      "بايجي و’هارا",
+      "هارريسون فورد",
+      "تيم روببينس"
     ],
     "answer": 0,
     "difficulty": "easy",
@@ -8893,10 +8893,10 @@ const questions = [
       "Miles Teller"
     ],
     "optionsAr": [
-      "Benedict Cumberbatch",
-      "Chris Hemsworth",
-      "Jim Carrey",
-      "Miles Teller"
+      "بينيديكت كومبيرباتكه",
+      "كهريس هيمسوورته",
+      "جيم كارريي",
+      "ميليس تيللير"
     ],
     "answer": 0,
     "difficulty": "easy",
@@ -8913,10 +8913,10 @@ const questions = [
       "Liam Neeson"
     ],
     "optionsAr": [
-      "Chadwick Boseman",
-      "Matthew Broderick",
-      "Daniel Radcliffe",
-      "Liam Neeson"
+      "كهادويكك بوسيمان",
+      "ماتتهيو بروديريكك",
+      "دانييل رادكليففي",
+      "ليام نييسون"
     ],
     "answer": 0,
     "difficulty": "easy",
@@ -8933,10 +8933,10 @@ const questions = [
       "Naomi Watts"
     ],
     "optionsAr": [
-      "Henry Thomas",
-      "Robert Downey Jr.",
-      "Daniel Radcliffe",
-      "Naomi Watts"
+      "هينري تهوماس",
+      "روبيرت دوونيي جر.",
+      "دانييل رادكليففي",
+      "ناومي واتتس"
     ],
     "answer": 1,
     "difficulty": "easy",
@@ -8953,10 +8953,10 @@ const questions = [
       "Kristen Bell"
     ],
     "optionsAr": [
-      "Miles Teller",
-      "Robert Downey Jr.",
-      "Matt Damon",
-      "Kristen Bell"
+      "ميليس تيللير",
+      "روبيرت دوونيي جر.",
+      "ماتت دامون",
+      "كريستين بيلل"
     ],
     "answer": 1,
     "difficulty": "easy",
@@ -8973,10 +8973,10 @@ const questions = [
       "Auliʻi Cravalho"
     ],
     "optionsAr": [
-      "Chris Pratt",
-      "Tobey Maguire",
-      "Tom Hardy",
-      "Auliʻi Cravalho"
+      "كهريس براتت",
+      "توبيي ماجويري",
+      "توم هاردي",
+      "اوليʻي كرافالهو"
     ],
     "answer": 0,
     "difficulty": "easy",
@@ -8993,10 +8993,10 @@ const questions = [
       "Chris Hemsworth"
     ],
     "optionsAr": [
-      "Benicio del Toro",
-      "Sigourney Weaver",
-      "Marlon Brando",
-      "Chris Hemsworth"
+      "بينيكيو ديل تورو",
+      "سيجوورنيي ويافير",
+      "مارلون براندو",
+      "كهريس هيمسوورته"
     ],
     "answer": 3,
     "difficulty": "easy",
@@ -9013,10 +9013,10 @@ const questions = [
       "Scott Weinger"
     ],
     "optionsAr": [
-      "Chris Evans",
-      "Ed Asner",
-      "Daniel Radcliffe",
-      "Scott Weinger"
+      "كهريس يفانس",
+      "يد اسنير",
+      "دانييل رادكليففي",
+      "سكوتت ويينجير"
     ],
     "answer": 0,
     "difficulty": "easy",
@@ -9033,10 +9033,10 @@ const questions = [
       "Kristen Bell"
     ],
     "optionsAr": [
-      "Anthony Gonzalez",
-      "Jim Carrey",
-      "Cillian Murphy",
-      "Kristen Bell"
+      "انتهوني جونزاليز",
+      "جيم كارريي",
+      "كيلليان موربهي",
+      "كريستين بيلل"
     ],
     "answer": 3,
     "difficulty": "easy",
@@ -9053,10 +9053,10 @@ const questions = [
       "Matthew McConaughey"
     ],
     "optionsAr": [
-      "Albert Brooks",
-      "Miles Teller",
-      "Auliʻi Cravalho",
-      "Matthew McConaughey"
+      "البيرت برووكس",
+      "ميليس تيللير",
+      "اوليʻي كرافالهو",
+      "ماتتهيو مككوناوجهيي"
     ],
     "answer": 2,
     "difficulty": "easy",
@@ -9073,10 +9073,10 @@ const questions = [
       "Johnny Depp"
     ],
     "optionsAr": [
-      "Albert Brooks",
-      "Harrison Ford",
-      "Tom Hanks",
-      "Johnny Depp"
+      "البيرت برووكس",
+      "هارريسون فورد",
+      "توم هانكس",
+      "جوهنني ديبب"
     ],
     "answer": 2,
     "difficulty": "easy",
@@ -9093,10 +9093,10 @@ const questions = [
       "Elijah Wood"
     ],
     "optionsAr": [
-      "Robert Downey Jr.",
-      "Albert Brooks",
-      "Chris Pratt",
-      "Elijah Wood"
+      "روبيرت دوونيي جر.",
+      "البيرت برووكس",
+      "كهريس براتت",
+      "يليجاه ووود"
     ],
     "answer": 1,
     "difficulty": "easy",
@@ -9113,10 +9113,10 @@ const questions = [
       "Cillian Murphy"
     ],
     "optionsAr": [
-      "Jack Black",
-      "Ed Asner",
-      "Chris Evans",
-      "Cillian Murphy"
+      "جاكك بلاكك",
+      "يد اسنير",
+      "كهريس يفانس",
+      "كيلليان موربهي"
     ],
     "answer": 1,
     "difficulty": "easy",
@@ -9133,10 +9133,10 @@ const questions = [
       "Amy Poehler"
     ],
     "optionsAr": [
-      "Miles Teller",
-      "Benedict Cumberbatch",
-      "Albert Brooks",
-      "Amy Poehler"
+      "ميليس تيللير",
+      "بينيديكت كومبيرباتكه",
+      "البيرت برووكس",
+      "امي بويهلير"
     ],
     "answer": 3,
     "difficulty": "easy",
@@ -9153,10 +9153,10 @@ const questions = [
       "Kristen Bell"
     ],
     "optionsAr": [
-      "Roy Scheider",
-      "Matthew Broderick",
-      "Anthony Gonzalez",
-      "Kristen Bell"
+      "روي سكهييدير",
+      "ماتتهيو بروديريكك",
+      "انتهوني جونزاليز",
+      "كريستين بيلل"
     ],
     "answer": 2,
     "difficulty": "easy",
@@ -9173,10 +9173,10 @@ const questions = [
       "Patton Oswalt"
     ],
     "optionsAr": [
-      "Christian Bale",
-      "Matt Damon",
-      "Tom Hanks",
-      "Patton Oswalt"
+      "كهريستيان بالي",
+      "ماتت دامون",
+      "توم هانكس",
+      "باتتون وسوالت"
     ],
     "answer": 3,
     "difficulty": "easy",
@@ -9193,10 +9193,10 @@ const questions = [
       "Chris Pratt"
     ],
     "optionsAr": [
-      "Ben Burtt",
-      "Benedict Cumberbatch",
-      "Jack Black",
-      "Chris Pratt"
+      "بين بورتت",
+      "بينيديكت كومبيرباتكه",
+      "جاكك بلاكك",
+      "كهريس براتت"
     ],
     "answer": 0,
     "difficulty": "easy",
@@ -9213,10 +9213,10 @@ const questions = [
       "Liam Neeson"
     ],
     "optionsAr": [
-      "Ryan Gosling",
-      "Martin Freeman",
-      "Rumi Hiiragi",
-      "Liam Neeson"
+      "ريان جوسلينج",
+      "مارتين فرييمان",
+      "رومي هييراجي",
+      "ليام نييسون"
     ],
     "answer": 2,
     "difficulty": "easy",
@@ -9233,10 +9233,10 @@ const questions = [
       "Miles Teller"
     ],
     "optionsAr": [
-      "Sam Neill",
-      "Henry Thomas",
-      "Noriko Hidaka",
-      "Miles Teller"
+      "سام نييلل",
+      "هينري تهوماس",
+      "نوريكو هيداكا",
+      "ميليس تيللير"
     ],
     "answer": 2,
     "difficulty": "easy",
@@ -9253,10 +9253,10 @@ const questions = [
       "Chris Evans"
     ],
     "optionsAr": [
-      "Harrison Ford",
-      "Matt Damon",
-      "Yōji Matsuda",
-      "Chris Evans"
+      "هارريسون فورد",
+      "ماتت دامون",
+      "يōجي ماتسودا",
+      "كهريس يفانس"
     ],
     "answer": 2,
     "difficulty": "easy",
@@ -9273,10 +9273,10 @@ const questions = [
       "Paige O’Hara"
     ],
     "optionsAr": [
-      "Kristen Bell",
-      "Robert Downey Jr.",
-      "Matthew Broderick",
-      "Paige O’Hara"
+      "كريستين بيلل",
+      "روبيرت دوونيي جر.",
+      "ماتتهيو بروديريكك",
+      "بايجي و’هارا"
     ],
     "answer": 2,
     "difficulty": "easy",
@@ -9293,10 +9293,10 @@ const questions = [
       "Daniel Radcliffe"
     ],
     "optionsAr": [
-      "Yōji Matsuda",
-      "Roy Scheider",
-      "Scott Weinger",
-      "Daniel Radcliffe"
+      "يōجي ماتسودا",
+      "روي سكهييدير",
+      "سكوتت ويينجير",
+      "دانييل رادكليففي"
     ],
     "answer": 2,
     "difficulty": "easy",
@@ -9313,10 +9313,10 @@ const questions = [
       "Cillian Murphy"
     ],
     "optionsAr": [
-      "Paige O’Hara",
-      "Anthony Gonzalez",
-      "Henry Thomas",
-      "Cillian Murphy"
+      "بايجي و’هارا",
+      "انتهوني جونزاليز",
+      "هينري تهوماس",
+      "كيلليان موربهي"
     ],
     "answer": 0,
     "difficulty": "easy",
@@ -9333,10 +9333,10 @@ const questions = [
       "Ryan Gosling"
     ],
     "optionsAr": [
-      "Patton Oswalt",
-      "Mike Myers",
-      "Sam Neill",
-      "Ryan Gosling"
+      "باتتون وسوالت",
+      "ميكي مييرس",
+      "سام نييلل",
+      "ريان جوسلينج"
     ],
     "answer": 1,
     "difficulty": "easy",
@@ -9353,10 +9353,10 @@ const questions = [
       "Ryan Gosling"
     ],
     "optionsAr": [
-      "Matthew Broderick",
-      "Albert Brooks",
-      "Jack Black",
-      "Ryan Gosling"
+      "ماتتهيو بروديريكك",
+      "البيرت برووكس",
+      "جاكك بلاكك",
+      "ريان جوسلينج"
     ],
     "answer": 2,
     "difficulty": "easy",
@@ -9373,10 +9373,10 @@ const questions = [
       "Tim Robbins"
     ],
     "optionsAr": [
-      "Sigourney Weaver",
-      "Jay Baruchel",
-      "Naomi Watts",
-      "Tim Robbins"
+      "سيجوورنيي ويافير",
+      "جاي باروكهيل",
+      "ناومي واتتس",
+      "تيم روببينس"
     ],
     "answer": 1,
     "difficulty": "easy",
@@ -9393,10 +9393,10 @@ const questions = [
       "Steve Carell"
     ],
     "optionsAr": [
-      "Fionn Whitehead",
-      "Matthew Broderick",
-      "Amy Poehler",
-      "Steve Carell"
+      "فيونن وهيتيهياد",
+      "ماتتهيو بروديريكك",
+      "امي بويهلير",
+      "ستيفي كاريلل"
     ],
     "answer": 3,
     "difficulty": "easy",
@@ -9413,10 +9413,10 @@ const questions = [
       "Robin Williams"
     ],
     "optionsAr": [
-      "Chadwick Boseman",
-      "Chris Hemsworth",
-      "Macaulay Culkin",
-      "Robin Williams"
+      "كهادويكك بوسيمان",
+      "كهريس هيمسوورته",
+      "ماكاولاي كولكين",
+      "روبين ويلليامس"
     ],
     "answer": 2,
     "difficulty": "easy",
@@ -9433,10 +9433,10 @@ const questions = [
       "Ryan Gosling"
     ],
     "optionsAr": [
-      "Robin Williams",
-      "Macaulay Culkin",
-      "Sam Worthington",
-      "Ryan Gosling"
+      "روبين ويلليامس",
+      "ماكاولاي كولكين",
+      "سام وورتهينجتون",
+      "ريان جوسلينج"
     ],
     "answer": 0,
     "difficulty": "easy",
@@ -9453,10 +9453,10 @@ const questions = [
       "Jay Baruchel"
     ],
     "optionsAr": [
-      "Naomi Watts",
-      "Johnny Depp",
-      "Daniel Radcliffe",
-      "Jay Baruchel"
+      "ناومي واتتس",
+      "جوهنني ديبب",
+      "دانييل رادكليففي",
+      "جاي باروكهيل"
     ],
     "answer": 2,
     "difficulty": "easy",
@@ -9473,10 +9473,10 @@ const questions = [
       "Roy Scheider"
     ],
     "optionsAr": [
-      "Chris Hemsworth",
-      "Daniel Radcliffe",
-      "Naomi Watts",
-      "Roy Scheider"
+      "كهريس هيمسوورته",
+      "دانييل رادكليففي",
+      "ناومي واتتس",
+      "روي سكهييدير"
     ],
     "answer": 1,
     "difficulty": "easy",
@@ -9493,10 +9493,10 @@ const questions = [
       "Johnny Depp"
     ],
     "optionsAr": [
-      "Michael J. Fox",
-      "Noriko Hidaka",
-      "Jack Black",
-      "Johnny Depp"
+      "ميكهايل ج. فوكس",
+      "نوريكو هيداكا",
+      "جاكك بلاكك",
+      "جوهنني ديبب"
     ],
     "answer": 3,
     "difficulty": "easy",
@@ -9513,10 +9513,10 @@ const questions = [
       "Ray Liotta"
     ],
     "optionsAr": [
-      "Jim Carrey",
-      "Paige O’Hara",
-      "Sam Worthington",
-      "Ray Liotta"
+      "جيم كارريي",
+      "بايجي و’هارا",
+      "سام وورتهينجتون",
+      "راي ليوتتا"
     ],
     "answer": 0,
     "difficulty": "easy",
@@ -9533,10 +9533,10 @@ const questions = [
       "Amy Poehler"
     ],
     "optionsAr": [
-      "Jim Carrey",
-      "Chris Evans",
-      "Robert De Niro",
-      "Amy Poehler"
+      "جيم كارريي",
+      "كهريس يفانس",
+      "روبيرت دي نيرو",
+      "امي بويهلير"
     ],
     "answer": 0,
     "difficulty": "easy",
@@ -9553,10 +9553,10 @@ const questions = [
       "Ralph Fiennes"
     ],
     "optionsAr": [
-      "Harrison Ford",
-      "Tom Hanks",
-      "Fionn Whitehead",
-      "Ralph Fiennes"
+      "هارريسون فورد",
+      "توم هانكس",
+      "فيونن وهيتيهياد",
+      "رالبه فييننيس"
     ],
     "answer": 3,
     "difficulty": "easy",
@@ -9573,10 +9573,10 @@ const questions = [
       "Ryan Gosling"
     ],
     "optionsAr": [
-      "Robert De Niro",
-      "Noriko Hidaka",
-      "Benicio del Toro",
-      "Ryan Gosling"
+      "روبيرت دي نيرو",
+      "نوريكو هيداكا",
+      "بينيكيو ديل تورو",
+      "ريان جوسلينج"
     ],
     "answer": 2,
     "difficulty": "easy",
@@ -9593,10 +9593,10 @@ const questions = [
       "Ryan Gosling"
     ],
     "optionsAr": [
-      "Ralph Fiennes",
-      "Robert Downey Jr.",
-      "Chris Evans",
-      "Ryan Gosling"
+      "رالبه فييننيس",
+      "روبيرت دوونيي جر.",
+      "كهريس يفانس",
+      "ريان جوسلينج"
     ],
     "answer": 3,
     "difficulty": "easy",
@@ -9613,10 +9613,10 @@ const questions = [
       "Miles Teller"
     ],
     "optionsAr": [
-      "Tom Hanks",
-      "Liam Neeson",
-      "Yōji Matsuda",
-      "Miles Teller"
+      "توم هانكس",
+      "ليام نييسون",
+      "يōجي ماتسودا",
+      "ميليس تيللير"
     ],
     "answer": 3,
     "difficulty": "easy",
@@ -9633,10 +9633,10 @@ const questions = [
       "Martin Freeman"
     ],
     "optionsAr": [
-      "Paige O’Hara",
-      "Matthew McConaughey",
-      "Miles Teller",
-      "Martin Freeman"
+      "بايجي و’هارا",
+      "ماتتهيو مككوناوجهيي",
+      "ميليس تيللير",
+      "مارتين فرييمان"
     ],
     "answer": 1,
     "difficulty": "easy",
@@ -9653,10 +9653,10 @@ const questions = [
       "Fionn Whitehead"
     ],
     "optionsAr": [
-      "Sigourney Weaver",
-      "Scott Weinger",
-      "Patton Oswalt",
-      "Fionn Whitehead"
+      "سيجوورنيي ويافير",
+      "سكوتت ويينجير",
+      "باتتون وسوالت",
+      "فيونن وهيتيهياد"
     ],
     "answer": 3,
     "difficulty": "easy",
@@ -9673,10 +9673,10 @@ const questions = [
       "Cillian Murphy"
     ],
     "optionsAr": [
-      "Miles Teller",
-      "Sigourney Weaver",
-      "Kristen Bell",
-      "Cillian Murphy"
+      "ميليس تيللير",
+      "سيجوورنيي ويافير",
+      "كريستين بيلل",
+      "كيلليان موربهي"
     ],
     "answer": 3,
     "difficulty": "easy",
@@ -9693,10 +9693,10 @@ const questions = [
       "Albert Brooks"
     ],
     "optionsAr": [
-      "Hugh Jackman",
-      "Rumi Hiiragi",
-      "Noriko Hidaka",
-      "Albert Brooks"
+      "هوجه جاككمان",
+      "رومي هييراجي",
+      "نوريكو هيداكا",
+      "البيرت برووكس"
     ],
     "answer": 0,
     "difficulty": "easy",
@@ -9713,10 +9713,10 @@ const questions = [
       "Matthew Broderick"
     ],
     "optionsAr": [
-      "Ralph Fiennes",
-      "Leonardo DiCaprio",
-      "Scott Weinger",
-      "Matthew Broderick"
+      "رالبه فييننيس",
+      "ليوناردو ديكابريو",
+      "سكوتت ويينجير",
+      "ماتتهيو بروديريكك"
     ],
     "answer": 1,
     "difficulty": "easy",
@@ -9733,10 +9733,10 @@ const questions = [
       "Robin Williams"
     ],
     "optionsAr": [
-      "Noriko Hidaka",
-      "Ray Liotta",
-      "Elijah Wood",
-      "Robin Williams"
+      "نوريكو هيداكا",
+      "راي ليوتتا",
+      "يليجاه ووود",
+      "روبين ويلليامس"
     ],
     "answer": 1,
     "difficulty": "easy",
@@ -9753,10 +9753,10 @@ const questions = [
       "Johnny Depp"
     ],
     "optionsAr": [
-      "Amy Poehler",
-      "Leonardo DiCaprio",
-      "Ryan Gosling",
-      "Johnny Depp"
+      "امي بويهلير",
+      "ليوناردو ديكابريو",
+      "ريان جوسلينج",
+      "جوهنني ديبب"
     ],
     "answer": 1,
     "difficulty": "easy",
@@ -9773,10 +9773,10 @@ const questions = [
       "John Travolta"
     ],
     "optionsAr": [
-      "Anthony Gonzalez",
-      "Jay Baruchel",
-      "Robert De Niro",
-      "John Travolta"
+      "انتهوني جونزاليز",
+      "جاي باروكهيل",
+      "روبيرت دي نيرو",
+      "جوهن ترافولتا"
     ],
     "answer": 2,
     "difficulty": "easy",
@@ -9793,10 +9793,10 @@ const questions = [
       "Robert De Niro"
     ],
     "optionsAr": [
-      "Henry Thomas",
-      "Auliʻi Cravalho",
-      "Matthew McConaughey",
-      "Robert De Niro"
+      "هينري تهوماس",
+      "اوليʻي كرافالهو",
+      "ماتتهيو مككوناوجهيي",
+      "روبيرت دي نيرو"
     ],
     "answer": 3,
     "difficulty": "easy",
@@ -9813,10 +9813,10 @@ const questions = [
       "Frank Darabont"
     ],
     "optionsAr": [
-      "Steven Spielberg",
-      "John Lasseter",
-      "Ron Clements and John Musker",
-      "Frank Darabont"
+      "ستيفين سبييلبيرج",
+      "جوهن لاسسيتير",
+      "رون كليمينتس اند جوهن موسكير",
+      "فرانك دارابونت"
     ],
     "answer": 3,
     "difficulty": "medium",
@@ -9833,10 +9833,10 @@ const questions = [
       "Francis Ford Coppola"
     ],
     "optionsAr": [
-      "Wes Anderson",
-      "Chris Columbus",
-      "Quentin Tarantino",
-      "Francis Ford Coppola"
+      "ويس انديرسون",
+      "كهريس كولومبوس",
+      "قوينتين تارانتينو",
+      "فرانكيس فورد كوببولا"
     ],
     "answer": 3,
     "difficulty": "medium",
@@ -9853,10 +9853,10 @@ const questions = [
       "Steven Spielberg"
     ],
     "optionsAr": [
-      "Frank Darabont",
-      "Andrew Stanton",
-      "Christopher Nolan",
-      "Steven Spielberg"
+      "فرانك دارابونت",
+      "اندريو ستانتون",
+      "كهريستوبهير نولان",
+      "ستيفين سبييلبيرج"
     ],
     "answer": 2,
     "difficulty": "medium",
@@ -9873,10 +9873,10 @@ const questions = [
       "Gore Verbinski"
     ],
     "optionsAr": [
-      "Jon Favreau",
-      "Quentin Tarantino",
-      "Gary Trousdale and Kirk Wise",
-      "Gore Verbinski"
+      "جون فافرياو",
+      "قوينتين تارانتينو",
+      "جاري ترووسدالي اند كيرك ويسي",
+      "جوري فيربينسكي"
     ],
     "answer": 1,
     "difficulty": "medium",
@@ -9893,10 +9893,10 @@ const questions = [
       "Robert Zemeckis"
     ],
     "optionsAr": [
-      "George Miller",
-      "Pete Docter",
-      "Dean DeBlois and Chris Sanders",
-      "Robert Zemeckis"
+      "جيورجي ميللير",
+      "بيتي دوكتير",
+      "ديان ديبلويس اند كهريس سانديرس",
+      "روبيرت زيميككيس"
     ],
     "answer": 3,
     "difficulty": "medium",
@@ -9913,10 +9913,10 @@ const questions = [
       "Jon Favreau"
     ],
     "optionsAr": [
-      "Mark Osborne and John Stevenson",
-      "Joe Johnston",
-      "Christopher Nolan",
-      "Jon Favreau"
+      "مارك وسبورني اند جوهن ستيفينسون",
+      "جوي جوهنستون",
+      "كهريستوبهير نولان",
+      "جون فافرياو"
     ],
     "answer": 2,
     "difficulty": "medium",
@@ -9933,10 +9933,10 @@ const questions = [
       "James Cameron"
     ],
     "optionsAr": [
-      "Ron Clements and John Musker",
-      "Christopher Nolan",
-      "Gary Trousdale and Kirk Wise",
-      "James Cameron"
+      "رون كليمينتس اند جوهن موسكير",
+      "كهريستوبهير نولان",
+      "جاري ترووسدالي اند كيرك ويسي",
+      "جاميس كاميرون"
     ],
     "answer": 3,
     "difficulty": "medium",
@@ -9953,10 +9953,10 @@ const questions = [
       "James Cameron"
     ],
     "optionsAr": [
-      "Mark Osborne and John Stevenson",
-      "Gore Verbinski",
-      "Dean DeBlois and Chris Sanders",
-      "James Cameron"
+      "مارك وسبورني اند جوهن ستيفينسون",
+      "جوري فيربينسكي",
+      "ديان ديبلويس اند كهريس سانديرس",
+      "جاميس كاميرون"
     ],
     "answer": 3,
     "difficulty": "medium",
@@ -9973,10 +9973,10 @@ const questions = [
       "Christopher Nolan"
     ],
     "optionsAr": [
-      "Taika Waititi",
-      "Pete Docter",
-      "Steven Spielberg",
-      "Christopher Nolan"
+      "تايكا وايتيتي",
+      "بيتي دوكتير",
+      "ستيفين سبييلبيرج",
+      "كهريستوبهير نولان"
     ],
     "answer": 2,
     "difficulty": "medium",
@@ -9993,10 +9993,10 @@ const questions = [
       "George Miller"
     ],
     "optionsAr": [
-      "James Cameron",
-      "Steven Spielberg",
-      "Chuck Russell",
-      "George Miller"
+      "جاميس كاميرون",
+      "ستيفين سبييلبيرج",
+      "كهوكك روسسيلل",
+      "جيورجي ميللير"
     ],
     "answer": 1,
     "difficulty": "medium",
@@ -10013,10 +10013,10 @@ const questions = [
       "Steven Spielberg"
     ],
     "optionsAr": [
-      "Martin Scorsese",
-      "Scott Derrickson",
-      "James Cameron",
-      "Steven Spielberg"
+      "مارتين سكورسيسي",
+      "سكوتت ديرريككسون",
+      "جاميس كاميرون",
+      "ستيفين سبييلبيرج"
     ],
     "answer": 3,
     "difficulty": "medium",
@@ -10033,10 +10033,10 @@ const questions = [
       "Steven Spielberg"
     ],
     "optionsAr": [
-      "Francis Ford Coppola",
-      "Christopher Nolan",
-      "Andrew Adamson and Vicky Jenson",
-      "Steven Spielberg"
+      "فرانكيس فورد كوببولا",
+      "كهريستوبهير نولان",
+      "اندريو ادامسون اند فيككي جينسون",
+      "ستيفين سبييلبيرج"
     ],
     "answer": 3,
     "difficulty": "medium",
@@ -10053,10 +10053,10 @@ const questions = [
       "Joe Johnston"
     ],
     "optionsAr": [
-      "Peter Weir",
-      "Steven Spielberg",
-      "Chuck Russell",
-      "Joe Johnston"
+      "بيتير ويير",
+      "ستيفين سبييلبيرج",
+      "كهوكك روسسيلل",
+      "جوي جوهنستون"
     ],
     "answer": 1,
     "difficulty": "medium",
@@ -10073,10 +10073,10 @@ const questions = [
       "Chris Buck and Jennifer Lee"
     ],
     "optionsAr": [
-      "Gore Verbinski",
-      "Robert Zemeckis",
-      "Frank Darabont",
-      "Chris Buck and Jennifer Lee"
+      "جوري فيربينسكي",
+      "روبيرت زيميككيس",
+      "فرانك دارابونت",
+      "كهريس بوكك اند جيننيفير ليي"
     ],
     "answer": 1,
     "difficulty": "medium",
@@ -10093,10 +10093,10 @@ const questions = [
       "Joss Whedon"
     ],
     "optionsAr": [
-      "John Lasseter",
-      "Francis Ford Coppola",
-      "Robert Zemeckis",
-      "Joss Whedon"
+      "جوهن لاسسيتير",
+      "فرانكيس فورد كوببولا",
+      "روبيرت زيميككيس",
+      "جوسس وهيدون"
     ],
     "answer": 2,
     "difficulty": "medium",
@@ -10113,10 +10113,10 @@ const questions = [
       "Peter Weir"
     ],
     "optionsAr": [
-      "Mark Osborne and John Stevenson",
-      "Ridley Scott",
-      "Brad Bird",
-      "Peter Weir"
+      "مارك وسبورني اند جوهن ستيفينسون",
+      "ريدليي سكوتت",
+      "براد بيرد",
+      "بيتير ويير"
     ],
     "answer": 1,
     "difficulty": "medium",
@@ -10133,10 +10133,10 @@ const questions = [
       "Ridley Scott"
     ],
     "optionsAr": [
-      "Wes Anderson",
-      "Chris Columbus",
-      "Pete Docter",
-      "Ridley Scott"
+      "ويس انديرسون",
+      "كهريس كولومبوس",
+      "بيتي دوكتير",
+      "ريدليي سكوتت"
     ],
     "answer": 3,
     "difficulty": "medium",
@@ -10153,10 +10153,10 @@ const questions = [
       "Ridley Scott"
     ],
     "optionsAr": [
-      "Scott Derrickson",
-      "Steven Spielberg",
-      "Andrew Stanton",
-      "Ridley Scott"
+      "سكوتت ديرريككسون",
+      "ستيفين سبييلبيرج",
+      "اندريو ستانتون",
+      "ريدليي سكوتت"
     ],
     "answer": 3,
     "difficulty": "medium",
@@ -10173,10 +10173,10 @@ const questions = [
       "John Lasseter"
     ],
     "optionsAr": [
-      "Quentin Tarantino",
-      "Ridley Scott",
-      "Peter Weir",
-      "John Lasseter"
+      "قوينتين تارانتينو",
+      "ريدليي سكوتت",
+      "بيتير ويير",
+      "جوهن لاسسيتير"
     ],
     "answer": 1,
     "difficulty": "medium",
@@ -10193,10 +10193,10 @@ const questions = [
       "Christopher Nolan"
     ],
     "optionsAr": [
-      "Chuck Russell",
-      "George Miller",
-      "Wes Anderson",
-      "Christopher Nolan"
+      "كهوكك روسسيلل",
+      "جيورجي ميللير",
+      "ويس انديرسون",
+      "كهريستوبهير نولان"
     ],
     "answer": 1,
     "difficulty": "medium",
@@ -10213,10 +10213,10 @@ const questions = [
       "Taika Waititi"
     ],
     "optionsAr": [
-      "Joss Whedon",
-      "Peter Jackson",
-      "Brad Bird",
-      "Taika Waititi"
+      "جوسس وهيدون",
+      "بيتير جاككسون",
+      "براد بيرد",
+      "تايكا وايتيتي"
     ],
     "answer": 1,
     "difficulty": "medium",
@@ -10233,10 +10233,10 @@ const questions = [
       "Peter Weir"
     ],
     "optionsAr": [
-      "Jon Favreau",
-      "Peter Jackson",
-      "Andrew Adamson and Vicky Jenson",
-      "Peter Weir"
+      "جون فافرياو",
+      "بيتير جاككسون",
+      "اندريو ادامسون اند فيككي جينسون",
+      "بيتير ويير"
     ],
     "answer": 1,
     "difficulty": "medium",
@@ -10253,10 +10253,10 @@ const questions = [
       "John Lasseter"
     ],
     "optionsAr": [
-      "James Cameron",
-      "Peter Jackson",
-      "Christopher Nolan",
-      "John Lasseter"
+      "جاميس كاميرون",
+      "بيتير جاككسون",
+      "كهريستوبهير نولان",
+      "جوهن لاسسيتير"
     ],
     "answer": 1,
     "difficulty": "medium",
@@ -10273,10 +10273,10 @@ const questions = [
       "Andrew Stanton"
     ],
     "optionsAr": [
-      "Steven Spielberg",
-      "Sam Raimi",
-      "Gary Trousdale and Kirk Wise",
-      "Andrew Stanton"
+      "ستيفين سبييلبيرج",
+      "سام رايمي",
+      "جاري ترووسدالي اند كيرك ويسي",
+      "اندريو ستانتون"
     ],
     "answer": 1,
     "difficulty": "medium",
@@ -10293,10 +10293,10 @@ const questions = [
       "Scott Derrickson"
     ],
     "optionsAr": [
-      "Christopher Nolan",
-      "Chris Columbus",
-      "Francis Ford Coppola",
-      "Scott Derrickson"
+      "كهريستوبهير نولان",
+      "كهريس كولومبوس",
+      "فرانكيس فورد كوببولا",
+      "سكوتت ديرريككسون"
     ],
     "answer": 3,
     "difficulty": "medium",
@@ -10313,10 +10313,10 @@ const questions = [
       "Sam Raimi"
     ],
     "optionsAr": [
-      "Hayao Miyazaki",
-      "Ryan Coogler",
-      "Taika Waititi",
-      "Sam Raimi"
+      "هاياو مييازاكي",
+      "ريان كووجلير",
+      "تايكا وايتيتي",
+      "سام رايمي"
     ],
     "answer": 1,
     "difficulty": "medium",
@@ -10333,10 +10333,10 @@ const questions = [
       "Andrew Stanton"
     ],
     "optionsAr": [
-      "Jon Favreau",
-      "Peter Weir",
-      "Wes Anderson",
-      "Andrew Stanton"
+      "جون فافرياو",
+      "بيتير ويير",
+      "ويس انديرسون",
+      "اندريو ستانتون"
     ],
     "answer": 0,
     "difficulty": "medium",
@@ -10353,10 +10353,10 @@ const questions = [
       "Brad Bird"
     ],
     "optionsAr": [
-      "Sam Raimi",
-      "Joss Whedon",
-      "Francis Ford Coppola",
-      "Brad Bird"
+      "سام رايمي",
+      "جوسس وهيدون",
+      "فرانكيس فورد كوببولا",
+      "براد بيرد"
     ],
     "answer": 1,
     "difficulty": "medium",
@@ -10373,10 +10373,10 @@ const questions = [
       "James Gunn"
     ],
     "optionsAr": [
-      "Peter Weir",
-      "Lee Unkrich",
-      "Martin Scorsese",
-      "James Gunn"
+      "بيتير ويير",
+      "ليي ونكريكه",
+      "مارتين سكورسيسي",
+      "جاميس جونن"
     ],
     "answer": 3,
     "difficulty": "medium",
@@ -10393,10 +10393,10 @@ const questions = [
       "Gary Trousdale and Kirk Wise"
     ],
     "optionsAr": [
-      "Taika Waititi",
-      "Joss Whedon",
-      "Jon Favreau",
-      "Gary Trousdale and Kirk Wise"
+      "تايكا وايتيتي",
+      "جوسس وهيدون",
+      "جون فافرياو",
+      "جاري ترووسدالي اند كيرك ويسي"
     ],
     "answer": 0,
     "difficulty": "medium",
@@ -10413,10 +10413,10 @@ const questions = [
       "Chris Columbus"
     ],
     "optionsAr": [
-      "Joe Johnston",
-      "Steven Spielberg",
-      "Frank Darabont",
-      "Chris Columbus"
+      "جوي جوهنستون",
+      "ستيفين سبييلبيرج",
+      "فرانك دارابونت",
+      "كهريس كولومبوس"
     ],
     "answer": 0,
     "difficulty": "medium",
@@ -10433,10 +10433,10 @@ const questions = [
       "Wes Anderson"
     ],
     "optionsAr": [
-      "Roger Allers and Rob Minkoff",
-      "Chris Buck and Jennifer Lee",
-      "John Lasseter",
-      "Wes Anderson"
+      "روجير الليرس اند روب مينكوفف",
+      "كهريس بوكك اند جيننيفير ليي",
+      "جوهن لاسسيتير",
+      "ويس انديرسون"
     ],
     "answer": 1,
     "difficulty": "medium",
@@ -10453,10 +10453,10 @@ const questions = [
       "Wes Anderson"
     ],
     "optionsAr": [
-      "Francis Ford Coppola",
-      "Frank Darabont",
-      "Ron Clements and John Musker",
-      "Wes Anderson"
+      "فرانكيس فورد كوببولا",
+      "فرانك دارابونت",
+      "رون كليمينتس اند جوهن موسكير",
+      "ويس انديرسون"
     ],
     "answer": 2,
     "difficulty": "medium",
@@ -10473,10 +10473,10 @@ const questions = [
       "Peter Jackson"
     ],
     "optionsAr": [
-      "Chuck Russell",
-      "Mark Osborne and John Stevenson",
-      "John Lasseter",
-      "Peter Jackson"
+      "كهوكك روسسيلل",
+      "مارك وسبورني اند جوهن ستيفينسون",
+      "جوهن لاسسيتير",
+      "بيتير جاككسون"
     ],
     "answer": 2,
     "difficulty": "medium",
@@ -10493,10 +10493,10 @@ const questions = [
       "Francis Ford Coppola"
     ],
     "optionsAr": [
-      "Peter Weir",
-      "Scott Derrickson",
-      "Andrew Stanton",
-      "Francis Ford Coppola"
+      "بيتير ويير",
+      "سكوتت ديرريككسون",
+      "اندريو ستانتون",
+      "فرانكيس فورد كوببولا"
     ],
     "answer": 2,
     "difficulty": "medium",
@@ -10513,10 +10513,10 @@ const questions = [
       "Gore Verbinski"
     ],
     "optionsAr": [
-      "Ridley Scott",
-      "Gary Trousdale and Kirk Wise",
-      "Pete Docter",
-      "Gore Verbinski"
+      "ريدليي سكوتت",
+      "جاري ترووسدالي اند كيرك ويسي",
+      "بيتي دوكتير",
+      "جوري فيربينسكي"
     ],
     "answer": 2,
     "difficulty": "medium",
@@ -10533,10 +10533,10 @@ const questions = [
       "Pete Docter"
     ],
     "optionsAr": [
-      "Gary Trousdale and Kirk Wise",
-      "Mark Osborne and John Stevenson",
-      "John Lasseter",
-      "Pete Docter"
+      "جاري ترووسدالي اند كيرك ويسي",
+      "مارك وسبورني اند جوهن ستيفينسون",
+      "جوهن لاسسيتير",
+      "بيتي دوكتير"
     ],
     "answer": 3,
     "difficulty": "medium",
@@ -10553,10 +10553,10 @@ const questions = [
       "Lee Unkrich"
     ],
     "optionsAr": [
-      "Ridley Scott",
-      "Sam Raimi",
-      "Mark Osborne and John Stevenson",
-      "Lee Unkrich"
+      "ريدليي سكوتت",
+      "سام رايمي",
+      "مارك وسبورني اند جوهن ستيفينسون",
+      "ليي ونكريكه"
     ],
     "answer": 3,
     "difficulty": "medium",
@@ -10573,10 +10573,10 @@ const questions = [
       "Peter Jackson"
     ],
     "optionsAr": [
-      "Brad Bird",
-      "Gore Verbinski",
-      "Peter Weir",
-      "Peter Jackson"
+      "براد بيرد",
+      "جوري فيربينسكي",
+      "بيتير ويير",
+      "بيتير جاككسون"
     ],
     "answer": 0,
     "difficulty": "medium",
@@ -10593,10 +10593,10 @@ const questions = [
       "Chris Columbus"
     ],
     "optionsAr": [
-      "Christopher Nolan",
-      "Ryan Coogler",
-      "Andrew Stanton",
-      "Chris Columbus"
+      "كهريستوبهير نولان",
+      "ريان كووجلير",
+      "اندريو ستانتون",
+      "كهريس كولومبوس"
     ],
     "answer": 2,
     "difficulty": "medium",
@@ -10613,10 +10613,10 @@ const questions = [
       "Steven Spielberg"
     ],
     "optionsAr": [
-      "James Cameron",
-      "Ryan Coogler",
-      "Hayao Miyazaki",
-      "Steven Spielberg"
+      "جاميس كاميرون",
+      "ريان كووجلير",
+      "هاياو مييازاكي",
+      "ستيفين سبييلبيرج"
     ],
     "answer": 2,
     "difficulty": "medium",
@@ -10633,10 +10633,10 @@ const questions = [
       "Hayao Miyazaki"
     ],
     "optionsAr": [
-      "Martin Scorsese",
-      "Andrew Stanton",
-      "Ridley Scott",
-      "Hayao Miyazaki"
+      "مارتين سكورسيسي",
+      "اندريو ستانتون",
+      "ريدليي سكوتت",
+      "هاياو مييازاكي"
     ],
     "answer": 3,
     "difficulty": "medium",
@@ -10653,10 +10653,10 @@ const questions = [
       "Peter Jackson"
     ],
     "optionsAr": [
-      "Wes Anderson",
-      "Ryan Coogler",
-      "Hayao Miyazaki",
-      "Peter Jackson"
+      "ويس انديرسون",
+      "ريان كووجلير",
+      "هاياو مييازاكي",
+      "بيتير جاككسون"
     ],
     "answer": 2,
     "difficulty": "medium",
@@ -10673,10 +10673,10 @@ const questions = [
       "Roger Allers and Rob Minkoff"
     ],
     "optionsAr": [
-      "Frank Darabont",
-      "John Lasseter",
-      "Joe Johnston",
-      "Roger Allers and Rob Minkoff"
+      "فرانك دارابونت",
+      "جوهن لاسسيتير",
+      "جوي جوهنستون",
+      "روجير الليرس اند روب مينكوفف"
     ],
     "answer": 3,
     "difficulty": "medium",
@@ -10693,10 +10693,10 @@ const questions = [
       "Peter Weir"
     ],
     "optionsAr": [
-      "Pierre Coffin and Chris Renaud",
-      "Ron Clements and John Musker",
-      "Brad Bird",
-      "Peter Weir"
+      "بييرري كوففين اند كهريس ريناود",
+      "رون كليمينتس اند جوهن موسكير",
+      "براد بيرد",
+      "بيتير ويير"
     ],
     "answer": 1,
     "difficulty": "medium",
@@ -10713,10 +10713,10 @@ const questions = [
       "Gary Trousdale and Kirk Wise"
     ],
     "optionsAr": [
-      "Frank Darabont",
-      "Ridley Scott",
-      "Scott Derrickson",
-      "Gary Trousdale and Kirk Wise"
+      "فرانك دارابونت",
+      "ريدليي سكوتت",
+      "سكوتت ديرريككسون",
+      "جاري ترووسدالي اند كيرك ويسي"
     ],
     "answer": 3,
     "difficulty": "medium",
@@ -10733,10 +10733,10 @@ const questions = [
       "Andrew Adamson and Vicky Jenson"
     ],
     "optionsAr": [
-      "Joe Johnston",
-      "Brad Bird",
-      "Lee Unkrich",
-      "Andrew Adamson and Vicky Jenson"
+      "جوي جوهنستون",
+      "براد بيرد",
+      "ليي ونكريكه",
+      "اندريو ادامسون اند فيككي جينسون"
     ],
     "answer": 3,
     "difficulty": "medium",
@@ -10753,10 +10753,10 @@ const questions = [
       "James Cameron"
     ],
     "optionsAr": [
-      "Mark Osborne and John Stevenson",
-      "Peter Weir",
-      "Chris Buck and Jennifer Lee",
-      "James Cameron"
+      "مارك وسبورني اند جوهن ستيفينسون",
+      "بيتير ويير",
+      "كهريس بوكك اند جيننيفير ليي",
+      "جاميس كاميرون"
     ],
     "answer": 0,
     "difficulty": "medium",
@@ -10773,10 +10773,10 @@ const questions = [
       "Dean DeBlois and Chris Sanders"
     ],
     "optionsAr": [
-      "Ron Clements and John Musker",
-      "John Lasseter",
-      "Peter Jackson",
-      "Dean DeBlois and Chris Sanders"
+      "رون كليمينتس اند جوهن موسكير",
+      "جوهن لاسسيتير",
+      "بيتير جاككسون",
+      "ديان ديبلويس اند كهريس سانديرس"
     ],
     "answer": 3,
     "difficulty": "medium",
@@ -10793,10 +10793,10 @@ const questions = [
       "Hayao Miyazaki"
     ],
     "optionsAr": [
-      "Joe Johnston",
-      "Pierre Coffin and Chris Renaud",
-      "Scott Derrickson",
-      "Hayao Miyazaki"
+      "جوي جوهنستون",
+      "بييرري كوففين اند كهريس ريناود",
+      "سكوتت ديرريككسون",
+      "هاياو مييازاكي"
     ],
     "answer": 1,
     "difficulty": "medium",
@@ -10813,10 +10813,10 @@ const questions = [
       "Damien Chazelle"
     ],
     "optionsAr": [
-      "Christopher Nolan",
-      "Chris Columbus",
-      "Brad Bird",
-      "Damien Chazelle"
+      "كهريستوبهير نولان",
+      "كهريس كولومبوس",
+      "براد بيرد",
+      "داميين كهازيللي"
     ],
     "answer": 1,
     "difficulty": "medium",
@@ -10833,10 +10833,10 @@ const questions = [
       "Chris Columbus"
     ],
     "optionsAr": [
-      "Lee Unkrich",
-      "Peter Jackson",
-      "Sam Raimi",
-      "Chris Columbus"
+      "ليي ونكريكه",
+      "بيتير جاككسون",
+      "سام رايمي",
+      "كهريس كولومبوس"
     ],
     "answer": 3,
     "difficulty": "medium",
@@ -10853,10 +10853,10 @@ const questions = [
       "Chris Columbus"
     ],
     "optionsAr": [
-      "Gary Trousdale and Kirk Wise",
-      "James Cameron",
-      "George Miller",
-      "Chris Columbus"
+      "جاري ترووسدالي اند كيرك ويسي",
+      "جاميس كاميرون",
+      "جيورجي ميللير",
+      "كهريس كولومبوس"
     ],
     "answer": 3,
     "difficulty": "medium",
@@ -10873,10 +10873,10 @@ const questions = [
       "Ryan Coogler"
     ],
     "optionsAr": [
-      "Chris Columbus",
-      "Chuck Russell",
-      "Martin Scorsese",
-      "Ryan Coogler"
+      "كهريس كولومبوس",
+      "كهوكك روسسيلل",
+      "مارتين سكورسيسي",
+      "ريان كووجلير"
     ],
     "answer": 0,
     "difficulty": "medium",
@@ -10893,10 +10893,10 @@ const questions = [
       "Gore Verbinski"
     ],
     "optionsAr": [
-      "Brad Bird",
-      "Robert Zemeckis",
-      "Ron Clements and John Musker",
-      "Gore Verbinski"
+      "براد بيرد",
+      "روبيرت زيميككيس",
+      "رون كليمينتس اند جوهن موسكير",
+      "جوري فيربينسكي"
     ],
     "answer": 3,
     "difficulty": "medium",
@@ -10913,10 +10913,10 @@ const questions = [
       "Chuck Russell"
     ],
     "optionsAr": [
-      "Joe Johnston",
-      "Chris Columbus",
-      "Scott Derrickson",
-      "Chuck Russell"
+      "جوي جوهنستون",
+      "كهريس كولومبوس",
+      "سكوتت ديرريككسون",
+      "كهوكك روسسيلل"
     ],
     "answer": 3,
     "difficulty": "medium",
@@ -10933,10 +10933,10 @@ const questions = [
       "Brad Bird"
     ],
     "optionsAr": [
-      "Peter Weir",
-      "Dean DeBlois and Chris Sanders",
-      "Frank Darabont",
-      "Brad Bird"
+      "بيتير ويير",
+      "ديان ديبلويس اند كهريس سانديرس",
+      "فرانك دارابونت",
+      "براد بيرد"
     ],
     "answer": 0,
     "difficulty": "medium",
@@ -10953,10 +10953,10 @@ const questions = [
       "Peter Jackson"
     ],
     "optionsAr": [
-      "Sam Raimi",
-      "Chris Columbus",
-      "Wes Anderson",
-      "Peter Jackson"
+      "سام رايمي",
+      "كهريس كولومبوس",
+      "ويس انديرسون",
+      "بيتير جاككسون"
     ],
     "answer": 2,
     "difficulty": "medium",
@@ -10973,10 +10973,10 @@ const questions = [
       "Wes Anderson"
     ],
     "optionsAr": [
-      "Mark Osborne and John Stevenson",
-      "Jon Favreau",
-      "John Lasseter",
-      "Wes Anderson"
+      "مارك وسبورني اند جوهن ستيفينسون",
+      "جون فافرياو",
+      "جوهن لاسسيتير",
+      "ويس انديرسون"
     ],
     "answer": 3,
     "difficulty": "medium",
@@ -10993,10 +10993,10 @@ const questions = [
       "Damien Chazelle"
     ],
     "optionsAr": [
-      "Roger Allers and Rob Minkoff",
-      "James Gunn",
-      "Dean DeBlois and Chris Sanders",
-      "Damien Chazelle"
+      "روجير الليرس اند روب مينكوفف",
+      "جاميس جونن",
+      "ديان ديبلويس اند كهريس سانديرس",
+      "داميين كهازيللي"
     ],
     "answer": 3,
     "difficulty": "medium",
@@ -11013,10 +11013,10 @@ const questions = [
       "Roger Allers and Rob Minkoff"
     ],
     "optionsAr": [
-      "Brad Bird",
-      "Lee Unkrich",
-      "Damien Chazelle",
-      "Roger Allers and Rob Minkoff"
+      "براد بيرد",
+      "ليي ونكريكه",
+      "داميين كهازيللي",
+      "روجير الليرس اند روب مينكوفف"
     ],
     "answer": 2,
     "difficulty": "medium",
@@ -11033,10 +11033,10 @@ const questions = [
       "Taika Waititi"
     ],
     "optionsAr": [
-      "Pierre Coffin and Chris Renaud",
-      "Scott Derrickson",
-      "Christopher Nolan",
-      "Taika Waititi"
+      "بييرري كوففين اند كهريس ريناود",
+      "سكوتت ديرريككسون",
+      "كهريستوبهير نولان",
+      "تايكا وايتيتي"
     ],
     "answer": 2,
     "difficulty": "medium",
@@ -11053,10 +11053,10 @@ const questions = [
       "Christopher Nolan"
     ],
     "optionsAr": [
-      "Gary Trousdale and Kirk Wise",
-      "Gore Verbinski",
-      "Steven Spielberg",
-      "Christopher Nolan"
+      "جاري ترووسدالي اند كيرك ويسي",
+      "جوري فيربينسكي",
+      "ستيفين سبييلبيرج",
+      "كهريستوبهير نولان"
     ],
     "answer": 3,
     "difficulty": "medium",
@@ -11073,10 +11073,10 @@ const questions = [
       "James Cameron"
     ],
     "optionsAr": [
-      "Christopher Nolan",
-      "Sam Raimi",
-      "Gore Verbinski",
-      "James Cameron"
+      "كهريستوبهير نولان",
+      "سام رايمي",
+      "جوري فيربينسكي",
+      "جاميس كاميرون"
     ],
     "answer": 0,
     "difficulty": "medium",
@@ -11093,10 +11093,10 @@ const questions = [
       "Martin Scorsese"
     ],
     "optionsAr": [
-      "Gary Trousdale and Kirk Wise",
-      "Peter Jackson",
-      "Christopher Nolan",
-      "Martin Scorsese"
+      "جاري ترووسدالي اند كيرك ويسي",
+      "بيتير جاككسون",
+      "كهريستوبهير نولان",
+      "مارتين سكورسيسي"
     ],
     "answer": 2,
     "difficulty": "medium",
@@ -11113,10 +11113,10 @@ const questions = [
       "Sam Raimi"
     ],
     "optionsAr": [
-      "Martin Scorsese",
-      "James Gunn",
-      "Joss Whedon",
-      "Sam Raimi"
+      "مارتين سكورسيسي",
+      "جاميس جونن",
+      "جوسس وهيدون",
+      "سام رايمي"
     ],
     "answer": 0,
     "difficulty": "medium",
@@ -11133,10 +11133,10 @@ const questions = [
       "Wes Anderson"
     ],
     "optionsAr": [
-      "Martin Scorsese",
-      "Christopher Nolan",
-      "Andrew Adamson and Vicky Jenson",
-      "Wes Anderson"
+      "مارتين سكورسيسي",
+      "كهريستوبهير نولان",
+      "اندريو ادامسون اند فيككي جينسون",
+      "ويس انديرسون"
     ],
     "answer": 0,
     "difficulty": "medium",
@@ -11153,10 +11153,10 @@ const questions = [
       "Martin Scorsese"
     ],
     "optionsAr": [
-      "John Lasseter",
-      "Ridley Scott",
-      "Chuck Russell",
-      "Martin Scorsese"
+      "جوهن لاسسيتير",
+      "ريدليي سكوتت",
+      "كهوكك روسسيلل",
+      "مارتين سكورسيسي"
     ],
     "answer": 3,
     "difficulty": "medium",
@@ -11173,10 +11173,10 @@ const questions = [
       "Pete Docter"
     ],
     "optionsAr": [
-      "Martin Scorsese",
-      "Andrew Stanton",
-      "Jon Favreau",
-      "Pete Docter"
+      "مارتين سكورسيسي",
+      "اندريو ستانتون",
+      "جون فافرياو",
+      "بيتي دوكتير"
     ],
     "answer": 0,
     "difficulty": "medium",
@@ -11193,10 +11193,10 @@ const questions = [
       "Martin Scorsese"
     ],
     "optionsAr": [
-      "Brad Bird",
-      "George Miller",
-      "Joe Johnston",
-      "Martin Scorsese"
+      "براد بيرد",
+      "جيورجي ميللير",
+      "جوي جوهنستون",
+      "مارتين سكورسيسي"
     ],
     "answer": 3,
     "difficulty": "medium",
@@ -15413,9 +15413,9 @@ const questions = [
       "Hydrogen"
     ],
     "optionsAr": [
-      "التيتانيوم",
-      "الكريبتون",
-      "الألومنيوم",
+      "تيتانيوم",
+      "كريبتون",
+      "الومينيوم",
       "الهيدروجين"
     ],
     "answer": 3,
@@ -15433,9 +15433,9 @@ const questions = [
       "Helium"
     ],
     "optionsAr": [
-      "الإيتربيوم",
-      "الألومنيوم",
-      "الأرجون",
+      "يتتيربيوم",
+      "الومينيوم",
+      "ارجون",
       "الهيليوم"
     ],
     "answer": 3,
@@ -15453,10 +15453,10 @@ const questions = [
       "Beryllium"
     ],
     "optionsAr": [
-      "السيلينيوم",
-      "الليثيوم",
-      "الكربون",
-      "البيريليوم"
+      "سيلينيوم",
+      "ليتهيوم",
+      "كاربون",
+      "بيريلليوم"
     ],
     "answer": 1,
     "difficulty": "hard",
@@ -15473,10 +15473,10 @@ const questions = [
       "Beryllium"
     ],
     "optionsAr": [
-      "النيون",
-      "التيلوريوم",
+      "نيون",
+      "تيللوريوم",
       "الحديد",
-      "البيريليوم"
+      "بيريلليوم"
     ],
     "answer": 3,
     "difficulty": "hard",
@@ -15493,10 +15493,10 @@ const questions = [
       "Caesium"
     ],
     "optionsAr": [
-      "البروميثيوم",
-      "الزنك",
-      "البورون",
-      "السيزيوم"
+      "بروميتهيوم",
+      "زينك",
+      "بورون",
+      "كايسيوم"
     ],
     "answer": 2,
     "difficulty": "hard",
@@ -15513,10 +15513,10 @@ const questions = [
       "Yttrium"
     ],
     "optionsAr": [
-      "الكربون",
-      "الألومنيوم",
-      "الروديوم",
-      "الإيتريوم"
+      "كاربون",
+      "الومينيوم",
+      "رهوديوم",
+      "يتتريوم"
     ],
     "answer": 0,
     "difficulty": "hard",
@@ -15533,10 +15533,10 @@ const questions = [
       "Iodine"
     ],
     "optionsAr": [
-      "الفلور",
+      "فلووريني",
       "النيتروجين",
-      "الزرنيخ",
-      "اليود"
+      "ارسينيك",
+      "يوديني"
     ],
     "answer": 1,
     "difficulty": "hard",
@@ -15553,10 +15553,10 @@ const questions = [
       "Fluorine"
     ],
     "optionsAr": [
-      "الزينون",
+      "كسينون",
       "الأكسجين",
-      "الزنك",
-      "الفلور"
+      "زينك",
+      "فلووريني"
     ],
     "answer": 1,
     "difficulty": "hard",
@@ -15573,10 +15573,10 @@ const questions = [
       "Sodium"
     ],
     "optionsAr": [
-      "الإربيوم",
-      "الفلور",
+      "يربيوم",
+      "فلووريني",
       "الفضة",
-      "الصوديوم"
+      "سوديوم"
     ],
     "answer": 1,
     "difficulty": "hard",
@@ -15593,10 +15593,10 @@ const questions = [
       "Arsenic"
     ],
     "optionsAr": [
-      "الكريبتون",
-      "الجرمانيوم",
-      "النيون",
-      "الزرنيخ"
+      "كريبتون",
+      "جيرمانيوم",
+      "نيون",
+      "ارسينيك"
     ],
     "answer": 2,
     "difficulty": "hard",
@@ -15613,10 +15613,10 @@ const questions = [
       "Beryllium"
     ],
     "optionsAr": [
-      "الفاناديوم",
-      "الصوديوم",
-      "الكربون",
-      "البيريليوم"
+      "فاناديوم",
+      "سوديوم",
+      "كاربون",
+      "بيريلليوم"
     ],
     "answer": 1,
     "difficulty": "hard",
@@ -15633,10 +15633,10 @@ const questions = [
       "Erbium"
     ],
     "optionsAr": [
-      "المنغنيز",
-      "التيلوريوم",
-      "المغنيسيوم",
-      "الإربيوم"
+      "مانجانيسي",
+      "تيللوريوم",
+      "ماجنيسيوم",
+      "يربيوم"
     ],
     "answer": 2,
     "difficulty": "hard",
@@ -15653,10 +15653,10 @@ const questions = [
       "Fluorine"
     ],
     "optionsAr": [
-      "السكانديوم",
-      "اليود",
-      "الألومنيوم",
-      "الفلور"
+      "سكانديوم",
+      "يوديني",
+      "الومينيوم",
+      "فلووريني"
     ],
     "answer": 2,
     "difficulty": "hard",
@@ -15673,10 +15673,10 @@ const questions = [
       "Tin"
     ],
     "optionsAr": [
-      "السيليكون",
-      "الأنتيمون",
-      "الكروم",
-      "القصدير"
+      "سيليكون",
+      "انتيموني",
+      "كهروميوم",
+      "تين"
     ],
     "answer": 0,
     "difficulty": "hard",
@@ -15693,10 +15693,10 @@ const questions = [
       "Potassium"
     ],
     "optionsAr": [
-      "الكوبالت",
-      "الفوسفور",
-      "الليثيوم",
-      "البوتاسيوم"
+      "كوبالت",
+      "بهوسبهوروس",
+      "ليتهيوم",
+      "بوتاسسيوم"
     ],
     "answer": 1,
     "difficulty": "hard",
@@ -15713,10 +15713,10 @@ const questions = [
       "Ytterbium"
     ],
     "optionsAr": [
-      "الأنتيمون",
-      "الكبريت",
-      "البروم",
-      "الإيتربيوم"
+      "انتيموني",
+      "سولفور",
+      "بروميني",
+      "يتتيربيوم"
     ],
     "answer": 1,
     "difficulty": "hard",
@@ -15733,10 +15733,10 @@ const questions = [
       "Caesium"
     ],
     "optionsAr": [
-      "الكلور",
-      "الروثينيوم",
-      "اليوروبيوم",
-      "السيزيوم"
+      "كهلوريني",
+      "روتهينيوم",
+      "يوروبيوم",
+      "كايسيوم"
     ],
     "answer": 0,
     "difficulty": "hard",
@@ -15753,10 +15753,10 @@ const questions = [
       "Argon"
     ],
     "optionsAr": [
-      "السترونشيوم",
-      "البراسيوديميوم",
-      "الثوليوم",
-      "الأرجون"
+      "سترونتيوم",
+      "براسيوديميوم",
+      "تهوليوم",
+      "ارجون"
     ],
     "answer": 3,
     "difficulty": "hard",
@@ -15773,10 +15773,10 @@ const questions = [
       "Caesium"
     ],
     "optionsAr": [
-      "الألومنيوم",
-      "البوتاسيوم",
-      "التيربيوم",
-      "السيزيوم"
+      "الومينيوم",
+      "بوتاسسيوم",
+      "تيربيوم",
+      "كايسيوم"
     ],
     "answer": 1,
     "difficulty": "hard",
@@ -15793,10 +15793,10 @@ const questions = [
       "Calcium"
     ],
     "optionsAr": [
-      "الفلور",
-      "الروبيديوم",
-      "البروميثيوم",
-      "الكالسيوم"
+      "فلووريني",
+      "روبيديوم",
+      "بروميتهيوم",
+      "كالكيوم"
     ],
     "answer": 3,
     "difficulty": "hard",
@@ -15813,10 +15813,10 @@ const questions = [
       "Aluminium"
     ],
     "optionsAr": [
-      "السيليكون",
-      "السكانديوم",
-      "الموليبدينوم",
-      "الألومنيوم"
+      "سيليكون",
+      "سكانديوم",
+      "موليبدينوم",
+      "الومينيوم"
     ],
     "answer": 1,
     "difficulty": "hard",
@@ -15833,9 +15833,9 @@ const questions = [
       "Nitrogen"
     ],
     "optionsAr": [
-      "التيتانيوم",
-      "الباريوم",
-      "النيكل",
+      "تيتانيوم",
+      "باريوم",
+      "نيككيل",
       "النيتروجين"
     ],
     "answer": 0,
@@ -15853,10 +15853,10 @@ const questions = [
       "Strontium"
     ],
     "optionsAr": [
-      "الفاناديوم",
+      "فاناديوم",
       "الفضة",
       "الهيليوم",
-      "السترونشيوم"
+      "سترونتيوم"
     ],
     "answer": 0,
     "difficulty": "hard",
@@ -15873,10 +15873,10 @@ const questions = [
       "Nickel"
     ],
     "optionsAr": [
-      "الإيتريوم",
-      "الكروم",
-      "الكريبتون",
-      "النيكل"
+      "يتتريوم",
+      "كهروميوم",
+      "كريبتون",
+      "نيككيل"
     ],
     "answer": 1,
     "difficulty": "hard",
@@ -15893,10 +15893,10 @@ const questions = [
       "Neon"
     ],
     "optionsAr": [
-      "السيريوم",
-      "الإيتريوم",
-      "المنغنيز",
-      "النيون"
+      "كيريوم",
+      "يتتريوم",
+      "مانجانيسي",
+      "نيون"
     ],
     "answer": 2,
     "difficulty": "hard",
@@ -15914,8 +15914,8 @@ const questions = [
     ],
     "optionsAr": [
       "الحديد",
-      "الجرمانيوم",
-      "البوتاسيوم",
+      "جيرمانيوم",
+      "بوتاسسيوم",
       "الفضة"
     ],
     "answer": 0,
@@ -15933,10 +15933,10 @@ const questions = [
       "Gadolinium"
     ],
     "optionsAr": [
-      "الأرجون",
-      "الكوبالت",
-      "الأنتيمون",
-      "الغادولينيوم"
+      "ارجون",
+      "كوبالت",
+      "انتيموني",
+      "جادولينيوم"
     ],
     "answer": 1,
     "difficulty": "hard",
@@ -15953,10 +15953,10 @@ const questions = [
       "Phosphorus"
     ],
     "optionsAr": [
-      "التيتانيوم",
-      "الإيتربيوم",
-      "النيكل",
-      "الفوسفور"
+      "تيتانيوم",
+      "يتتيربيوم",
+      "نيككيل",
+      "بهوسبهوروس"
     ],
     "answer": 2,
     "difficulty": "hard",
@@ -15973,9 +15973,9 @@ const questions = [
       "Copper"
     ],
     "optionsAr": [
-      "السيلينيوم",
-      "الإنديوم",
-      "الموليبدينوم",
+      "سيلينيوم",
+      "ينديوم",
+      "موليبدينوم",
       "النحاس"
     ],
     "answer": 3,
@@ -15993,10 +15993,10 @@ const questions = [
       "Europium"
     ],
     "optionsAr": [
-      "اللانثانوم",
-      "السيلينيوم",
-      "الزنك",
-      "اليوروبيوم"
+      "لانتهانوم",
+      "سيلينيوم",
+      "زينك",
+      "يوروبيوم"
     ],
     "answer": 2,
     "difficulty": "hard",
@@ -16013,10 +16013,10 @@ const questions = [
       "Sulfur"
     ],
     "optionsAr": [
-      "السيلينيوم",
-      "البورون",
-      "الغاليوم",
-      "الكبريت"
+      "سيلينيوم",
+      "بورون",
+      "جالليوم",
+      "سولفور"
     ],
     "answer": 2,
     "difficulty": "hard",
@@ -16034,9 +16034,9 @@ const questions = [
     ],
     "optionsAr": [
       "النحاس",
-      "الجرمانيوم",
-      "الكلور",
-      "الكالسيوم"
+      "جيرمانيوم",
+      "كهلوريني",
+      "كالكيوم"
     ],
     "answer": 1,
     "difficulty": "hard",
@@ -16053,9 +16053,9 @@ const questions = [
       "Hydrogen"
     ],
     "optionsAr": [
-      "البورون",
-      "الزرنيخ",
-      "الأرجون",
+      "بورون",
+      "ارسينيك",
+      "ارجون",
       "الهيدروجين"
     ],
     "answer": 1,
@@ -16073,10 +16073,10 @@ const questions = [
       "Gallium"
     ],
     "optionsAr": [
-      "البورون",
+      "بورون",
       "الهيدروجين",
-      "السيلينيوم",
-      "الغاليوم"
+      "سيلينيوم",
+      "جالليوم"
     ],
     "answer": 2,
     "difficulty": "hard",
@@ -16093,10 +16093,10 @@ const questions = [
       "Bromine"
     ],
     "optionsAr": [
-      "الديسبروسيوم",
-      "الكريبتون",
-      "الثوليوم",
-      "البروم"
+      "ديسبروسيوم",
+      "كريبتون",
+      "تهوليوم",
+      "بروميني"
     ],
     "answer": 3,
     "difficulty": "hard",
@@ -16113,9 +16113,9 @@ const questions = [
       "Copper"
     ],
     "optionsAr": [
-      "البروم",
-      "الكبريت",
-      "الكريبتون",
+      "بروميني",
+      "سولفور",
+      "كريبتون",
       "النحاس"
     ],
     "answer": 2,
@@ -16133,10 +16133,10 @@ const questions = [
       "Rubidium"
     ],
     "optionsAr": [
-      "الكريبتون",
-      "الكالسيوم",
-      "الثوليوم",
-      "الروبيديوم"
+      "كريبتون",
+      "كالكيوم",
+      "تهوليوم",
+      "روبيديوم"
     ],
     "answer": 3,
     "difficulty": "hard",
@@ -16154,9 +16154,9 @@ const questions = [
     ],
     "optionsAr": [
       "الهيدروجين",
-      "البورون",
-      "الغادولينيوم",
-      "السترونشيوم"
+      "بورون",
+      "جادولينيوم",
+      "سترونتيوم"
     ],
     "answer": 3,
     "difficulty": "hard",
@@ -16173,10 +16173,10 @@ const questions = [
       "Ytterbium"
     ],
     "optionsAr": [
-      "البراسيوديميوم",
-      "التيلوريوم",
-      "الإيتريوم",
-      "الإيتربيوم"
+      "براسيوديميوم",
+      "تيللوريوم",
+      "يتتريوم",
+      "يتتيربيوم"
     ],
     "answer": 2,
     "difficulty": "hard",
@@ -16193,10 +16193,10 @@ const questions = [
       "Zirconium"
     ],
     "optionsAr": [
-      "الزنك",
-      "السكانديوم",
-      "الغاليوم",
-      "الزركونيوم"
+      "زينك",
+      "سكانديوم",
+      "جالليوم",
+      "زيركونيوم"
     ],
     "answer": 3,
     "difficulty": "hard",
@@ -16213,10 +16213,10 @@ const questions = [
       "Niobium"
     ],
     "optionsAr": [
-      "السيليكون",
-      "الكبريت",
-      "التيربيوم",
-      "النيوبيوم"
+      "سيليكون",
+      "سولفور",
+      "تيربيوم",
+      "نيوبيوم"
     ],
     "answer": 3,
     "difficulty": "hard",
@@ -16233,10 +16233,10 @@ const questions = [
       "Cobalt"
     ],
     "optionsAr": [
-      "الموليبدينوم",
-      "اليوروبيوم",
-      "الباريوم",
-      "الكوبالت"
+      "موليبدينوم",
+      "يوروبيوم",
+      "باريوم",
+      "كوبالت"
     ],
     "answer": 0,
     "difficulty": "hard",
@@ -16253,10 +16253,10 @@ const questions = [
       "Gallium"
     ],
     "optionsAr": [
-      "السيليكون",
-      "التكنيتيوم",
-      "الكربون",
-      "الغاليوم"
+      "سيليكون",
+      "تيكهنيتيوم",
+      "كاربون",
+      "جالليوم"
     ],
     "answer": 1,
     "difficulty": "hard",
@@ -16273,10 +16273,10 @@ const questions = [
       "Titanium"
     ],
     "optionsAr": [
-      "الكوبالت",
-      "الروثينيوم",
+      "كوبالت",
+      "روتهينيوم",
       "الهيدروجين",
-      "التيتانيوم"
+      "تيتانيوم"
     ],
     "answer": 1,
     "difficulty": "hard",
@@ -16293,10 +16293,10 @@ const questions = [
       "Titanium"
     ],
     "optionsAr": [
-      "الروديوم",
-      "الكالسيوم",
-      "الفاناديوم",
-      "التيتانيوم"
+      "رهوديوم",
+      "كالكيوم",
+      "فاناديوم",
+      "تيتانيوم"
     ],
     "answer": 0,
     "difficulty": "hard",
@@ -16313,10 +16313,10 @@ const questions = [
       "Rubidium"
     ],
     "optionsAr": [
-      "الليثيوم",
-      "القصدير",
-      "البلاديوم",
-      "الروبيديوم"
+      "ليتهيوم",
+      "تين",
+      "باللاديوم",
+      "روبيديوم"
     ],
     "answer": 2,
     "difficulty": "hard",
@@ -16333,10 +16333,10 @@ const questions = [
       "Ytterbium"
     ],
     "optionsAr": [
-      "الزينون",
-      "الفلور",
+      "كسينون",
+      "فلووريني",
       "الفضة",
-      "الإيتربيوم"
+      "يتتيربيوم"
     ],
     "answer": 2,
     "difficulty": "hard",
@@ -16353,9 +16353,9 @@ const questions = [
       "Nitrogen"
     ],
     "optionsAr": [
-      "الموليبدينوم",
-      "الروديوم",
-      "الكادميوم",
+      "موليبدينوم",
+      "رهوديوم",
+      "كادميوم",
       "النيتروجين"
     ],
     "answer": 2,
@@ -16373,10 +16373,10 @@ const questions = [
       "Titanium"
     ],
     "optionsAr": [
-      "الإنديوم",
-      "الإربيوم",
-      "الإيتربيوم",
-      "التيتانيوم"
+      "ينديوم",
+      "يربيوم",
+      "يتتيربيوم",
+      "تيتانيوم"
     ],
     "answer": 0,
     "difficulty": "hard",
@@ -16393,10 +16393,10 @@ const questions = [
       "Boron"
     ],
     "optionsAr": [
-      "السكانديوم",
-      "الكوبالت",
-      "القصدير",
-      "البورون"
+      "سكانديوم",
+      "كوبالت",
+      "تين",
+      "بورون"
     ],
     "answer": 2,
     "difficulty": "hard",
@@ -16413,10 +16413,10 @@ const questions = [
       "Samarium"
     ],
     "optionsAr": [
-      "الأنتيمون",
-      "الفلور",
-      "اليود",
-      "الساماريوم"
+      "انتيموني",
+      "فلووريني",
+      "يوديني",
+      "ساماريوم"
     ],
     "answer": 0,
     "difficulty": "hard",
@@ -16433,10 +16433,10 @@ const questions = [
       "Antimony"
     ],
     "optionsAr": [
-      "البوتاسيوم",
-      "الإنديوم",
-      "التيلوريوم",
-      "الأنتيمون"
+      "بوتاسسيوم",
+      "ينديوم",
+      "تيللوريوم",
+      "انتيموني"
     ],
     "answer": 2,
     "difficulty": "hard",
@@ -16453,10 +16453,10 @@ const questions = [
       "Ruthenium"
     ],
     "optionsAr": [
-      "اليود",
-      "الإربيوم",
-      "التيربيوم",
-      "الروثينيوم"
+      "يوديني",
+      "يربيوم",
+      "تيربيوم",
+      "روتهينيوم"
     ],
     "answer": 0,
     "difficulty": "hard",
@@ -16473,10 +16473,10 @@ const questions = [
       "Dysprosium"
     ],
     "optionsAr": [
-      "النيكل",
-      "الساماريوم",
-      "الزينون",
-      "الديسبروسيوم"
+      "نيككيل",
+      "ساماريوم",
+      "كسينون",
+      "ديسبروسيوم"
     ],
     "answer": 2,
     "difficulty": "hard",
@@ -16493,10 +16493,10 @@ const questions = [
       "Caesium"
     ],
     "optionsAr": [
-      "الفوسفور",
-      "الهولميوم",
-      "الكلور",
-      "السيزيوم"
+      "بهوسبهوروس",
+      "هولميوم",
+      "كهلوريني",
+      "كايسيوم"
     ],
     "answer": 3,
     "difficulty": "hard",
@@ -16513,10 +16513,10 @@ const questions = [
       "Vanadium"
     ],
     "optionsAr": [
-      "الباريوم",
-      "اللانثانوم",
-      "السيليكون",
-      "الفاناديوم"
+      "باريوم",
+      "لانتهانوم",
+      "سيليكون",
+      "فاناديوم"
     ],
     "answer": 0,
     "difficulty": "hard",
@@ -16533,10 +16533,10 @@ const questions = [
       "Germanium"
     ],
     "optionsAr": [
-      "اللانثانوم",
+      "لانتهانوم",
       "النيتروجين",
-      "الفاناديوم",
-      "الجرمانيوم"
+      "فاناديوم",
+      "جيرمانيوم"
     ],
     "answer": 0,
     "difficulty": "hard",
@@ -16553,10 +16553,10 @@ const questions = [
       "Manganese"
     ],
     "optionsAr": [
-      "النيكل",
-      "السيلينيوم",
-      "السيريوم",
-      "المنغنيز"
+      "نيككيل",
+      "سيلينيوم",
+      "كيريوم",
+      "مانجانيسي"
     ],
     "answer": 2,
     "difficulty": "hard",
@@ -16573,10 +16573,10 @@ const questions = [
       "Niobium"
     ],
     "optionsAr": [
-      "التيربيوم",
-      "الإيتريوم",
-      "البراسيوديميوم",
-      "النيوبيوم"
+      "تيربيوم",
+      "يتتريوم",
+      "براسيوديميوم",
+      "نيوبيوم"
     ],
     "answer": 2,
     "difficulty": "hard",
@@ -16593,10 +16593,10 @@ const questions = [
       "Caesium"
     ],
     "optionsAr": [
-      "الروبيديوم",
-      "الديسبروسيوم",
-      "النيوديميوم",
-      "السيزيوم"
+      "روبيديوم",
+      "ديسبروسيوم",
+      "نيوديميوم",
+      "كايسيوم"
     ],
     "answer": 2,
     "difficulty": "hard",
@@ -16613,10 +16613,10 @@ const questions = [
       "Lithium"
     ],
     "optionsAr": [
-      "الإربيوم",
-      "الغاليوم",
-      "البروميثيوم",
-      "الليثيوم"
+      "يربيوم",
+      "جالليوم",
+      "بروميتهيوم",
+      "ليتهيوم"
     ],
     "answer": 2,
     "difficulty": "hard",
@@ -16633,9 +16633,9 @@ const questions = [
       "Nitrogen"
     ],
     "optionsAr": [
-      "المغنيسيوم",
-      "الثوليوم",
-      "الساماريوم",
+      "ماجنيسيوم",
+      "تهوليوم",
+      "ساماريوم",
       "النيتروجين"
     ],
     "answer": 2,
@@ -16653,10 +16653,10 @@ const questions = [
       "Dysprosium"
     ],
     "optionsAr": [
-      "البيريليوم",
-      "الكوبالت",
-      "اليوروبيوم",
-      "الديسبروسيوم"
+      "بيريلليوم",
+      "كوبالت",
+      "يوروبيوم",
+      "ديسبروسيوم"
     ],
     "answer": 2,
     "difficulty": "hard",
@@ -16673,10 +16673,10 @@ const questions = [
       "Sodium"
     ],
     "optionsAr": [
-      "الموليبدينوم",
-      "التيربيوم",
-      "الغادولينيوم",
-      "الصوديوم"
+      "موليبدينوم",
+      "تيربيوم",
+      "جادولينيوم",
+      "سوديوم"
     ],
     "answer": 2,
     "difficulty": "hard",
@@ -16693,10 +16693,10 @@ const questions = [
       "Antimony"
     ],
     "optionsAr": [
-      "التيربيوم",
-      "الكادميوم",
-      "الهولميوم",
-      "الأنتيمون"
+      "تيربيوم",
+      "كادميوم",
+      "هولميوم",
+      "انتيموني"
     ],
     "answer": 0,
     "difficulty": "hard",
@@ -16713,10 +16713,10 @@ const questions = [
       "Dysprosium"
     ],
     "optionsAr": [
-      "البراسيوديميوم",
-      "البروم",
-      "الكادميوم",
-      "الديسبروسيوم"
+      "براسيوديميوم",
+      "بروميني",
+      "كادميوم",
+      "ديسبروسيوم"
     ],
     "answer": 3,
     "difficulty": "hard",
@@ -16734,8 +16734,8 @@ const questions = [
     ],
     "optionsAr": [
       "الحديد",
-      "اليوروبيوم",
-      "الهولميوم",
+      "يوروبيوم",
+      "هولميوم",
       "النحاس"
     ],
     "answer": 2,
@@ -16753,10 +16753,10 @@ const questions = [
       "Technetium"
     ],
     "optionsAr": [
-      "النيكل",
-      "اللانثانوم",
-      "الإربيوم",
-      "التكنيتيوم"
+      "نيككيل",
+      "لانتهانوم",
+      "يربيوم",
+      "تيكهنيتيوم"
     ],
     "answer": 2,
     "difficulty": "hard",
@@ -16773,10 +16773,10 @@ const questions = [
       "Zirconium"
     ],
     "optionsAr": [
-      "الفلور",
-      "الديسبروسيوم",
-      "الثوليوم",
-      "الزركونيوم"
+      "فلووريني",
+      "ديسبروسيوم",
+      "تهوليوم",
+      "زيركونيوم"
     ],
     "answer": 2,
     "difficulty": "hard",
@@ -16793,10 +16793,10 @@ const questions = [
       "Nickel"
     ],
     "optionsAr": [
-      "الإيتربيوم",
-      "الزركونيوم",
-      "النيون",
-      "النيكل"
+      "يتتيربيوم",
+      "زيركونيوم",
+      "نيون",
+      "نيككيل"
     ],
     "answer": 0,
     "difficulty": "hard",
@@ -16813,10 +16813,10 @@ const questions = [
       "Mario"
     ],
     "optionsAr": [
-      "Cloud Strife",
-      "Doomguy",
-      "The Chosen Undead",
-      "Mario"
+      "كلوود ستريفي",
+      "دوومجوي",
+      "المختار غير الميت",
+      "ماريو"
     ],
     "answer": 3,
     "difficulty": "easy",
@@ -16833,10 +16833,10 @@ const questions = [
       "No fixed protagonist"
     ],
     "optionsAr": [
-      "A group of survivors",
-      "Steve",
-      "Peter Parker",
-      "No fixed protagonist"
+      "مجموعة من الناجين",
+      "ستيفي",
+      "بيتير باركير",
+      "لا توجد شخصية رئيسية ثابتة"
     ],
     "answer": 1,
     "difficulty": "easy",
@@ -16853,10 +16853,10 @@ const questions = [
       "Master Chief"
     ],
     "optionsAr": [
-      "Aloy",
-      "Link",
-      "Cole Phelps",
-      "Master Chief"
+      "الوي",
+      "لينك",
+      "كولي بهيلبس",
+      "ماستير كهييف"
     ],
     "answer": 1,
     "difficulty": "easy",
@@ -16873,10 +16873,10 @@ const questions = [
       "The Hunter"
     ],
     "optionsAr": [
-      "The player-created character",
-      "Mario",
-      "Link",
-      "The Hunter"
+      "الشخصية التي ينشئها اللاعب",
+      "ماريو",
+      "لينك",
+      "الصياد"
     ],
     "answer": 2,
     "difficulty": "easy",
@@ -16893,10 +16893,10 @@ const questions = [
       "Jin Sakai"
     ],
     "optionsAr": [
-      "Red",
-      "Ratchet",
-      "Joel",
-      "Jin Sakai"
+      "ريد",
+      "راتكهيت",
+      "جويل",
+      "جين ساكاي"
     ],
     "answer": 0,
     "difficulty": "easy",
@@ -16913,10 +16913,10 @@ const questions = [
       "Dante"
     ],
     "optionsAr": [
-      "Pac-Man",
-      "No fixed protagonist",
-      "Joel",
-      "Dante"
+      "باك-مان",
+      "لا توجد شخصية رئيسية ثابتة",
+      "جويل",
+      "دانتي"
     ],
     "answer": 1,
     "difficulty": "easy",
@@ -16933,10 +16933,10 @@ const questions = [
       "Link"
     ],
     "optionsAr": [
-      "Arthur Morgan",
-      "Sonic",
-      "Jimmy Hopkins",
-      "Link"
+      "ارتهور مورجان",
+      "سونيك",
+      "جيممي هوبكينس",
+      "لينك"
     ],
     "answer": 1,
     "difficulty": "easy",
@@ -16953,10 +16953,10 @@ const questions = [
       "Steve"
     ],
     "optionsAr": [
-      "Pac-Man",
-      "Sonic",
-      "The player character",
-      "Steve"
+      "باك-مان",
+      "سونيك",
+      "تهي بلايير كهاراكتير",
+      "ستيفي"
     ],
     "answer": 0,
     "difficulty": "easy",
@@ -16973,10 +16973,10 @@ const questions = [
       "Joel"
     ],
     "optionsAr": [
-      "A group of survivors",
-      "Tracer and other heroes",
-      "Mario",
-      "Joel"
+      "مجموعة من الناجين",
+      "تراكير اند وتهير هيرويس",
+      "ماريو",
+      "جويل"
     ],
     "answer": 2,
     "difficulty": "easy",
@@ -16993,10 +16993,10 @@ const questions = [
       "The player character"
     ],
     "optionsAr": [
-      "Samus Aran",
-      "The Sole Survivor",
-      "No fixed protagonist",
-      "The player character"
+      "ساموس اران",
+      "تهي سولي سورفيفور",
+      "لا توجد شخصية رئيسية ثابتة",
+      "تهي بلايير كهاراكتير"
     ],
     "answer": 0,
     "difficulty": "easy",
@@ -17013,10 +17013,10 @@ const questions = [
       "A group of survivors"
     ],
     "optionsAr": [
-      "Leon S. Kennedy",
-      "Cloud Strife",
-      "Pac-Man",
-      "A group of survivors"
+      "ليون س. كيننيدي",
+      "كلوود ستريفي",
+      "باك-مان",
+      "مجموعة من الناجين"
     ],
     "answer": 1,
     "difficulty": "easy",
@@ -17033,10 +17033,10 @@ const questions = [
       "The player avatar"
     ],
     "optionsAr": [
-      "The Hunter",
-      "Joel",
-      "Tidus",
-      "The player avatar"
+      "الصياد",
+      "جويل",
+      "تيدوس",
+      "تهي بلايير افاتار"
     ],
     "answer": 2,
     "difficulty": "easy",
@@ -17053,10 +17053,10 @@ const questions = [
       "The Luminary"
     ],
     "optionsAr": [
-      "Samus Aran",
-      "Sonic",
-      "Jin Sakai",
-      "The Luminary"
+      "ساموس اران",
+      "سونيك",
+      "جين ساكاي",
+      "تهي لوميناري"
     ],
     "answer": 3,
     "difficulty": "easy",
@@ -17073,10 +17073,10 @@ const questions = [
       "A selectable class hero"
     ],
     "optionsAr": [
-      "Gordon Freeman",
-      "Dante",
-      "Sora",
-      "A selectable class hero"
+      "جوردون فرييمان",
+      "دانتي",
+      "سورا",
+      "ا سيليكتابلي كلاسس هيرو"
     ],
     "answer": 2,
     "difficulty": "easy",
@@ -17093,10 +17093,10 @@ const questions = [
       "Ryu"
     ],
     "optionsAr": [
-      "Doomguy",
-      "The Chosen Undead",
-      "Steve",
-      "Ryu"
+      "دوومجوي",
+      "المختار غير الميت",
+      "ستيفي",
+      "ريو"
     ],
     "answer": 3,
     "difficulty": "easy",
@@ -17113,10 +17113,10 @@ const questions = [
       "No fixed protagonist"
     ],
     "optionsAr": [
-      "The player avatar",
-      "Chris Redfield and Jill Valentine",
-      "The Sole Survivor",
-      "No fixed protagonist"
+      "تهي بلايير افاتار",
+      "كهريس ريدفييلد اند جيلل فالينتيني",
+      "تهي سولي سورفيفور",
+      "لا توجد شخصية رئيسية ثابتة"
     ],
     "answer": 1,
     "difficulty": "easy",
@@ -17133,10 +17133,10 @@ const questions = [
       "No fixed protagonist"
     ],
     "optionsAr": [
-      "A choice of playable heroes",
-      "The Sole Survivor",
-      "Leon S. Kennedy",
-      "No fixed protagonist"
+      "ا كهويكي وف بلايابلي هيرويس",
+      "تهي سولي سورفيفور",
+      "ليون س. كيننيدي",
+      "لا توجد شخصية رئيسية ثابتة"
     ],
     "answer": 2,
     "difficulty": "easy",
@@ -17153,10 +17153,10 @@ const questions = [
       "Jin Kazama"
     ],
     "optionsAr": [
-      "Mega Man",
-      "Gordon Freeman",
-      "Ratchet",
-      "Jin Kazama"
+      "ميجا مان",
+      "جوردون فرييمان",
+      "راتكهيت",
+      "جين كازاما"
     ],
     "answer": 0,
     "difficulty": "easy",
@@ -17173,10 +17173,10 @@ const questions = [
       "Aloy"
     ],
     "optionsAr": [
-      "Kratos",
-      "Chell",
-      "Dante",
-      "Aloy"
+      "كراتوس",
+      "كهيلل",
+      "دانتي",
+      "الوي"
     ],
     "answer": 2,
     "difficulty": "easy",
@@ -17193,9 +17193,9 @@ const questions = [
       "V"
     ],
     "optionsAr": [
-      "The Hunter",
-      "Master Chief",
-      "Cloud Strife",
+      "الصياد",
+      "ماستير كهييف",
+      "كلوود ستريفي",
       "V"
     ],
     "answer": 0,
@@ -17213,10 +17213,10 @@ const questions = [
       "Master Chief"
     ],
     "optionsAr": [
-      "The player-created character",
-      "The Hunter",
-      "Marcus Fenix",
-      "Master Chief"
+      "الشخصية التي ينشئها اللاعب",
+      "الصياد",
+      "ماركوس فينيكس",
+      "ماستير كهييف"
     ],
     "answer": 3,
     "difficulty": "easy",
@@ -17233,10 +17233,10 @@ const questions = [
       "Master Chief"
     ],
     "optionsAr": [
-      "The Sole Survivor",
-      "Red",
-      "Jim Raynor",
-      "Master Chief"
+      "تهي سولي سورفيفور",
+      "ريد",
+      "جيم راينور",
+      "ماستير كهييف"
     ],
     "answer": 3,
     "difficulty": "easy",
@@ -17253,10 +17253,10 @@ const questions = [
       "The player-created Sims"
     ],
     "optionsAr": [
-      "Peter Parker",
-      "Wolf",
-      "Marcus Fenix",
-      "The player-created Sims"
+      "بيتير باركير",
+      "وولف",
+      "ماركوس فينيكس",
+      "تهي بلايير-كرياتيد سيمس"
     ],
     "answer": 2,
     "difficulty": "easy",
@@ -17273,10 +17273,10 @@ const questions = [
       "Kratos"
     ],
     "optionsAr": [
-      "The Luminary",
-      "Doomguy",
-      "The player avatar",
-      "Kratos"
+      "تهي لوميناري",
+      "دوومجوي",
+      "تهي بلايير افاتار",
+      "كراتوس"
     ],
     "answer": 2,
     "difficulty": "easy",
@@ -17293,10 +17293,10 @@ const questions = [
       "No single fixed protagonist"
     ],
     "optionsAr": [
-      "The player-created Sims",
-      "Jim Raynor",
-      "Marcus Fenix",
-      "No single fixed protagonist"
+      "تهي بلايير-كرياتيد سيمس",
+      "جيم راينور",
+      "ماركوس فينيكس",
+      "نو سينجلي فيكسيد بروتاجونيست"
     ],
     "answer": 3,
     "difficulty": "easy",
@@ -17313,10 +17313,10 @@ const questions = [
       "Aloy"
     ],
     "optionsAr": [
-      "Doomguy",
-      "Geralt of Rivia",
-      "Chell",
-      "Aloy"
+      "دوومجوي",
+      "جيرالت وف ريفيا",
+      "كهيلل",
+      "الوي"
     ],
     "answer": 0,
     "difficulty": "easy",
@@ -17333,10 +17333,10 @@ const questions = [
       "Mario"
     ],
     "optionsAr": [
-      "Leon S. Kennedy",
-      "Ranger",
-      "Ratchet",
-      "Mario"
+      "ليون س. كيننيدي",
+      "رانجير",
+      "راتكهيت",
+      "ماريو"
     ],
     "answer": 1,
     "difficulty": "easy",
@@ -17353,10 +17353,10 @@ const questions = [
       "B. J. Blazkowicz"
     ],
     "optionsAr": [
-      "The Sole Survivor",
-      "A group of survivors",
-      "Ryu",
-      "B. J. Blazkowicz"
+      "تهي سولي سورفيفور",
+      "مجموعة من الناجين",
+      "ريو",
+      "ب. ج. بلازكوويكز"
     ],
     "answer": 3,
     "difficulty": "easy",
@@ -17373,10 +17373,10 @@ const questions = [
       "The Dragonborn"
     ],
     "optionsAr": [
-      "The Hunter",
-      "Peter Parker",
-      "No single fixed protagonist",
-      "The Dragonborn"
+      "الصياد",
+      "بيتير باركير",
+      "نو سينجلي فيكسيد بروتاجونيست",
+      "تهي دراجونبورن"
     ],
     "answer": 3,
     "difficulty": "easy",
@@ -17393,10 +17393,10 @@ const questions = [
       "A group of survivors"
     ],
     "optionsAr": [
-      "The Sole Survivor",
-      "Jimmy Hopkins",
-      "Joel",
-      "A group of survivors"
+      "تهي سولي سورفيفور",
+      "جيممي هوبكينس",
+      "جويل",
+      "مجموعة من الناجين"
     ],
     "answer": 0,
     "difficulty": "easy",
@@ -17413,10 +17413,10 @@ const questions = [
       "The player-created Sims"
     ],
     "optionsAr": [
-      "The player character",
-      "Aloy",
-      "A group of survivors",
-      "The player-created Sims"
+      "تهي بلايير كهاراكتير",
+      "الوي",
+      "مجموعة من الناجين",
+      "تهي بلايير-كرياتيد سيمس"
     ],
     "answer": 0,
     "difficulty": "easy",
@@ -17433,10 +17433,10 @@ const questions = [
       "Steve"
     ],
     "optionsAr": [
-      "Geralt of Rivia",
-      "Kratos",
-      "A selectable class hero",
-      "Steve"
+      "جيرالت وف ريفيا",
+      "كراتوس",
+      "ا سيليكتابلي كلاسس هيرو",
+      "ستيفي"
     ],
     "answer": 0,
     "difficulty": "easy",
@@ -17453,9 +17453,9 @@ const questions = [
       "V"
     ],
     "optionsAr": [
-      "Jin Kazama",
-      "B. J. Blazkowicz",
-      "Crash Bandicoot",
+      "جين كازاما",
+      "ب. ج. بلازكوويكز",
+      "كراسه بانديكووت",
       "V"
     ],
     "answer": 3,
@@ -17473,10 +17473,10 @@ const questions = [
       "A selectable class hero"
     ],
     "optionsAr": [
-      "Steve",
-      "Pac-Man",
-      "The player-created character",
-      "A selectable class hero"
+      "ستيفي",
+      "باك-مان",
+      "الشخصية التي ينشئها اللاعب",
+      "ا سيليكتابلي كلاسس هيرو"
     ],
     "answer": 2,
     "difficulty": "easy",
@@ -17493,10 +17493,10 @@ const questions = [
       "A choice of playable heroes"
     ],
     "optionsAr": [
-      "Pac-Man",
-      "The player-created Sims",
-      "Jimmy Hopkins",
-      "A choice of playable heroes"
+      "باك-مان",
+      "تهي بلايير-كرياتيد سيمس",
+      "جيممي هوبكينس",
+      "ا كهويكي وف بلايابلي هيرويس"
     ],
     "answer": 3,
     "difficulty": "easy",
@@ -17513,10 +17513,10 @@ const questions = [
       "No single fixed protagonist"
     ],
     "optionsAr": [
-      "Nathan Drake",
-      "Mega Man",
-      "Chris Redfield and Jill Valentine",
-      "No single fixed protagonist"
+      "ناتهان دراكي",
+      "ميجا مان",
+      "كهريس ريدفييلد اند جيلل فالينتيني",
+      "نو سينجلي فيكسيد بروتاجونيست"
     ],
     "answer": 3,
     "difficulty": "easy",
@@ -17533,10 +17533,10 @@ const questions = [
       "Gordon Freeman"
     ],
     "optionsAr": [
-      "Mega Man",
-      "Leon S. Kennedy",
-      "Cole Phelps",
-      "Gordon Freeman"
+      "ميجا مان",
+      "ليون س. كيننيدي",
+      "كولي بهيلبس",
+      "جوردون فرييمان"
     ],
     "answer": 3,
     "difficulty": "easy",
@@ -17553,10 +17553,10 @@ const questions = [
       "Link"
     ],
     "optionsAr": [
-      "A choice of playable heroes",
-      "Chell",
-      "Sonic",
-      "Link"
+      "ا كهويكي وف بلايابلي هيرويس",
+      "كهيلل",
+      "سونيك",
+      "لينك"
     ],
     "answer": 1,
     "difficulty": "easy",
@@ -17573,10 +17573,10 @@ const questions = [
       "No fixed protagonist"
     ],
     "optionsAr": [
-      "Chris Redfield and Jill Valentine",
-      "The Dragonborn",
-      "A group of survivors",
-      "No fixed protagonist"
+      "كهريس ريدفييلد اند جيلل فالينتيني",
+      "تهي دراجونبورن",
+      "مجموعة من الناجين",
+      "لا توجد شخصية رئيسية ثابتة"
     ],
     "answer": 2,
     "difficulty": "easy",
@@ -17593,10 +17593,10 @@ const questions = [
       "Tracer and other heroes"
     ],
     "optionsAr": [
-      "Wolf",
-      "A selectable class hero",
-      "Claude",
-      "Tracer and other heroes"
+      "وولف",
+      "ا سيليكتابلي كلاسس هيرو",
+      "كلاودي",
+      "تراكير اند وتهير هيرويس"
     ],
     "answer": 3,
     "difficulty": "easy",
@@ -17613,10 +17613,10 @@ const questions = [
       "Sonic"
     ],
     "optionsAr": [
-      "The player-created character",
-      "The Chosen Undead",
-      "Claude",
-      "Sonic"
+      "الشخصية التي ينشئها اللاعب",
+      "المختار غير الميت",
+      "كلاودي",
+      "سونيك"
     ],
     "answer": 0,
     "difficulty": "easy",
@@ -17633,10 +17633,10 @@ const questions = [
       "No fixed protagonist"
     ],
     "optionsAr": [
-      "Jin Sakai",
-      "A selectable class hero",
-      "The Luminary",
-      "No fixed protagonist"
+      "جين ساكاي",
+      "ا سيليكتابلي كلاسس هيرو",
+      "تهي لوميناري",
+      "لا توجد شخصية رئيسية ثابتة"
     ],
     "answer": 1,
     "difficulty": "easy",
@@ -17653,10 +17653,10 @@ const questions = [
       "Chell"
     ],
     "optionsAr": [
-      "Pac-Man",
-      "The player-created Sims",
-      "Jim Raynor",
-      "Chell"
+      "باك-مان",
+      "تهي بلايير-كرياتيد سيمس",
+      "جيم راينور",
+      "كهيلل"
     ],
     "answer": 2,
     "difficulty": "easy",
@@ -17673,9 +17673,9 @@ const questions = [
       "V"
     ],
     "optionsAr": [
-      "Ryu",
-      "A selectable hero",
-      "Sonic",
+      "ريو",
+      "ا سيليكتابلي هيرو",
+      "سونيك",
       "V"
     ],
     "answer": 1,
@@ -17693,10 +17693,10 @@ const questions = [
       "The player-created Sims"
     ],
     "optionsAr": [
-      "Michael, Franklin and Trevor",
-      "Jin Sakai",
-      "Pac-Man",
-      "The player-created Sims"
+      "ميكهايل, فرانكلين اند تريفور",
+      "جين ساكاي",
+      "باك-مان",
+      "تهي بلايير-كرياتيد سيمس"
     ],
     "answer": 3,
     "difficulty": "easy",
@@ -17713,10 +17713,10 @@ const questions = [
       "The player as mayor"
     ],
     "optionsAr": [
-      "Cole Phelps",
-      "Dante",
-      "Ranger",
-      "The player as mayor"
+      "كولي بهيلبس",
+      "دانتي",
+      "رانجير",
+      "تهي بلايير اس مايور"
     ],
     "answer": 3,
     "difficulty": "easy",
@@ -17733,10 +17733,10 @@ const questions = [
       "B. J. Blazkowicz"
     ],
     "optionsAr": [
-      "Marcus Fenix",
-      "Claude",
-      "Wolf",
-      "B. J. Blazkowicz"
+      "ماركوس فينيكس",
+      "كلاودي",
+      "وولف",
+      "ب. ج. بلازكوويكز"
     ],
     "answer": 1,
     "difficulty": "easy",
@@ -17753,10 +17753,10 @@ const questions = [
       "Ryu"
     ],
     "optionsAr": [
-      "Link",
-      "Red",
-      "Michael, Franklin and Trevor",
-      "Ryu"
+      "لينك",
+      "ريد",
+      "ميكهايل, فرانكلين اند تريفور",
+      "ريو"
     ],
     "answer": 2,
     "difficulty": "easy",
@@ -17773,10 +17773,10 @@ const questions = [
       "Wolf"
     ],
     "optionsAr": [
-      "Dante",
-      "Jimmy Hopkins",
-      "Arthur Morgan",
-      "Wolf"
+      "دانتي",
+      "جيممي هوبكينس",
+      "ارتهور مورجان",
+      "وولف"
     ],
     "answer": 2,
     "difficulty": "easy",
@@ -17793,10 +17793,10 @@ const questions = [
       "The player avatar"
     ],
     "optionsAr": [
-      "Jimmy Hopkins",
-      "Doomguy",
-      "Jim Raynor",
-      "The player avatar"
+      "جيممي هوبكينس",
+      "دوومجوي",
+      "جيم راينور",
+      "تهي بلايير افاتار"
     ],
     "answer": 0,
     "difficulty": "easy",
@@ -17813,10 +17813,10 @@ const questions = [
       "Ratchet"
     ],
     "optionsAr": [
-      "Cole Phelps",
-      "Jin Sakai",
-      "Ryu",
-      "Ratchet"
+      "كولي بهيلبس",
+      "جين ساكاي",
+      "ريو",
+      "راتكهيت"
     ],
     "answer": 0,
     "difficulty": "easy",
@@ -17833,10 +17833,10 @@ const questions = [
       "Nathan Drake"
     ],
     "optionsAr": [
-      "The Chosen Undead",
-      "Steve",
-      "Samus Aran",
-      "Nathan Drake"
+      "المختار غير الميت",
+      "ستيفي",
+      "ساموس اران",
+      "ناتهان دراكي"
     ],
     "answer": 3,
     "difficulty": "easy",
@@ -17853,10 +17853,10 @@ const questions = [
       "Cloud Strife"
     ],
     "optionsAr": [
-      "Joel",
-      "Jak",
+      "جويل",
+      "جاك",
       "V",
-      "Cloud Strife"
+      "كلوود ستريفي"
     ],
     "answer": 0,
     "difficulty": "easy",
@@ -17873,10 +17873,10 @@ const questions = [
       "The Tarnished"
     ],
     "optionsAr": [
-      "Jimmy Hopkins",
-      "Crash Bandicoot",
-      "The Luminary",
-      "The Tarnished"
+      "جيممي هوبكينس",
+      "كراسه بانديكووت",
+      "تهي لوميناري",
+      "تهي تارنيسهيد"
     ],
     "answer": 1,
     "difficulty": "easy",
@@ -17893,10 +17893,10 @@ const questions = [
       "Mega Man"
     ],
     "optionsAr": [
-      "A selectable hero",
-      "Leon S. Kennedy",
-      "Jak",
-      "Mega Man"
+      "ا سيليكتابلي هيرو",
+      "ليون س. كيننيدي",
+      "جاك",
+      "ميجا مان"
     ],
     "answer": 2,
     "difficulty": "easy",
@@ -17913,10 +17913,10 @@ const questions = [
       "Geralt of Rivia"
     ],
     "optionsAr": [
-      "Kratos",
-      "A choice of playable heroes",
-      "Pac-Man",
-      "Geralt of Rivia"
+      "كراتوس",
+      "ا كهويكي وف بلايابلي هيرويس",
+      "باك-مان",
+      "جيرالت وف ريفيا"
     ],
     "answer": 0,
     "difficulty": "easy",
@@ -17933,10 +17933,10 @@ const questions = [
       "No fixed protagonist"
     ],
     "optionsAr": [
-      "The Luminary",
-      "Sora",
-      "Kratos",
-      "No fixed protagonist"
+      "تهي لوميناري",
+      "سورا",
+      "كراتوس",
+      "لا توجد شخصية رئيسية ثابتة"
     ],
     "answer": 2,
     "difficulty": "easy",
@@ -17953,10 +17953,10 @@ const questions = [
       "Steve"
     ],
     "optionsAr": [
-      "Pac-Man",
-      "Aloy",
-      "Michael, Franklin and Trevor",
-      "Steve"
+      "باك-مان",
+      "الوي",
+      "ميكهايل, فرانكلين اند تريفور",
+      "ستيفي"
     ],
     "answer": 1,
     "difficulty": "easy",
@@ -17973,10 +17973,10 @@ const questions = [
       "Jin Sakai"
     ],
     "optionsAr": [
-      "Red",
-      "A selectable class hero",
-      "B. J. Blazkowicz",
-      "Jin Sakai"
+      "ريد",
+      "ا سيليكتابلي كلاسس هيرو",
+      "ب. ج. بلازكوويكز",
+      "جين ساكاي"
     ],
     "answer": 3,
     "difficulty": "easy",
@@ -17993,10 +17993,10 @@ const questions = [
       "Peter Parker"
     ],
     "optionsAr": [
-      "The player avatar",
-      "The Hunter",
-      "Sora",
-      "Peter Parker"
+      "تهي بلايير افاتار",
+      "الصياد",
+      "سورا",
+      "بيتير باركير"
     ],
     "answer": 3,
     "difficulty": "easy",
@@ -18013,10 +18013,10 @@ const questions = [
       "Chell"
     ],
     "optionsAr": [
-      "Wolf",
-      "Kratos",
-      "Ratchet",
-      "Chell"
+      "وولف",
+      "كراتوس",
+      "راتكهيت",
+      "كهيلل"
     ],
     "answer": 2,
     "difficulty": "easy",
@@ -18033,10 +18033,10 @@ const questions = [
       "A selectable class hero"
     ],
     "optionsAr": [
-      "No fixed protagonist",
-      "Steve",
-      "Link",
-      "A selectable class hero"
+      "لا توجد شخصية رئيسية ثابتة",
+      "ستيفي",
+      "لينك",
+      "ا سيليكتابلي كلاسس هيرو"
     ],
     "answer": 0,
     "difficulty": "easy",
@@ -18053,10 +18053,10 @@ const questions = [
       "The Luminary"
     ],
     "optionsAr": [
-      "Claude",
-      "Link",
-      "The Tarnished",
-      "The Luminary"
+      "كلاودي",
+      "لينك",
+      "تهي تارنيسهيد",
+      "تهي لوميناري"
     ],
     "answer": 2,
     "difficulty": "easy",
@@ -18073,10 +18073,10 @@ const questions = [
       "Michael, Franklin and Trevor"
     ],
     "optionsAr": [
-      "The player-created Sims",
-      "The Chosen Undead",
-      "The player as mayor",
-      "Michael, Franklin and Trevor"
+      "تهي بلايير-كرياتيد سيمس",
+      "المختار غير الميت",
+      "تهي بلايير اس مايور",
+      "ميكهايل, فرانكلين اند تريفور"
     ],
     "answer": 1,
     "difficulty": "easy",
@@ -18093,10 +18093,10 @@ const questions = [
       "The Hunter"
     ],
     "optionsAr": [
-      "Samus Aran",
-      "Tracer and other heroes",
-      "Arthur Morgan",
-      "The Hunter"
+      "ساموس اران",
+      "تراكير اند وتهير هيرويس",
+      "ارتهور مورجان",
+      "الصياد"
     ],
     "answer": 3,
     "difficulty": "easy",
@@ -18113,10 +18113,10 @@ const questions = [
       "Jak"
     ],
     "optionsAr": [
-      "Samus Aran",
-      "Chris Redfield and Jill Valentine",
-      "Wolf",
-      "Jak"
+      "ساموس اران",
+      "كهريس ريدفييلد اند جيلل فالينتيني",
+      "وولف",
+      "جاك"
     ],
     "answer": 2,
     "difficulty": "easy",
@@ -18133,10 +18133,10 @@ const questions = [
       "Jin Kazama"
     ],
     "optionsAr": [
-      "Tidus",
-      "The Dragonborn",
-      "A choice of playable heroes",
-      "Jin Kazama"
+      "تيدوس",
+      "تهي دراجونبورن",
+      "ا كهويكي وف بلايابلي هيرويس",
+      "جين كازاما"
     ],
     "answer": 3,
     "difficulty": "easy",
@@ -18153,10 +18153,10 @@ const questions = [
       "A selectable class hero"
     ],
     "optionsAr": [
-      "A selectable hero",
-      "The player avatar",
-      "A choice of playable heroes",
-      "A selectable class hero"
+      "ا سيليكتابلي هيرو",
+      "تهي بلايير افاتار",
+      "ا كهويكي وف بلايابلي هيرويس",
+      "ا سيليكتابلي كلاسس هيرو"
     ],
     "answer": 1,
     "difficulty": "easy",
@@ -18173,10 +18173,10 @@ const questions = [
       "No fixed protagonist"
     ],
     "optionsAr": [
-      "A choice of playable heroes",
-      "Jimmy Hopkins",
-      "The Tarnished",
-      "No fixed protagonist"
+      "ا كهويكي وف بلايابلي هيرويس",
+      "جيممي هوبكينس",
+      "تهي تارنيسهيد",
+      "لا توجد شخصية رئيسية ثابتة"
     ],
     "answer": 3,
     "difficulty": "easy",
@@ -18193,10 +18193,10 @@ const questions = [
       "Nintendo"
     ],
     "optionsAr": [
-      "Naughty Dog",
-      "Playground Games",
-      "Sega",
-      "Nintendo"
+      "ناوجهتي دوج",
+      "بلايجرووند جاميس",
+      "سيجا",
+      "نينتيندو"
     ],
     "answer": 3,
     "difficulty": "medium",
@@ -18213,10 +18213,10 @@ const questions = [
       "Rockstar Games"
     ],
     "optionsAr": [
-      "Square Enix",
-      "Mojang",
-      "Maxis",
-      "Rockstar Games"
+      "سقواري ينيكس",
+      "موجانج",
+      "ماكسيس",
+      "روككستار جاميس"
     ],
     "answer": 1,
     "difficulty": "medium",
@@ -18233,10 +18233,10 @@ const questions = [
       "Insomniac Games"
     ],
     "optionsAr": [
-      "Nintendo",
-      "Sucker Punch Productions",
-      "Santa Monica Studio",
-      "Insomniac Games"
+      "نينتيندو",
+      "سوككير بونكه برودوكتيونس",
+      "سانتا مونيكا ستوديو",
+      "ينسومنياك جاميس"
     ],
     "answer": 0,
     "difficulty": "medium",
@@ -18253,10 +18253,10 @@ const questions = [
       "Santa Monica Studio"
     ],
     "optionsAr": [
-      "Mojang",
-      "Naughty Dog",
-      "Nintendo",
-      "Santa Monica Studio"
+      "موجانج",
+      "ناوجهتي دوج",
+      "نينتيندو",
+      "سانتا مونيكا ستوديو"
     ],
     "answer": 2,
     "difficulty": "medium",
@@ -18273,10 +18273,10 @@ const questions = [
       "Blizzard Entertainment"
     ],
     "optionsAr": [
-      "Game Freak",
-      "Rockstar Games",
-      "Polyphony Digital",
-      "Blizzard Entertainment"
+      "جامي فرياك",
+      "روككستار جاميس",
+      "بوليبهوني ديجيتال",
+      "بليززارد ينتيرتاينمينت"
     ],
     "answer": 0,
     "difficulty": "medium",
@@ -18293,10 +18293,10 @@ const questions = [
       "Namco"
     ],
     "optionsAr": [
-      "Rockstar Games",
-      "Larian Studios",
-      "Alexey Pajitnov",
-      "Namco"
+      "روككستار جاميس",
+      "لاريان ستوديوس",
+      "اليكسيي باجيتنوف",
+      "نامكو"
     ],
     "answer": 2,
     "difficulty": "medium",
@@ -18313,10 +18313,10 @@ const questions = [
       "Sega"
     ],
     "optionsAr": [
-      "Santa Monica Studio",
-      "CD Projekt Red",
-      "Blizzard Entertainment",
-      "Sega"
+      "سانتا مونيكا ستوديو",
+      "كد بروجيكت ريد",
+      "بليززارد ينتيرتاينمينت",
+      "سيجا"
     ],
     "answer": 3,
     "difficulty": "medium",
@@ -18333,10 +18333,10 @@ const questions = [
       "Alexey Pajitnov"
     ],
     "optionsAr": [
-      "Namco",
-      "Bandai Namco Studios",
-      "Playground Games",
-      "Alexey Pajitnov"
+      "نامكو",
+      "بانداي نامكو ستوديوس",
+      "بلايجرووند جاميس",
+      "اليكسيي باجيتنوف"
     ],
     "answer": 0,
     "difficulty": "medium",
@@ -18353,10 +18353,10 @@ const questions = [
       "Polyphony Digital"
     ],
     "optionsAr": [
-      "id Software",
-      "Capcom",
-      "Nintendo",
-      "Polyphony Digital"
+      "يد سوفتواري",
+      "كابكوم",
+      "نينتيندو",
+      "بوليبهوني ديجيتال"
     ],
     "answer": 2,
     "difficulty": "medium",
@@ -18373,10 +18373,10 @@ const questions = [
       "Valve"
     ],
     "optionsAr": [
-      "Naughty Dog",
-      "Ensemble Studios",
-      "Nintendo",
-      "Valve"
+      "ناوجهتي دوج",
+      "ينسيمبلي ستوديوس",
+      "نينتيندو",
+      "فالفي"
     ],
     "answer": 2,
     "difficulty": "medium",
@@ -18393,10 +18393,10 @@ const questions = [
       "Valve"
     ],
     "optionsAr": [
-      "Blizzard Entertainment",
-      "Bungie",
-      "Square",
-      "Valve"
+      "بليززارد ينتيرتاينمينت",
+      "بونجيي",
+      "سقواري",
+      "فالفي"
     ],
     "answer": 2,
     "difficulty": "medium",
@@ -18413,10 +18413,10 @@ const questions = [
       "Nintendo"
     ],
     "optionsAr": [
-      "Square",
-      "Valve",
-      "Maxis",
-      "Nintendo"
+      "سقواري",
+      "فالفي",
+      "ماكسيس",
+      "نينتيندو"
     ],
     "answer": 0,
     "difficulty": "medium",
@@ -18433,10 +18433,10 @@ const questions = [
       "Valve"
     ],
     "optionsAr": [
-      "Polyphony Digital",
-      "Sucker Punch Productions",
-      "Square Enix",
-      "Valve"
+      "بوليبهوني ديجيتال",
+      "سوككير بونكه برودوكتيونس",
+      "سقواري ينيكس",
+      "فالفي"
     ],
     "answer": 2,
     "difficulty": "medium",
@@ -18453,10 +18453,10 @@ const questions = [
       "Game Freak"
     ],
     "optionsAr": [
-      "343 Industries",
-      "Square Enix",
-      "id Software",
-      "Game Freak"
+      "343 يندوسترييس",
+      "سقواري ينيكس",
+      "يد سوفتواري",
+      "جامي فرياك"
     ],
     "answer": 1,
     "difficulty": "medium",
@@ -18473,10 +18473,10 @@ const questions = [
       "FromSoftware"
     ],
     "optionsAr": [
-      "CD Projekt Red",
-      "Capcom",
-      "Larian Studios",
-      "FromSoftware"
+      "كد بروجيكت ريد",
+      "كابكوم",
+      "لاريان ستوديوس",
+      "فرومسوفتواري"
     ],
     "answer": 1,
     "difficulty": "medium",
@@ -18493,10 +18493,10 @@ const questions = [
       "Capcom"
     ],
     "optionsAr": [
-      "Blizzard Entertainment",
-      "Bandai Namco Studios",
-      "FromSoftware",
-      "Capcom"
+      "بليززارد ينتيرتاينمينت",
+      "بانداي نامكو ستوديوس",
+      "فرومسوفتواري",
+      "كابكوم"
     ],
     "answer": 3,
     "difficulty": "medium",
@@ -18513,10 +18513,10 @@ const questions = [
       "Alexey Pajitnov"
     ],
     "optionsAr": [
-      "Capcom",
-      "id Software",
-      "Blizzard Entertainment",
-      "Alexey Pajitnov"
+      "كابكوم",
+      "يد سوفتواري",
+      "بليززارد ينتيرتاينمينت",
+      "اليكسيي باجيتنوف"
     ],
     "answer": 0,
     "difficulty": "medium",
@@ -18533,10 +18533,10 @@ const questions = [
       "CD Projekt Red"
     ],
     "optionsAr": [
-      "Capcom",
-      "Maxis",
-      "Bethesda Game Studios",
-      "CD Projekt Red"
+      "كابكوم",
+      "ماكسيس",
+      "بيتهيسدا جامي ستوديوس",
+      "كد بروجيكت ريد"
     ],
     "answer": 0,
     "difficulty": "medium",
@@ -18553,10 +18553,10 @@ const questions = [
       "Blizzard Entertainment"
     ],
     "optionsAr": [
-      "Capcom",
-      "Santa Monica Studio",
-      "FromSoftware",
-      "Blizzard Entertainment"
+      "كابكوم",
+      "سانتا مونيكا ستوديو",
+      "فرومسوفتواري",
+      "بليززارد ينتيرتاينمينت"
     ],
     "answer": 0,
     "difficulty": "medium",
@@ -18573,10 +18573,10 @@ const questions = [
       "Larian Studios"
     ],
     "optionsAr": [
-      "Guerrilla Games",
-      "Capcom",
-      "Epic Games",
-      "Larian Studios"
+      "جويرريللا جاميس",
+      "كابكوم",
+      "يبيك جاميس",
+      "لاريان ستوديوس"
     ],
     "answer": 1,
     "difficulty": "medium",
@@ -18593,10 +18593,10 @@ const questions = [
       "Alexey Pajitnov"
     ],
     "optionsAr": [
-      "Bungie",
-      "343 Industries",
-      "Playground Games",
-      "Alexey Pajitnov"
+      "بونجيي",
+      "343 يندوسترييس",
+      "بلايجرووند جاميس",
+      "اليكسيي باجيتنوف"
     ],
     "answer": 0,
     "difficulty": "medium",
@@ -18613,10 +18613,10 @@ const questions = [
       "Polyphony Digital"
     ],
     "optionsAr": [
-      "Capcom",
-      "343 Industries",
-      "Insomniac Games",
-      "Polyphony Digital"
+      "كابكوم",
+      "343 يندوسترييس",
+      "ينسومنياك جاميس",
+      "بوليبهوني ديجيتال"
     ],
     "answer": 1,
     "difficulty": "medium",
@@ -18633,10 +18633,10 @@ const questions = [
       "Epic Games"
     ],
     "optionsAr": [
-      "Rockstar Games",
-      "Square",
-      "Nintendo",
-      "Epic Games"
+      "روككستار جاميس",
+      "سقواري",
+      "نينتيندو",
+      "يبيك جاميس"
     ],
     "answer": 3,
     "difficulty": "medium",
@@ -18653,10 +18653,10 @@ const questions = [
       "Playground Games"
     ],
     "optionsAr": [
-      "Game Freak",
-      "Insomniac Games",
-      "Polyphony Digital",
-      "Playground Games"
+      "جامي فرياك",
+      "ينسومنياك جاميس",
+      "بوليبهوني ديجيتال",
+      "بلايجرووند جاميس"
     ],
     "answer": 3,
     "difficulty": "medium",
@@ -18673,10 +18673,10 @@ const questions = [
       "Larian Studios"
     ],
     "optionsAr": [
-      "Ensemble Studios",
-      "Sucker Punch Productions",
-      "Blizzard Entertainment",
-      "Larian Studios"
+      "ينسيمبلي ستوديوس",
+      "سوككير بونكه برودوكتيونس",
+      "بليززارد ينتيرتاينمينت",
+      "لاريان ستوديوس"
     ],
     "answer": 0,
     "difficulty": "medium",
@@ -18693,10 +18693,10 @@ const questions = [
       "Namco"
     ],
     "optionsAr": [
-      "Naughty Dog",
-      "id Software",
-      "Ensemble Studios",
-      "Namco"
+      "ناوجهتي دوج",
+      "يد سوفتواري",
+      "ينسيمبلي ستوديوس",
+      "نامكو"
     ],
     "answer": 1,
     "difficulty": "medium",
@@ -18713,10 +18713,10 @@ const questions = [
       "Nintendo"
     ],
     "optionsAr": [
-      "CD Projekt Red",
-      "id Software",
-      "Sucker Punch Productions",
-      "Nintendo"
+      "كد بروجيكت ريد",
+      "يد سوفتواري",
+      "سوككير بونكه برودوكتيونس",
+      "نينتيندو"
     ],
     "answer": 1,
     "difficulty": "medium",
@@ -18733,10 +18733,10 @@ const questions = [
       "Ensemble Studios"
     ],
     "optionsAr": [
-      "id Software",
-      "Larian Studios",
-      "Insomniac Games",
-      "Ensemble Studios"
+      "يد سوفتواري",
+      "لاريان ستوديوس",
+      "ينسومنياك جاميس",
+      "ينسيمبلي ستوديوس"
     ],
     "answer": 0,
     "difficulty": "medium",
@@ -18753,10 +18753,10 @@ const questions = [
       "Rockstar Games"
     ],
     "optionsAr": [
-      "Bethesda Game Studios",
-      "Playground Games",
-      "Epic Games",
-      "Rockstar Games"
+      "بيتهيسدا جامي ستوديوس",
+      "بلايجرووند جاميس",
+      "يبيك جاميس",
+      "روككستار جاميس"
     ],
     "answer": 0,
     "difficulty": "medium",
@@ -18773,10 +18773,10 @@ const questions = [
       "Ensemble Studios"
     ],
     "optionsAr": [
-      "Bethesda Game Studios",
-      "Bandai Namco Studios",
-      "Capcom",
-      "Ensemble Studios"
+      "بيتهيسدا جامي ستوديوس",
+      "بانداي نامكو ستوديوس",
+      "كابكوم",
+      "ينسيمبلي ستوديوس"
     ],
     "answer": 0,
     "difficulty": "medium",
@@ -18793,10 +18793,10 @@ const questions = [
       "Santa Monica Studio"
     ],
     "optionsAr": [
-      "Sucker Punch Productions",
-      "Maxis",
-      "Bethesda Game Studios",
-      "Santa Monica Studio"
+      "سوككير بونكه برودوكتيونس",
+      "ماكسيس",
+      "بيتهيسدا جامي ستوديوس",
+      "سانتا مونيكا ستوديو"
     ],
     "answer": 2,
     "difficulty": "medium",
@@ -18813,10 +18813,10 @@ const questions = [
       "Valve"
     ],
     "optionsAr": [
-      "Ensemble Studios",
-      "CD Projekt Red",
-      "Blizzard Entertainment",
-      "Valve"
+      "ينسيمبلي ستوديوس",
+      "كد بروجيكت ريد",
+      "بليززارد ينتيرتاينمينت",
+      "فالفي"
     ],
     "answer": 1,
     "difficulty": "medium",
@@ -18833,10 +18833,10 @@ const questions = [
       "Larian Studios"
     ],
     "optionsAr": [
-      "CD Projekt Red",
-      "Mojang",
-      "Bethesda Game Studios",
-      "Larian Studios"
+      "كد بروجيكت ريد",
+      "موجانج",
+      "بيتهيسدا جامي ستوديوس",
+      "لاريان ستوديوس"
     ],
     "answer": 0,
     "difficulty": "medium",
@@ -18853,10 +18853,10 @@ const questions = [
       "Capcom"
     ],
     "optionsAr": [
-      "Larian Studios",
-      "Bungie",
-      "343 Industries",
-      "Capcom"
+      "لاريان ستوديوس",
+      "بونجيي",
+      "343 يندوسترييس",
+      "كابكوم"
     ],
     "answer": 0,
     "difficulty": "medium",
@@ -18873,10 +18873,10 @@ const questions = [
       "Valve"
     ],
     "optionsAr": [
-      "Guerrilla Games",
-      "Sucker Punch Productions",
-      "Sega",
-      "Valve"
+      "جويرريللا جاميس",
+      "سوككير بونكه برودوكتيونس",
+      "سيجا",
+      "فالفي"
     ],
     "answer": 3,
     "difficulty": "medium",
@@ -18893,10 +18893,10 @@ const questions = [
       "Valve"
     ],
     "optionsAr": [
-      "Maxis",
-      "Bethesda Game Studios",
-      "Square",
-      "Valve"
+      "ماكسيس",
+      "بيتهيسدا جامي ستوديوس",
+      "سقواري",
+      "فالفي"
     ],
     "answer": 3,
     "difficulty": "medium",
@@ -18913,10 +18913,10 @@ const questions = [
       "Valve"
     ],
     "optionsAr": [
-      "Maxis",
-      "FromSoftware",
-      "Playground Games",
-      "Valve"
+      "ماكسيس",
+      "فرومسوفتواري",
+      "بلايجرووند جاميس",
+      "فالفي"
     ],
     "answer": 3,
     "difficulty": "medium",
@@ -18933,10 +18933,10 @@ const questions = [
       "FromSoftware"
     ],
     "optionsAr": [
-      "Blizzard Entertainment",
-      "Guerrilla Games",
-      "Valve",
-      "FromSoftware"
+      "بليززارد ينتيرتاينمينت",
+      "جويرريللا جاميس",
+      "فالفي",
+      "فرومسوفتواري"
     ],
     "answer": 2,
     "difficulty": "medium",
@@ -18953,10 +18953,10 @@ const questions = [
       "Nintendo"
     ],
     "optionsAr": [
-      "Valve",
-      "Bandai Namco Studios",
-      "Bungie",
-      "Nintendo"
+      "فالفي",
+      "بانداي نامكو ستوديوس",
+      "بونجيي",
+      "نينتيندو"
     ],
     "answer": 0,
     "difficulty": "medium",
@@ -18973,10 +18973,10 @@ const questions = [
       "Epic Games"
     ],
     "optionsAr": [
-      "Team Bondi",
-      "Blizzard Entertainment",
-      "CD Projekt Red",
-      "Epic Games"
+      "تيام بوندي",
+      "بليززارد ينتيرتاينمينت",
+      "كد بروجيكت ريد",
+      "يبيك جاميس"
     ],
     "answer": 1,
     "difficulty": "medium",
@@ -18993,10 +18993,10 @@ const questions = [
       "Epic Games"
     ],
     "optionsAr": [
-      "Maxis",
-      "Blizzard Entertainment",
-      "Nintendo",
-      "Epic Games"
+      "ماكسيس",
+      "بليززارد ينتيرتاينمينت",
+      "نينتيندو",
+      "يبيك جاميس"
     ],
     "answer": 1,
     "difficulty": "medium",
@@ -19013,10 +19013,10 @@ const questions = [
       "Capcom"
     ],
     "optionsAr": [
-      "Blizzard Entertainment",
-      "Game Freak",
-      "Sega",
-      "Capcom"
+      "بليززارد ينتيرتاينمينت",
+      "جامي فرياك",
+      "سيجا",
+      "كابكوم"
     ],
     "answer": 0,
     "difficulty": "medium",
@@ -19033,10 +19033,10 @@ const questions = [
       "Polyphony Digital"
     ],
     "optionsAr": [
-      "Blizzard Entertainment",
-      "Alexey Pajitnov",
-      "Epic Games",
-      "Polyphony Digital"
+      "بليززارد ينتيرتاينمينت",
+      "اليكسيي باجيتنوف",
+      "يبيك جاميس",
+      "بوليبهوني ديجيتال"
     ],
     "answer": 0,
     "difficulty": "medium",
@@ -19053,10 +19053,10 @@ const questions = [
       "Blizzard Entertainment"
     ],
     "optionsAr": [
-      "Square",
-      "Sucker Punch Productions",
-      "Game Freak",
-      "Blizzard Entertainment"
+      "سقواري",
+      "سوككير بونكه برودوكتيونس",
+      "جامي فرياك",
+      "بليززارد ينتيرتاينمينت"
     ],
     "answer": 3,
     "difficulty": "medium",
@@ -19073,10 +19073,10 @@ const questions = [
       "CD Projekt Red"
     ],
     "optionsAr": [
-      "Maxis",
-      "id Software",
-      "Bethesda Game Studios",
-      "CD Projekt Red"
+      "ماكسيس",
+      "يد سوفتواري",
+      "بيتهيسدا جامي ستوديوس",
+      "كد بروجيكت ريد"
     ],
     "answer": 0,
     "difficulty": "medium",
@@ -19093,10 +19093,10 @@ const questions = [
       "Maxis"
     ],
     "optionsAr": [
-      "Epic Games",
-      "Namco",
-      "Guerrilla Games",
-      "Maxis"
+      "يبيك جاميس",
+      "نامكو",
+      "جويرريللا جاميس",
+      "ماكسيس"
     ],
     "answer": 3,
     "difficulty": "medium",
@@ -19113,10 +19113,10 @@ const questions = [
       "Rockstar Games"
     ],
     "optionsAr": [
-      "Guerrilla Games",
-      "343 Industries",
-      "Sega",
-      "Rockstar Games"
+      "جويرريللا جاميس",
+      "343 يندوسترييس",
+      "سيجا",
+      "روككستار جاميس"
     ],
     "answer": 3,
     "difficulty": "medium",
@@ -19133,10 +19133,10 @@ const questions = [
       "id Software"
     ],
     "optionsAr": [
-      "Rockstar Games",
-      "Namco",
-      "CD Projekt Red",
-      "id Software"
+      "روككستار جاميس",
+      "نامكو",
+      "كد بروجيكت ريد",
+      "يد سوفتواري"
     ],
     "answer": 0,
     "difficulty": "medium",
@@ -19153,10 +19153,10 @@ const questions = [
       "Valve"
     ],
     "optionsAr": [
-      "343 Industries",
-      "Rockstar Games",
-      "Insomniac Games",
-      "Valve"
+      "343 يندوسترييس",
+      "روككستار جاميس",
+      "ينسومنياك جاميس",
+      "فالفي"
     ],
     "answer": 1,
     "difficulty": "medium",
@@ -19173,10 +19173,10 @@ const questions = [
       "Rockstar Games"
     ],
     "optionsAr": [
-      "Bandai Namco Studios",
-      "Bethesda Game Studios",
-      "Namco",
-      "Rockstar Games"
+      "بانداي نامكو ستوديوس",
+      "بيتهيسدا جامي ستوديوس",
+      "نامكو",
+      "روككستار جاميس"
     ],
     "answer": 3,
     "difficulty": "medium",
@@ -19193,10 +19193,10 @@ const questions = [
       "Team Bondi"
     ],
     "optionsAr": [
-      "Alexey Pajitnov",
-      "Nintendo",
-      "id Software",
-      "Team Bondi"
+      "اليكسيي باجيتنوف",
+      "نينتيندو",
+      "يد سوفتواري",
+      "تيام بوندي"
     ],
     "answer": 3,
     "difficulty": "medium",
@@ -19213,10 +19213,10 @@ const questions = [
       "id Software"
     ],
     "optionsAr": [
-      "Namco",
-      "Naughty Dog",
-      "Team Bondi",
-      "id Software"
+      "نامكو",
+      "ناوجهتي دوج",
+      "تيام بوندي",
+      "يد سوفتواري"
     ],
     "answer": 1,
     "difficulty": "medium",
@@ -19233,10 +19233,10 @@ const questions = [
       "Naughty Dog"
     ],
     "optionsAr": [
-      "343 Industries",
-      "Larian Studios",
-      "Insomniac Games",
-      "Naughty Dog"
+      "343 يندوسترييس",
+      "لاريان ستوديوس",
+      "ينسومنياك جاميس",
+      "ناوجهتي دوج"
     ],
     "answer": 3,
     "difficulty": "medium",
@@ -19253,10 +19253,10 @@ const questions = [
       "Naughty Dog"
     ],
     "optionsAr": [
-      "Namco",
-      "Team Bondi",
-      "Nintendo",
-      "Naughty Dog"
+      "نامكو",
+      "تيام بوندي",
+      "نينتيندو",
+      "ناوجهتي دوج"
     ],
     "answer": 3,
     "difficulty": "medium",
@@ -19273,10 +19273,10 @@ const questions = [
       "Blizzard Entertainment"
     ],
     "optionsAr": [
-      "Alexey Pajitnov",
-      "Naughty Dog",
-      "Game Freak",
-      "Blizzard Entertainment"
+      "اليكسيي باجيتنوف",
+      "ناوجهتي دوج",
+      "جامي فرياك",
+      "بليززارد ينتيرتاينمينت"
     ],
     "answer": 1,
     "difficulty": "medium",
@@ -19293,10 +19293,10 @@ const questions = [
       "Epic Games"
     ],
     "optionsAr": [
-      "Sucker Punch Productions",
-      "343 Industries",
-      "Santa Monica Studio",
-      "Epic Games"
+      "سوككير بونكه برودوكتيونس",
+      "343 يندوسترييس",
+      "سانتا مونيكا ستوديو",
+      "يبيك جاميس"
     ],
     "answer": 2,
     "difficulty": "medium",
@@ -19313,10 +19313,10 @@ const questions = [
       "Larian Studios"
     ],
     "optionsAr": [
-      "Team Bondi",
-      "Santa Monica Studio",
-      "id Software",
-      "Larian Studios"
+      "تيام بوندي",
+      "سانتا مونيكا ستوديو",
+      "يد سوفتواري",
+      "لاريان ستوديوس"
     ],
     "answer": 1,
     "difficulty": "medium",
@@ -19333,10 +19333,10 @@ const questions = [
       "Insomniac Games"
     ],
     "optionsAr": [
-      "Capcom",
-      "Guerrilla Games",
-      "Maxis",
-      "Insomniac Games"
+      "كابكوم",
+      "جويرريللا جاميس",
+      "ماكسيس",
+      "ينسومنياك جاميس"
     ],
     "answer": 1,
     "difficulty": "medium",
@@ -19353,10 +19353,10 @@ const questions = [
       "Insomniac Games"
     ],
     "optionsAr": [
-      "Sucker Punch Productions",
-      "Team Bondi",
-      "Square",
-      "Insomniac Games"
+      "سوككير بونكه برودوكتيونس",
+      "تيام بوندي",
+      "سقواري",
+      "ينسومنياك جاميس"
     ],
     "answer": 0,
     "difficulty": "medium",
@@ -19373,10 +19373,10 @@ const questions = [
       "Polyphony Digital"
     ],
     "optionsAr": [
-      "Insomniac Games",
-      "Valve",
-      "id Software",
-      "Polyphony Digital"
+      "ينسومنياك جاميس",
+      "فالفي",
+      "يد سوفتواري",
+      "بوليبهوني ديجيتال"
     ],
     "answer": 0,
     "difficulty": "medium",
@@ -19393,10 +19393,10 @@ const questions = [
       "Naughty Dog"
     ],
     "optionsAr": [
-      "Insomniac Games",
-      "Team Bondi",
-      "Rockstar Games",
-      "Naughty Dog"
+      "ينسومنياك جاميس",
+      "تيام بوندي",
+      "روككستار جاميس",
+      "ناوجهتي دوج"
     ],
     "answer": 0,
     "difficulty": "medium",
@@ -19413,10 +19413,10 @@ const questions = [
       "Bethesda Game Studios"
     ],
     "optionsAr": [
-      "Namco",
-      "Polyphony Digital",
-      "Rockstar Games",
-      "Bethesda Game Studios"
+      "نامكو",
+      "بوليبهوني ديجيتال",
+      "روككستار جاميس",
+      "بيتهيسدا جامي ستوديوس"
     ],
     "answer": 1,
     "difficulty": "medium",
@@ -19433,10 +19433,10 @@ const questions = [
       "Sega"
     ],
     "optionsAr": [
-      "Valve",
-      "FromSoftware",
-      "Namco",
-      "Sega"
+      "فالفي",
+      "فرومسوفتواري",
+      "نامكو",
+      "سيجا"
     ],
     "answer": 1,
     "difficulty": "medium",
@@ -19453,10 +19453,10 @@ const questions = [
       "Sucker Punch Productions"
     ],
     "optionsAr": [
-      "Nintendo",
-      "FromSoftware",
-      "Larian Studios",
-      "Sucker Punch Productions"
+      "نينتيندو",
+      "فرومسوفتواري",
+      "لاريان ستوديوس",
+      "سوككير بونكه برودوكتيونس"
     ],
     "answer": 1,
     "difficulty": "medium",
@@ -19473,10 +19473,10 @@ const questions = [
       "Team Bondi"
     ],
     "optionsAr": [
-      "Valve",
-      "FromSoftware",
-      "343 Industries",
-      "Team Bondi"
+      "فالفي",
+      "فرومسوفتواري",
+      "343 يندوسترييس",
+      "تيام بوندي"
     ],
     "answer": 1,
     "difficulty": "medium",
@@ -19493,10 +19493,10 @@ const questions = [
       "FromSoftware"
     ],
     "optionsAr": [
-      "Ensemble Studios",
-      "343 Industries",
-      "Square",
-      "FromSoftware"
+      "ينسيمبلي ستوديوس",
+      "343 يندوسترييس",
+      "سقواري",
+      "فرومسوفتواري"
     ],
     "answer": 3,
     "difficulty": "medium",
@@ -19513,10 +19513,10 @@ const questions = [
       "Santa Monica Studio"
     ],
     "optionsAr": [
-      "Square",
-      "Namco",
-      "Bandai Namco Studios",
-      "Santa Monica Studio"
+      "سقواري",
+      "نامكو",
+      "بانداي نامكو ستوديوس",
+      "سانتا مونيكا ستوديو"
     ],
     "answer": 2,
     "difficulty": "medium",
@@ -19533,10 +19533,10 @@ const questions = [
       "Game Freak"
     ],
     "optionsAr": [
-      "Epic Games",
-      "Alexey Pajitnov",
-      "Sega",
-      "Game Freak"
+      "يبيك جاميس",
+      "اليكسيي باجيتنوف",
+      "سيجا",
+      "جامي فرياك"
     ],
     "answer": 0,
     "difficulty": "medium",
@@ -20913,10 +20913,10 @@ const questions = [
       "Algiers"
     ],
     "optionsAr": [
-      "Muscat",
-      "Berlin",
-      "Kabul",
-      "Algiers"
+      "مسقط",
+      "برلين",
+      "كابل",
+      "الجزائر العاصمة"
     ],
     "answer": 2,
     "difficulty": "easy",
@@ -20933,10 +20933,10 @@ const questions = [
       "Dhaka"
     ],
     "optionsAr": [
-      "Tirana",
-      "Nairobi",
-      "Tokyo",
-      "Dhaka"
+      "تيرانا",
+      "نيروبي",
+      "طوكيو",
+      "دكا"
     ],
     "answer": 0,
     "difficulty": "easy",
@@ -20953,10 +20953,10 @@ const questions = [
       "Algiers"
     ],
     "optionsAr": [
-      "Buenos Aires",
-      "Reykjavik",
-      "Warsaw",
-      "Algiers"
+      "بوينس آيرس",
+      "ريكيافيك",
+      "وارسو",
+      "الجزائر العاصمة"
     ],
     "answer": 3,
     "difficulty": "easy",
@@ -20973,10 +20973,10 @@ const questions = [
       "Kabul"
     ],
     "optionsAr": [
-      "Kuala Lumpur",
-      "Luanda",
-      "Santo Domingo",
-      "Kabul"
+      "كوالالمبور",
+      "لواندا",
+      "سانتو دومينغو",
+      "كابل"
     ],
     "answer": 1,
     "difficulty": "easy",
@@ -20993,10 +20993,10 @@ const questions = [
       "Buenos Aires"
     ],
     "optionsAr": [
-      "Gaborone",
-      "Rome",
-      "Quito",
-      "Buenos Aires"
+      "غابورون",
+      "روما",
+      "قويتو",
+      "بوينس آيرس"
     ],
     "answer": 3,
     "difficulty": "easy",
@@ -21013,10 +21013,10 @@ const questions = [
       "Phnom Penh"
     ],
     "optionsAr": [
-      "Tehran",
-      "Helsinki",
-      "Yerevan",
-      "Phnom Penh"
+      "تيهران",
+      "هيلسينكي",
+      "ييريفان",
+      "بهنوم بينه"
     ],
     "answer": 2,
     "difficulty": "easy",
@@ -21033,10 +21033,10 @@ const questions = [
       "Vienna"
     ],
     "optionsAr": [
-      "Reykjavik",
-      "Ottawa",
-      "Canberra",
-      "Vienna"
+      "ريكيافيك",
+      "وتتاوا",
+      "كانبيررا",
+      "فيينا"
     ],
     "answer": 2,
     "difficulty": "easy",
@@ -21053,10 +21053,10 @@ const questions = [
       "Budapest"
     ],
     "optionsAr": [
-      "Ulan Bator",
-      "Tallinn",
-      "Vienna",
-      "Budapest"
+      "ولان باتور",
+      "تاللينن",
+      "فيينا",
+      "بودابيست"
     ],
     "answer": 2,
     "difficulty": "easy",
@@ -21073,10 +21073,10 @@ const questions = [
       "Tokyo"
     ],
     "optionsAr": [
-      "Kathmandu",
-      "Zagreb",
-      "Baku",
-      "Tokyo"
+      "كاتهماندو",
+      "زاجريب",
+      "باكو",
+      "طوكيو"
     ],
     "answer": 2,
     "difficulty": "easy",
@@ -21093,10 +21093,10 @@ const questions = [
       "Dhaka"
     ],
     "optionsAr": [
-      "Buenos Aires",
-      "Copenhagen",
-      "Luanda",
-      "Dhaka"
+      "بوينس آيرس",
+      "كوبينهاجين",
+      "لواندا",
+      "دكا"
     ],
     "answer": 3,
     "difficulty": "easy",
@@ -21113,10 +21113,10 @@ const questions = [
       "Minsk"
     ],
     "optionsAr": [
-      "Bogotá",
-      "Athens",
-      "Phnom Penh",
-      "Minsk"
+      "بوجوتá",
+      "أثينا",
+      "بهنوم بينه",
+      "مينسك"
     ],
     "answer": 3,
     "difficulty": "easy",
@@ -21133,10 +21133,10 @@ const questions = [
       "Tirana"
     ],
     "optionsAr": [
-      "Lima",
-      "Jerusalem",
-      "Brussels",
-      "Tirana"
+      "ليما",
+      "جيروساليم",
+      "بروسسيلس",
+      "تيرانا"
     ],
     "answer": 2,
     "difficulty": "easy",
@@ -21153,10 +21153,10 @@ const questions = [
       "Jerusalem"
     ],
     "optionsAr": [
-      "Sucre",
-      "Havana",
-      "Quito",
-      "Jerusalem"
+      "سوكري",
+      "هافانا",
+      "قويتو",
+      "جيروساليم"
     ],
     "answer": 0,
     "difficulty": "easy",
@@ -21173,10 +21173,10 @@ const questions = [
       "Sarajevo"
     ],
     "optionsAr": [
-      "Baghdad",
-      "Havana",
-      "Berlin",
-      "Sarajevo"
+      "باجهداد",
+      "هافانا",
+      "برلين",
+      "سراييفو"
     ],
     "answer": 3,
     "difficulty": "easy",
@@ -21193,10 +21193,10 @@ const questions = [
       "Gaborone"
     ],
     "optionsAr": [
-      "Rome",
-      "Addis Ababa",
-      "Santiago",
-      "Gaborone"
+      "روما",
+      "ادديس ابابا",
+      "سانتياجو",
+      "غابورون"
     ],
     "answer": 3,
     "difficulty": "easy",
@@ -21213,10 +21213,10 @@ const questions = [
       "Kathmandu"
     ],
     "optionsAr": [
-      "Brasília",
-      "Berlin",
-      "Dublin",
-      "Kathmandu"
+      "براسíليا",
+      "برلين",
+      "دوبلين",
+      "كاتهماندو"
     ],
     "answer": 0,
     "difficulty": "easy",
@@ -21233,10 +21233,10 @@ const questions = [
       "Amsterdam"
     ],
     "optionsAr": [
-      "Brussels",
-      "Islamabad",
-      "Sofia",
-      "Amsterdam"
+      "بروسسيلس",
+      "يسلاماباد",
+      "سوفيا",
+      "امستيردام"
     ],
     "answer": 2,
     "difficulty": "easy",
@@ -21253,10 +21253,10 @@ const questions = [
       "Amsterdam"
     ],
     "optionsAr": [
-      "Phnom Penh",
-      "Luanda",
-      "Tokyo",
-      "Amsterdam"
+      "بهنوم بينه",
+      "لواندا",
+      "طوكيو",
+      "امستيردام"
     ],
     "answer": 0,
     "difficulty": "easy",
@@ -21273,10 +21273,10 @@ const questions = [
       "Yaoundé"
     ],
     "optionsAr": [
-      "Vienna",
-      "Muscat",
-      "Santiago",
-      "Yaoundé"
+      "فيينا",
+      "مسقط",
+      "سانتياجو",
+      "ياووندé"
     ],
     "answer": 3,
     "difficulty": "easy",
@@ -21293,10 +21293,10 @@ const questions = [
       "Copenhagen"
     ],
     "optionsAr": [
-      "Baghdad",
-      "Ottawa",
-      "Sofia",
-      "Copenhagen"
+      "باجهداد",
+      "وتتاوا",
+      "سوفيا",
+      "كوبينهاجين"
     ],
     "answer": 1,
     "difficulty": "easy",
@@ -21313,10 +21313,10 @@ const questions = [
       "Kuwait City"
     ],
     "optionsAr": [
-      "Canberra",
-      "Santiago",
-      "Havana",
-      "Kuwait City"
+      "كانبيررا",
+      "سانتياجو",
+      "هافانا",
+      "كووايت كيتي"
     ],
     "answer": 1,
     "difficulty": "easy",
@@ -21333,10 +21333,10 @@ const questions = [
       "Islamabad"
     ],
     "optionsAr": [
-      "Beijing",
-      "Abuja",
-      "Kathmandu",
-      "Islamabad"
+      "بكين",
+      "ابوجا",
+      "كاتهماندو",
+      "يسلاماباد"
     ],
     "answer": 0,
     "difficulty": "easy",
@@ -21353,10 +21353,10 @@ const questions = [
       "Bogotá"
     ],
     "optionsAr": [
-      "Guatemala City",
-      "Baghdad",
-      "Kuwait City",
-      "Bogotá"
+      "جواتيمالا كيتي",
+      "باجهداد",
+      "كووايت كيتي",
+      "بوجوتá"
     ],
     "answer": 3,
     "difficulty": "easy",
@@ -21373,10 +21373,10 @@ const questions = [
       "Santiago"
     ],
     "optionsAr": [
-      "Nairobi",
-      "Dhaka",
-      "San José",
-      "Santiago"
+      "نيروبي",
+      "دكا",
+      "سان جوسé",
+      "سانتياجو"
     ],
     "answer": 2,
     "difficulty": "easy",
@@ -21393,10 +21393,10 @@ const questions = [
       "Zagreb"
     ],
     "optionsAr": [
-      "Buenos Aires",
-      "Havana",
-      "Manila",
-      "Zagreb"
+      "بوينس آيرس",
+      "هافانا",
+      "مانيلا",
+      "زاجريب"
     ],
     "answer": 3,
     "difficulty": "easy",
@@ -21413,10 +21413,10 @@ const questions = [
       "Minsk"
     ],
     "optionsAr": [
-      "Muscat",
-      "Havana",
-      "San José",
-      "Minsk"
+      "مسقط",
+      "هافانا",
+      "سان جوسé",
+      "مينسك"
     ],
     "answer": 1,
     "difficulty": "easy",
@@ -21433,10 +21433,10 @@ const questions = [
       "Havana"
     ],
     "optionsAr": [
-      "Buenos Aires",
-      "Addis Ababa",
-      "Nicosia",
-      "Havana"
+      "بوينس آيرس",
+      "ادديس ابابا",
+      "نيكوسيا",
+      "هافانا"
     ],
     "answer": 2,
     "difficulty": "easy",
@@ -21453,10 +21453,10 @@ const questions = [
       "Kuwait City"
     ],
     "optionsAr": [
-      "Ulan Bator",
-      "Copenhagen",
-      "Sucre",
-      "Kuwait City"
+      "ولان باتور",
+      "كوبينهاجين",
+      "سوكري",
+      "كووايت كيتي"
     ],
     "answer": 1,
     "difficulty": "easy",
@@ -21473,10 +21473,10 @@ const questions = [
       "Lima"
     ],
     "optionsAr": [
-      "Santo Domingo",
-      "Beirut",
-      "Warsaw",
-      "Lima"
+      "سانتو دومينغو",
+      "بييروت",
+      "وارسو",
+      "ليما"
     ],
     "answer": 0,
     "difficulty": "easy",
@@ -21493,10 +21493,10 @@ const questions = [
       "Dublin"
     ],
     "optionsAr": [
-      "Tehran",
-      "Quito",
-      "Santo Domingo",
-      "Dublin"
+      "تيهران",
+      "قويتو",
+      "سانتو دومينغو",
+      "دوبلين"
     ],
     "answer": 1,
     "difficulty": "easy",
@@ -21513,10 +21513,10 @@ const questions = [
       "Cairo"
     ],
     "optionsAr": [
-      "Oslo",
-      "Nairobi",
-      "Dhaka",
-      "Cairo"
+      "وسلو",
+      "نيروبي",
+      "دكا",
+      "القاهرة"
     ],
     "answer": 3,
     "difficulty": "easy",
@@ -21533,10 +21533,10 @@ const questions = [
       "Santiago"
     ],
     "optionsAr": [
-      "Tallinn",
-      "Buenos Aires",
-      "Canberra",
-      "Santiago"
+      "تاللينن",
+      "بوينس آيرس",
+      "كانبيررا",
+      "سانتياجو"
     ],
     "answer": 0,
     "difficulty": "easy",
@@ -21553,10 +21553,10 @@ const questions = [
       "Addis Ababa"
     ],
     "optionsAr": [
-      "Baghdad",
-      "Helsinki",
-      "Reykjavik",
-      "Addis Ababa"
+      "باجهداد",
+      "هيلسينكي",
+      "ريكيافيك",
+      "ادديس ابابا"
     ],
     "answer": 3,
     "difficulty": "easy",
@@ -21573,10 +21573,10 @@ const questions = [
       "Wellington"
     ],
     "optionsAr": [
-      "Ulan Bator",
-      "Nicosia",
-      "Helsinki",
-      "Wellington"
+      "ولان باتور",
+      "نيكوسيا",
+      "هيلسينكي",
+      "ويللينجتون"
     ],
     "answer": 2,
     "difficulty": "easy",
@@ -21593,10 +21593,10 @@ const questions = [
       "Amman"
     ],
     "optionsAr": [
-      "Bogotá",
-      "Paris",
-      "Helsinki",
-      "Amman"
+      "بوجوتá",
+      "باريس",
+      "هيلسينكي",
+      "اممان"
     ],
     "answer": 1,
     "difficulty": "easy",
@@ -21613,10 +21613,10 @@ const questions = [
       "Tbilisi"
     ],
     "optionsAr": [
-      "Kuala Lumpur",
-      "Athens",
-      "Sarajevo",
-      "Tbilisi"
+      "كوالالمبور",
+      "أثينا",
+      "سراييفو",
+      "تبيليسي"
     ],
     "answer": 3,
     "difficulty": "easy",
@@ -21633,10 +21633,10 @@ const questions = [
       "Algiers"
     ],
     "optionsAr": [
-      "Tehran",
-      "Minsk",
-      "Berlin",
-      "Algiers"
+      "تيهران",
+      "مينسك",
+      "برلين",
+      "الجزائر العاصمة"
     ],
     "answer": 2,
     "difficulty": "easy",
@@ -21653,10 +21653,10 @@ const questions = [
       "Sarajevo"
     ],
     "optionsAr": [
-      "Guatemala City",
-      "Accra",
-      "Mexico City",
-      "Sarajevo"
+      "جواتيمالا كيتي",
+      "اككرا",
+      "ميكسيكو كيتي",
+      "سراييفو"
     ],
     "answer": 1,
     "difficulty": "easy",
@@ -21673,10 +21673,10 @@ const questions = [
       "Phnom Penh"
     ],
     "optionsAr": [
-      "Athens",
-      "Sofia",
-      "Sucre",
-      "Phnom Penh"
+      "أثينا",
+      "سوفيا",
+      "سوكري",
+      "بهنوم بينه"
     ],
     "answer": 0,
     "difficulty": "easy",
@@ -21693,10 +21693,10 @@ const questions = [
       "Beirut"
     ],
     "optionsAr": [
-      "Beijing",
-      "Guatemala City",
-      "Zagreb",
-      "Beirut"
+      "بكين",
+      "جواتيمالا كيتي",
+      "زاجريب",
+      "بييروت"
     ],
     "answer": 1,
     "difficulty": "easy",
@@ -21713,10 +21713,10 @@ const questions = [
       "Manila"
     ],
     "optionsAr": [
-      "Canberra",
-      "Athens",
-      "Budapest",
-      "Manila"
+      "كانبيررا",
+      "أثينا",
+      "بودابيست",
+      "مانيلا"
     ],
     "answer": 2,
     "difficulty": "easy",
@@ -21733,10 +21733,10 @@ const questions = [
       "Tokyo"
     ],
     "optionsAr": [
-      "Baku",
-      "Athens",
-      "Reykjavik",
-      "Tokyo"
+      "باكو",
+      "أثينا",
+      "ريكيافيك",
+      "طوكيو"
     ],
     "answer": 2,
     "difficulty": "easy",
@@ -21753,10 +21753,10 @@ const questions = [
       "Abuja"
     ],
     "optionsAr": [
-      "Rome",
-      "New Delhi",
-      "Vienna",
-      "Abuja"
+      "روما",
+      "نيو ديلهي",
+      "فيينا",
+      "ابوجا"
     ],
     "answer": 1,
     "difficulty": "easy",
@@ -21773,10 +21773,10 @@ const questions = [
       "Jakarta"
     ],
     "optionsAr": [
-      "Vienna",
-      "Yaoundé",
-      "Amman",
-      "Jakarta"
+      "فيينا",
+      "ياووندé",
+      "اممان",
+      "جاكارتا"
     ],
     "answer": 3,
     "difficulty": "easy",
@@ -21793,10 +21793,10 @@ const questions = [
       "Tehran"
     ],
     "optionsAr": [
-      "Kathmandu",
-      "Tokyo",
-      "Quito",
-      "Tehran"
+      "كاتهماندو",
+      "طوكيو",
+      "قويتو",
+      "تيهران"
     ],
     "answer": 3,
     "difficulty": "easy",
@@ -21813,10 +21813,10 @@ const questions = [
       "Yerevan"
     ],
     "optionsAr": [
-      "Baghdad",
-      "Sarajevo",
-      "Guatemala City",
-      "Yerevan"
+      "باجهداد",
+      "سراييفو",
+      "جواتيمالا كيتي",
+      "ييريفان"
     ],
     "answer": 0,
     "difficulty": "easy",
@@ -21833,10 +21833,10 @@ const questions = [
       "Ottawa"
     ],
     "optionsAr": [
-      "Luanda",
-      "Jerusalem",
-      "Dublin",
-      "Ottawa"
+      "لواندا",
+      "جيروساليم",
+      "دوبلين",
+      "وتتاوا"
     ],
     "answer": 2,
     "difficulty": "easy",
@@ -21853,10 +21853,10 @@ const questions = [
       "Lima"
     ],
     "optionsAr": [
-      "Santo Domingo",
-      "Jerusalem",
-      "Baghdad",
-      "Lima"
+      "سانتو دومينغو",
+      "جيروساليم",
+      "باجهداد",
+      "ليما"
     ],
     "answer": 1,
     "difficulty": "easy",
@@ -21873,10 +21873,10 @@ const questions = [
       "Kathmandu"
     ],
     "optionsAr": [
-      "Rome",
-      "Manila",
-      "Kabul",
-      "Kathmandu"
+      "روما",
+      "مانيلا",
+      "كابل",
+      "كاتهماندو"
     ],
     "answer": 0,
     "difficulty": "easy",
@@ -21893,10 +21893,10 @@ const questions = [
       "Tokyo"
     ],
     "optionsAr": [
-      "Luanda",
-      "Yerevan",
-      "Copenhagen",
-      "Tokyo"
+      "لواندا",
+      "ييريفان",
+      "كوبينهاجين",
+      "طوكيو"
     ],
     "answer": 3,
     "difficulty": "easy",
@@ -21913,10 +21913,10 @@ const questions = [
       "Sofia"
     ],
     "optionsAr": [
-      "Budapest",
-      "Amman",
-      "Kabul",
-      "Sofia"
+      "بودابيست",
+      "اممان",
+      "كابل",
+      "سوفيا"
     ],
     "answer": 1,
     "difficulty": "easy",
@@ -21933,10 +21933,10 @@ const questions = [
       "Canberra"
     ],
     "optionsAr": [
-      "Paris",
-      "Astana",
-      "Kuwait City",
-      "Canberra"
+      "باريس",
+      "أستانا",
+      "كووايت كيتي",
+      "كانبيررا"
     ],
     "answer": 1,
     "difficulty": "easy",
@@ -21953,10 +21953,10 @@ const questions = [
       "Brussels"
     ],
     "optionsAr": [
-      "Nairobi",
-      "New Delhi",
-      "Jakarta",
-      "Brussels"
+      "نيروبي",
+      "نيو ديلهي",
+      "جاكارتا",
+      "بروسسيلس"
     ],
     "answer": 0,
     "difficulty": "easy",
@@ -21973,10 +21973,10 @@ const questions = [
       "Kuwait City"
     ],
     "optionsAr": [
-      "Reykjavik",
-      "Lima",
-      "Ulan Bator",
-      "Kuwait City"
+      "ريكيافيك",
+      "ليما",
+      "ولان باتور",
+      "كووايت كيتي"
     ],
     "answer": 3,
     "difficulty": "easy",
@@ -21993,10 +21993,10 @@ const questions = [
       "Beirut"
     ],
     "optionsAr": [
-      "Kabul",
-      "Algiers",
-      "Tallinn",
-      "Beirut"
+      "كابل",
+      "الجزائر العاصمة",
+      "تاللينن",
+      "بييروت"
     ],
     "answer": 3,
     "difficulty": "easy",
@@ -22013,10 +22013,10 @@ const questions = [
       "Muscat"
     ],
     "optionsAr": [
-      "Ottawa",
-      "Kuala Lumpur",
-      "Gaborone",
-      "Muscat"
+      "وتتاوا",
+      "كوالالمبور",
+      "غابورون",
+      "مسقط"
     ],
     "answer": 1,
     "difficulty": "easy",
@@ -22033,10 +22033,10 @@ const questions = [
       "Tirana"
     ],
     "optionsAr": [
-      "Lima",
-      "Amman",
-      "Mexico City",
-      "Tirana"
+      "ليما",
+      "اممان",
+      "ميكسيكو كيتي",
+      "تيرانا"
     ],
     "answer": 2,
     "difficulty": "easy",
@@ -22053,10 +22053,10 @@ const questions = [
       "Ulan Bator"
     ],
     "optionsAr": [
-      "Rabat",
-      "New Delhi",
-      "Lima",
-      "Ulan Bator"
+      "رابات",
+      "نيو ديلهي",
+      "ليما",
+      "ولان باتور"
     ],
     "answer": 3,
     "difficulty": "easy",
@@ -22073,10 +22073,10 @@ const questions = [
       "Minsk"
     ],
     "optionsAr": [
-      "Reykjavik",
-      "New Delhi",
-      "Rabat",
-      "Minsk"
+      "ريكيافيك",
+      "نيو ديلهي",
+      "رابات",
+      "مينسك"
     ],
     "answer": 2,
     "difficulty": "easy",
@@ -22093,10 +22093,10 @@ const questions = [
       "Kathmandu"
     ],
     "optionsAr": [
-      "Muscat",
-      "Tallinn",
-      "Ulan Bator",
-      "Kathmandu"
+      "مسقط",
+      "تاللينن",
+      "ولان باتور",
+      "كاتهماندو"
     ],
     "answer": 3,
     "difficulty": "easy",
@@ -22113,10 +22113,10 @@ const questions = [
       "Athens"
     ],
     "optionsAr": [
-      "Amsterdam",
-      "Baku",
-      "Paris",
-      "Athens"
+      "امستيردام",
+      "باكو",
+      "باريس",
+      "أثينا"
     ],
     "answer": 0,
     "difficulty": "easy",
@@ -22133,10 +22133,10 @@ const questions = [
       "New Delhi"
     ],
     "optionsAr": [
-      "Minsk",
-      "Amsterdam",
-      "Wellington",
-      "New Delhi"
+      "مينسك",
+      "امستيردام",
+      "ويللينجتون",
+      "نيو ديلهي"
     ],
     "answer": 2,
     "difficulty": "easy",
@@ -22153,10 +22153,10 @@ const questions = [
       "Abuja"
     ],
     "optionsAr": [
-      "Lima",
-      "Tallinn",
-      "Quito",
-      "Abuja"
+      "ليما",
+      "تاللينن",
+      "قويتو",
+      "ابوجا"
     ],
     "answer": 3,
     "difficulty": "easy",
@@ -22173,10 +22173,10 @@ const questions = [
       "Accra"
     ],
     "optionsAr": [
-      "Oslo",
-      "Addis Ababa",
-      "Yaoundé",
-      "Accra"
+      "وسلو",
+      "ادديس ابابا",
+      "ياووندé",
+      "اككرا"
     ],
     "answer": 0,
     "difficulty": "easy",
@@ -22193,10 +22193,10 @@ const questions = [
       "Addis Ababa"
     ],
     "optionsAr": [
-      "Muscat",
-      "Rabat",
-      "Budapest",
-      "Addis Ababa"
+      "مسقط",
+      "رابات",
+      "بودابيست",
+      "ادديس ابابا"
     ],
     "answer": 0,
     "difficulty": "easy",
@@ -22213,10 +22213,10 @@ const questions = [
       "Islamabad"
     ],
     "optionsAr": [
-      "Baghdad",
-      "Jakarta",
-      "Yaoundé",
-      "Islamabad"
+      "باجهداد",
+      "جاكارتا",
+      "ياووندé",
+      "يسلاماباد"
     ],
     "answer": 3,
     "difficulty": "easy",
@@ -22233,10 +22233,10 @@ const questions = [
       "Zagreb"
     ],
     "optionsAr": [
-      "San José",
-      "Lima",
-      "Dhaka",
-      "Zagreb"
+      "سان جوسé",
+      "ليما",
+      "دكا",
+      "زاجريب"
     ],
     "answer": 1,
     "difficulty": "easy",
@@ -22253,10 +22253,10 @@ const questions = [
       "Reykjavik"
     ],
     "optionsAr": [
-      "Ottawa",
-      "Manila",
-      "Brussels",
-      "Reykjavik"
+      "وتتاوا",
+      "مانيلا",
+      "بروسسيلس",
+      "ريكيافيك"
     ],
     "answer": 1,
     "difficulty": "easy",
@@ -22273,10 +22273,10 @@ const questions = [
       "Warsaw"
     ],
     "optionsAr": [
-      "Manila",
-      "Santo Domingo",
-      "Minsk",
-      "Warsaw"
+      "مانيلا",
+      "سانتو دومينغو",
+      "مينسك",
+      "وارسو"
     ],
     "answer": 3,
     "difficulty": "easy",
@@ -22293,8 +22293,8 @@ const questions = [
       "Africa"
     ],
     "optionsAr": [
-      "الأمريكتان",
-      "أوقيانوسيا",
+      "اميريكاس",
+      "وكيانيا",
       "آسيا",
       "أفريقيا"
     ],
@@ -22316,7 +22316,7 @@ const questions = [
       "أوروبا",
       "آسيا",
       "أفريقيا",
-      "الأمريكتان"
+      "اميريكاس"
     ],
     "answer": 0,
     "difficulty": "medium",
@@ -22333,8 +22333,8 @@ const questions = [
       "Asia"
     ],
     "optionsAr": [
-      "أوقيانوسيا",
-      "الأمريكتان",
+      "وكيانيا",
+      "اميريكاس",
       "أفريقيا",
       "آسيا"
     ],
@@ -22354,8 +22354,8 @@ const questions = [
     ],
     "optionsAr": [
       "أفريقيا",
-      "أوقيانوسيا",
-      "الأمريكتان",
+      "وكيانيا",
+      "اميريكاس",
       "أوروبا"
     ],
     "answer": 0,
@@ -22376,7 +22376,7 @@ const questions = [
       "أفريقيا",
       "آسيا",
       "أوروبا",
-      "الأمريكتان"
+      "اميريكاس"
     ],
     "answer": 3,
     "difficulty": "medium",
@@ -22395,8 +22395,8 @@ const questions = [
     "optionsAr": [
       "آسيا",
       "أوروبا",
-      "أوقيانوسيا",
-      "الأمريكتان"
+      "وكيانيا",
+      "اميريكاس"
     ],
     "answer": 0,
     "difficulty": "medium",
@@ -22416,7 +22416,7 @@ const questions = [
       "آسيا",
       "أفريقيا",
       "أوروبا",
-      "أوقيانوسيا"
+      "وكيانيا"
     ],
     "answer": 3,
     "difficulty": "medium",
@@ -22435,8 +22435,8 @@ const questions = [
     "optionsAr": [
       "أوروبا",
       "أفريقيا",
-      "الأمريكتان",
-      "أوقيانوسيا"
+      "اميريكاس",
+      "وكيانيا"
     ],
     "answer": 0,
     "difficulty": "medium",
@@ -22455,8 +22455,8 @@ const questions = [
     "optionsAr": [
       "آسيا",
       "أوروبا",
-      "أوقيانوسيا",
-      "الأمريكتان"
+      "وكيانيا",
+      "اميريكاس"
     ],
     "answer": 0,
     "difficulty": "medium",
@@ -22473,7 +22473,7 @@ const questions = [
       "Asia"
     ],
     "optionsAr": [
-      "أوقيانوسيا",
+      "وكيانيا",
       "أوروبا",
       "أفريقيا",
       "آسيا"
@@ -22494,9 +22494,9 @@ const questions = [
     ],
     "optionsAr": [
       "أوروبا",
-      "أوقيانوسيا",
+      "وكيانيا",
       "أفريقيا",
-      "الأمريكتان"
+      "اميريكاس"
     ],
     "answer": 0,
     "difficulty": "medium",
@@ -22513,7 +22513,7 @@ const questions = [
       "Asia"
     ],
     "optionsAr": [
-      "الأمريكتان",
+      "اميريكاس",
       "أفريقيا",
       "أوروبا",
       "آسيا"
@@ -22533,8 +22533,8 @@ const questions = [
       "Europe"
     ],
     "optionsAr": [
-      "الأمريكتان",
-      "أوقيانوسيا",
+      "اميريكاس",
+      "وكيانيا",
       "آسيا",
       "أوروبا"
     ],
@@ -22554,9 +22554,9 @@ const questions = [
     ],
     "optionsAr": [
       "آسيا",
-      "أوقيانوسيا",
+      "وكيانيا",
       "أوروبا",
-      "الأمريكتان"
+      "اميريكاس"
     ],
     "answer": 2,
     "difficulty": "medium",
@@ -22576,7 +22576,7 @@ const questions = [
       "آسيا",
       "أوروبا",
       "أفريقيا",
-      "أوقيانوسيا"
+      "وكيانيا"
     ],
     "answer": 2,
     "difficulty": "medium",
@@ -22595,7 +22595,7 @@ const questions = [
     "optionsAr": [
       "أفريقيا",
       "آسيا",
-      "الأمريكتان",
+      "اميريكاس",
       "أوروبا"
     ],
     "answer": 2,
@@ -22616,7 +22616,7 @@ const questions = [
       "آسيا",
       "أوروبا",
       "أفريقيا",
-      "الأمريكتان"
+      "اميريكاس"
     ],
     "answer": 1,
     "difficulty": "medium",
@@ -22634,7 +22634,7 @@ const questions = [
     ],
     "optionsAr": [
       "أوروبا",
-      "الأمريكتان",
+      "اميريكاس",
       "آسيا",
       "أفريقيا"
     ],
@@ -22653,7 +22653,7 @@ const questions = [
       "Asia"
     ],
     "optionsAr": [
-      "أوقيانوسيا",
+      "وكيانيا",
       "أوروبا",
       "أفريقيا",
       "آسيا"
@@ -22675,8 +22675,8 @@ const questions = [
     "optionsAr": [
       "آسيا",
       "أفريقيا",
-      "أوقيانوسيا",
-      "الأمريكتان"
+      "وكيانيا",
+      "اميريكاس"
     ],
     "answer": 3,
     "difficulty": "medium",
@@ -22694,9 +22694,9 @@ const questions = [
     ],
     "optionsAr": [
       "أفريقيا",
-      "الأمريكتان",
+      "اميريكاس",
       "أوروبا",
-      "أوقيانوسيا"
+      "وكيانيا"
     ],
     "answer": 1,
     "difficulty": "medium",
@@ -22715,7 +22715,7 @@ const questions = [
     "optionsAr": [
       "أفريقيا",
       "آسيا",
-      "الأمريكتان",
+      "اميريكاس",
       "أوروبا"
     ],
     "answer": 1,
@@ -22733,8 +22733,8 @@ const questions = [
       "Africa"
     ],
     "optionsAr": [
-      "الأمريكتان",
-      "أوقيانوسيا",
+      "اميريكاس",
+      "وكيانيا",
       "آسيا",
       "أفريقيا"
     ],
@@ -22755,8 +22755,8 @@ const questions = [
     "optionsAr": [
       "أوروبا",
       "أفريقيا",
-      "الأمريكتان",
-      "أوقيانوسيا"
+      "اميريكاس",
+      "وكيانيا"
     ],
     "answer": 2,
     "difficulty": "medium",
@@ -22773,8 +22773,8 @@ const questions = [
       "Africa"
     ],
     "optionsAr": [
-      "الأمريكتان",
-      "أوقيانوسيا",
+      "اميريكاس",
+      "وكيانيا",
       "أوروبا",
       "أفريقيا"
     ],
@@ -22795,8 +22795,8 @@ const questions = [
     "optionsAr": [
       "أوروبا",
       "آسيا",
-      "أوقيانوسيا",
-      "الأمريكتان"
+      "وكيانيا",
+      "اميريكاس"
     ],
     "answer": 3,
     "difficulty": "medium",
@@ -22814,8 +22814,8 @@ const questions = [
     ],
     "optionsAr": [
       "أوروبا",
-      "الأمريكتان",
-      "أوقيانوسيا",
+      "اميريكاس",
+      "وكيانيا",
       "آسيا"
     ],
     "answer": 0,
@@ -22835,8 +22835,8 @@ const questions = [
     "optionsAr": [
       "أوروبا",
       "أفريقيا",
-      "الأمريكتان",
-      "أوقيانوسيا"
+      "اميريكاس",
+      "وكيانيا"
     ],
     "answer": 0,
     "difficulty": "medium",
@@ -22853,8 +22853,8 @@ const questions = [
       "Asia"
     ],
     "optionsAr": [
-      "أوقيانوسيا",
-      "الأمريكتان",
+      "وكيانيا",
+      "اميريكاس",
       "أفريقيا",
       "آسيا"
     ],
@@ -22874,9 +22874,9 @@ const questions = [
     ],
     "optionsAr": [
       "أفريقيا",
-      "أوقيانوسيا",
+      "وكيانيا",
       "أوروبا",
-      "الأمريكتان"
+      "اميريكاس"
     ],
     "answer": 3,
     "difficulty": "medium",
@@ -22895,8 +22895,8 @@ const questions = [
     "optionsAr": [
       "أفريقيا",
       "آسيا",
-      "الأمريكتان",
-      "أوقيانوسيا"
+      "اميريكاس",
+      "وكيانيا"
     ],
     "answer": 0,
     "difficulty": "medium",
@@ -22913,10 +22913,10 @@ const questions = [
       "Americas"
     ],
     "optionsAr": [
-      "أوقيانوسيا",
+      "وكيانيا",
       "آسيا",
       "أوروبا",
-      "الأمريكتان"
+      "اميريكاس"
     ],
     "answer": 2,
     "difficulty": "medium",
@@ -22935,7 +22935,7 @@ const questions = [
     "optionsAr": [
       "أفريقيا",
       "آسيا",
-      "الأمريكتان",
+      "اميريكاس",
       "أوروبا"
     ],
     "answer": 0,
@@ -22953,8 +22953,8 @@ const questions = [
       "Africa"
     ],
     "optionsAr": [
-      "أوقيانوسيا",
-      "الأمريكتان",
+      "وكيانيا",
+      "اميريكاس",
       "أوروبا",
       "أفريقيا"
     ],
@@ -22973,8 +22973,8 @@ const questions = [
       "Europe"
     ],
     "optionsAr": [
-      "الأمريكتان",
-      "أوقيانوسيا",
+      "اميريكاس",
+      "وكيانيا",
       "أفريقيا",
       "أوروبا"
     ],
@@ -22993,8 +22993,8 @@ const questions = [
       "Asia"
     ],
     "optionsAr": [
-      "أوقيانوسيا",
-      "الأمريكتان",
+      "وكيانيا",
+      "اميريكاس",
       "أوروبا",
       "آسيا"
     ],
@@ -23016,7 +23016,7 @@ const questions = [
       "أوروبا",
       "آسيا",
       "أفريقيا",
-      "أوقيانوسيا"
+      "وكيانيا"
     ],
     "answer": 0,
     "difficulty": "medium",
@@ -23035,7 +23035,7 @@ const questions = [
     "optionsAr": [
       "أفريقيا",
       "أوروبا",
-      "أوقيانوسيا",
+      "وكيانيا",
       "آسيا"
     ],
     "answer": 0,
@@ -23053,7 +23053,7 @@ const questions = [
       "Asia"
     ],
     "optionsAr": [
-      "الأمريكتان",
+      "اميريكاس",
       "أوروبا",
       "أفريقيا",
       "آسيا"
@@ -23073,10 +23073,10 @@ const questions = [
       "Americas"
     ],
     "optionsAr": [
-      "أوقيانوسيا",
+      "وكيانيا",
       "أفريقيا",
       "أوروبا",
-      "الأمريكتان"
+      "اميريكاس"
     ],
     "answer": 3,
     "difficulty": "medium",
@@ -23094,7 +23094,7 @@ const questions = [
     ],
     "optionsAr": [
       "أوروبا",
-      "أوقيانوسيا",
+      "وكيانيا",
       "آسيا",
       "أفريقيا"
     ],
@@ -23116,7 +23116,7 @@ const questions = [
       "آسيا",
       "أفريقيا",
       "أوروبا",
-      "أوقيانوسيا"
+      "وكيانيا"
     ],
     "answer": 2,
     "difficulty": "medium",
@@ -23134,7 +23134,7 @@ const questions = [
     ],
     "optionsAr": [
       "أوروبا",
-      "أوقيانوسيا",
+      "وكيانيا",
       "أفريقيا",
       "آسيا"
     ],
@@ -23153,8 +23153,8 @@ const questions = [
       "Africa"
     ],
     "optionsAr": [
-      "الأمريكتان",
-      "أوقيانوسيا",
+      "اميريكاس",
+      "وكيانيا",
       "آسيا",
       "أفريقيا"
     ],
@@ -23173,7 +23173,7 @@ const questions = [
       "Europe"
     ],
     "optionsAr": [
-      "الأمريكتان",
+      "اميريكاس",
       "آسيا",
       "أفريقيا",
       "أوروبا"
@@ -23195,7 +23195,7 @@ const questions = [
     "optionsAr": [
       "أفريقيا",
       "آسيا",
-      "الأمريكتان",
+      "اميريكاس",
       "أوروبا"
     ],
     "answer": 1,
@@ -23214,9 +23214,9 @@ const questions = [
     ],
     "optionsAr": [
       "أوروبا",
-      "أوقيانوسيا",
+      "وكيانيا",
       "آسيا",
-      "الأمريكتان"
+      "اميريكاس"
     ],
     "answer": 0,
     "difficulty": "medium",
@@ -23233,9 +23233,9 @@ const questions = [
       "Asia"
     ],
     "optionsAr": [
-      "أوقيانوسيا",
+      "وكيانيا",
       "أوروبا",
-      "الأمريكتان",
+      "اميريكاس",
       "آسيا"
     ],
     "answer": 3,
@@ -23255,7 +23255,7 @@ const questions = [
     "optionsAr": [
       "أوروبا",
       "أفريقيا",
-      "أوقيانوسيا",
+      "وكيانيا",
       "آسيا"
     ],
     "answer": 0,
@@ -23273,8 +23273,8 @@ const questions = [
       "Asia"
     ],
     "optionsAr": [
-      "الأمريكتان",
-      "أوقيانوسيا",
+      "اميريكاس",
+      "وكيانيا",
       "أوروبا",
       "آسيا"
     ],
@@ -23294,9 +23294,9 @@ const questions = [
     ],
     "optionsAr": [
       "آسيا",
-      "أوقيانوسيا",
+      "وكيانيا",
       "أوروبا",
-      "الأمريكتان"
+      "اميريكاس"
     ],
     "answer": 0,
     "difficulty": "medium",
@@ -23314,9 +23314,9 @@ const questions = [
     ],
     "optionsAr": [
       "آسيا",
-      "الأمريكتان",
+      "اميريكاس",
       "أفريقيا",
-      "أوقيانوسيا"
+      "وكيانيا"
     ],
     "answer": 0,
     "difficulty": "medium",
@@ -23333,10 +23333,10 @@ const questions = [
       "Oceania"
     ],
     "optionsAr": [
-      "الأمريكتان",
+      "اميريكاس",
       "أوروبا",
       "أفريقيا",
-      "أوقيانوسيا"
+      "وكيانيا"
     ],
     "answer": 2,
     "difficulty": "medium",
@@ -23355,8 +23355,8 @@ const questions = [
     "optionsAr": [
       "أوروبا",
       "آسيا",
-      "الأمريكتان",
-      "أوقيانوسيا"
+      "اميريكاس",
+      "وكيانيا"
     ],
     "answer": 1,
     "difficulty": "medium",
@@ -23375,7 +23375,7 @@ const questions = [
     "optionsAr": [
       "أوروبا",
       "آسيا",
-      "الأمريكتان",
+      "اميريكاس",
       "أفريقيا"
     ],
     "answer": 1,
@@ -23394,9 +23394,9 @@ const questions = [
     ],
     "optionsAr": [
       "أفريقيا",
-      "الأمريكتان",
+      "اميريكاس",
       "آسيا",
-      "أوقيانوسيا"
+      "وكيانيا"
     ],
     "answer": 2,
     "difficulty": "medium",
@@ -23413,9 +23413,9 @@ const questions = [
       "Asia"
     ],
     "optionsAr": [
-      "الأمريكتان",
+      "اميريكاس",
       "أفريقيا",
-      "أوقيانوسيا",
+      "وكيانيا",
       "آسيا"
     ],
     "answer": 0,
@@ -23433,9 +23433,9 @@ const questions = [
       "Africa"
     ],
     "optionsAr": [
-      "الأمريكتان",
+      "اميريكاس",
       "آسيا",
-      "أوقيانوسيا",
+      "وكيانيا",
       "أفريقيا"
     ],
     "answer": 1,
@@ -23453,10 +23453,10 @@ const questions = [
       "Oceania"
     ],
     "optionsAr": [
-      "الأمريكتان",
+      "اميريكاس",
       "أفريقيا",
       "آسيا",
-      "أوقيانوسيا"
+      "وكيانيا"
     ],
     "answer": 1,
     "difficulty": "medium",
@@ -23473,10 +23473,10 @@ const questions = [
       "Oceania"
     ],
     "optionsAr": [
-      "الأمريكتان",
+      "اميريكاس",
       "آسيا",
       "أوروبا",
-      "أوقيانوسيا"
+      "وكيانيا"
     ],
     "answer": 1,
     "difficulty": "medium",
@@ -23493,10 +23493,10 @@ const questions = [
       "Americas"
     ],
     "optionsAr": [
-      "أوقيانوسيا",
+      "وكيانيا",
       "أوروبا",
       "أفريقيا",
-      "الأمريكتان"
+      "اميريكاس"
     ],
     "answer": 1,
     "difficulty": "medium",
@@ -23513,9 +23513,9 @@ const questions = [
       "Europe"
     ],
     "optionsAr": [
-      "الأمريكتان",
+      "اميريكاس",
       "آسيا",
-      "أوقيانوسيا",
+      "وكيانيا",
       "أوروبا"
     ],
     "answer": 2,
@@ -23533,9 +23533,9 @@ const questions = [
       "Africa"
     ],
     "optionsAr": [
-      "أوقيانوسيا",
+      "وكيانيا",
       "آسيا",
-      "الأمريكتان",
+      "اميريكاس",
       "أفريقيا"
     ],
     "answer": 3,
@@ -23555,8 +23555,8 @@ const questions = [
     "optionsAr": [
       "أفريقيا",
       "أوروبا",
-      "الأمريكتان",
-      "أوقيانوسيا"
+      "اميريكاس",
+      "وكيانيا"
     ],
     "answer": 1,
     "difficulty": "medium",
@@ -23573,8 +23573,8 @@ const questions = [
       "Africa"
     ],
     "optionsAr": [
-      "الأمريكتان",
-      "أوقيانوسيا",
+      "اميريكاس",
+      "وكيانيا",
       "آسيا",
       "أفريقيا"
     ],
@@ -23594,9 +23594,9 @@ const questions = [
     ],
     "optionsAr": [
       "أفريقيا",
-      "الأمريكتان",
+      "اميريكاس",
       "آسيا",
-      "أوقيانوسيا"
+      "وكيانيا"
     ],
     "answer": 2,
     "difficulty": "medium",
@@ -23613,9 +23613,9 @@ const questions = [
       "Africa"
     ],
     "optionsAr": [
-      "أوقيانوسيا",
+      "وكيانيا",
       "آسيا",
-      "الأمريكتان",
+      "اميريكاس",
       "أفريقيا"
     ],
     "answer": 2,
@@ -23633,7 +23633,7 @@ const questions = [
       "Asia"
     ],
     "optionsAr": [
-      "الأمريكتان",
+      "اميريكاس",
       "أفريقيا",
       "أوروبا",
       "آسيا"
@@ -23653,10 +23653,10 @@ const questions = [
       "KWD"
     ],
     "optionsAr": [
-      "بيزو الدومنيكان",
-      "أفغاني",
-      "يورو",
-      "دينار كويتي"
+      "DOP",
+      "AFN",
+      "EUR",
+      "KWD"
     ],
     "answer": 1,
     "difficulty": "hard",
@@ -23673,10 +23673,10 @@ const questions = [
       "NGN"
     ],
     "optionsAr": [
-      "يوان صيني",
-      "ليك ألباني",
-      "كوتزال غواتيمالا",
-      "نايرا نيجيري"
+      "CNY",
+      "ALL",
+      "GTQ",
+      "NGN"
     ],
     "answer": 1,
     "difficulty": "hard",
@@ -23693,10 +23693,10 @@ const questions = [
       "BRL"
     ],
     "optionsAr": [
-      "رينغيت ماليزي",
-      "كرونة أيسلندية",
-      "دينار جزائري",
-      "ريال برازيلي"
+      "MYR",
+      "ISK",
+      "DZD",
+      "BRL"
     ],
     "answer": 2,
     "difficulty": "hard",
@@ -23713,10 +23713,10 @@ const questions = [
       "PHP"
     ],
     "optionsAr": [
-      "دينار جزائري",
-      "روبية نيبالي",
-      "كوانزا أنغولي",
-      "بيزو فلبيني"
+      "DZD",
+      "NPR",
+      "AOA",
+      "PHP"
     ],
     "answer": 2,
     "difficulty": "hard",
@@ -23733,10 +23733,10 @@ const questions = [
       "ETB"
     ],
     "optionsAr": [
-      "روبية إندونيسية",
-      "كوانزا أنغولي",
-      "بيزو أرجنتيني",
-      "بير أثيوبي"
+      "IDR",
+      "AOA",
+      "ARS",
+      "ETB"
     ],
     "answer": 2,
     "difficulty": "hard",
@@ -23753,10 +23753,10 @@ const questions = [
       "AZN"
     ],
     "optionsAr": [
-      "درام أرميني",
-      "رييال كمبودي",
-      "درهم مغربي",
-      "مانات أذربيجان"
+      "AMD",
+      "KHR",
+      "MAD",
+      "AZN"
     ],
     "answer": 0,
     "difficulty": "hard",
@@ -23773,10 +23773,10 @@ const questions = [
       "PEN"
     ],
     "optionsAr": [
-      "رييال كمبودي",
-      "دولار أسترالي",
-      "بيزو الدومنيكان",
-      "سول بيروفي"
+      "KHR",
+      "AUD",
+      "DOP",
+      "PEN"
     ],
     "answer": 1,
     "difficulty": "hard",
@@ -23793,10 +23793,10 @@ const questions = [
       "DOP"
     ],
     "optionsAr": [
-      "بولا بتسواني",
-      "درام أرميني",
-      "يورو",
-      "بيزو الدومنيكان"
+      "BWP",
+      "AMD",
+      "EUR",
+      "DOP"
     ],
     "answer": 2,
     "difficulty": "hard",
@@ -23813,10 +23813,10 @@ const questions = [
       "AZN"
     ],
     "optionsAr": [
-      "جنيه لبناني",
-      "كرونة دنماركية",
-      "زلوتي بولندي",
-      "مانات أذربيجان"
+      "LBP",
+      "DKK",
+      "PLN",
+      "AZN"
     ],
     "answer": 3,
     "difficulty": "hard",
@@ -23833,10 +23833,10 @@ const questions = [
       "BDT"
     ],
     "optionsAr": [
-      "شيكل إسرائيلي جديد",
-      "بيزو أرجنتيني",
-      "رييال كمبودي",
-      "تاكا بنغلاديشي"
+      "ILS",
+      "ARS",
+      "KHR",
+      "BDT"
     ],
     "answer": 3,
     "difficulty": "hard",
@@ -23853,10 +23853,10 @@ const questions = [
       "GHS"
     ],
     "optionsAr": [
-      "روبية نيبالي",
-      "دولار نيوزيلندي",
-      "روبل بيلاروسي (٢٠٠٠–٢٠١٦)",
-      "سيدي غانا"
+      "NPR",
+      "NZD",
+      "BYR",
+      "GHS"
     ],
     "answer": 2,
     "difficulty": "hard",
@@ -23873,10 +23873,10 @@ const questions = [
       "EUR"
     ],
     "optionsAr": [
-      "كرونة أيسلندية",
-      "بيزو الدومنيكان",
-      "جنيه لبناني",
-      "يورو"
+      "ISK",
+      "DOP",
+      "LBP",
+      "EUR"
     ],
     "answer": 3,
     "difficulty": "hard",
@@ -23893,10 +23893,10 @@ const questions = [
       "PLN"
     ],
     "optionsAr": [
-      "رييال كمبودي",
-      "نايرا نيجيري",
-      "بوليفيانو بوليفي",
-      "زلوتي بولندي"
+      "KHR",
+      "NGN",
+      "BOB",
+      "PLN"
     ],
     "answer": 2,
     "difficulty": "hard",
@@ -23913,10 +23913,10 @@ const questions = [
       "BAM"
     ],
     "optionsAr": [
-      "لارى جورجي",
-      "كوانزا أنغولي",
-      "جنيه لبناني",
-      "مارك البوسنة والهرسك قابل للتحويل"
+      "GEL",
+      "AOA",
+      "LBP",
+      "BAM"
     ],
     "answer": 3,
     "difficulty": "hard",
@@ -23933,10 +23933,10 @@ const questions = [
       "EUR"
     ],
     "optionsAr": [
-      "بولا بتسواني",
-      "دينار عراقي",
-      "بير أثيوبي",
-      "يورو"
+      "BWP",
+      "IQD",
+      "ETB",
+      "EUR"
     ],
     "answer": 0,
     "difficulty": "hard",
@@ -23953,10 +23953,10 @@ const questions = [
       "BRL"
     ],
     "optionsAr": [
-      "كرونة دنماركية",
-      "كوتزال غواتيمالا",
-      "فورينت هنغاري",
-      "ريال برازيلي"
+      "DKK",
+      "GTQ",
+      "HUF",
+      "BRL"
     ],
     "answer": 3,
     "difficulty": "hard",
@@ -23973,10 +23973,10 @@ const questions = [
       "CUC"
     ],
     "optionsAr": [
-      "ليف بلغاري",
-      "سول بيروفي",
-      "ليك ألباني",
-      "بيزو كوبي قابل للتحويل"
+      "BGN",
+      "PEN",
+      "ALL",
+      "CUC"
     ],
     "answer": 0,
     "difficulty": "hard",
@@ -23993,10 +23993,10 @@ const questions = [
       "ETB"
     ],
     "optionsAr": [
-      "بيزو مكسيكي",
-      "تينغ كازاخستاني",
-      "رييال كمبودي",
-      "بير أثيوبي"
+      "MXN",
+      "KZT",
+      "KHR",
+      "ETB"
     ],
     "answer": 2,
     "difficulty": "hard",
@@ -24013,10 +24013,10 @@ const questions = [
       "PEN"
     ],
     "optionsAr": [
-      "كرونة أيسلندية",
-      "رينغيت ماليزي",
-      "فرنك وسط أفريقي",
-      "سول بيروفي"
+      "ISK",
+      "MYR",
+      "XAF",
+      "PEN"
     ],
     "answer": 2,
     "difficulty": "hard",
@@ -24033,10 +24033,10 @@ const questions = [
       "BWP"
     ],
     "optionsAr": [
-      "دولار كندي",
-      "دولار نيوزيلندي",
-      "نايرا نيجيري",
-      "بولا بتسواني"
+      "CAD",
+      "NZD",
+      "NGN",
+      "BWP"
     ],
     "answer": 0,
     "difficulty": "hard",
@@ -24053,9 +24053,9 @@ const questions = [
       "CLF"
     ],
     "optionsAr": [
-      "ليف بلغاري",
-      "ريال برازيلي",
-      "كرونة دنماركية",
+      "BGN",
+      "BRL",
+      "DKK",
       "CLF"
     ],
     "answer": 3,
@@ -24073,10 +24073,10 @@ const questions = [
       "ALL"
     ],
     "optionsAr": [
-      "يوان صيني",
-      "ين ياباني",
-      "ريال برازيلي",
-      "ليك ألباني"
+      "CNY",
+      "JPY",
+      "BRL",
+      "ALL"
     ],
     "answer": 0,
     "difficulty": "hard",
@@ -24093,10 +24093,10 @@ const questions = [
       "AMD"
     ],
     "optionsAr": [
-      "بيزو كولومبي",
-      "تينغ كازاخستاني",
-      "دولار أمريكي",
-      "درام أرميني"
+      "COP",
+      "KZT",
+      "USD",
+      "AMD"
     ],
     "answer": 0,
     "difficulty": "hard",
@@ -24113,10 +24113,10 @@ const questions = [
       "KES"
     ],
     "optionsAr": [
-      "يوان صيني",
-      "كرونة أيسلندية",
-      "كولن كوستاريكي",
-      "شلن كينيي"
+      "CNY",
+      "ISK",
+      "CRC",
+      "KES"
     ],
     "answer": 2,
     "difficulty": "hard",
@@ -24133,10 +24133,10 @@ const questions = [
       "ETB"
     ],
     "optionsAr": [
-      "كونا كرواتي",
-      "بيزو كوبي قابل للتحويل",
-      "سيدي غانا",
-      "بير أثيوبي"
+      "HRK",
+      "CUC",
+      "GHS",
+      "ETB"
     ],
     "answer": 0,
     "difficulty": "hard",
@@ -24153,10 +24153,10 @@ const questions = [
       "CRC"
     ],
     "optionsAr": [
-      "روبية باكستاني",
-      "بيزو فلبيني",
-      "بيزو كوبي قابل للتحويل",
-      "كولن كوستاريكي"
+      "PKR",
+      "PHP",
+      "CUC",
+      "CRC"
     ],
     "answer": 2,
     "difficulty": "hard",
@@ -24173,10 +24173,10 @@ const questions = [
       "JPY"
     ],
     "optionsAr": [
-      "فرنك وسط أفريقي",
-      "كرونة أيسلندية",
-      "يورو",
-      "ين ياباني"
+      "XAF",
+      "ISK",
+      "EUR",
+      "JPY"
     ],
     "answer": 2,
     "difficulty": "hard",
@@ -24193,9 +24193,9 @@ const questions = [
       "CLF"
     ],
     "optionsAr": [
-      "كرونة دنماركية",
-      "نايرا نيجيري",
-      "سول بيروفي",
+      "DKK",
+      "NGN",
+      "PEN",
       "CLF"
     ],
     "answer": 0,
@@ -24213,10 +24213,10 @@ const questions = [
       "NPR"
     ],
     "optionsAr": [
-      "مانات أذربيجان",
-      "بيزو الدومنيكان",
-      "روبية باكستاني",
-      "روبية نيبالي"
+      "AZN",
+      "DOP",
+      "PKR",
+      "NPR"
     ],
     "answer": 1,
     "difficulty": "hard",
@@ -24233,10 +24233,10 @@ const questions = [
       "ILS"
     ],
     "optionsAr": [
-      "كرونة دنماركية",
-      "دولار أمريكي",
-      "روبية باكستاني",
-      "شيكل إسرائيلي جديد"
+      "DKK",
+      "USD",
+      "PKR",
+      "ILS"
     ],
     "answer": 1,
     "difficulty": "hard",
@@ -24253,10 +24253,10 @@ const questions = [
       "BYR"
     ],
     "optionsAr": [
-      "بيزو كولومبي",
-      "يوان صيني",
-      "جنيه مصري",
-      "روبل بيلاروسي (٢٠٠٠–٢٠١٦)"
+      "COP",
+      "CNY",
+      "EGP",
+      "BYR"
     ],
     "answer": 2,
     "difficulty": "hard",
@@ -24273,10 +24273,10 @@ const questions = [
       "USD"
     ],
     "optionsAr": [
-      "ريال عماني",
-      "يورو",
-      "بوليفيانو بوليفي",
-      "دولار أمريكي"
+      "OMR",
+      "EUR",
+      "BOB",
+      "USD"
     ],
     "answer": 1,
     "difficulty": "hard",
@@ -24293,10 +24293,10 @@ const questions = [
       "BWP"
     ],
     "optionsAr": [
-      "لارى جورجي",
-      "روبل بيلاروسي (٢٠٠٠–٢٠١٦)",
-      "بير أثيوبي",
-      "بولا بتسواني"
+      "GEL",
+      "BYR",
+      "ETB",
+      "BWP"
     ],
     "answer": 2,
     "difficulty": "hard",
@@ -24313,10 +24313,10 @@ const questions = [
       "KZT"
     ],
     "optionsAr": [
-      "يورو",
-      "دولار أسترالي",
-      "شيكل إسرائيلي جديد",
-      "تينغ كازاخستاني"
+      "EUR",
+      "AUD",
+      "ILS",
+      "KZT"
     ],
     "answer": 0,
     "difficulty": "hard",
@@ -24333,10 +24333,10 @@ const questions = [
       "BRL"
     ],
     "optionsAr": [
-      "بيزو كولومبي",
-      "يورو",
-      "فرنك وسط أفريقي",
-      "ريال برازيلي"
+      "COP",
+      "EUR",
+      "XAF",
+      "BRL"
     ],
     "answer": 1,
     "difficulty": "hard",
@@ -24353,10 +24353,10 @@ const questions = [
       "AZN"
     ],
     "optionsAr": [
-      "بيزو فلبيني",
-      "سيدي غانا",
-      "لارى جورجي",
-      "مانات أذربيجان"
+      "PHP",
+      "GHS",
+      "GEL",
+      "AZN"
     ],
     "answer": 2,
     "difficulty": "hard",
@@ -24373,10 +24373,10 @@ const questions = [
       "AOA"
     ],
     "optionsAr": [
-      "يورو",
-      "ريال إيراني",
-      "روبية هندي",
-      "كوانزا أنغولي"
+      "EUR",
+      "IRR",
+      "INR",
+      "AOA"
     ],
     "answer": 0,
     "difficulty": "hard",
@@ -24393,10 +24393,10 @@ const questions = [
       "CUC"
     ],
     "optionsAr": [
-      "ريال عماني",
-      "كوتزال غواتيمالا",
-      "سيدي غانا",
-      "بيزو كوبي قابل للتحويل"
+      "OMR",
+      "GTQ",
+      "GHS",
+      "CUC"
     ],
     "answer": 2,
     "difficulty": "hard",
@@ -24413,10 +24413,10 @@ const questions = [
       "PLN"
     ],
     "optionsAr": [
-      "دينار عراقي",
-      "يورو",
-      "دولار أمريكي",
-      "زلوتي بولندي"
+      "IQD",
+      "EUR",
+      "USD",
+      "PLN"
     ],
     "answer": 1,
     "difficulty": "hard",
@@ -24433,10 +24433,10 @@ const questions = [
       "PHP"
     ],
     "optionsAr": [
-      "دينار أردني",
-      "سول بيروفي",
-      "كوتزال غواتيمالا",
-      "بيزو فلبيني"
+      "JOD",
+      "PEN",
+      "GTQ",
+      "PHP"
     ],
     "answer": 2,
     "difficulty": "hard",
@@ -24453,10 +24453,10 @@ const questions = [
       "NGN"
     ],
     "optionsAr": [
-      "فورينت هنغاري",
-      "ريال برازيلي",
-      "بوليفيانو بوليفي",
-      "نايرا نيجيري"
+      "HUF",
+      "BRL",
+      "BOB",
+      "NGN"
     ],
     "answer": 0,
     "difficulty": "hard",
@@ -24473,10 +24473,10 @@ const questions = [
       "HRK"
     ],
     "optionsAr": [
-      "بولا بتسواني",
-      "كرونة أيسلندية",
-      "تينغ كازاخستاني",
-      "كونا كرواتي"
+      "BWP",
+      "ISK",
+      "KZT",
+      "HRK"
     ],
     "answer": 1,
     "difficulty": "hard",
@@ -24494,9 +24494,9 @@ const questions = [
     ],
     "optionsAr": [
       "CLF",
-      "فرنك وسط أفريقي",
-      "روبية هندي",
-      "رييال كمبودي"
+      "XAF",
+      "INR",
+      "KHR"
     ],
     "answer": 2,
     "difficulty": "hard",
@@ -24513,10 +24513,10 @@ const questions = [
       "CAD"
     ],
     "optionsAr": [
-      "روبية إندونيسية",
-      "روبية هندي",
-      "سول بيروفي",
-      "دولار كندي"
+      "IDR",
+      "INR",
+      "PEN",
+      "CAD"
     ],
     "answer": 0,
     "difficulty": "hard",
@@ -24533,10 +24533,10 @@ const questions = [
       "IRR"
     ],
     "optionsAr": [
-      "بوليفيانو بوليفي",
-      "كوتزال غواتيمالا",
-      "جنيه لبناني",
-      "ريال إيراني"
+      "BOB",
+      "GTQ",
+      "LBP",
+      "IRR"
     ],
     "answer": 3,
     "difficulty": "hard",
@@ -24553,10 +24553,10 @@ const questions = [
       "IQD"
     ],
     "optionsAr": [
-      "نايرا نيجيري",
-      "بيزو مكسيكي",
-      "درام أرميني",
-      "دينار عراقي"
+      "NGN",
+      "MXN",
+      "AMD",
+      "IQD"
     ],
     "answer": 3,
     "difficulty": "hard",
@@ -24573,10 +24573,10 @@ const questions = [
       "EUR"
     ],
     "optionsAr": [
-      "ريال برازيلي",
-      "شلن كينيي",
-      "دينار أردني",
-      "يورو"
+      "BRL",
+      "KES",
+      "JOD",
+      "EUR"
     ],
     "answer": 3,
     "difficulty": "hard",
@@ -24593,10 +24593,10 @@ const questions = [
       "PEN"
     ],
     "optionsAr": [
-      "دولار كندي",
-      "شيكل إسرائيلي جديد",
-      "كرونة أيسلندية",
-      "سول بيروفي"
+      "CAD",
+      "ILS",
+      "ISK",
+      "PEN"
     ],
     "answer": 1,
     "difficulty": "hard",
@@ -24613,10 +24613,10 @@ const questions = [
       "GEL"
     ],
     "optionsAr": [
-      "يورو",
-      "ليك ألباني",
-      "فورينت هنغاري",
-      "لارى جورجي"
+      "EUR",
+      "ALL",
+      "HUF",
+      "GEL"
     ],
     "answer": 0,
     "difficulty": "hard",
@@ -24633,10 +24633,10 @@ const questions = [
       "HRK"
     ],
     "optionsAr": [
-      "ين ياباني",
-      "دولار نيوزيلندي",
-      "رييال كمبودي",
-      "كونا كرواتي"
+      "JPY",
+      "NZD",
+      "KHR",
+      "HRK"
     ],
     "answer": 0,
     "difficulty": "hard",
@@ -24653,10 +24653,10 @@ const questions = [
       "PKR"
     ],
     "optionsAr": [
-      "سيدي غانا",
-      "دينار عراقي",
-      "دينار أردني",
-      "روبية باكستاني"
+      "GHS",
+      "IQD",
+      "JOD",
+      "PKR"
     ],
     "answer": 2,
     "difficulty": "hard",
@@ -24673,10 +24673,10 @@ const questions = [
       "KZT"
     ],
     "optionsAr": [
-      "بيزو كولومبي",
-      "دينار كويتي",
-      "ليك ألباني",
-      "تينغ كازاخستاني"
+      "COP",
+      "KWD",
+      "ALL",
+      "KZT"
     ],
     "answer": 3,
     "difficulty": "hard",
@@ -24693,10 +24693,10 @@ const questions = [
       "ILS"
     ],
     "optionsAr": [
-      "ليك ألباني",
-      "ريال عماني",
-      "شلن كينيي",
-      "شيكل إسرائيلي جديد"
+      "ALL",
+      "OMR",
+      "KES",
+      "ILS"
     ],
     "answer": 2,
     "difficulty": "hard",
@@ -24713,10 +24713,10 @@ const questions = [
       "KWD"
     ],
     "optionsAr": [
-      "كرونة نرويجية",
+      "NOK",
       "CLF",
-      "بيزو فلبيني",
-      "دينار كويتي"
+      "PHP",
+      "KWD"
     ],
     "answer": 3,
     "difficulty": "hard",
@@ -24733,10 +24733,10 @@ const questions = [
       "LBP"
     ],
     "optionsAr": [
-      "سول بيروفي",
-      "كرونة دنماركية",
-      "تاكا بنغلاديشي",
-      "جنيه لبناني"
+      "PEN",
+      "DKK",
+      "BDT",
+      "LBP"
     ],
     "answer": 3,
     "difficulty": "hard",
@@ -24753,10 +24753,10 @@ const questions = [
       "MYR"
     ],
     "optionsAr": [
-      "شلن كينيي",
-      "بيزو مكسيكي",
-      "دينار جزائري",
-      "رينغيت ماليزي"
+      "KES",
+      "MXN",
+      "DZD",
+      "MYR"
     ],
     "answer": 3,
     "difficulty": "hard",
@@ -24773,10 +24773,10 @@ const questions = [
       "GTQ"
     ],
     "optionsAr": [
-      "فورينت هنغاري",
-      "كوانزا أنغولي",
-      "بيزو مكسيكي",
-      "كوتزال غواتيمالا"
+      "HUF",
+      "AOA",
+      "MXN",
+      "GTQ"
     ],
     "answer": 2,
     "difficulty": "hard",
@@ -24793,10 +24793,10 @@ const questions = [
       "BOB"
     ],
     "optionsAr": [
-      "توغروغ منغولي",
-      "روبية نيبالي",
-      "رييال كمبودي",
-      "بوليفيانو بوليفي"
+      "MNT",
+      "NPR",
+      "KHR",
+      "BOB"
     ],
     "answer": 0,
     "difficulty": "hard",
@@ -24813,10 +24813,10 @@ const questions = [
       "HUF"
     ],
     "optionsAr": [
-      "كرونة نرويجية",
-      "دولار أسترالي",
-      "درهم مغربي",
-      "فورينت هنغاري"
+      "NOK",
+      "AUD",
+      "MAD",
+      "HUF"
     ],
     "answer": 2,
     "difficulty": "hard",
@@ -24833,10 +24833,10 @@ const questions = [
       "BGN"
     ],
     "optionsAr": [
-      "روبية نيبالي",
-      "دولار أسترالي",
-      "تينغ كازاخستاني",
-      "ليف بلغاري"
+      "NPR",
+      "AUD",
+      "KZT",
+      "BGN"
     ],
     "answer": 0,
     "difficulty": "hard",
@@ -24853,10 +24853,10 @@ const questions = [
       "ALL"
     ],
     "optionsAr": [
-      "يورو",
-      "دولار أسترالي",
-      "جنيه مصري",
-      "ليك ألباني"
+      "EUR",
+      "AUD",
+      "EGP",
+      "ALL"
     ],
     "answer": 0,
     "difficulty": "hard",
@@ -24873,10 +24873,10 @@ const questions = [
       "BYR"
     ],
     "optionsAr": [
-      "دولار كندي",
-      "يورو",
-      "دولار نيوزيلندي",
-      "روبل بيلاروسي (٢٠٠٠–٢٠١٦)"
+      "CAD",
+      "EUR",
+      "NZD",
+      "BYR"
     ],
     "answer": 2,
     "difficulty": "hard",
@@ -24893,10 +24893,10 @@ const questions = [
       "PEN"
     ],
     "optionsAr": [
-      "بيزو الدومنيكان",
-      "نايرا نيجيري",
-      "يوان صيني",
-      "سول بيروفي"
+      "DOP",
+      "NGN",
+      "CNY",
+      "PEN"
     ],
     "answer": 1,
     "difficulty": "hard",
@@ -24913,10 +24913,10 @@ const questions = [
       "NOK"
     ],
     "optionsAr": [
-      "جنيه مصري",
-      "زلوتي بولندي",
-      "ريال برازيلي",
-      "كرونة نرويجية"
+      "EGP",
+      "PLN",
+      "BRL",
+      "NOK"
     ],
     "answer": 3,
     "difficulty": "hard",
@@ -24933,10 +24933,10 @@ const questions = [
       "ILS"
     ],
     "optionsAr": [
-      "ريال عماني",
-      "روبية باكستاني",
-      "دينار عراقي",
-      "شيكل إسرائيلي جديد"
+      "OMR",
+      "PKR",
+      "IQD",
+      "ILS"
     ],
     "answer": 0,
     "difficulty": "hard",
@@ -24953,10 +24953,10 @@ const questions = [
       "PKR"
     ],
     "optionsAr": [
-      "كوتزال غواتيمالا",
-      "رينغيت ماليزي",
-      "دولار أمريكي",
-      "روبية باكستاني"
+      "GTQ",
+      "MYR",
+      "USD",
+      "PKR"
     ],
     "answer": 3,
     "difficulty": "hard",
@@ -24973,10 +24973,10 @@ const questions = [
       "PEN"
     ],
     "optionsAr": [
-      "شلن كينيي",
-      "كوانزا أنغولي",
-      "يوان صيني",
-      "سول بيروفي"
+      "KES",
+      "AOA",
+      "CNY",
+      "PEN"
     ],
     "answer": 3,
     "difficulty": "hard",
@@ -24993,10 +24993,10 @@ const questions = [
       "BGN"
     ],
     "optionsAr": [
-      "كوتزال غواتيمالا",
-      "دينار عراقي",
-      "بيزو فلبيني",
-      "ليف بلغاري"
+      "GTQ",
+      "IQD",
+      "PHP",
+      "BGN"
     ],
     "answer": 2,
     "difficulty": "hard",
