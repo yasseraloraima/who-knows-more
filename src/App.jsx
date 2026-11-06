@@ -1900,15 +1900,7 @@ socket.emit(
                   )}
                 </p>
 
-                <label className="multiplayer-label">
-                  {text("Your name", "اسمك")}
-                </label>
-
-                <input
-                  className="multiplayer-input"
-                  value={playerName}
-                  readOnly
-                />
+              
 
                 {/* AVATAR PICKER */}
 
