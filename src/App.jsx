@@ -1481,13 +1481,20 @@ socket.emit(
           </a>
         </nav>
 
-        <div className="nav-user">
-          <Avatar
-            src={currentPlayer.avatar_url}
-            alt={currentPlayer.username}
-          />
+      <div className="nav-user">
+  <button
+    type="button"
+    className="nav-profile-button"
+    onClick={() => openPlayerProfile(currentPlayer.username)}
+    title={text("View Profile", "عرض الملف الشخصي")}
+  >
+    <Avatar
+      src={currentPlayer.avatar_url}
+      alt={currentPlayer.username}
+    />
 
-          <span>{currentPlayer.username}</span>
+    <span>{currentPlayer.username}</span>
+  </button>
 
           <button
             className="language-button"
