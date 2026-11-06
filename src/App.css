@@ -1346,6 +1346,87 @@ footer {
   font-weight: 600;
 }
 
+/* CATEGORY SELECTION - WHO KNOWS MORE */
 
+.avatar-picker:has(input[type="checkbox"]) .avatar-options {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 14px;
+}
+
+.avatar-picker:has(input[type="checkbox"]) .avatar-option {
+  min-height: 76px;
+  padding: 16px !important;
+  display: flex !important;
+  flex-direction: row !important;
+  align-items: center !important;
+  justify-content: center !important;
+  gap: 12px;
+
+  background: rgba(255, 255, 255, 0.035) !important;
+  border: 1px solid rgba(168, 85, 247, 0.22) !important;
+  border-radius: 16px !important;
+
+  color: white !important;
+  cursor: pointer;
+  transition: all 0.25s ease;
+}
+
+.avatar-picker:has(input[type="checkbox"]) .avatar-option:hover {
+  background: rgba(139, 92, 246, 0.13) !important;
+  border-color: #a855f7 !important;
+  transform: translateY(-3px);
+}
+
+.avatar-picker:has(input[type="checkbox"]) .avatar-option:has(input:checked) {
+  background: rgba(139, 92, 246, 0.2) !important;
+  border: 1px solid #a855f7 !important;
+  box-shadow: 0 0 15px rgba(139, 92, 246, 0.15);
+}
+
+.avatar-picker:has(input[type="checkbox"]) .avatar-option input[type="checkbox"] {
+  appearance: none;
+  -webkit-appearance: none;
+
+  width: 21px;
+  height: 21px;
+  min-width: 21px;
+  margin: 0;
+
+  border: 2px solid #76518f;
+  border-radius: 6px;
+  background: #21172d;
+
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.avatar-picker:has(input[type="checkbox"]) .avatar-option input[type="checkbox"]:checked {
+  background: #9333ea;
+  border-color: #c084fc;
+}
+
+.avatar-picker:has(input[type="checkbox"]) .avatar-option input[type="checkbox"]:checked::after {
+  content: "✓";
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  color: white;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.avatar-picker:has(input[type="checkbox"]) .avatar-option span {
+  font-size: 14px;
+  font-weight: 600;
+  color: white;
+}
+
+@media (max-width: 600px) {
+  .avatar-picker:has(input[type="checkbox"]) .avatar-options {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
 
 
