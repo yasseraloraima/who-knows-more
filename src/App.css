@@ -1311,3 +1311,41 @@ footer {
   color: #a78bfa;
   font-weight: 600;
 }
+
+/* NAVBAR PROFILE BUTTON */
+.navbar .nav-user .nav-profile-button {
+  all: unset;
+  display: inline-flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 6px 10px;
+  border-radius: 30px;
+  color: white;
+  cursor: pointer;
+  font: inherit;
+  transition: all 0.25s ease;
+}
+
+.navbar .nav-user .nav-profile-button:hover {
+  background: rgba(139, 92, 246, 0.12);
+  outline: 1px solid rgba(139, 92, 246, 0.5);
+}
+
+.navbar .nav-user .nav-profile-button img {
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.navbar .nav-user .nav-profile-button span {
+  color: white;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+
+
+
