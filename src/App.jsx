@@ -9,20 +9,17 @@ const SERVER_URL =
 const AVATARS = [
   {
     id: "suit-cap",
-    name: "Suit & Cap",
-    nameAr: "البدلة والكاب",
+
     url: "/avatars/suit-cap.jpeg",
   },
   {
     id: "long-hair",
-    name: "Long Hair",
-    nameAr: "الشعر الطويل",
+
     url: "/avatars/long-hair.jpeg",
   },
   {
     id: "saudi-thobe",
-    name: "Saudi Thobe",
-    nameAr: "الثوب السعودي",
+
     url: "/avatars/saudi-thobe.jpeg",
   },
 ];
